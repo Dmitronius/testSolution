@@ -1,5 +1,0 @@
-//disables error on https://jira.transas.com/projects/CRM/issues/CRM-22
-function serviceid_onchange_handler(eventObj,eventArgs) { 
-return false; 
-}
-//end of CRM-22
