@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="Softline.Transas.Workflows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a01e5dcf0c630a52" PluginAssemblyId="5b9975ec-f003-4a0f-9676-ce196d8ee040" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/SoftlineTransasWorkflows-5B9975EC-F003-4A0F-9676-CE196D8EE040/SoftlineTransasWorkflows.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Softline.Transas.Workflows.WorkOnCustomActivity, Softline.Transas.Workflows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a01e5dcf0c630a52" PluginTypeId="087c2cfc-3980-e811-813a-5065f38a4a21" Name="Softline.Transas.Workflows.WorkOnCustomActivity">
+      <FriendlyName>c794d3fb-b5eb-4455-a6cf-a2acceb2f079</FriendlyName>
+      <WorkflowActivityGroupName>Softline.Transas.Workflows (1.0.0.0)</WorkflowActivityGroupName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

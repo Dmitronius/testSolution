@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{cfdea078-d5c6-49a0-9222-31bfabcb0f6e}</savedqueryid>
+    <layoutxml>
+      <grid name="new_accountproducts" jump="new_accproductidname" select="1" icon="1" preview="1">
+        <row name="new_accountproduct" id="new_accountproductid">
+          <cell name="new_productid" width="100" />
+          <cell name="new_accproductidname" width="100" />
+          <cell name="new_configuration" width="100" />
+          <cell name="new_patch" width="50" />
+          <cell name="new_productkey" width="125" />
+          <cell name="new_product_number" width="100" />
+          <cell name="new_serial_number" width="100" />
+          <cell name="new_version" width="100" />
+          <cell name="new_installed" width="75" />
+          <cell name="new_installationdate" width="100" />
+          <cell name="crm1st_warrantystatus" width="100" />
+          <cell name="new_accountid" width="150" />
+          <cell name="statecode" width="75" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch distinct="false" no-lock="false" mapping="logical">
+        <entity name="new_accountproduct">
+          <attribute name="new_serial_number" />
+          <attribute name="statecode" />
+          <attribute name="new_installationdate" />
+          <attribute name="new_product_number" />
+          <attribute name="new_patch" />
+          <attribute name="new_accountid" />
+          <attribute name="new_configuration" />
+          <attribute name="new_version" />
+          <attribute name="new_installed" />
+          <attribute name="new_accproductidname" />
+          <attribute name="new_productkey" />
+          <attribute name="new_productid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_installed" descending="true" />
+          <attribute name="crm1st_warrantystatus" />
+          <attribute name="new_accountproductid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Account Product Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

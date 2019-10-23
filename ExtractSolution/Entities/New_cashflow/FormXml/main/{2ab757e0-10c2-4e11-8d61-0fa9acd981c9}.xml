@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{2ab757e0-10c2-4e11-8d61-0fa9acd981c9}</formid>
+    <IntroducedVersion>0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab verticallayout="true" id="{b588c623-46c7-4afb-9654-f91b214d8199}" IsUserDefined="1" expanded="true" locklevel="0" showlabel="true" name="General" labelid="{93e99f11-ffd2-4842-a882-39223c396094}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="30%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c00eff49-f834-43d5-bd35-4353e2dfda47}" name="{c00eff49-f834-43d5-bd35-4353e2dfda47}" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{95e14d6e-a92e-4d4c-8827-232035eccf21}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="true" locklevel="0" id="{5e4916b1-fef3-4ed9-837e-a9e32b386fa8}" labelid="{ada7d9ac-1314-4c61-9a8c-182e25b82eac}">
+                        <labels>
+                          <label description="Project ID" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" uniqueid="{d7378bac-8160-0142-d5a7-c33e17eeec3d}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{4957b7d4-7520-46bb-bf4c-8b1f5749adfe}" labelid="{507a2449-cd93-4ac7-b0b0-fbc738b260f2}">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{ae54071e-ef5c-4714-8795-a1378eeb2cda}" labelid="{99388827-33f9-4bf7-9036-20a458aa8f65}">
+                        <labels>
+                          <label description="Due Date In" languagecode="1033" />
+                        </labels>
+                        <control id="new_due_date" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_due_date" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b5e87e11-6db5-44e5-b2ef-3bd5f5eb37b6}" showlabel="true" locklevel="1" labelid="{ad586c2d-35e5-4760-9019-9373f7b20622}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" uniqueid="{3206ac42-e071-db37-696a-075a4dc73620}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{8fef58e4-233c-4d47-b2c2-2efeab56ff37}" labelid="{fab88180-c5e9-4918-9b6f-2c45765f87bd}">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="new_opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_opportunityid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{72c8a7ee-1b3b-21dd-10e1-316a63875b96}" showlabel="true" locklevel="0" labelid="{214b431f-edce-43e5-86e8-dc4695f53887}">
+                        <labels>
+                          <label description="Exchange Rate" languagecode="1033" />
+                        </labels>
+                        <control id="exchangerate" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="exchangerate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a4517d18-24d5-a911-a526-0e7951e9622a}" showlabel="true" locklevel="0" labelid="{4da129f0-d02d-4fa2-8299-3cb7ebef5a39}">
+                        <labels>
+                          <label description="Gross Margin (Base)" languagecode="1033" />
+                        </labels>
+                        <control id="new_grossmargin_base" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_grossmargin_base" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="40%">
+              <sections>
+                <section name="{b588c623-46c7-4afb-9654-f91b214d8199}_section_3" showlabel="false" showbar="false" locklevel="0" id="{0bc674c9-2e79-869c-46e3-7cd318329d24}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{9f9c6f77-38d7-4f41-ae00-aabbb50d515d}">
+                  <labels>
+                    <label description="Comment" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{05912a61-e4d5-32da-483b-6020cb2aae85}" showlabel="false" rowspan="15" auto="false" colspan="1" locklevel="0" labelid="{704f1254-07e9-4a10-ba2a-fe8734b1de8e}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{d4a610ac-5963-5a71-acb8-dbca486bd060}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>ActivitiesTab</DefaultTabId>
+                            <OrderByActivityWall>descending</OrderByActivityWall>
+                            <SortActivityWall>modifiedon</SortActivityWall>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="30%">
+              <sections>
+                <section name="{b588c623-46c7-4afb-9654-f91b214d8199}_section_4" showlabel="false" showbar="false" locklevel="0" id="{9894d9d1-901a-a590-dd25-c460accd8ac4}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{a19c434c-edc9-45cd-83ef-f956757372eb}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{41085881-186e-29d6-ea78-d72386eb69aa}" showlabel="false" labelid="{484d2215-1253-4e88-825f-eb9461c22d90}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{f0424863-976a-4d77-96db-a12432903aba}" columns="111">
+        <rows>
+          <row>
+            <cell id="{eee458e5-2576-e138-aa98-c2ba30a2e8b6}" showlabel="true" locklevel="0" labelid="{c4873dad-5c7a-4a46-b3ec-64f942bbdb90}">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{388264c8-9cc7-a365-b04a-2eabb095e85e}" showlabel="true" locklevel="0" labelid="{7b18f1c8-6613-4d67-adb9-e01e142a1633}">
+              <labels>
+                <label description="Exchange Rate" languagecode="1033" />
+              </labels>
+              <control id="header_exchangerate" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="exchangerate" disabled="false" />
+            </cell>
+            <cell id="{0a7b9ce7-24e5-3695-9d5e-d79975c14987}" showlabel="true" locklevel="0" labelid="{aa988760-04ad-4e83-911c-94e48ba2f124}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{a6806ef1-ad7d-48b4-8a4e-e6f906e54e09}">
+        <rows>
+          <row>
+            <cell id="{6f1f0b0c-4dfc-4138-a52b-11b6cbd06f0d}" labelid="{599fc824-5371-450f-8235-4d899d800a0a}">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="footer_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="New_cashflow_main_library.js" libraryUniqueId="{1be7c837-c4c6-44e1-9fa8-c011cabd0833}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="true">
+          <Handlers>
+            <Handler functionName="cashflowMain.OnLoadForm" libraryName="New_cashflow_main_library.js" handlerUniqueId="7377a389-b5cd-45e6-9cb0-372b510844ad" enabled="true" passExecutionContext="false" parameters="">
+              <dependencies />
+            </Handler>
+          </Handlers>
+        </event>
+        <event name="onsave" application="false" active="true">
+          <Handlers>
+            <Handler functionName="incidentMain.OnSaveForm" libraryName="New_cashflow_main_library.js" handlerUniqueId="309088f3-a8b4-4b8e-9911-c6c1221a00d6" enabled="true" passExecutionContext="false" parameters="">
+              <dependencies />
+            </Handler>
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Development form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

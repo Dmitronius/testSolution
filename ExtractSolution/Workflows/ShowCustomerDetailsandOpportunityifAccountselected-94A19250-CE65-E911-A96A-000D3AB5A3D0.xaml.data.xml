@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{94a19250-ce65-e911-a96a-000d3ab5a3d0}" Name="Show Customer Details and Opportunity if Account selected" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ShowCustomerDetailsandOpportunityifAccountselected-94A19250-CE65-E911-A96A-000D3AB5A3D0.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.44.2.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>New_AccountProduct</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Show Customer Details and Opportunity if Account selected" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{5d69c965-de65-e911-a96a-000d3ab5a3d0}">
+      <controltype>1</controltype>
+      <formid>{fa2f9544-5fd5-467e-a099-2c6cbc721d66}</formid>
+      <scope>1</scope>
+      <controlname>new_accountid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>New_AccountProduct</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{5e69c965-de65-e911-a96a-000d3ab5a3d0}">
+      <formid>{fa2f9544-5fd5-467e-a099-2c6cbc721d66}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>New_AccountProduct</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

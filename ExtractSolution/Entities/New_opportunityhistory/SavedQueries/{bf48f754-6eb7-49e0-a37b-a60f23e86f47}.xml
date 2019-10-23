@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{bf48f754-6eb7-49e0-a37b-a60f23e86f47}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_opportunityhistory" id="new_opportunityhistoryid">
+          <cell name="new_statusreason" width="100" />
+          <cell name="new_fin_contractvalue" width="100" />
+          <cell name="new_estclosedate" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="createdby" width="100" />
+          <cell name="new_probability" width="100" />
+          <cell name="new_fin_grossmargin" width="100" />
+          <cell name="new_fin_operatingprofit" width="100" />
+          <cell name="new_fin_profitabilityindex" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_opportunityhistory">
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_statusreason" />
+          <attribute name="new_fin_profitabilityindex" />
+          <attribute name="new_probability" />
+          <attribute name="ownerid" />
+          <attribute name="new_fin_operatingprofit" />
+          <attribute name="new_fin_grossmargin" />
+          <attribute name="new_estclosedate" />
+          <attribute name="new_fin_contractvalue" />
+          <attribute name="createdby" />
+          <attribute name="new_opportunityhistoryid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.17.03.29</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Opportunity History Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

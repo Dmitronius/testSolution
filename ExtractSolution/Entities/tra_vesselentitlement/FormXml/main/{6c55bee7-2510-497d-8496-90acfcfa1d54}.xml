@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6c55bee7-2510-497d-8496-90acfcfa1d54}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab verticallayout="true" id="{cbdea3a2-1182-4c68-9321-3664b1bfb9c4}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{ca6befd5-2795-434e-956a-cee357953b93}" name="{ca6befd5-2795-434e-956a-cee357953b93}" columns="11" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6d01c089-8cae-8815-ac49-7b7e4b829683}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Account" languagecode="1033" />
+                        </labels>
+                        <control id="tra_accountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_accountid" disabled="false" />
+                      </cell>
+                      <cell id="{96e90ea2-a500-5d21-a1ea-c63206360a56}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vessel" languagecode="1033" />
+                        </labels>
+                        <control id="tra_vesselid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_vesselid" disabled="false" uniqueid="{1cb5d7bb-decd-b1b1-4e6a-176a54b4ce28}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{20213B0E-4625-40CD-A3F8-182D6184A1DF}</DefaultViewId>
+                            <FilterRelationshipName>new_account_new_vessels_ParentAccount</FilterRelationshipName>
+                            <DependentAttributeName>tra_vesselentitlement.tra_accountid</DependentAttributeName>
+                            <DependentAttributeType>account</DependentAttributeType>
+                            <AllowFilterOff>true</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9133e6b4-59e4-780d-a9ad-e952418218c0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="MSA" languagecode="1033" />
+                        </labels>
+                        <control id="tra_msaid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_msaid" disabled="false" />
+                      </cell>
+                      <cell id="{ce410b47-8b83-2336-4d42-d38d9d7ede39}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2d2a1798-3d75-e02e-4737-26b769970386}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                      <cell id="{43c45680-6084-e671-c213-2cc5ac744427}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{de5c4e50-d3b5-4afa-8c38-0be61e397804}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_name" uniqueid="{55007be5-726c-0213-d9ec-0c4610219710}" disabled="false" />
+                      </cell>
+                      <cell id="{12c90eaa-a4bb-5dbe-c19d-392edb531903}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="tra_SetFormNotification" libraryUniqueId="{e7a5b489-0ad8-68c6-7828-91ce158e21dc}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="TRA.FormNotification.saveFirst" libraryName="tra_SetFormNotification" handlerUniqueId="{325c65bc-a596-93ac-68b6-9e300aa09d7b}" enabled="true" parameters="&quot;Save Vessel Entitlement first and then fill in Vessel field&quot;" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

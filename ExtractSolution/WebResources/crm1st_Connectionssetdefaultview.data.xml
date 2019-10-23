@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{d47f374c-da72-e711-8108-5065f38a4a21}</WebResourceId>
+  <Name>crm1st_Connectionssetdefaultview</Name>
+  <DisplayName>Connections</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>0.40.2.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/crm1st_ConnectionssetdefaultviewD47F374C-DA72-E711-8108-5065F38A4A21</FileName>
+</WebResource>

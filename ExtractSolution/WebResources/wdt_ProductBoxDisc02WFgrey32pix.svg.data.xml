@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{0301083b-b5d0-e911-a978-000d3ab5a0d7}</WebResourceId>
+  <Name>wdt_ProductBoxDisc02WFgrey32pix.svg</Name>
+  <DisplayName>Product Box Disc 02 WF grey 32pix.svg</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/wdt_ProductBoxDisc02WFgrey32pixsvg0301083B-B5D0-E911-A978-000D3AB5A0D7</FileName>
+</WebResource>

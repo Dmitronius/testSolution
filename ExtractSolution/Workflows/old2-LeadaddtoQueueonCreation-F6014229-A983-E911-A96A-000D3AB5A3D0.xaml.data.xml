@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{f6014229-a983-e911-a96a-000d3ab5a3d0}" Name="old2- Lead.add to Queue on Creation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/old2-LeadaddtoQueueonCreation-F6014229-A983-E911-A96A-000D3AB5A3D0.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>1</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <UniqueName>LeadaddtoQueueonCreationf8014229a983e911a96a000d3ab5a3d0</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.44.5.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>Lead</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="old2- Lead.add to Queue on Creation" />
+  </LocalizedNames>
+</Workflow>

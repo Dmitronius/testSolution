@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b65f3961-9081-4cc9-9eb9-a3e5bd135131}</savedqueryid>
+    <layoutxml>
+      <grid name="new_opportunityproductgroups" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_opportunityproductgroup" id="new_opportunityproductgroupid">
+          <cell name="tra_productlineid" width="100" />
+          <cell name="tra_productpackageitemscount" width="100" />
+          <cell name="a_316a9f83847be811813d5065f38aea61.tra_basicweight" width="100" disableSorting="1" />
+          <cell name="new_opportunityid" width="100" />
+          <cell name="createdby" width="100" />
+          <cell name="createdon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch distinct="false" no-lock="false" mapping="logical">
+        <entity name="new_opportunityproductgroup">
+          <attribute name="createdon" />
+          <attribute name="createdby" />
+          <attribute name="new_opportunityid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="tra_productlineid" descending="false" />
+          <attribute name="tra_productpackageitemscount" />
+          <attribute name="tra_productlineid" />
+          <link-entity alias="a_316a9f83847be811813d5065f38aea61" name="product" from="productid" to="tra_productlineid" link-type="outer" visible="false">
+            <attribute name="tra_basicweight" />
+          </link-entity>
+          <attribute name="new_opportunityproductgroupid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Opportunity Product Line Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

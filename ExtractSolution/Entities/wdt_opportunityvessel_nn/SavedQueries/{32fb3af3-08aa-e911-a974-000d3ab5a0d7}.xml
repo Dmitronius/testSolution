@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{32fb3af3-08aa-e911-a974-000d3ab5a0d7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="wdt_name" select="1" icon="1" preview="1">
+        <row name="result" id="wdt_opportunityvessel_nnid">
+          <cell name="wdt_vesselid" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_89ae828706aae911a974000d3ab5a0d7.new_imo" width="100" disableSorting="1" />
+          <cell name="wdt_isentitlementscreated" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="wdt_opportunityvessel_nn">
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="wdt_vesselid" />
+          <attribute name="wdt_isentitlementscreated" />
+          <link-entity alias="a_89ae828706aae911a974000d3ab5a0d7" name="new_vessels" from="new_vesselsid" to="wdt_vesselid" link-type="outer" visible="false">
+            <attribute name="new_imo" />
+          </link-entity>
+          <attribute name="wdt_opportunityvessel_nnid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.44.9.36</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Opportunites Vessels For Opportunity Form" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

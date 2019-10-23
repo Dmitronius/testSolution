@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{700aa010-cf0e-e511-9461-00155d038c01}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="title" select="1" preview="1" icon="1">
+        <row name="result" id="incidentid">
+          <cell name="ticketnumber" width="125" />
+          <cell name="new_productcaseid" width="100" />
+          <cell name="title" width="200" />
+          <cell name="casetypecode" width="125" />
+          <cell name="createdon" width="100" />
+          <cell name="statuscode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="incident">
+          <attribute name="title" />
+          <attribute name="statuscode" />
+          <attribute name="createdon" />
+          <attribute name="casetypecode" />
+          <attribute name="ticketnumber" />
+          <order attribute="createdon" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="in">
+              <value>2</value>
+              <value>1</value>
+            </condition>
+          </filter>
+          <attribute name="new_productcaseid" />
+          <attribute name="incidentid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0000</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Web - Closed Cases" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="View used by the portal to display resolved or cancelled cases." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

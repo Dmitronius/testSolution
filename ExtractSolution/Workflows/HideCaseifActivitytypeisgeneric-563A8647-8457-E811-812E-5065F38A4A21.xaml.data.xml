@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{563a8647-8457-e811-812e-5065f38a4a21}" Name="Hide Case if Activity type is generic" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/HideCaseifActivitytypeisgeneric-563A8647-8457-E811-812E-5065F38A4A21.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>tra_timeexpense</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Hide Case if Activity type is generic" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{ad39b28b-1dce-e811-8150-5065f38b06f1}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>tra_timeexpenseactivitytypecode</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>tra_timeexpense</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{ae39b28b-1dce-e811-8150-5065f38b06f1}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>tra_timeexpense</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{af39b28b-1dce-e811-8150-5065f38b06f1}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>tra_timeexpenseactivitytypecode</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>tra_timeexpense</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{b039b28b-1dce-e811-8150-5065f38b06f1}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>tra_timeexpense</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

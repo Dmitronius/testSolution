@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="crm1st.Mscrm.Form.opportunity.FormDesign.Hide" Location="Mscrm.Form.opportunity.FormDesign" />
+    <HideCustomAction HideActionId="crm1st.Mscrm.Form.opportunity.Recalculate.Hide" Location="Mscrm.Form.opportunity.Recalculate" />
+    <HideCustomAction HideActionId="crm1st.Mscrm.HomepageGrid.opportunity.MBPF.ConvertTo.Hide" Location="Mscrm.HomepageGrid.opportunity.MBPF.ConvertTo" />
+    <CustomAction Id="new.crm1st.Form.opportunity.MainTab.Actions.CreateBudgetButton.CustomAction" Location="Mscrm.Form.opportunity.MainTab.ModernClient.Controls._children" Sequence="4">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:crm1st.Form.opportunity.MainTab.Actions.CreateBudgetButton.Alt" Command="crm1st.Form.opportunity.MainTab.Actions.CreateBudgetButton.Command" Id="crm1st.Form.opportunity.MainTab.Actions.CreateBudgetButton" Image32by32="$webresource:IconNew_productgroupMedium" Image16by16="$webresource:IconNew_productgroupSmall" LabelText="$LocLabels:crm1st.Form.opportunity.MainTab.Actions.CreateBudgetButton.LabelText" Sequence="4" ToolTipTitle="$LocLabels:crm1st.Form.opportunity.MainTab.Actions.CreateBudgetButton.ToolTipTitle" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.CustomAction" Location="Mscrm.Form.opportunity.MainTab.Save.Controls._children" Sequence="95">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.Alt" Command="crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.Command" Id="crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode" Image32by32="$webresource:msdyn_/Images/MoveUp_32.png" Image16by16="$webresource:msdyn_/Images/MoveUp_16.png" LabelText="$LocLabels:crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.LabelText" Sequence="95" TemplateAlias="o2" ToolTipTitle="$LocLabels:crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.ToolTipTitle" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.Form.opportunity.MainTab.Actions.StartApprovalProcessButton.CustomAction" Location="Mscrm.Form.opportunity.MainTab.ModernClient.Controls._children" Sequence="7">
+      <CommandUIDefinition>
+        <Button Command="crm1st.Form.opportunity.MainTab.Actions.StartApprovalProcessButton.Command" Id="crm1st.Form.opportunity.MainTab.Actions.StartApprovalProcessButton" Image32by32="$webresource:crm1st_startapprovalprocess32" Image16by16="$webresource:crm1st_startapprovalprocess16" LabelText="$LocLabels:crm1st.Form.opportunity.MainTab.Actions.StartApprovalProcessButton.LabelText" Sequence="7" ToolTipTitle="$LocLabels:crm1st.Form.opportunity.MainTab.Actions.StartApprovalProcessButton.ToolTipTitle" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.Mscrm.Form.opportunity.FormDesign.CustomAction" Location="Mscrm.Form.opportunity.MainTab.Workflow.Controls._children" Sequence="10">
+      <CommandUIDefinition>
+        <Button Alt="$Resources:Ribbon.Form.Data.Customize.FormDesign" Command="Mscrm.FormDesign.OpenFromForm" Id="crm1st.Mscrm.Form.opportunity.FormDesign" Image32by32="/_imgs/ribbon/EditForm_32.png" Image16by16="/_imgs/ribbon/formdesign16.png" LabelText="$Resources:Ribbon.Form.Data.Customize.FormDesign" Sequence="10" TemplateAlias="o1" ToolTipTitle="$Resources:Ribbon.Form.Data.Customize.FormDesign" ToolTipDescription="$Resources:Ribbon.Tooltip.DesignForm" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.Mscrm.HomepageGrid.opportunity.MBPF.ConvertTo.CustomAction" Location="Mscrm.Form.opportunity.MainTab.Workflow.Controls._children" Sequence="15">
+      <CommandUIDefinition>
+        <FlyoutAnchor Alt="$Resources:RefreshCommandBar.Process" Command="Mscrm.Form.Process" Id="crm1st.Mscrm.HomepageGrid.opportunity.MBPF.ConvertTo" Image16by16="/_imgs/Workplace/ConvertActivity_16.png" Image32by32="/_imgs/Workplace/ConvertActivity_32.png" LabelText="$Resources:RefreshCommandBar.Process" Sequence="15" TemplateAlias="o1" ToolTipTitle="$Resources:RefreshCommandBar.Process" ToolTipDescription="$Resources:Ribbon.Tooltip.Process">
+          <Menu Id="crm1st.Mscrm.HomepageGrid.opportunity.MBPF.ConvertTo.Menu">
+            <MenuSection Id="Mscrm.HomepageGrid.opportunity.MBPF.MenuSection" Sequence="106" DisplayMode="Menu16">
+              <Controls Id="Mscrm.HomepageGrid.opportunity.MBPF.MenuSection.Controls">
+                <Button Alt="$Resources:RefreshCommandBar.SwitchProcess" Command="Mscrm.SwitchProcess" Id="Mscrm.Form.opportunity.SwitchProcess" Image32by32="/_imgs/ribbon/convert_32.png" Image16by16="/_imgs/ribbon/convert_16.png" LabelText="$Resources:RefreshCommandBar.SwitchProcess" Sequence="10" TemplateAlias="o1" ToolTipTitle="$Resources:RefreshCommandBar.SwitchProcess" ToolTipDescription="$Resources:Ribbon.Tooltip.SwitchProcess" ModernImage="SwitchProcess" />
+                <Button Alt="$Resources:RefreshCommandBar.EditSalesProcess" Command="Mscrm.EditSalesProcess" Id="Mscrm.Form.opportunity.EditSalesProcess" Image32by32="/_imgs/ribbon/edit32.png" Image16by16="/_imgs/ribbon/edit_16.png" LabelText="$Resources:RefreshCommandBar.EditSalesProcess" Sequence="20" TemplateAlias="o1" ToolTipTitle="$Resources:RefreshCommandBar.EditSalesProcess" ToolTipDescription="$Resources:Ribbon.Tooltip.EditSalesProcess" />
+                <Button Alt="$Resources:RefreshCommandBar.Abandon" Command="Mscrm.Abandon" Id="Mscrm.Form.opportunity.Abandon" Image32by32="/_imgs/ribbon/convert_32.png" Image16by16="/_imgs/ribbon/convert_16.png" LabelText="$Resources:RefreshCommandBar.Abandon" Sequence="30" TemplateAlias="o1" ToolTipTitle="$Resources:RefreshCommandBar.Abandon" ToolTipDescription="$Resources:Ribbon.Tooltip.Abandon" ModernImage="Abandon" />
+                <Button Alt="$Resources:RefreshCommandBar.Reactivate" Command="Mscrm.Reactivate" Id="Mscrm.Form.opportunity.Reactivate" Image32by32="/_imgs/ribbon/convert_32.png" Image16by16="/_imgs/ribbon/convert_16.png" LabelText="$Resources:RefreshCommandBar.Reactivate" Sequence="40" TemplateAlias="o1" ToolTipTitle="$Resources:RefreshCommandBar.Reactivate" ToolTipDescription="$Resources:Ribbon.Tooltip.Reactivate" ModernImage="Reactivate" />
+                <Button Alt="$Resources:RefreshCommandBar.FinishStage" Command="Mscrm.FinishStage" Id="Mscrm.Form.opportunity.FinishStage" Image32by32="/_imgs/ribbon/convert_32.png" Image16by16="/_imgs/ribbon/convert_16.png" LabelText="$Resources:RefreshCommandBar.FinishStage" Sequence="50" TemplateAlias="o1" ToolTipTitle="$Resources:RefreshCommandBar.FinishStage" ToolTipDescription="$Resources:Ribbon.Tooltip.FinishStage" ModernImage="FinishStage" />
+                <Button Alt="$Resources:ProcessControl.SetActive" Command="Mscrm.SetActiveStage" Id="Mscrm.Form.opportunity.SetActiveStage" Image32by32="/_imgs/ribbon/convert_32.png" Image16by16="/_imgs/ribbon/convert_16.png" LabelText="$Resources:ProcessControl.SetActive" Sequence="60" TemplateAlias="o1" ToolTipTitle="$Resources:ProcessControl.SetActive" ToolTipDescription="$Resources:Ribbon.Tooltip.SetActiveStage" ModernImage="SetActiveStage" />
+              </Controls>
+            </MenuSection>
+          </Menu>
+        </FlyoutAnchor>
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.opportunity.Button2.RecalculateButton.CustomAction" Location="Mscrm.Form.opportunity.MainTab.ModernClient.Controls._children" Sequence="0">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:crm1st.opportunity.Button2.RecalculateButton.Alt" Command="crm1st.opportunity.Command9.RecalculateCommand" Id="crm1st.opportunity.Button2.RecalculateButton" Image32by32="/_imgs/ribbon/recalculateopportunity32.png" Image16by16="/_imgs/SFA/Recalculate_16.png" LabelText="$LocLabels:crm1st.opportunity.Button2.RecalculateButton.LabelText" Sequence="0" ToolTipTitle="$LocLabels:crm1st.opportunity.Button2.RecalculateButton.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.opportunity.Button2.RecalculateButton.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.Mscrm.Form.opportunity.Save.CustomAction" Location="Mscrm.Form.opportunity.MainTab.Save.Controls._children" Sequence="10">
+      <CommandUIDefinition>
+        <Button Alt="$Resources:Ribbon.Form.MainTab.Save.Save" Command="Mscrm.SavePrimary" Id="Mscrm.Form.opportunity.Save" Image32by32="/_imgs/ribbon/Save_32.png" Image16by16="/_imgs/ribbon/Save_16.png" LabelText="$Resources:Ribbon.Form.MainTab.Save.Save" Sequence="10" TemplateAlias="o1" ToolTipTitle="$Resources:Mscrm_Form_Other_MainTab_Save_Save_ToolTipTitle" ToolTipDescription="$Resources(EntityDisplayName):Ribbon.Tooltip.Save" ModernImage="Save" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.Mscrm.Isv.opportunity.Form.CustomAction" Location="Mscrm.Tabs._children" Sequence="1010">
+      <CommandUIDefinition>
+        <Tab Command="Mscrm.Isv.opportunity.Form" Description="ISV Opportunity Form" Id="Mscrm.Isv.opportunity.Form" Sequence="1010" Title="$LocLabels:Mscrm.Isv.opportunity.Form.Title">
+          <Scaling Id="Mscrm.Isv.opportunity.Form.Scaling">
+            <MaxSize GroupId="Mscrm.Isv.opportunity.Form.Group0" Id="Mscrm.Isv.opportunity.Form.Group0.MaxSize" Sequence="10" Size="Large" />
+            <Scale GroupId="Mscrm.Isv.opportunity.Form.Group0" Id="Mscrm.Isv.opportunity.Form.Group0.Scale.Medium" Sequence="20" Size="Medium" />
+            <Scale GroupId="Mscrm.Isv.opportunity.Form.Group0" Id="Mscrm.Isv.opportunity.Form.Group0.Scale.Small" Sequence="30" Size="Small" />
+            <Scale GroupId="Mscrm.Isv.opportunity.Form.Group0" Id="Mscrm.Isv.opportunity.Form.Group0.Scale.Popup" Sequence="40" Size="Popup" />
+          </Scaling>
+          <Groups Id="Mscrm.Isv.opportunity.Form.Groups" />
+        </Tab>
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.opportunity.RecalculateFX.Button.CustomAction" Location="Mscrm.Form.opportunity.MainTab.Workflow.Controls._children" Sequence="30">
+      <CommandUIDefinition>
+        <Button Command="new.opportunity.GenerateFX.Command" Id="new.opportunity.RecalculateFX.Button" Image32by32="$webresource:tra_Cur_Yen_32" Image16by16="$webresource:tra_Cur_Yen_16" LabelText="$LocLabels:new.opportunity.RecalculateFX.Button.LabelText" Sequence="30" TemplateAlias="o1" ToolTipTitle="$LocLabels:new.opportunity.RecalculateFX.Button.ToolTipTitle" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.TRA.opportunity.OpenConfiguratorISV.Button.CustomAction" Location="Mscrm.Form.opportunity.MainTab.ModernClient.Controls._children" Sequence="14">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:TRA.opportunity.OpenConfiguratorISV.Button.Alt" Command="TRA.opportunity.OpenConfiguratorISV.Command" Id="TRA.opportunity.OpenConfiguratorISV.Button" Image32by32="$webresource:tra_config1_32" Image16by16="$webresource:tra_config1_16" LabelText="$LocLabels:TRA.opportunity.OpenConfiguratorISV.Button.LabelText" Sequence="14" TemplateAlias="" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.TRA.opportunity.OpenConfiguratorPROD.Button.CustomAction" Location="Mscrm.Form.opportunity.MainTab.ModernClient.Controls._children" Sequence="13">
+      <CommandUIDefinition>
+        <Button Command="TRA.opportunity.OpenConfiguratorPROD.URLAction.Command" Id="TRA.opportunity.OpenConfiguratorPROD.Button" LabelText="$LocLabels:TRA.opportunity.OpenConfiguratorPROD.Button.LabelText" Sequence="13" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.TRA.opportunity.OpenConfiguratorUATDEV.Button.CustomAction" Location="Mscrm.Form.opportunity.MainTab.ModernClient.Controls._children" Sequence="12">
+      <CommandUIDefinition>
+        <Button Command="TRA.opportunity.OpenConfiguratorUATDEV.URLAction.Command" Id="TRA.opportunity.OpenConfiguratorUATDEV.Button" LabelText="$LocLabels:TRA.opportunity.OpenConfiguratorUATDEV.Button.LabelText" Sequence="12" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.wdt.Form.Opportunity.CreateAccountProduct.Button.CustomAction" Location="Mscrm.Form.opportunity.MainTab.ModernClient.Controls._children" Sequence="10">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:wdt.Form.Opportunity.CreateAccountProduct.Button.Alt" Command="wdt.opportunity.CreateNewAccountProduct.Command" Id="wdt.Form.Opportunity.CreateAccountProduct.Button" Image32by32="$webresource:wdt_ProductBoxDisc02WFwhite32pix.svg" Image16by16="$webresource:wdt_ProductBoxDisc02WF16pix.svg" LabelText="$LocLabels:wdt.Form.Opportunity.CreateAccountProduct.Button.LabelText" Sequence="10" TemplateAlias="" ToolTipTitle="$LocLabels:wdt.Form.Opportunity.CreateAccountProduct.Button.ToolTipTitle" ToolTipDescription="$LocLabels:wdt.Form.Opportunity.CreateAccountProduct.Button.ToolTipDescription" ModernImage="$webresource:wdt_ProductBoxDisc02WFgrey32pix.svg" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="crm1st.Form.opportunity.MainTab.Actions.CreateBudgetButton.Command">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="tra.opportunity.HideIfTransferedToJira.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="opportunityCreateBudget" Library="$webresource:crm1st_ribboncommands" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.Command">
+      <EnableRules>
+        <EnableRule Id="crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.Command.EnableRule.CustomRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="GenerateProjectCode" Library="$webresource:crm1st_/scripts/opportunities/Opportunity_GenerateProjectCode_Button.js" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.Form.opportunity.MainTab.Actions.StartApprovalProcessButton.Command">
+      <EnableRules>
+        <EnableRule Id="new.opportunity.StartApprovalProcessButton.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="opportunityApproval" Library="$webresource:crm1st_ribboncommands" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.opportunity.Command9.RecalculateCommand">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="budgetRecalculate" Library="$webresource:crm1st_ribboncommands" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Form.opportunity.MarkAsWon">
+      <EnableRules>
+        <EnableRule Id="Mscrm.CanWritePrimary" />
+        <EnableRule Id="Mscrm.OpportunityIsOpen" />
+        <EnableRule Id="Mscrm.IsAvailableInMocaOffline" />
+        <EnableRule Id="TRA.Opportunity.Form.ProcessStatusIsFinished" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWriteOpportunity" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.OpportunityCommandActions.opportunityClose" Library="$webresource:Sales/Opportunity/Opportunity_main_system_library.js">
+          <BoolParameter Value="true" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.HomepageGrid.opportunity.MarkAsWon">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountExactlyOne" />
+        <EnableRule Id="Mscrm.VisualizationPaneNotMaximized" />
+        <EnableRule Id="Mscrm.IsAvailableInMocaOffline" />
+        <EnableRule Id="TRA.Opportunity.Grid.checkProcessStatus" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWriteOpportunity" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.OpportunityGridCommandActions.opportunityClose" Library="$webresource:Sales/Opportunity/Opportunity_main_system_library.js">
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <BoolParameter Value="true" />
+          <CrmParameter Value="SelectedControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.opportunity.Form">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.opportunity.Form" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.opportunity.Form.Group0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.opportunity.Form.Group0" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.opportunity.Form.Group0.Control0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.opportunity.Form.Group0.Control0" />
+      </DisplayRules>
+      <Actions>
+        <Url Address="/ISV/CashFlowLineBatchShift/CashFlowWizardDialog/default.aspx" WinMode="0" WinParams="height=280, width=500,  scrollbars=yes, toolbar=false, status=yes, resizable=yes" PassParams="true" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.opportunity.Form.Group0.Control1">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.opportunity.Form.Group0.Control1" />
+      </DisplayRules>
+      <Actions>
+        <Url Address="/ISV/CashFlow/UpdateFinKPIs.aspx" WinMode="0" WinParams="height=140, width=250, scrollbars=yes, toolbar=false, status=yes" PassParams="true" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.opportunity.Form.Group0.Control2">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.opportunity.Form.Group0.Control2" />
+      </DisplayRules>
+      <Actions>
+        <Url Address="/ISV/ContractApprovalSite/CreateApprovalForm/Default.aspx" WinMode="0" WinParams="height=420, width=920, scrollbars=yes, toolbar=false, resizable=yes" PassParams="true" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.opportunity.Form.Group0.Control3">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.opportunity.Form.Group0.Control3" />
+      </DisplayRules>
+      <Actions>
+        <Url Address="/ISV/CashFlowLineBatchShift/CloseOpportunity/default.aspx" WinMode="0" WinParams="height=310, width=700, scrollbars=yes, toolbar=false" PassParams="true" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.SavePrimary">
+      <EnableRules>
+        <EnableRule Id="Mscrm.AvailableOnForm" />
+        <EnableRule Id="Mscrm.CanSavePrimary" />
+        <EnableRule Id="Mscrm.ReadPrimaryPermission" />
+        <EnableRule Id="Mscrm.IsAutoSaveDisable" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanSavePrimaryEntityType" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Save.saveForm" Library="$webresource:Main_system_library.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="new.opportunity.GenerateFX.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="opportunityRecalculateFX" Library="$webresource:crm1st_ribboncommands" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="TRA.opportunity.OpenConfiguratorISV.Command">
+      <EnableRules>
+        <EnableRule Id="TRA.opportunity.OpenConfiguratorISV.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="TRA.OpportunityRibbonLibrary.openConfigurator" Library="$webresource:tra_opportunity_ribbon_library" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="TRA.opportunity.OpenConfiguratorPROD.URLAction.Command">
+      <EnableRules>
+        <EnableRule Id="TRA.opportunity.OpenConfiguratorISV.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <Url Address="https://weita-crmfirst.transas.com/ISVDev/QuoteConfigurator/" WinMode="0" PassParams="true" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="TRA.opportunity.OpenConfiguratorUATDEV.URLAction.Command">
+      <EnableRules>
+        <EnableRule Id="TRA.opportunity.OpenConfiguratorISV.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <Url Address="https://weita-crmfirst.transas.com/ISVDev/QuoteConfigurator/" WinMode="0" PassParams="true" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="wdt.opportunity.CreateNewAccountProduct.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="createAccountProductFromOpportunity" Library="$webresource:wdt_opportunity_ribbon_library.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules>
+      <TabDisplayRule TabCommand="Mscrm.Isv.opportunity.Form">
+        <EntityRule Context="Form" />
+      </TabDisplayRule>
+    </TabDisplayRules>
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.CanSavePrimaryEntityType">
+        <OrRule>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Create" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+        </OrRule>
+        <EntityPrivilegeRule PrivilegeType="Read" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.CanWriteOpportunity">
+        <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" EntityName="opportunity" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.opportunity.Form">
+        <MiscellaneousPrivilegeRule PrivilegeName="ISVExtensions" />
+        <OrRule>
+          <Or>
+            <CrmClientTypeRule Type="Web" />
+          </Or>
+          <Or>
+            <CrmClientTypeRule Type="Outlook" />
+            <CrmOfflineAccessStateRule State="Online" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.opportunity.Form.Group0">
+        <FormStateRule State="Create" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.opportunity.Form.Group0.Control0">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.opportunity.Form.Group0.Control1">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.opportunity.Form.Group0.Control2">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.opportunity.Form.Group0.Control3">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="tra.opportunity.HideIfTransferedToJira.DisplayRule">
+        <ValueRule Field="tra_isbudgettransferredtojira" Value="1" Default="true" InvertResult="true" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.Command.EnableRule.CustomRule">
+        <CustomRule FunctionName="EnableProjectCodeButton" Library="$webresource:crm1st_/scripts/opportunities/Opportunity_GenerateProjectCode_Button.js" Default="false" InvertResult="false" />
+      </EnableRule>
+      <EnableRule Id="crm1st.Form.opportunity.MainTab.Actions.StartApprovalProcessButton.Command.EnableRule.CustomRule">
+        <CustomRule FunctionName="EnableStartApprovalButton" Library="$webresource:crm1st_/scripts/opportunities/Opportunity_StartApprovalButton.js" Default="false" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.AvailableOnForm">
+        <EntityRule AppliesTo="PrimaryEntity" Context="Form" Default="false" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.CanSavePrimary">
+        <OrRule>
+          <Or>
+            <RecordPrivilegeRule PrivilegeType="Create" AppliesTo="PrimaryEntity" />
+            <FormStateRule State="Create" />
+          </Or>
+          <Or>
+            <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" />
+            <FormStateRule State="Existing" />
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.CanWritePrimary">
+        <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.IsAutoSaveDisable">
+        <OrRule>
+          <Or>
+            <FormStateRule State="Create" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.AutoSave.isAutoSaveEnabled" Library="$webresource:Main_system_library.js" InvertResult="true" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.RefreshForm.isRefreshForm" Library="$webresource:Main_system_library.js" InvertResult="true" />
+          </Or>
+          <Or>
+            <FormStateRule State="Existing" />
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.IsAvailableInMocaOffline">
+        <CustomRule FunctionName="XrmCore.Rules.Online.IsCommandAvailableInMocaOffline" Library="$webresource:Main_system_library.js">
+          <BoolParameter Value="true" />
+          <CrmParameter Value="SelectedEntityTypeName" />
+        </CustomRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.OpportunityIsOpen">
+        <FormStateRule State="Existing" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.ReadPrimaryPermission">
+        <RecordPrivilegeRule PrivilegeType="Read" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.SelectionCountExactlyOne">
+        <SelectionCountRule AppliesTo="SelectedEntity" Minimum="1" Maximum="1" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.VisualizationPaneNotMaximized">
+        <OrRule>
+          <Or>
+            <CommandClientTypeRule Type="Modern" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.Charts.disableButtonsWhenChartMaximized" Library="$webresource:Main_system_library.js">
+              <CrmParameter Value="SelectedControl" />
+            </CustomRule>
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="new.opportunity.StartApprovalProcessButton.EnableRule">
+        <CustomRule FunctionName="TRA.OpportunityRibbonLibrary.checkApprovalStage" Library="$webresource:tra_opportunity_ribbon_library" Default="false" />
+      </EnableRule>
+      <EnableRule Id="TRA.Opportunity.Form.ProcessStatusIsFinished">
+        <CustomRule FunctionName="checkProcessStatusForm" Library="$webresource:tra_opportunity_ribbon_library" Default="true" InvertResult="false" />
+      </EnableRule>
+      <EnableRule Id="TRA.Opportunity.Grid.checkProcessStatus">
+        <CustomRule FunctionName="checkProcessStatusGrid" Library="$webresource:tra_opportunity_ribbon_library" Default="true" InvertResult="false">
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+        </CustomRule>
+      </EnableRule>
+      <EnableRule Id="TRA.opportunity.OpenConfiguratorISV.EnableRule">
+        <CustomRule FunctionName="TRA.OpportunityRibbonLibrary.checkInstance" Library="$webresource:tra_opportunity_ribbon_library" Default="true" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="crm1st.Form.opportunity.MainTab.Actions.CreateBudgetButton.Alt">
+      <Titles>
+        <Title description="Create Budget" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.Form.opportunity.MainTab.Actions.CreateBudgetButton.LabelText">
+      <Titles>
+        <Title description="Create Budget" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.Form.opportunity.MainTab.Actions.CreateBudgetButton.ToolTipTitle">
+      <Titles>
+        <Title description="Create Budget with Budget lines" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.Alt">
+      <Titles>
+        <Title description="Generate Project Code" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.LabelText">
+      <Titles>
+        <Title description="Generate Project Code" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.Form.opportunity.MainTab.Actions.GenerateProjectCode.ToolTipTitle">
+      <Titles>
+        <Title description="Generates a code if it does not exist" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.Form.opportunity.MainTab.Actions.StartApprovalProcessButton.LabelText">
+      <Titles>
+        <Title description="Start Approval Process" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.Form.opportunity.MainTab.Actions.StartApprovalProcessButton.ToolTipTitle">
+      <Titles>
+        <Title description="Launch approval process" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.opportunity.Button2.RecalculateButton.Alt">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.opportunity.Button2.RecalculateButton.LabelText">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.opportunity.Button2.RecalculateButton.ToolTipDescription">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.opportunity.Button2.RecalculateButton.ToolTipTitle">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.opportunity.Form.Title">
+      <Titles>
+        <Title description="ISV Opportunity Form" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.opportunity.RecalculateFX.Button.LabelText">
+      <Titles>
+        <Title description="Recalculate FX" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.opportunity.RecalculateFX.Button.ToolTipTitle">
+      <Titles>
+        <Title description="It will update whole project" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="TRA.opportunity.OpenConfiguratorISV.Button.Alt">
+      <Titles>
+        <Title description="Configurator" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="TRA.opportunity.OpenConfiguratorISV.Button.LabelText">
+      <Titles>
+        <Title description="Configurator" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="TRA.opportunity.OpenConfiguratorPROD.Button.LabelText">
+      <Titles>
+        <Title description="Conf Prod" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="TRA.opportunity.OpenConfiguratorUATDEV.Button.LabelText">
+      <Titles>
+        <Title description="Conf UAT\DEV" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.Form.Opportunity.CreateAccountProduct.Button.Alt">
+      <Titles>
+        <Title description="Add Account Product" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.Form.Opportunity.CreateAccountProduct.Button.LabelText">
+      <Titles>
+        <Title description="Add Account Product" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.Form.Opportunity.CreateAccountProduct.Button.ToolTipDescription">
+      <Titles>
+        <Title description="This will create new AP to the current Opportunity" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.Form.Opportunity.CreateAccountProduct.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Create New Account Product" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

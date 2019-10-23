@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="AgCrm2015DistributeWF, Version=1.3.2.1, Culture=neutral, PublicKeyToken=814530733b6620ed" PluginAssemblyId="ee8732b3-a882-4af9-8a5e-61334407aa16" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/AgCrm2015DistributeWF-EE8732B3-A882-4AF9-8A5E-61334407AA16/AgCrm2015DistributeWF.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Gemina.CRM2015.WF.CrmDistributeWF.DistributeWFActivityManyToMany, AgCrm2015DistributeWF, Version=1.3.2.1, Culture=neutral, PublicKeyToken=814530733b6620ed" PluginTypeId="977e09a0-f4f7-4fc8-8ce0-f78e2d3d966f" Name="Gemina.CRM2015.WF.CrmDistributeWF.DistributeWFActivityManyToMany">
+      <FriendlyName>e1783231-a466-477c-8057-ac0ba71003e3</FriendlyName>
+      <WorkflowActivityGroupName>AgCrm2015DistributeWF (1.3.2.1)</WorkflowActivityGroupName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Gemina.CRM2015.WF.CrmDistributeWF.DistributeWFActivityOneToMany, AgCrm2015DistributeWF, Version=1.3.2.1, Culture=neutral, PublicKeyToken=814530733b6620ed" PluginTypeId="6ed6b922-69c1-4fdd-a758-841d8e94b140" Name="Gemina.CRM2015.WF.CrmDistributeWF.DistributeWFActivityOneToMany">
+      <FriendlyName>2f89c907-1f9d-4556-853d-db69bcf5e3db</FriendlyName>
+      <WorkflowActivityGroupName>AgCrm2015DistributeWF (1.3.2.1)</WorkflowActivityGroupName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

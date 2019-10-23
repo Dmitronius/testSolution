@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{116ed980-4a99-e711-8110-5065f38b06f1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bpf_name" select="1" preview="1" icon="1">
+        <row name="result" id="businessprocessflowinstanceid">
+          <cell name="bpf_name" width="150" />
+          <cell name="activestageid" width="100" />
+          <cell name="bpf_opportunityid" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="a_9a501a76f56ae711810a5065f38b06f1.statecode" width="100" disableSorting="1" />
+          <cell name="statecode" width="100" />
+          <cell name="a_9a501a76f56ae711810a5065f38b06f1.statuscode" width="100" disableSorting="1" />
+          <cell name="a_9a501a76f56ae711810a5065f38b06f1.CFSTLProjectID" width="100" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="crm1st_opportunitybidapprovalprocess">
+          <attribute name="bpf_name" />
+          <attribute name="statuscode" />
+          <attribute name="bpf_opportunityid" />
+          <attribute name="activestageid" />
+          <order attribute="bpf_name" descending="false" />
+          <filter type="and">
+            <condition attribute="activestageid" operator="ne" uiname="Initial Negotiation" uitype="processstage" value="{9F17A4E3-3F69-4C89-9561-9F9599AEC6B6}" />
+          </filter>
+          <link-entity name="opportunity" from="opportunityid" to="bpf_opportunityid" alias="a_9a501a76f56ae711810a5065f38b06f1">
+            <attribute name="statuscode" />
+            <filter type="and">
+              <condition attribute="statuscode" operator="in">
+                <value>1</value>
+                <value>7</value>
+                <value>2</value>
+                <value>4</value>
+                <value>614860005</value>
+                <value>614860000</value>
+                <value>614860002</value>
+                <value>614860004</value>
+                <value>614860003</value>
+                <value>614860001</value>
+                <value>614860006</value>
+                <value>10</value>
+                <value>614860007</value>
+                <value>614860008</value>
+                <value>614860009</value>
+                <value>5</value>
+                <value>200001</value>
+              </condition>
+            </filter>
+            <attribute name="statecode" />
+            <attribute name="CFSTLProjectID" />
+          </link-entity>
+          <attribute name="statecode" />
+          <attribute name="businessprocessflowinstanceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="RQ4.Opportunities with incorrect Active stage (CRM-119) initial negotiation" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="part of CRM-119" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

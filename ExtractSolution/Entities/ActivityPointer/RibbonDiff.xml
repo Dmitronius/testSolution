@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="new.activitypointer.Button2.Button.CustomAction" Location="Mscrm.HomepageGrid.activitypointer.MainTab.New.Controls._children" Sequence="95">
+      <CommandUIDefinition>
+        <FlyoutAnchor Command="Mscrm.Enabled" Id="new.activitypointer.Button2.Button" Image16by16="$webresource:tra_Time_Expense_16.png" Image32by32="$webresource:tra_Time_Expense_32.png" LabelText="$LocLabels:new.activitypointer.Button2.Button.LabelText" Sequence="95" TemplateAlias="o1">
+          <Menu Id="new.activitypointer.Button2.Button.Menu">
+            <MenuSection Id="new.activitypointer.Section3.Section" Sequence="5" DisplayMode="Menu16">
+              <Controls Id="new.activitypointer.Section3.Section.Controls">
+                <Button Command="tra.tra_timeexpense.Home.RunSubmitWF.Command" Id="new.activitypointer.Button4.Button" Image32by32="$webresource:tra_Submit02_32.png" Image16by16="$webresource:tra_Submit02_16.png" LabelText="$LocLabels:new.activitypointer.Button4.Button.LabelText" Sequence="10" />
+                <Button Command="tra.tra_timeexpense.Home.RunApproveWF.Command" Id="new.activitypointer.Button5.Button" Image32by32="$webresource:tra_Approve02_32.png" Image16by16="$webresource:tra_Approve02_16.png" LabelText="$LocLabels:new.activitypointer.Button5.Button.LabelText" Sequence="15" />
+                <Button Command="tra.tra_timeexpense.Home.RunRejectWF.Command" Id="new.activitypointer.Button6.Button" Image32by32="$webresource:tra_Reject02_32.png" Image16by16="$webresource:tra_Reject02_16.png" LabelText="$LocLabels:new.activitypointer.Button6.Button.LabelText" Sequence="20" />
+              </Controls>
+            </MenuSection>
+          </Menu>
+        </FlyoutAnchor>
+      </CommandUIDefinition>
+    </CustomAction>
+    <HideCustomAction HideActionId="new.Mscrm.HomepageGrid.activitypointer.NewFax.Hide" Location="Mscrm.HomepageGrid.activitypointer.NewFax" />
+    <HideCustomAction HideActionId="new.Mscrm.HomepageGrid.activitypointer.NewLetter.Hide" Location="Mscrm.HomepageGrid.activitypointer.NewLetter" />
+    <CustomAction Id="new.tra.activitypointer.Button.Mscrm.HomepageGrid.activitypointer.NewTimeExpense.CustomAction" Location="Mscrm.HomepageGrid.activitypointer.MainTab.New.Controls._children" Sequence="0">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:tra.activitypointer.Button.Mscrm.HomepageGrid.activitypointer.NewTimeExpense.Alt" Command="Mscrm.CreateTimeExpense" Id="tra.activitypointer.Button.Mscrm.HomepageGrid.activitypointer.NewTimeExpense" Image32by32="$webresource:tra_Time_Expense_32.png" Image16by16="$webresource:tra_Time_Expense_16.png" LabelText="$LocLabels:tra.activitypointer.Button.Mscrm.HomepageGrid.activitypointer.NewTimeExpense.LabelText" Sequence="0" TemplateAlias="c1" ToolTipTitle="$LocLabels:tra.activitypointer.Button.Mscrm.HomepageGrid.activitypointer.NewTimeExpense.ToolTipTitle" ModernImage="$webresource:tra_Time_Expense_32.png" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="Mscrm.CreateTimeExpense">
+      <EnableRules>
+        <EnableRule Id="Mscrm.IsEntityAvailableForUserInMocaOffline" />
+        <EnableRule Id="Mscrm.IsTaskEntityAvailableForUserInMocaOffline" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.PrimaryIsActivity" />
+        <DisplayRule Id="Mscrm.CreateAndReadPrimaryEntityPermission" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Open.openNewRecord" Library="$webresource:Main_system_library.js">
+          <StringParameter Value="tra_timeexpense" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.tra_timeexpense.Home.RunApproveWF.Command">
+      <EnableRules>
+        <EnableRule Id="tra.activitypointer.RunApproveRejectWF.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.GridRibbonActions.launchOnDemandWorkflow" Library="/_static/_common/scripts/RibbonActions.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="SelectedEntityTypeCode" />
+          <StringParameter Value="9298A64A-930B-4BEB-A3A1-123E29F11B59" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.tra_timeexpense.Home.RunRejectWF.Command">
+      <EnableRules>
+        <EnableRule Id="tra.activitypointer.RunApproveRejectWF.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.GridRibbonActions.launchOnDemandWorkflow" Library="/_static/_common/scripts/RibbonActions.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="SelectedEntityTypeCode" />
+          <StringParameter Value="177CF704-EAB4-4A7D-9427-C4B78F0BA622" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.tra_timeexpense.Home.RunSubmitWF.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.GridRibbonActions.launchOnDemandWorkflow" Library="/_static/_common/scripts/RibbonActions.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="SelectedEntityTypeCode" />
+          <StringParameter Value="711D8FC1-0071-4E8E-8395-20ABC757BD01" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.CreateAndReadPrimaryEntityPermission">
+        <EntityPrivilegeRule PrivilegeType="Create" PrivilegeDepth="Basic" EntityName="activitypointer" />
+        <EntityPrivilegeRule PrivilegeType="Read" PrivilegeDepth="Basic" EntityName="activitypointer" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.PrimaryIsActivity">
+        <EntityPropertyRule AppliesTo="PrimaryEntity" PropertyName="IsActivity" PropertyValue="true" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="Mscrm.IsEntityAvailableForUserInMocaOffline">
+        <CustomRule FunctionName="XrmCore.Rules.Online.IsEntityAvailableForUserInMocaOffline" Library="$webresource:Main_system_library.js">
+          <CrmParameter Value="SelectedEntityTypeName" />
+        </CustomRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.IsTaskEntityAvailableForUserInMocaOffline">
+        <CustomRule FunctionName="XrmCore.Rules.Online.IsEntityAvailableForUserInMocaOffline" Library="$webresource:Main_system_library.js">
+          <StringParameter Value="task" />
+        </CustomRule>
+      </EnableRule>
+      <EnableRule Id="tra.activitypointer.RunApproveRejectWF.EnableRule">
+        <CustomRule FunctionName="checkIsUserApprover" Library="$webresource:tra_timereport_ribbon_main_library" Default="true" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="new.activitypointer.Button2.Button.LabelText">
+      <Titles>
+        <Title description="Time Report Approval" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.activitypointer.Button4.Button.LabelText">
+      <Titles>
+        <Title description="Submit" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.activitypointer.Button5.Button.LabelText">
+      <Titles>
+        <Title description="Approve" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.activitypointer.Button6.Button.LabelText">
+      <Titles>
+        <Title description="Reject" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.activitypointer.Button.Mscrm.HomepageGrid.activitypointer.NewTimeExpense.Alt">
+      <Titles>
+        <Title description="Time Report" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.activitypointer.Button.Mscrm.HomepageGrid.activitypointer.NewTimeExpense.LabelText">
+      <Titles>
+        <Title description="Time Report" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.activitypointer.Button.Mscrm.HomepageGrid.activitypointer.NewTimeExpense.ToolTipTitle">
+      <Titles>
+        <Title description="Time Report" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

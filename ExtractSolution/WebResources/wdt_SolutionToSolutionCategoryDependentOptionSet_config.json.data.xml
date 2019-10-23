@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{35651650-6466-e911-a970-000d3ab5a0d7}</WebResourceId>
+  <Name>wdt_SolutionToSolutionCategoryDependentOptionSet_config.json</Name>
+  <DisplayName>Solution To SolutionCategory DependentOptionSet config</DisplayName>
+  <Description>wdt_SolutionToSolutionCategoryDependentOptionSet_config.json</Description>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>0.44.2.2</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/wdt_SolutionToSolutionCategoryDependentOptionSet_c35651650-6466-E911-A970-000D3AB5A0D7</FileName>
+</WebResource>

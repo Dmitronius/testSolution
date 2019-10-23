@@ -1,0 +1,20 @@
+//andnov 1/16/2018
+//function checks if Contact is system and shouldnt be editable by users
+function lockSystemContact() {
+    if (Xrm.Page.getAttribute("tra_issystemcontact")!=undefined) {
+    if (Xrm.Page.getAttribute("tra_issystemcontact").getValue() == true) {
+        console.log("TRA: tra_issystemcontact = true");
+        Xrm.Page.ui.setFormNotification("This is System Contact. Do not edit it.", "WARNING", "ReadOnly");
+        disableAllFields();
+    }
+    }
+};
+//function disables all controls on form
+function disableAllFields() {
+    Xrm.Page.ui.controls.forEach(function (control, i) {
+        if (control && control.getDisabled && !control.getDisabled()) {
+            console.log("TRA: disabling field: ", control.getName() );
+            control.setDisabled(true);
+        }
+    });
+};

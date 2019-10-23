@@ -1,0 +1,53 @@
+//CRM 08-05-2017 andnov
+//If the TRA namespace object is not defined, create it.
+if (typeof (TRA) == "undefined")
+{ TRA = {}; }
+// Create Namespace container for functions in this library;
+TRA.Field = {};
+
+TRA.Field.setRequiredLevel = function (fieldName, userRole, requiredLevel) {
+    //requesting guids of userRole
+    var roleid = [];
+    var req = new XMLHttpRequest();
+    //console.log ("/api/data/v8.2/roles?$select=roleid&$filter=name eq "+ userRole);
+    req.open("GET", Xrm.Page.context.getClientUrl() + "/api/data/v8.2/roles?$select=roleid&$filter=name eq '" + userRole + "'", false);
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("Prefer", "odata.include-annotations=\"*\"");
+    req.onreadystatechange = function () {
+        if (this.readyState === 4) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var results = JSON.parse(this.response);
+                //console.log(results);
+                for (var i = 0; i < results.value.length; i++) {
+                    roleid[i] = results.value[i]["roleid"];
+                    //console.log(roleid);
+                }
+
+            } else {
+                Xrm.Utility.alertDialog(this.statusText);
+            }
+        }
+    };
+    req.send();
+    console.log("TRA. IDs of security role: " + roleid);
+
+    //getting current user roles
+    var currentUserRole = [];
+    currentUserRole = Xrm.Page.context.getUserRoles();
+    console.log("TRA. IDs of users security roles: " + currentUserRole);
+
+    //comparing user roles with IDs of security role
+
+    for (var i = 0; i < currentUserRole.length; i++) {
+        for (var j = 0; j < roleid.length; j++) {
+            if (Xrm.Page.getControl(fieldName) && currentUserRole[i] == roleid[j]) {
+                Xrm.Page.getAttribute(fieldName).setRequiredLevel(requiredLevel); //"none|required|recommended"
+                console.log("TRA. switched field: " + fieldName + " " + requiredLevel);
+            }
+        }
+    }
+}

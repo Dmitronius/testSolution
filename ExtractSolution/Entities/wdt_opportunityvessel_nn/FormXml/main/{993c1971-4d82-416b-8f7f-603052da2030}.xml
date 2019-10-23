@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{993c1971-4d82-416b-8f7f-603052da2030}</formid>
+    <IntroducedVersion>0.44.9.36</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{8bb8d3f0-9830-4e13-af80-9da838f3723a}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{90f7198a-d63c-45fe-a81a-0464eeaf13ab}" name="{90f7198a-d63c-45fe-a81a-0464eeaf13ab}" columns="111" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fe611f91-649c-49c9-a4fd-f9a0089a85e3}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="wdt_name" />
+                      </cell>
+                      <cell id="{a0668cac-0aa1-edd3-4434-82c8e294c85b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Entitlement Created" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_isentitlementscreated" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="wdt_isentitlementscreated" disabled="false" />
+                      </cell>
+                      <cell id="{4536a861-702c-c2db-3123-d8037e2b6e50}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d159a457-21eb-99de-bade-4490ab1ed1a4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="wdt_opportunityid" disabled="false" />
+                      </cell>
+                      <cell id="{4e972232-8aae-41ea-a059-4c38e63c1b64}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b28c5bc8-e7e1-616e-1aee-8bec8dcc5569}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3816b160-2558-e3b9-cca3-463120aa2179}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vessel" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_vesselid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="wdt_vesselid" disabled="false" />
+                      </cell>
+                      <cell id="{2c816cda-958b-b6d2-c4c2-e7b985d464cd}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{24590c0d-4b10-ac36-e816-dce2265a4766}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

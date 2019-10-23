@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{8180cabe-f3a4-e711-8112-5065f38b06f1}" Name="Bundles Survey.VSAT Last update date" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/BundlesSurveyVSATLastupdatedate-8180CABE-F3A4-E711-8112-5065F38B06F1.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnUpdateAttributeList>tra_vsattypecode,tra_vsatexpirydate,tra_iridiumtypecode,tra_iridiumexpirydate,tra_fleetbroadbandtypecode,tra_fbexpirydate,tra_airtimeprovidertypecode,tra_airtimeexpirydate</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>1</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <UniqueName>BundlesSurveyVSATLastupdatedate8380cabef3a4e71181125065f38b06f1</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>tra_questionnaire</PrimaryEntity>
+</Workflow>

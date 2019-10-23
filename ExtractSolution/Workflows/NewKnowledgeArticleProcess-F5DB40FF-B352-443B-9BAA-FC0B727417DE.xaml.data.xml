@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{f5db40ff-b352-443b-9baa-fc0b727417de}" Name="New Knowledge Article Process" Description="WDT: This is new custom process for Knowledge Article Publishing&#xA;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/NewKnowledgeArticleProcess-F5DB40FF-B352-443B-9BAA-FC0B727417DE.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>0</processorder>
+  <processroleassignment>&lt;DisplayConditions&gt;&lt;Role Id="{46FD716B-08B0-4979-A4A7-0088E46E30F1}" /&gt;&lt;Role Id="{AC5C95D8-5330-456F-923E-149BE0E28C45}" /&gt;&lt;Role Id="{7F29EAE1-E98A-43A1-9137-1EA9311E38C5}" /&gt;&lt;Role Id="{E619CA78-74B0-4702-B3CF-29242ABAC551}" /&gt;&lt;Role Id="{627090ff-40a3-4053-8790-584edc5be201}" /&gt;&lt;Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" /&gt;&lt;Role Id="{9A317651-FC27-4797-8C94-634EE1948D57}" /&gt;&lt;Role Id="{D466AC76-44D7-4FAC-B000-66A7178BB666}" /&gt;&lt;Role Id="{33516B93-3ADB-4434-B6C7-7A9AD4FF89B4}" /&gt;&lt;Role Id="{77E5D842-F89A-4809-9C18-C78F137DD5D7}" /&gt;&lt;/DisplayConditions&gt;</processroleassignment>
+  <RunAs>1</RunAs>
+  <UniqueName>wdt_newknowledgearticleprocess</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.44.1.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>KnowledgeArticle</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="New Knowledge Article Process" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="WDT: This is new custom process for Knowledge Article Publishing&#xA;" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{5e56c478-4999-4454-be3b-245f8744100d}">
+      <label languagecode="1033" description="Author" />
+    </steplabels>
+    <steplabels id="{43e27430-decd-4479-a322-307b2f8e9552}">
+      <label languagecode="1033" description="Set Keywords" />
+    </steplabels>
+    <steplabels id="{891e4c4d-0e65-4edf-8316-9f9ac4f331e4}">
+      <label languagecode="1033" description="Assign Primary Author" />
+    </steplabels>
+    <steplabels id="{a6cb9e26-6da0-4db1-abae-1292d80027d8}">
+      <label languagecode="1033" description="Mark Ready For Review" />
+    </steplabels>
+    <steplabels id="{2a0d1486-1b22-4e28-b977-a0bdd1e77b99}">
+      <label languagecode="1033" description="Review" />
+    </steplabels>
+    <steplabels id="{53da4355-77da-4bb6-9bb1-69c8e10e491d}">
+      <label languagecode="1033" description="Internal (No for Customer Portal)" />
+    </steplabels>
+    <steplabels id="{916674f3-4c98-4afc-b99b-f9c29857975e}">
+      <label languagecode="1033" description="Review" />
+    </steplabels>
+    <steplabels id="{d6722ee8-47bb-4884-b5fa-2717a12f5498}">
+      <label languagecode="1033" description="Update Content" />
+    </steplabels>
+    <steplabels id="{49948287-34be-46d4-8ee7-d44ab409dbb5}">
+      <label languagecode="1033" description="Update Content" />
+    </steplabels>
+    <steplabels id="{61d5981b-e033-4e57-b06e-764775a480b2}">
+      <label languagecode="1033" description="Publish" />
+    </steplabels>
+    <steplabels id="{79b77156-1dcb-4672-a719-2668845a8261}">
+      <label languagecode="1033" description="Set Expiration Date" />
+    </steplabels>
+  </labels>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{ec23dfa0-a544-e911-a96c-000d3ab5a0d7}">
+      <controltype>1</controltype>
+      <methodid>{2a0d1486-1b22-4e28-b977-a0bdd1e77b99}</methodid>
+      <scope>1</scope>
+      <controlname>review</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>KnowledgeArticle</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{ed23dfa0-a544-e911-a96c-000d3ab5a0d7}">
+      <methodid>{2e5c0932-2874-46af-81f2-559024d637c9}</methodid>
+      <scope>1</scope>
+      <controlname>5e56c478-4999-4454-be3b-245f8744100d</controlname>
+      <event>STAGEEXIT</event>
+      <pipelinestage>20</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>KnowledgeArticle</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tra_portlevels" localizedName="Port Levels" description="For ports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Port Levels" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="For ports" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="167490000" Color="#0000ff">
+      <labels>
+        <label description="Average / Minor port / terminal" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490001" Color="#0000ff">
+      <labels>
+        <label description="Major port / terminal in at least one cargo category" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490002" Color="#0000ff">
+      <labels>
+        <label description="Port / terminal of global significance" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490003" Color="#0000ff">
+      <labels>
+        <label description="Port / terminal of regional significance" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

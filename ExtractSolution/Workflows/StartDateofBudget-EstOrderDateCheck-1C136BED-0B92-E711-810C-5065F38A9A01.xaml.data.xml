@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{1c136bed-0b92-e711-810c-5065f38a9a01}" Name="Start Date of Budget - Est. Order Date Check" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/StartDateofBudget-EstOrderDateCheck-1C136BED-0B92-E711-810C-5065F38A9A01.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>Opportunity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Start Date of Budget - Est. Order Date Check" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{faab8908-284c-4559-a4ed-0f4ce77cdb70}">
+      <label languagecode="1033" description="Budget cannot start earlier than Est. Order Date" />
+    </steplabels>
+    <steplabels id="{1cc7fdc2-aa92-43a1-942a-d13a3e012269}">
+      <label languagecode="1033" description="1) Make sure you Recalculate the Opportunity&#xA;2) Open the Budget and shift start date beyond the Est. Order Date&#xA;3) Return to Opportunity and recalculate again." />
+    </steplabels>
+  </labels>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{f3bc6e14-0e92-e711-810c-5065f38a9a01}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>new_calc_date_start</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{f4bc6e14-0e92-e711-810c-5065f38a9a01}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{f5bc6e14-0e92-e711-810c-5065f38a9a01}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>new_actualorderdate</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{f6bc6e14-0e92-e711-810c-5065f38a9a01}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

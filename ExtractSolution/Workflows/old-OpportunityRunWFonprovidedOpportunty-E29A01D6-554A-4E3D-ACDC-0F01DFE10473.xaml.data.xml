@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{e29a01d6-554a-4e3d-acdc-0f01dfe10473}" Name="old - Opportunity.Run WF on provided Opportunty" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/old-OpportunityRunWFonprovidedOpportunty-E29A01D6-554A-4E3D-ACDC-0F01DFE10473.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>3</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <CreateStage>40</CreateStage>
+  <RunAs>1</RunAs>
+  <SdkMessageId>{5637bef5-477d-e911-a964-000d3ab5a84e}</SdkMessageId>
+  <UniqueName>OpportunityRunWFonprovidedOpportunty</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.44.5.9</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <FormId>{00000000-0000-0000-0000-000000000000}</FormId>
+  <PrimaryEntity>Opportunity</PrimaryEntity>
+</Workflow>

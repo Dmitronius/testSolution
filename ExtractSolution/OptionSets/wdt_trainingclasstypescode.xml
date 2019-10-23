@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="wdt_trainingclasstypescode" localizedName="Training Class Types" description="For SAT \ Academy AP configuration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>0.44.2.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Training Class Types" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="For SAT \ Academy AP configuration" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="750610000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Class A Full Mission" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Class B Part Task" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Class C Classroom" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Individual Workplace/s" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Class X Full Mission" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

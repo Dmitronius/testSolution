@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="crm1st.Mscrm.Form.appointment.Save.CustomAction" Location="Mscrm.Form.appointment.MainTab.Save.Controls._children" Sequence="10">
+      <CommandUIDefinition>
+        <Button Alt="$Resources:Ribbon.Form.MainTab.Save.Save" Command="Mscrm.SavePrimary" Id="Mscrm.Form.appointment.Save" Image32by32="/_imgs/ribbon/Save_32.png" Image16by16="/_imgs/ribbon/Save_16.png" LabelText="$Resources:Ribbon.Form.MainTab.Save.Save" Sequence="10" TemplateAlias="o1" ToolTipTitle="$Resources:Mscrm_Form_Other_MainTab_Save_Save_ToolTipTitle" ToolTipDescription="$Resources(EntityDisplayName):Ribbon.Tooltip.Save" ModernImage="Save" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="Mscrm.SavePrimary">
+      <EnableRules>
+        <EnableRule Id="Mscrm.AvailableOnForm" />
+        <EnableRule Id="Mscrm.CanSavePrimaryForAppointment" />
+        <EnableRule Id="Mscrm.ReadPrimaryPermission" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanSavePrimaryEntityType" />
+        <DisplayRule Id="Mscrm.SearchAvailabilityRuleInverted" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Save.saveForm" Library="$webresource:Main_system_library.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.CanSavePrimaryEntityType">
+        <OrRule>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Create" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+        </OrRule>
+        <EntityPrivilegeRule PrivilegeType="Read" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.SearchAvailabilityRuleInverted">
+        <MiscellaneousPrivilegeRule PrivilegeName="SearchAvailability" InvertResult="true" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="Mscrm.AvailableOnForm">
+        <EntityRule AppliesTo="PrimaryEntity" Context="Form" Default="false" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.CanSavePrimaryForAppointment">
+        <OrRule>
+          <Or>
+            <RecordPrivilegeRule PrivilegeType="Create" AppliesTo="PrimaryEntity" />
+            <FormStateRule State="Create" />
+          </Or>
+          <Or>
+            <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" />
+            <FormStateRule State="Existing" />
+          </Or>
+          <Or>
+            <FormStateRule State="Disabled" />
+            <ValueRule Field="statecode" Value="Scheduled" />
+          </Or>
+          <Or>
+            <FormStateRule State="Existing" />
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.ReadPrimaryPermission">
+        <RecordPrivilegeRule PrivilegeType="Read" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6ecbf3de-23e5-47d1-872b-ab95a1f6b116}</formid>
+    <IntroducedVersion>0.46.1.15</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{b2b6d192-522f-4575-a333-eb3ba593e680}" name="Account Product" showlabel="false" locklevel="0" expanded="true" labelid="{9a491120-363f-491b-a87b-dfb26b3ac9f9}">
+          <labels>
+            <label description="Account Product" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{2e219d9e-870c-4740-9af2-c7c21e2943ca}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelid="{186ed330-e39d-4145-ae3b-2fbfe210ef1c}">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{35834b7d-cce7-c06c-47a1-096928208c09}" showlabel="true" locklevel="0" labelid="{c1a9bf0d-5b82-4cd7-8e7a-9af1652de461}">
+                        <labels>
+                          <label description="Solution" languagecode="1033" />
+                        </labels>
+                        <control id="tra_solutioncode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_solutioncode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e7205dc7-509c-6727-9c95-523996c96812}" showlabel="true" locklevel="0" labelid="{0eec912e-d8e5-48b2-ad72-89c9ffe66321}">
+                        <labels>
+                          <label description="Product" languagecode="1033" />
+                        </labels>
+                        <control id="new_productid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_productid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{975e6b96-1a0d-5b82-ab6e-1db46b058ec3}" showlabel="true" locklevel="0" labelid="{15834648-9a4b-455e-8cd7-dd144ae2aef7}">
+                        <labels>
+                          <label description="Version" languagecode="1033" />
+                        </labels>
+                        <control id="new_version" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_version" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{23aa3c49-4bc2-1c66-5dc7-11406d15825d}" showlabel="true" locklevel="0" labelid="{115e01bb-b058-4a6c-a90e-cf003574b587}">
+                        <labels>
+                          <label description="Product Key/Dongle" languagecode="1033" />
+                        </labels>
+                        <control id="new_productkey" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_productkey" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3aaea996-8774-cd74-405e-1a0a1eb8a179}" showlabel="true" locklevel="0" labelid="{acbfe6da-09d6-408f-90cb-c28c813f072e}">
+                        <labels>
+                          <label description="Installation Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_installationdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_installationdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b4cbddc8-5184-45ac-e861-961918aa77e5}" showlabel="true" locklevel="0" labelid="{743a3c8c-db52-44d2-8d20-4eecf0c06341}">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="new_opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_opportunityid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="2">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="quick viwe( Solution,Product,Version,Product Key.Installation date, Opportunity)" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

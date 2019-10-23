@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{71839f66-81d5-45ed-ad44-40620825ec44}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="subject" select="1" icon="1" preview="1">
+        <row name="result" id="activityid">
+          <cell name="tra_postingdate" width="100" />
+          <cell name="a_0f5e9b8270c5e811814f5065f38b06f1.tra_officeid" width="100" disableSorting="1" />
+          <cell name="a_0f5e9b8270c5e811814f5065f38b06f1.tra_centerofexcellenceid" width="100" disableSorting="1" />
+          <cell name="tra_employeenameid" width="100" />
+          <cell name="tra_timeexpenseactivitytypecode" width="100" />
+          <cell name="tra_approvalstatuscode" width="100" />
+          <cell name="tra_tier1approverid" width="100" />
+          <cell name="tra_tier2approverid" width="100" />
+          <cell name="tra_caseid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_timeexpense">
+          <filter type="and">
+            <condition attribute="statecode" operator="not-null" />
+          </filter>
+          <attribute name="tra_timeexpenseactivitytypecode" />
+          <attribute name="tra_tier2approverid" />
+          <attribute name="tra_tier1approverid" />
+          <attribute name="tra_postingdate" />
+          <attribute name="tra_caseid" />
+          <attribute name="tra_approvalstatuscode" />
+          <attribute name="tra_employeenameid" />
+          <order attribute="tra_postingdate" descending="true" />
+          <order attribute="tra_employeenameid" descending="false" />
+          <link-entity name="systemuser" from="systemuserid" to="tra_employeenameid" visible="false" link-type="outer" alias="a_0f5e9b8270c5e811814f5065f38b06f1">
+            <attribute name="tra_officeid" />
+            <attribute name="tra_centerofexcellenceid" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Time Reports" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

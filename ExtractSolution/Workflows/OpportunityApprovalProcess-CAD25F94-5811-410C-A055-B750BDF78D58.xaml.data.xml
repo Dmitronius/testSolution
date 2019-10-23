@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{cad25f94-5811-410c-a055-b750bdf78d58}" Name="Opportunity Approval Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/OpportunityApprovalProcess-CAD25F94-5811-410C-A055-B750BDF78D58.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>1</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>crm1st_opportunitybidapprovalprocess</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.34</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>Opportunity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Opportunity Approval Process" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{9f17a4e3-3f69-4c89-9561-9f9599aec6b6}">
+      <label languagecode="1033" description="Initial Negotiation" />
+    </steplabels>
+    <steplabels id="{bc8e6cb3-5169-4281-bcda-6244a97ca23e}">
+      <label languagecode="1033" description="Customer Decision Maker" />
+    </steplabels>
+    <steplabels id="{3eb88ac9-5132-42de-a478-9cb501809a30}">
+      <label languagecode="1033" description="Competitors Identified" />
+    </steplabels>
+    <steplabels id="{3aa2aaff-b32f-4ead-b17a-b42784d989b0}">
+      <label languagecode="1033" description="Bid Approval Required" />
+    </steplabels>
+    <steplabels id="{d69bb2ca-5609-4048-aa02-c91f4cc8a3a2}">
+      <label languagecode="1033" description="Bid Prep Started" />
+    </steplabels>
+    <steplabels id="{ff426c99-25e2-40fd-8266-1093e90dc3a0}">
+      <label languagecode="1033" description="Bid Prep Deadline" />
+    </steplabels>
+    <steplabels id="{974db4bb-68c3-4e50-82ef-10be5979ff40}">
+      <label languagecode="1033" description="Products Being Offered" />
+    </steplabels>
+    <steplabels id="{a6bf35d1-59e2-4cad-b6ac-1404e8902eef}">
+      <label languagecode="1033" description="Is Commercial" />
+    </steplabels>
+    <steplabels id="{cdd6e1b2-aada-4409-87b2-176a56c03830}">
+      <label languagecode="1033" description="Vessel Added" />
+    </steplabels>
+    <steplabels id="{017e8e71-0848-45ac-ae4b-46e99f2703c1}">
+      <label languagecode="1033" description="Bid Approval" />
+    </steplabels>
+    <steplabels id="{aea7f9ff-729b-42da-ae9c-7a449342e520}">
+      <label languagecode="1033" description="Decision Maker Status" />
+    </steplabels>
+    <steplabels id="{a4f14ae6-ed99-409d-9400-30c20758757c}">
+      <label languagecode="1033" description="Sales Executive Status" />
+    </steplabels>
+    <steplabels id="{424b6b1a-2250-4c5f-a14a-66a951f34bbc}">
+      <label languagecode="1033" description="Finance Status " />
+    </steplabels>
+    <steplabels id="{a08cb10a-bc60-4444-abfd-13290b90e77f}">
+      <label languagecode="1033" description="Trade Finance Status" />
+    </steplabels>
+    <steplabels id="{160d9d03-1b3f-4db5-bad9-792d5269049e}">
+      <label languagecode="1033" description="Fin&amp;Biz Control Status" />
+    </steplabels>
+    <steplabels id="{9756c2aa-f543-4745-9e2a-3a411804e4d8}">
+      <label languagecode="1033" description="Legal Approve Status" />
+    </steplabels>
+    <steplabels id="{4851df34-55d6-413a-9e37-9f4511ba302c}">
+      <label languagecode="1033" description="PMO Status" />
+    </steplabels>
+    <steplabels id="{768aef05-4419-4744-8f81-79c4df20f720}">
+      <label languagecode="1033" description="Operational Director Status" />
+    </steplabels>
+    <steplabels id="{587b02ba-ed77-431b-97d8-3d5ef55891f6}">
+      <label languagecode="1033" description="Offer Submitted" />
+    </steplabels>
+    <steplabels id="{f878669e-9fa7-4d18-bd9f-f361b873b2ef}">
+      <label languagecode="1033" description="Contract Approval Required" />
+    </steplabels>
+    <steplabels id="{a4278c05-4cfb-4a93-b79a-d3c5db91cc77}">
+      <label languagecode="1033" description="Single Active Budget" />
+    </steplabels>
+    <steplabels id="{0d67f7ee-c10d-4f9b-9192-6fbbbfbefa7d}">
+      <label languagecode="1033" description="Entitlements" />
+    </steplabels>
+    <steplabels id="{7c5672d0-7bef-4775-bec6-1affc94472ef}">
+      <label languagecode="1033" description="Contract Approval" />
+    </steplabels>
+    <steplabels id="{27e8e3e3-8a84-48da-8a44-dde3fa977d80}">
+      <label languagecode="1033" description="Decision Maker Status" />
+    </steplabels>
+    <steplabels id="{f3abee1d-cf69-432e-87a8-49091dc9b4d4}">
+      <label languagecode="1033" description="Sales Executive Status" />
+    </steplabels>
+    <steplabels id="{dd05c98e-b343-4034-ab89-1917ff5a5096}">
+      <label languagecode="1033" description="Finance Status " />
+    </steplabels>
+    <steplabels id="{cafdd7bf-7572-444b-82ca-7e1cf59d350f}">
+      <label languagecode="1033" description="Trade Finance Status" />
+    </steplabels>
+    <steplabels id="{903197b9-b522-483e-b67c-c2b99acd5a5f}">
+      <label languagecode="1033" description="Fin&amp;Biz Control Status" />
+    </steplabels>
+    <steplabels id="{b4c19796-ef4a-47a1-9af2-ed4a71888c3d}">
+      <label languagecode="1033" description="Legal Approve Status" />
+    </steplabels>
+    <steplabels id="{32147394-b269-4310-afe9-e17d1fc506a6}">
+      <label languagecode="1033" description="PMO Status" />
+    </steplabels>
+    <steplabels id="{e6d71304-f39a-4c60-a288-7fcfdb977347}">
+      <label languagecode="1033" description="Operational Director Status" />
+    </steplabels>
+    <steplabels id="{8975ad1f-a022-420f-a62d-7c03baece185}">
+      <label languagecode="1033" description="Single Active Budget" />
+    </steplabels>
+    <steplabels id="{940fe360-ae32-4961-bb40-bc0c5ec4e6b3}">
+      <label languagecode="1033" description="Ordered" />
+    </steplabels>
+    <steplabels id="{c39fa54c-4c35-4c77-b36a-248c51febb87}">
+      <label languagecode="1033" description="Project Manager" />
+    </steplabels>
+    <steplabels id="{eb946133-71dd-4102-b1f2-56d2a01e6062}">
+      <label languagecode="1033" description="Handed-Over To PMO" />
+    </steplabels>
+    <steplabels id="{f38a5858-58c6-4f41-8f6a-17b3678e215a}">
+      <label languagecode="1033" description="Single Active Budget" />
+    </steplabels>
+  </labels>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{89899269-cade-e911-a96c-000d3ab5a84e}">
+      <controltype>1</controltype>
+      <methodid>{9f17a4e3-3f69-4c89-9561-9f9599aec6b6}</methodid>
+      <scope>1</scope>
+      <controlname>tra_isbidapprovalrequired</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{8a899269-cade-e911-a96c-000d3ab5a84e}">
+      <controltype>1</controltype>
+      <methodid>{587b02ba-ed77-431b-97d8-3d5ef55891f6}</methodid>
+      <scope>1</scope>
+      <controlname>tra_iscontractapprovalrequired</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{8b899269-cade-e911-a96c-000d3ab5a84e}">
+      <methodid>{c8f93e50-8542-4c5c-83c1-877b77060d5f}</methodid>
+      <scope>1</scope>
+      <controlname>940fe360-ae32-4961-bb40-bc0c5ec4e6b3</controlname>
+      <event>STAGEENTER</event>
+      <pipelinestage>40</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{400c861d-f355-42b2-9899-2b3196cbd71f}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="productsubstituteid">
+          <cell name="substitutedproductid" width="300" />
+          <cell name="salesrelationshiptype" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="direction" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="productsubstitute">
+          <attribute name="substitutedproductid" />
+          <order attribute="substitutedproductid" descending="false" />
+          <attribute name="salesrelationshiptype" />
+          <attribute name="direction" />
+          <attribute name="productsubstituteid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>7.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Product Relationships" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

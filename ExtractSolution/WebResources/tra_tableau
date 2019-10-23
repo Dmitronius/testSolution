@@ -1,0 +1,13 @@
+<script type='text/javascript' src='https://dub01.online.tableau.com/javascripts/api/viz_v1.js'></script>
+<div class='tableauPlaceholder' style='width: 1680px; height: 841px;'>
+    <object class='tableauViz' width='1680' height='841' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fdub01.online.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='&#47;t&#47;transas' />
+        <param name='name' value='CRMOpportunityTrends&#47;Trends' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='showAppBanner' value='false' />
+        <param name='filter' value='iframeSizedToWindow=true' />
+    </object>
+</div>

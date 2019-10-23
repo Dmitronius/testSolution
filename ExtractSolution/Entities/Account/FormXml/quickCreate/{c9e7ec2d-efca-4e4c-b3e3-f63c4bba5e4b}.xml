@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}</formid>
+    <IntroducedVersion>6.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1900">
+      <tabs>
+        <tab id="{8ca48364-f790-43e4-b753-aa35fa4f9c77}" name="tab_1" expanded="true" locklevel="0" showlabel="false" IsUserDefined="0">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{bcee7abc-6004-49f3-bc27-9eb7d1d3561b}" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7697e89b-cb21-2809-82b3-dc18084c2d6a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Account Name" languagecode="1033" />
+                        </labels>
+                        <control id="name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="name" disabled="false" uniqueid="{3697a316-c723-0363-4408-84d52775ab5d}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2394a194-6a77-c426-7611-96b946a22dbb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Account" languagecode="1033" />
+                        </labels>
+                        <control id="parentaccountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="parentaccountid" disabled="false" uniqueid="{7d635058-5dd3-81b1-0c38-eb4a7b52c1a7}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7bbd2912-bc57-9a6b-0948-cde2bc506346}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Relationship Type" languagecode="1033" />
+                        </labels>
+                        <control id="customertypecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="customertypecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{74462bc8-31ba-726c-e195-bc30857d41e5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact" languagecode="1033" />
+                        </labels>
+                        <control id="primarycontactid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="primarycontactid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b14c76a6-9eda-0610-594c-e4012208aa6b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="emailaddress1" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="emailaddress1" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{32ff71fb-26e6-4b51-8e93-e94b5780a8ae}" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0794FA63-F298-4831-BD5A-B3F46A91F146}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="City" languagecode="1033" />
+                        </labels>
+                        <control id="address1_city" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="address1_city" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{50159453-96d2-96e0-eab8-92a47e677537}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Country" languagecode="1033" />
+                        </labels>
+                        <control id="new_countryid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_countryid" disabled="false" uniqueid="{c6d87a87-a1e9-25e6-4292-a6a3dd4cb7c3}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{C1F69F09-EAEA-492E-A555-E3F60A12B315}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e5c8b659-8956-debd-6a9e-8edab5bb0507}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Interested in Solutions" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_interestedinsolutioncodes" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="wdt_interestedinsolutioncodes" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{a549aa16-a731-41b7-9181-86710f8feef5}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                  <labels>
+                    <label description="Address" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3c22bd43-a153-9a47-0ca3-39e147864220}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="tra_Alter_Option_Set" libraryUniqueId="{c6e891a0-8c99-4700-6edb-12906a659cab}" />
+        <Library name="Account_main_library.js" libraryUniqueId="{99dd0795-40a5-44b9-14b8-629aeb7b2251}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="TRA.AlterOptionSet.disableOption" libraryName="tra_Alter_Option_Set" handlerUniqueId="{41493925-b2e7-417a-8443-b3166bcb0d54}" enabled="false" parameters="&quot;customertypecode&quot;,[&quot;15&quot;]" passExecutionContext="false" />
+            <Handler functionName="alterOptionSetValues" libraryName="tra_Alter_Option_Set" handlerUniqueId="{50028484-8672-3b1c-da1a-c4b32ea99aa4}" enabled="true" parameters="[{&quot;picklist&quot;:&quot;wdt_interestedinsolutioncodes&quot;,&#xA;    &quot;action&quot;:&quot;disable&quot;,&#xA;    &quot;optionsetvalues&quot;: [&quot;167490005&quot;,&quot;167490006&quot;,&quot;167490007&quot;,&quot;167490008&quot;]&#xA;    },&#xA;    {&quot;picklist&quot;:&quot;customertypecode&quot;,&#xA;    &quot;action&quot;:&quot;disable&quot;,&#xA;    &quot;optionsetvalues&quot;: [&quot;15&quot;,&quot;8&quot;,&quot;9&quot;,&quot;11&quot;,&quot;200000&quot;,&quot;14&quot;,&quot;4&quot;,&quot;6&quot;,&quot;200001&quot;,&quot;2&quot;,&quot;10&quot;]&#xA;    }&#xA;    ]" passExecutionContext="true" />
+            <Handler functionName="onLoadForm_autocomplete_name" libraryName="Account_main_library.js" handlerUniqueId="{2330ab73-bce5-44e1-206d-230ac034c262}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="name">
+          <Handlers>
+            <Handler functionName="name_onchange" libraryName="Account_main_library.js" handlerUniqueId="{c4ca5abe-9c92-93c3-133c-332482161671}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions FallbackForm="true" Order="2">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Account Quick Create" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Default quick create form for Account" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

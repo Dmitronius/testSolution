@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tra_centerofexcellencetypes" localizedName="Center Of Excellence types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.1.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Center Of Excellence types" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="167490004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="05_DATA SUPPORT" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Digital Data Support" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="05_FIELD SUPPORT" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Field Support" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="05_FIELD SUPPORT_EXTERNAL" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="05_S COORDINATION" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Support Coordination" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="05_TECHNICAL SUPPORT" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Technical Support" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="05_TECHNICAL TRAININ" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Technical Experts and Training" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="06_RUS_LOGISTICS" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="06_RUS_OIL_GAS" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="06_RUS_RETROFIT" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="06_RUS_SBS" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610005" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="06_RUS_SERVICE" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610006" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="06_RUS_SHIPBUILD" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610007" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="06_RUS_SIM" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610008" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="06_RUS_SOFTWARE" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610009" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="06_RUS_SSP" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

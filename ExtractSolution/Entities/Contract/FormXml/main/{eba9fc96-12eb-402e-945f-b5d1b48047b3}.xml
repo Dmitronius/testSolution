@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{eba9fc96-12eb-402e-945f-b5d1b48047b3}</formid>
+    <IntroducedVersion>0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <ancestor id="{9198BC43-88A8-40C0-BD25-6BE0A13EE30F}" />
+      <hiddencontrols>
+        <data id="statecode" datafieldname="statecode" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="contractid" datafieldname="contractid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+      </hiddencontrols>
+      <tabs>
+        <tab name="general" id="{1412F57D-DFC7-49BC-AE2D-55473808CCCF}" IsUserDefined="0" locklevel="0" expanded="true" showlabel="true" labelid="{b63dd490-875b-491c-beac-14a8f0cd4234}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="28%">
+              <sections>
+                <section name="header" showlabel="false" showbar="false" id="{C403B012-A9FD-43DD-A7C4-76BF1379E215}" IsUserDefined="0" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{3161cdfa-ed6f-4f5a-ab50-6e13d796a62c}">
+                  <labels>
+                    <label description="Header" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{D0F6E4F6-C144-4C85-BB14-16B198F97A7F}" labelid="{7edbd14a-17d3-4e36-aa5b-1e16e154d0c1}">
+                        <labels>
+                          <label description="Contract ID" languagecode="1033" />
+                        </labels>
+                        <control id="contractnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="contractnumber" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{97acaf6f-2284-418d-aa07-4a35af0a7b04}" labelid="{9a96d265-3693-4717-aa5f-c9a20bd729ee}">
+                        <labels>
+                          <label description="Contract Name" languagecode="1033" />
+                        </labels>
+                        <control id="title" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="title" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7c69b396-d1ea-8c6a-9d6c-c72514ca4d6a}" showlabel="true" locklevel="0" labelid="{c9c65826-37fa-4ca8-8f70-a3760a4d390e}">
+                        <labels>
+                          <label description="Contract Template" languagecode="1033" />
+                        </labels>
+                        <control id="contracttemplateid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="contracttemplateid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1918385F-537C-439F-B3A4-3F110C1190BC}" labelid="{284d3e42-34da-4b4a-9813-c2590c76b5c8}">
+                        <labels>
+                          <label description="Customer" languagecode="1033" />
+                        </labels>
+                        <control id="customerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="customerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{04a1dd3a-3635-8dcb-8633-c2379aeec568}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_opportunityid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5A906485-A4CF-4616-8396-6106C49B0278}" labelid="{8d230918-1e73-4188-af21-f2da65a4ae89}">
+                        <labels>
+                          <label description="Contract Address" languagecode="1033" />
+                        </labels>
+                        <events>
+                          <event name="setadditionalparams" application="true" active="true">
+                            <InternalHandlers>
+                              <Handler functionName="Mscrm.serviceaddress_setadditionalparams_0" libraryName="Service/Contract/Contract_main_system_library.js" handlerUniqueId="9940796e-8168-47dc-a83a-253804648cad" enabled="true" passExecutionContext="true">
+                                <dependencies>
+                                  <dependency id="customerid" />
+                                </dependencies>
+                              </Handler>
+                            </InternalHandlers>
+                          </event>
+                        </events>
+                        <control id="serviceaddress" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="serviceaddress">
+                          <parameters>
+                            <IsInlineNewEnabled>false</IsInlineNewEnabled>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3501B150-D4D1-44AF-9B50-DF8E32568347}" labelid="{921832be-1e63-46fc-81a2-2ce6c138c4af}">
+                        <labels>
+                          <label description="Contract Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="activeon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="activeon" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ACB12DD-1048-4801-8D95-AFBC2FFC8C29}" labelid="{24bc9fe8-618c-40da-bfb0-57ae90673959}">
+                        <labels>
+                          <label description="Contract End Date" languagecode="1033" />
+                        </labels>
+                        <control id="expireson" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="expireson" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7AA7F8A3-2D6C-4D58-B894-A430CA94BFC2}" labelid="{6de2837f-71a4-45f4-bfa0-c292f26b98c2}">
+                        <labels>
+                          <label description="Duration In Days" languagecode="1033" />
+                        </labels>
+                        <control id="duration" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="duration" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{666576AC-9EC8-44CC-8370-14109B082134}" labelid="{82a9fff4-b6fc-45cb-bf0e-29b2aa6c17ed}">
+                        <labels>
+                          <label description="Originating Contract" languagecode="1033" />
+                        </labels>
+                        <control id="originatingcontract" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="originatingcontract" disabled="true">
+                          <parameters>
+                            <DefaultViewId>{646DE3EE-EBFB-4d19-8A44-4A619505E188}</DefaultViewId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{E7AADED0-A668-4E4A-A241-C5B17262BA7A}" labelid="{c036eb15-6d5a-44f7-adbb-ed82e55a67d8}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" uniqueid="{495d66eb-ade0-3bb7-7577-0cedd2d355e9}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{CD5625B0-DDA8-4EE2-B13F-B9331E027C8A}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="general_section_6" showlabel="true" showbar="false" locklevel="0" id="{77cc282d-6529-87b7-b778-acd7b4496b37}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{175a0518-19cc-41eb-a3a2-6a0f590e94c1}">
+                  <labels>
+                    <label description="STATUS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a1023550-8a08-2527-292e-bcb7901b1b4b}" showlabel="true" locklevel="0" labelid="{491a7096-cb48-4579-8e9e-dfc30b4c77f6}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8792eb5a-9818-b7a5-d3e0-e2380460ceeb}" showlabel="true" locklevel="0" labelid="{b9d0ddcc-1c28-4c1e-b66e-1cdc6f277c54}">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="44%">
+              <sections>
+                <section name="billing information" showlabel="true" showbar="false" id="{69D09984-2A31-45FB-84EE-EB9DD8E7C289}" IsUserDefined="0" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{480e1ed4-08fd-4454-ae11-cb589074124a}">
+                  <labels>
+                    <label description="BILLING INFORMATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{F0F64F31-A07B-442E-B6D6-C381A4A242B3}" labelid="{8d5421e3-0752-42d5-b36c-62d9af5267fa}">
+                        <labels>
+                          <label description="Bill To Customer" languagecode="1033" />
+                        </labels>
+                        <control id="billingcustomerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="billingcustomerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{51CB1A65-CDCE-4774-800A-CC2C76C6579A}" labelid="{83984bb7-b20a-4df2-871f-2b46183fa1c3}">
+                        <labels>
+                          <label description="Bill To Address" languagecode="1033" />
+                        </labels>
+                        <events>
+                          <event name="setadditionalparams" application="true" active="true">
+                            <InternalHandlers>
+                              <Handler functionName="Mscrm.billtoaddress_setadditionalparams" libraryName="Service/Contract/Contract_main_system_library.js" handlerUniqueId="7eb92c93-27bc-4405-a1ed-f18d1fdd862d" enabled="true" passExecutionContext="true">
+                                <dependencies>
+                                  <dependency id="billingcustomerid" />
+                                </dependencies>
+                              </Handler>
+                            </InternalHandlers>
+                          </event>
+                        </events>
+                        <control id="billtoaddress" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="billtoaddress">
+                          <parameters>
+                            <IsInlineNewEnabled>false</IsInlineNewEnabled>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{17CF1DF9-F27D-446B-8CAB-7F0686128000}" labelid="{50cb24a2-4693-40ec-81e0-ce704e576f75}">
+                        <labels>
+                          <label description="Billing Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="billingstarton" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="billingstarton" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{FE2F5B6B-97A2-4296-A9BB-9A123CA9FE61}" labelid="{beaa15cc-6ad6-4848-8823-34e297cd6956}">
+                        <labels>
+                          <label description="Billing End Date" languagecode="1033" />
+                        </labels>
+                        <control id="billingendon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="billingendon" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1AFCBFE1-2C1A-4E53-B9E3-05F6CEF4C4C1}" labelid="{d3fd19ae-5b1e-4281-acf9-300fb4e4342e}">
+                        <labels>
+                          <label description="Billing Frequency" languagecode="1033" />
+                        </labels>
+                        <control id="billingfrequencycode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="billingfrequencycode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{E10DF1CA-6E83-442A-8258-F3C5F7C67E7A}" labelid="{234210f9-3f2d-477e-af80-1a394b2845de}">
+                        <labels>
+                          <label description="Cancellation Date" languagecode="1033" />
+                        </labels>
+                        <control id="cancelon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="cancelon" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="28%">
+              <sections>
+                <section name="notes" showlabel="false" showbar="false" id="{2EADE3FB-C5DC-4D8A-B00E-FAEDB2BD8A3C}" IsUserDefined="0" height="auto" labelid="{3637e9fb-b0e1-4b98-af27-81cfd842874f}">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="1" showlabel="false" rowspan="18" id="{B6EDC109-45C2-4E67-B520-8D43B794AD03}" labelid="{83577902-5df0-428c-a3a7-a28d4fe423c3}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{8c3eca13-786e-756a-5352-9b5e3ddaad7d}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false" labelid="{88f0e704-3ee5-44eb-ba92-e5e2ed3c52b1}">
+          <labels>
+            <label description="Vessels" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="Vessels" showlabel="false" showbar="false" locklevel="0" id="{2a9e4b2b-3a60-4e2b-13a7-0ab192c5ea70}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{61633422-b165-4cfc-819e-8aa35899d5c5}">
+                  <labels>
+                    <label description="Vessels" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d9dbe067-a699-9eb1-7d58-131924590566}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="Vessels" languagecode="1033" />
+                        </labels>
+                        <control id="Vessels_of_contract" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{a05dbba4-abec-870d-1dc6-c961531ed91d}">
+                          <parameters>
+                            <ViewId>{1C89DB8B-6B7B-4627-88B2-68CCB7B95708}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>tra_contract_new_vessels_nn</RelationshipName>
+                            <TargetEntityType>new_vessels</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <RelationshipRoleOrdinal>1</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Documents" id="{666d221d-2bce-daab-1183-4bac268667a2}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="Documents" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{a9591ae4-e374-34a7-4c9b-0b63d3c0c7c2}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7247dd00-a72d-e564-699d-c0d64ab5ed53}" showlabel="false" colspan="1" auto="false" rowspan="25">
+                        <labels>
+                          <label description="Documents" languagecode="1033" />
+                        </labels>
+                        <control id="WebResource_Properties" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
+                          <parameters>
+                            <Url>c4crm_DocumentsIFrame.html</Url>
+                            <Data>etc</Data>
+                            <PassParameters>true</PassParameters>
+                            <ShowOnMobileClient>false</ShowOnMobileClient>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>true</Border>
+                            <WebResourceId>{0A03826B-A277-E711-810C-5065F38B06F1}</WebResourceId>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{D6F58178-BB38-45A6-BCB9-4802906EF774}" celllabelposition="Top" columns="111" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{EFEE337D-C145-49DC-8652-6D05B3223220}" showlabel="true" locklevel="0" labelid="{a80169e7-5061-499a-b68c-c02ab57a40ef}">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="header_createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="true" />
+            </cell>
+            <cell id="{89D4831A-2C6A-4DD5-92D8-69C1DDBDA41A}" showlabel="true" labelid="{37245356-3539-414a-adf9-adb7d9373a77}">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_status" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statuscode" disabled="false" />
+            </cell>
+            <cell id="{BCB9E009-B731-4EB1-9379-B9C9FFA38535}" labelid="{c80747cb-a048-42dc-aaf2-84443e719954}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Sales Manager" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" uniqueid="{2ce66718-9e96-ab19-a133-2e52d36710bc}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                </parameters>
+              </control>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Service/Contract/Contract_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.Form_onload" libraryName="Service/Contract/Contract_main_system_library.js" handlerUniqueId="c8f51c9e-2ba6-456c-9e36-0c0144f48e06" enabled="true">
+              <dependencies>
+                <dependency id="expireson" />
+                <dependency id="activeon" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="customerid">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.customerid_onchange" libraryName="Service/Contract/Contract_main_system_library.js" handlerUniqueId="6b524758-d169-4959-99bc-90d73bfd5ba1" enabled="true">
+              <dependencies>
+                <dependency id="serviceaddress" />
+                <dependency id="billingcustomerid" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="serviceaddress">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.serviceaddress_onchange" libraryName="Service/Contract/Contract_main_system_library.js" handlerUniqueId="ff96bf4d-b9bf-46bf-9796-279ddb68381e" enabled="true">
+              <dependencies>
+                <dependency id="customerid" />
+                <dependency id="billingcustomerid" />
+                <dependency id="billtoaddress" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="activeon">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.activeon_onchange" libraryName="Service/Contract/Contract_main_system_library.js" handlerUniqueId="74ca0e0b-781d-46fd-918c-7cb963f3ecfa" enabled="true">
+              <dependencies>
+                <dependency id="expireson" />
+                <dependency id="billingstarton" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="expireson">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.expireson_onchange" libraryName="Service/Contract/Contract_main_system_library.js" handlerUniqueId="723e0da4-bb7b-4c9f-a834-35e1b615a463" enabled="true">
+              <dependencies>
+                <dependency id="activeon" />
+                <dependency id="billingendon" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="billingcustomerid">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.billingcustomerid_onchange" libraryName="Service/Contract/Contract_main_system_library.js" handlerUniqueId="2cf93b4f-cb53-41aa-91e4-4d63a4b70752" enabled="true">
+              <dependencies>
+                <dependency id="billtoaddress" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="billingstarton">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.billingstarton_onchange" libraryName="Service/Contract/Contract_main_system_library.js" handlerUniqueId="a9794902-e727-4883-8726-17b551207928" enabled="true">
+              <dependencies>
+                <dependency id="billingendon" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="billingendon">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.billingendon_onchange" libraryName="Service/Contract/Contract_main_system_library.js" handlerUniqueId="1667942d-3c89-4842-9cc8-38f387f3b10c" enabled="true">
+              <dependencies>
+                <dependency id="billingstarton" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+      </events>
+      <controlDescriptions />
+      <DisplayConditions FallbackForm="true" Order="3">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Bundle Contract" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

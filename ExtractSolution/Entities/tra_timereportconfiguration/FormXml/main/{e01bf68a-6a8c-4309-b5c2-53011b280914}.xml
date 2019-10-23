@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e01bf68a-6a8c-4309-b5c2-53011b280914}</formid>
+    <IntroducedVersion>18.10.11.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{4915b00f-2a15-466d-a2b0-6ec30cbf306a}" IsUserDefined="1" name="{4915b00f-2a15-466d-a2b0-6ec30cbf306a}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c0ce975d-dd94-43bd-9bdf-7d26cc036fe6}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{942222bc-4381-be13-8470-3eb61a075203}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_opportunityid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{20b9b09d-ab06-bddb-5932-56c24520b69e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Time Report Activity Type" languagecode="1033" />
+                        </labels>
+                        <control id="tra_timerreportactivitytypecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_timerreportactivitytypecode" disabled="false" uniqueid="{ddc51cd2-719c-94a3-7064-4e9dee6977e8}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b8ac1007-e056-27ce-4e37-9227c1135d38}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Office" languagecode="1033" />
+                        </labels>
+                        <control id="tra_officeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_officeid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{330de305-a244-402d-9ea3-1d0cf7462334}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_name" uniqueid="{d6c865c4-0ed4-b534-d1c3-12e397dd82b6}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4b5b304d-8b90-3325-9126-518d0e1a1e58}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Always Generic" languagecode="1033" />
+                        </labels>
+                        <control id="tra_isalwaysgeneric" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="tra_isalwaysgeneric" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="{4915b00f-2a15-466d-a2b0-6ec30cbf306a}_section_2" showlabel="false" showbar="false" locklevel="0" id="{d253d502-0ddc-949b-310b-2d37e0cc3ee1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c8887606-2848-3d8d-257c-69666d483a5b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

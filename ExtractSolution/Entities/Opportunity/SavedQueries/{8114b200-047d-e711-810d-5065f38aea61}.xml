@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{8114b200-047d-e711-810d-5065f38aea61}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" preview="1" icon="1">
+        <row name="result" id="opportunityid">
+          <cell name="tra_subregioncalc" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="crm1st_red_flag_bid" width="100" />
+          <cell name="name" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="estimatedvalue" width="100" />
+          <cell name="new_fin_grossmargin" width="100" />
+          <cell name="tra_decisionmakernamebid" width="100" />
+          <cell name="crm1st_decisionmakerstatus_bid" width="100" />
+          <cell name="tra_financenamebid" width="100" />
+          <cell name="crm1st_financestatus_bid" width="100" />
+          <cell name="wdt_tradefinancenamebidid" width="100" />
+          <cell name="wdt_tradefinancestatus_bid" width="100" />
+          <cell name="tra_legalnamebid" width="100" />
+          <cell name="wdt_legalapprovestatus_bid" width="100" />
+          <cell name="tra_pmonamebid" width="100" />
+          <cell name="crm1st_pmostatus_bid" width="100" />
+          <cell name="tra_cfonamebid" width="100" />
+          <cell name="crm1st_cfostatus_bid" width="100" />
+          <cell name="tra_vpopsnamebid" width="100" />
+          <cell name="tra_vpopsstatus_bid" width="100" />
+          <cell name="tra_vpsalesnamebid" width="100" />
+          <cell name="crm1st_vpsalesstatus_bid" width="100" />
+          <cell name="crm1st_financecomment_bid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="opportunity">
+          <attribute name="name" />
+          <attribute name="estimatedvalue" />
+          <attribute name="crm1st_decisionmakerstatus_bid" />
+          <attribute name="ownerid" />
+          <attribute name="crm1st_red_flag_bid" />
+          <attribute name="tra_decisionmakernamebid" />
+          <attribute name="new_fin_grossmargin" />
+          <attribute name="crm1st_financestatus_bid" />
+          <attribute name="tra_financenamebid" />
+          <attribute name="crm1st_pmostatus_bid" />
+          <attribute name="tra_pmonamebid" />
+          <attribute name="tra_legalnamebid" />
+          <attribute name="crm1st_vpsalesstatus_bid" />
+          <attribute name="tra_vpsalesnamebid" />
+          <attribute name="tra_vpopsstatus_bid" />
+          <attribute name="tra_vpopsnamebid" />
+          <attribute name="crm1st_cfostatus_bid" />
+          <attribute name="tra_cfonamebid" />
+          <attribute name="crm1st_financecomment_bid" />
+          <attribute name="tra_subregioncalc" />
+          <attribute name="wdt_legalapprovestatus_bid" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="wdt_currentapproversnames" operator="like" value="%Bid Approvers%" />
+          </filter>
+          <attribute name="wdt_tradefinancestatus_bid" />
+          <attribute name="wdt_tradefinancenamebidid" />
+          <attribute name="opportunityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Bid Approvals Status" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

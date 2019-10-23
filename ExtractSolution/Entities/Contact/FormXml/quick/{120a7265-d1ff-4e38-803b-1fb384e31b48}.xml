@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{120a7265-d1ff-4e38-803b-1fb384e31b48}</formid>
+    <IntroducedVersion>0.45.1.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="400">
+      <tabs>
+        <tab id="{e88f7faf-6aaa-4dba-ba31-e9273cb8ba5c}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{4d5a7158-a6ab-47a9-a466-3e0965d6e522}" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Product(s) Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0dd5a0ba-50b1-8983-4dda-9562a2e2dd7b}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Product(s) Details" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_productdetails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="wdt_productdetails" disabled="false" uniqueid="{9c291e75-72de-46b3-4bc9-ee1c76e6526e}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="4">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Contact for iSailor Contact Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{bc3f2745-c802-4b2b-adb6-7b5cf32e54d9}</formid>
+    <IntroducedVersion>1.0.0.6</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <hiddencontrols>
+        <data id="isprimary" datafieldname="isprimary" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="parentarticlecontentid" datafieldname="parentarticlecontentid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="hd_majorversionnumber" datafieldname="majorversionnumber" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="hd_minorversionnumber" datafieldname="minorversionnumber" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="hd_languagelocaleid" datafieldname="languagelocaleid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="hd_articlepublicnumber" datafieldname="articlepublicnumber" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="statecode" datafieldname="statecode" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="expiredreviewoptions" datafieldname="expiredreviewoptions" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+      </hiddencontrols>
+      <tabs>
+        <tab id="{8192ba2a-a713-43bf-83c7-deae9b6e0e1a}" IsUserDefined="0" name="general" expanded="true" locklevel="0" labelid="{48f9896a-5abe-4161-bffc-86879ed323e6}">
+          <labels>
+            <label description="CONTENT" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="66%">
+              <sections>
+                <section id="{c14cfa53-bf17-47cf-be9e-102d4e8c7a4c}" showlabel="true" showbar="false" IsUserDefined="0" name="Knowledge Information" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{aa95d35d-430b-48bc-9d74-953a9870765e}">
+                  <labels>
+                    <label description="ARTICLE CONTENT" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" id="{088da358-7943-49e5-a007-dccf2bee570c}" labelid="{047282b1-89a4-47b3-9384-13fbc3d0f08a}">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="title" datafieldname="title" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" id="{c4949d1e-03fc-4eab-b676-79b585f7d818}" labelid="{e95488be-c738-4b77-b359-b763bd2057a5}">
+                        <labels>
+                          <label description="Keywords" languagecode="1033" />
+                        </labels>
+                        <control id="keywords" datafieldname="keywords" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="3" id="{6eeaeda1-8e7b-4f6e-b973-c02ea4ed5964}" labelid="{3ec56fb3-853b-4db6-a99b-271238b1d4dc}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="description" datafieldname="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="KnowledgeArticleIFrameContent" showlabel="false" showbar="false" locklevel="0" id="{a2511c7c-e634-02b5-3481-dea919ecd108}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" availableforphone="true" labelid="{f2a79831-9d62-4652-950f-f0313973c2ce}">
+                  <labels>
+                    <label description="Content" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="1" rowspan="15" colspan="1" id="{5aad20b4-966a-4950-974e-a047901d1f13}" labelid="{c565ada8-99ba-4a53-a8e8-735dce1c4865}">
+                        <labels>
+                          <label description="Content" languagecode="1033" />
+                        </labels>
+                        <control id="IFRAME_articlecontent" classid="{FD2A7985-3187-444E-908D-6624B21F69C0}" datafieldname="content">
+                          <parameters>
+                            <Url>/KnowledgeArticleViewer/KnowledgeArticleContentViewer.aspx</Url>
+                            <PassParameters>true</PassParameters>
+                            <Preload>true</Preload>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>false</Border>
+                            <ShowOnMobileClient>true</ShowOnMobileClient>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="34%">
+              <sections>
+                <section name="Related_pane" showlabel="true" showbar="true" locklevel="0" id="{d9b17321-d0f9-4e3c-a3bb-e8286d8ff78d}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{a7e8da6e-7613-4f15-997b-6179288bf53a}">
+                  <labels>
+                    <label description="RELATED INFORMATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row height="stdwithlabel">
+                      <cell id="{463603d0-c9cc-4d7b-98f3-1ea7af8bbd57}" showlabel="false" rowspan="20" auto="false" colspan="1" labelid="{0d33cd1b-af1d-4f56-ab61-4e28489adac1}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="publish" verticallayout="true" id="{b9a47ab3-ca03-4f42-95bf-8eb1990452c8}" visible="true" expanded="true" IsUserDefined="0" labelid="{1d6c69cc-a0c4-4bb4-946a-dfe2e7dcf1d3}">
+          <labels>
+            <label description="SETTINGS" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{fcdc1eb0-cb3d-41b3-81b1-d97438be5333}" showlabel="true" showbar="false" IsUserDefined="0" name="Portal Settings" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{ca867e48-1ecc-4a2f-9a03-5cc07f22bdf7}">
+                  <labels>
+                    <label description="PORTAL SETTINGS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" rowspan="1" colspan="1" id="{a6b7a22d-ef5d-4d60-b403-522a621e0619}" labelid="{0ce284f3-cc6a-4432-bfc3-68a96a6b8bae}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ea634c91-8c59-a23d-4e3d-d4dd001bdad0}" showlabel="true" locklevel="0" labelid="{4465cb23-dfa7-416b-aacd-8f195cc13814}">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{53779835-e934-46e3-90f9-3270ccadbf48}" labelid="{5af5de95-70e0-47eb-8237-58265355d091}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{b6790acc-480e-34d1-d004-a5dc9c2c3b7a}" labelid="{087f5b7c-4327-400f-804f-0547c542b17d}">
+                        <labels>
+                          <label description="Article Public Number" languagecode="1033" />
+                        </labels>
+                        <control id="articlepublicnumber" datafieldname="articlepublicnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75b64a04-ee65-ae60-098c-16a5debd02a3}" showlabel="true" locklevel="0" labelid="{0161912b-30f8-4f9a-9e55-a8280dbf53a2}">
+                        <labels>
+                          <label description="Primary Author Id" languagecode="1033" />
+                        </labels>
+                        <control id="primaryauthorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="primaryauthorid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" locklevel="0" rowspan="1" colspan="1" id="{ed31b977-3ae9-4889-b1a7-033f515c7f83}" labelid="{faef1d90-0da9-4557-bd3a-24f1dd1204d3}">
+                        <labels>
+                          <label description="Language" languagecode="1033" />
+                        </labels>
+                        <control id="languagelocaleid" datafieldname="languagelocaleid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{de947588-7c07-4a99-9576-9622be472f5f}" labelid="{e7ecfff0-5de7-4a2d-80b6-c21e7a431580}">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdname" datafieldname="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{b093f731-776b-42ff-bdda-1c4006fa10eb}" labelid="{294c28da-a68d-40c3-8990-11e6638f91c6}">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="creadedon" datafieldname="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{9f9ee256-2509-430e-bbab-352c3b411a6f}" labelid="{0ba2bf14-0d9c-4b7d-ad81-49fa50f3a81b}">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedname" datafieldname="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{c07df98d-a7c9-41a7-9a32-82a3268f1b1e}" labelid="{3f7003e6-fce9-4eb8-abdc-3679ddabaaa0}">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" datafieldname="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{273989fe-96b2-4673-8270-2d8b1bb39cff}" showlabel="true" showbar="false" IsUserDefined="0" name="Associations" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{d90f3c1e-a969-4800-8abb-d5cbc99abac7}">
+                  <labels>
+                    <label description="ASSOCIATED INFORMATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{88bb04a5-4311-429e-a91c-1cb37f1d2192}" userspacer="0" labelid="{93de1922-858c-4860-8ddc-2d8feca9f9cc}">
+                        <labels>
+                          <label description="Subject" languagecode="1033" />
+                        </labels>
+                        <control id="subjectid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="subjectid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e4028bb1-ca21-92a1-7071-c73ddab8d006}" showlabel="true" locklevel="0" labelid="{09ab46fc-36f1-4950-aba8-80a360d69305}">
+                        <labels>
+                          <label description="Publish On" languagecode="1033" />
+                        </labels>
+                        <control id="publishon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="publishon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e39ad09c-a7b0-1beb-a4c3-ee7e744c31d8}" showlabel="true" locklevel="0" labelid="{f3605c25-445a-49a8-b047-9c2a931b63d2}">
+                        <labels>
+                          <label description="Expiration Date" languagecode="1033" />
+                        </labels>
+                        <control id="expirationdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="expirationdate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="34%">
+              <sections>
+                <section id="{b06c3c1c-9c23-413a-8f10-670e842cafae}" showlabel="true" showbar="false" IsUserDefined="0" name="Version History" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto" labelid="{b54140da-2525-4b61-8fb3-a6eb7f21b7a9}">
+                  <labels>
+                    <label description="RELATED INFORMATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{DA400DA7-8404-498A-AB61-6814A318BA54}" colspan="1" showlabel="false" labelid="{8c00cefa-97a6-459c-b027-5b59230da55d}">
+                        <labels>
+                          <label description="Related Versions" languagecode="1033" />
+                        </labels>
+                        <control id="relatedversionsquickform" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="parentarticlecontentid" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="knowledgearticle"&gt;53C74C18-823C-4D38-8F58-649252DA6835&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{735710be-37ef-49fb-90f8-f31352835d5a}" showlabel="true" colspan="1" auto="true" rowspan="7" labelid="{4ecf391b-626d-46a4-b5e3-87fa823166cd}">
+                        <labels>
+                          <label description="Related Translations" languagecode="1033" />
+                        </labels>
+                        <control id="RelatedTranslationsGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{ae82a232-1529-4bde-9972-93ce21a095c6}</ViewId>
+                            <RelationshipName>knowledgearticle_parentarticle_contentid</RelationshipName>
+                            <TargetEntityType>knowledgearticle</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <EnableContextualActions>true</EnableContextualActions>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                    <row>
+                      <cell id="{03F7456A-AC30-428A-9977-5E18D7AC685F}" showlabel="true" colspan="1" rowspan="7" labelid="{ef38bde4-05c4-4c89-a5c3-ea01aa62061c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{d4e2bffb-003c-4cd0-8086-c78b9cf58223}" colspan="1" showlabel="false" labelid="{58e357e7-c215-485b-bcfa-18fe51f77918}">
+                        <labels>
+                          <label description="Root Article Id" languagecode="1033" />
+                        </labels>
+                        <control id="relatedarticlequickform" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="rootarticleid" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="knowledgearticle"&gt;cb6b2f21-b844-4192-8561-b285f2708d08&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4e6caee7-008c-eda5-7a38-6d709e3ea57a}" showlabel="true" colspan="1" auto="false" rowspan="6" labelid="{eaea5067-ed68-43a2-9b59-50eea5284006}">
+                        <labels>
+                          <label description="Related Products" languagecode="1033" />
+                        </labels>
+                        <control id="relatedproducts" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{BA3387BF-382D-4376-A538-5B02467925D3}</ViewId>
+                            <RelationshipName>knowledgearticle_connections1</RelationshipName>
+                            <TargetEntityType>connection</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <EnableContextualActions>true</EnableContextualActions>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{7d607a73-c594-6dc9-782e-0ac059766327}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Content Access Levels" languagecode="1033" />
+                        </labels>
+                        <control id="ContentAccessLevels" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{21591064-4735-d33a-6a4a-96746a44cc79}">
+                          <parameters>
+                            <ViewId>{D96B5DC6-5ACC-430B-936B-0D30175851B3}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>adx_KnowledgeArticleContentAccessLevel</RelationshipName>
+                            <TargetEntityType>adx_contentaccesslevel</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{D96B5DC6-5ACC-430B-936B-0D30175851B3}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <RelationshipRoleOrdinal>2</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="analytics" id="{3de7cc88-1430-837b-d356-791be364b3b2}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{2f6bfaea-f4e5-47a1-85a9-d78872b842e8}">
+          <labels>
+            <label description="ANALYTICS" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section name="views" showlabel="true" showbar="false" locklevel="0" id="{2e87061b-b328-2932-2978-187855347401}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{fdaa4579-e8f9-42b1-b7c9-3331948cfe02}">
+                  <labels>
+                    <label description="Views" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{67847d0b-bdd9-943d-42d1-8d6ae13e5b78}" showlabel="false" locklevel="0" labelid="{95048e69-8ed5-4c51-929d-156741b06667}">
+                        <labels>
+                          <label description="Total views" languagecode="1033" />
+                        </labels>
+                        <control id="articleviewcountquickform" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="rootarticleid" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="knowledgearticle"&gt;ddc7bced-64ae-4496-a8cf-bc8699cf1ab0&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9db12177-0fcb-4a4a-a0b2-c87093bb3f8d}" showlabel="true" colspan="1" labelid="{5f293f1f-2dff-41ec-b913-032212daf0d1}">
+                        <labels>
+                          <label description="Views by day and location" languagecode="1033" />
+                        </labels>
+                        <control id="KnowledgearticleviewsGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{8a34b2e6-d82a-4ccf-a71f-ead4332b3f08}</ViewId>
+                            <RelationshipName>knowledgearticle_views</RelationshipName>
+                            <TargetEntityType>knowledgearticleviews</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <EnableContextualActions>false</EnableContextualActions>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="Feedback" showlabel="true" showbar="false" locklevel="0" id="{5a26e999-2e59-4c5c-939d-42783cbf7f0e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{92a655ed-4399-4e58-b496-6c70ea058ee1}">
+                  <labels>
+                    <label description="Feedback" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8dbcc8a6-6448-8a5b-d601-912ae3cecc34}" showlabel="true" locklevel="0" labelid="{2074c1bb-ad8a-4cc8-9fe4-491d52e7d2e3}">
+                        <labels>
+                          <label description="Rating" languagecode="1033" />
+                        </labels>
+                        <control id="rating" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="rating" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5271038b-91d9-4afe-8625-48c0205bad4b}" showlabel="true" colspan="1" auto="false" rowspan="6" labelid="{f0f05179-a999-474e-b0f9-92ac4307ea01}">
+                        <labels>
+                          <label description="Feedback" languagecode="1033" />
+                        </labels>
+                        <control id="Feedback" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{90f0300e-101a-4462-96af-677cdfd654da}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>KnowledgeArticle_Feedback</RelationshipName>
+                            <TargetEntityType>feedback</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="34%">
+              <sections>
+                <section name="cases" showlabel="true" showbar="false" locklevel="0" id="{a5c5b0bb-9446-2719-c62a-c9ab1d88b452}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{98405b78-ad3c-4f49-8969-9a154ac0b201}">
+                  <labels>
+                    <label description="Cases" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{00c5c830-c7f9-4371-9d96-2f82010d0282}" showlabel="true" colspan="1" labelid="{b892c3f6-e154-47f4-b8fa-9067c9fd67a6}">
+                        <labels>
+                          <label description="Cases using this article" languagecode="1033" />
+                        </labels>
+                        <control id="RelatedCasesGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{d4af3595-52f5-43a4-b89c-47a413f27665}</ViewId>
+                            <RelationshipName>incident_knowledgearticles</RelationshipName>
+                            <TargetEntityType>knowledgearticleincident</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <EnableContextualActions>false</EnableContextualActions>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{cdda92a6-7b19-4fbd-8ce4-acc6c3148bcf}" columns="1111" celllabelposition="Top" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{92cdeb45-94cc-c487-d928-db1731363caa}" showlabel="true" locklevel="0" labelid="{dd52d4cd-20f7-4705-ac64-64a4710430d0}">
+              <labels>
+                <label description="Major Version Number" languagecode="1033" />
+              </labels>
+              <control id="header_majorversionnumber" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="majorversionnumber" disabled="true" />
+            </cell>
+            <cell id="{6905b7b1-0eda-03b5-5216-09ae8b5d7a94}" showlabel="true" locklevel="0" labelid="{4dc61349-e5b1-4e7a-bfdd-775d8e2320bb}">
+              <labels>
+                <label description="Minor Version Number" languagecode="1033" />
+              </labels>
+              <control id="header_minorversionnumber" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="minorversionnumber" disabled="true" />
+            </cell>
+            <cell id="{835e2045-56d4-8b41-e246-b9a4779c4002}" showlabel="true" locklevel="0" labelid="{ba38fc85-93ae-4521-a7b5-8d3d92b2fe05}">
+              <labels>
+                <label description="Language" languagecode="1033" />
+              </labels>
+              <control id="header_languagelocaleid" datafieldname="languagelocaleid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+            </cell>
+            <cell id="{d7297ac7-a0cb-ba96-264d-b0aeb39c3b69}" showlabel="true" locklevel="0" labelid="{92039fe5-f80c-4a37-9126-6cc4459547df}">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="AppCommon.KnowledgeArticle.Instance.form_onload" libraryName="KnowledgeArticle_main_system_library.js" handlerUniqueId="32FE066C-23D0-4F34-A0FE-ABBC808C4DDD" enabled="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onsave" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="AppCommon.KnowledgeArticle.Instance.form_onsave" libraryName="KnowledgeArticle_main_system_library.js" handlerUniqueId="293220A9-B609-4EFE-9C94-0228E2603C94" enabled="true" passExecutionContext="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="review">
+          <InternalHandlers>
+            <Handler functionName="AppCommon.KnowledgeArticle.Instance.review_onchange" libraryName="KnowledgeArticle_main_system_library.js" handlerUniqueId="144c9ca5-f155-42f7-92c3-adaf74010dad" enabled="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="expirationdate">
+          <InternalHandlers>
+            <Handler functionName="AppCommon.KnowledgeArticle.Instance.expirationdate_onchange" libraryName="KnowledgeArticle_main_system_library.js" handlerUniqueId="a232c3bf-9a73-4112-be96-2d1096ea7cdf" enabled="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="publishon">
+          <InternalHandlers>
+            <Handler functionName="AppCommon.KnowledgeArticle.Instance.publishdate_onchange" libraryName="KnowledgeArticle_main_system_library.js" handlerUniqueId="a1e13678-163a-43dc-a24a-210c305682ab" enabled="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="expiredreviewoptions">
+          <InternalHandlers>
+            <Handler functionName="AppCommon.KnowledgeArticle.Instance.expiredreviewoptions_onchange" libraryName="KnowledgeArticle_main_system_library.js" handlerUniqueId="f4799561-c9c9-4b6d-9245-0e515cbb2067" enabled="true" />
+          </InternalHandlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientvariables />
+          <clientincludes>
+            <internaljscriptfile src="$webresource:KnowledgeArticle_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+              <Title LCID="1026" Text="Обща информация" />
+              <Title LCID="1027" Text="Comú" />
+              <Title LCID="1029" Text="Obecné" />
+              <Title LCID="1030" Text="Fælles" />
+              <Title LCID="1031" Text="Allgemein" />
+              <Title LCID="1032" Text="Κοινό" />
+              <Title LCID="3082" Text="Común" />
+              <Title LCID="1061" Text="Levinud" />
+              <Title LCID="1069" Text="Ohikoak" />
+              <Title LCID="1035" Text="Yhteiset" />
+              <Title LCID="1036" Text="Éléments communs" />
+              <Title LCID="1110" Text="Común" />
+              <Title LCID="1081" Text="सामान्य" />
+              <Title LCID="1050" Text="Uobičajeno" />
+              <Title LCID="1038" Text="Általános" />
+              <Title LCID="1057" Text="Umum" />
+              <Title LCID="1040" Text="Elementi comuni" />
+              <Title LCID="1041" Text="共通" />
+              <Title LCID="1087" Text="Жалпы" />
+              <Title LCID="1042" Text="일반" />
+              <Title LCID="1063" Text="Bendra" />
+              <Title LCID="1062" Text="Kopējs" />
+              <Title LCID="1086" Text="Umum" />
+              <Title LCID="1044" Text="Felles" />
+              <Title LCID="1043" Text="Algemeen" />
+              <Title LCID="1045" Text="Wspólne" />
+              <Title LCID="1046" Text="Comum" />
+              <Title LCID="2070" Text="Comum" />
+              <Title LCID="1048" Text="Comun" />
+              <Title LCID="1049" Text="Общее" />
+              <Title LCID="1051" Text="Spoločné" />
+              <Title LCID="1060" Text="Splošno" />
+              <Title LCID="3098" Text="Уобичајено" />
+              <Title LCID="10266" Text="Уобичајено" />
+              <Title LCID="2074" Text="Uobičajeno" />
+              <Title LCID="9242" Text="Uobičajeno" />
+              <Title LCID="1053" Text="Gemensamt" />
+              <Title LCID="1054" Text="ทั่วไป" />
+              <Title LCID="1055" Text="Ortak" />
+              <Title LCID="1058" Text="Загальне" />
+              <Title LCID="1066" Text="Thông thường" />
+              <Title LCID="2052" Text="公用" />
+              <Title LCID="3076" Text="一般" />
+              <Title LCID="1028" Text="一般" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+              <Title LCID="1026" Text="Продажби" />
+              <Title LCID="1027" Text="Vendes" />
+              <Title LCID="1029" Text="Prodej" />
+              <Title LCID="1030" Text="Salg" />
+              <Title LCID="1031" Text="Vertrieb" />
+              <Title LCID="1032" Text="Πωλήσεις" />
+              <Title LCID="3082" Text="Ventas" />
+              <Title LCID="1061" Text="Müük" />
+              <Title LCID="1069" Text="Salmentak" />
+              <Title LCID="1035" Text="Myynti" />
+              <Title LCID="1036" Text="Ventes" />
+              <Title LCID="1110" Text="Vendas" />
+              <Title LCID="1081" Text="विक्रय" />
+              <Title LCID="1050" Text="Prodaja" />
+              <Title LCID="1038" Text="Értékesítés" />
+              <Title LCID="1057" Text="Penjualan" />
+              <Title LCID="1040" Text="Vendite" />
+              <Title LCID="1041" Text="営業" />
+              <Title LCID="1087" Text="Сатылым" />
+              <Title LCID="1042" Text="영업" />
+              <Title LCID="1063" Text="Pardavimas" />
+              <Title LCID="1062" Text="Pārdošana" />
+              <Title LCID="1086" Text="Jualan" />
+              <Title LCID="1044" Text="Salg" />
+              <Title LCID="1043" Text="Verkoop" />
+              <Title LCID="1045" Text="Sprzedaż" />
+              <Title LCID="1046" Text="Vendas" />
+              <Title LCID="2070" Text="Vendas" />
+              <Title LCID="1048" Text="Vânzări" />
+              <Title LCID="1049" Text="Продажи" />
+              <Title LCID="1051" Text="Predaj" />
+              <Title LCID="1060" Text="Prodaja" />
+              <Title LCID="3098" Text="Продаја" />
+              <Title LCID="10266" Text="Продаја" />
+              <Title LCID="2074" Text="Prodaja" />
+              <Title LCID="9242" Text="Prodaja" />
+              <Title LCID="1053" Text="Försäljning" />
+              <Title LCID="1054" Text="การขาย" />
+              <Title LCID="1055" Text="Satış" />
+              <Title LCID="1058" Text="Збут" />
+              <Title LCID="1066" Text="Bán hàng" />
+              <Title LCID="2052" Text="销售" />
+              <Title LCID="3076" Text="銷售" />
+              <Title LCID="1028" Text="銷售" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+              <Title LCID="1026" Text="Обслужване" />
+              <Title LCID="1027" Text="Servei" />
+              <Title LCID="1029" Text="Služby" />
+              <Title LCID="1030" Text="Service" />
+              <Title LCID="1031" Text="Service" />
+              <Title LCID="1032" Text="Υπηρεσία" />
+              <Title LCID="3082" Text="Servicio" />
+              <Title LCID="1061" Text="Teenindus" />
+              <Title LCID="1069" Text="Zerbitzua" />
+              <Title LCID="1035" Text="Palvelu" />
+              <Title LCID="1036" Text="Service" />
+              <Title LCID="1110" Text="Servizo" />
+              <Title LCID="1081" Text="सेवा" />
+              <Title LCID="1050" Text="Usluga" />
+              <Title LCID="1038" Text="Szolgáltatás" />
+              <Title LCID="1057" Text="Layanan" />
+              <Title LCID="1040" Text="Servizio" />
+              <Title LCID="1041" Text="サービス" />
+              <Title LCID="1087" Text="Қызмет" />
+              <Title LCID="1042" Text="서비스" />
+              <Title LCID="1063" Text="Paslauga" />
+              <Title LCID="1062" Text="Serviss" />
+              <Title LCID="1086" Text="Perkhidmatan" />
+              <Title LCID="1044" Text="Service" />
+              <Title LCID="1043" Text="Service" />
+              <Title LCID="1045" Text="Usługa" />
+              <Title LCID="1046" Text="Serviço" />
+              <Title LCID="2070" Text="Serviço" />
+              <Title LCID="1048" Text="Serviciu" />
+              <Title LCID="1049" Text="Сервис" />
+              <Title LCID="1051" Text="Služba" />
+              <Title LCID="1060" Text="Storitev" />
+              <Title LCID="3098" Text="Услуга" />
+              <Title LCID="10266" Text="Услуга" />
+              <Title LCID="2074" Text="Usluga" />
+              <Title LCID="9242" Text="Usluga" />
+              <Title LCID="1053" Text="Tjänst" />
+              <Title LCID="1054" Text="การบริการ" />
+              <Title LCID="1055" Text="Servis" />
+              <Title LCID="1058" Text="Послуга" />
+              <Title LCID="1066" Text="Dịch vụ" />
+              <Title LCID="2052" Text="服务" />
+              <Title LCID="3076" Text="服務" />
+              <Title LCID="1028" Text="服務" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+              <Title LCID="1026" Text="Маркетинг" />
+              <Title LCID="1027" Text="Màrqueting" />
+              <Title LCID="1029" Text="Marketing" />
+              <Title LCID="1030" Text="Marketing" />
+              <Title LCID="1031" Text="Marketing" />
+              <Title LCID="1032" Text="Μάρκετινγκ" />
+              <Title LCID="3082" Text="Marketing" />
+              <Title LCID="1061" Text="Turundus" />
+              <Title LCID="1069" Text="Marketina" />
+              <Title LCID="1035" Text="Markkinointi" />
+              <Title LCID="1036" Text="Marketing" />
+              <Title LCID="1110" Text="Márketing" />
+              <Title LCID="1081" Text="मार्केटिंग" />
+              <Title LCID="1050" Text="Marketing" />
+              <Title LCID="1038" Text="Marketing" />
+              <Title LCID="1057" Text="Pemasaran" />
+              <Title LCID="1040" Text="Marketing" />
+              <Title LCID="1041" Text="マーケティング" />
+              <Title LCID="1087" Text="Маркетинг" />
+              <Title LCID="1042" Text="마케팅" />
+              <Title LCID="1063" Text="Rinkodara" />
+              <Title LCID="1062" Text="Mārketings" />
+              <Title LCID="1086" Text="Pemasaran" />
+              <Title LCID="1044" Text="Markedsføring" />
+              <Title LCID="1043" Text="Marketing" />
+              <Title LCID="1045" Text="Marketing" />
+              <Title LCID="1046" Text="Marketing" />
+              <Title LCID="2070" Text="Marketing" />
+              <Title LCID="1048" Text="Marketing" />
+              <Title LCID="1049" Text="Маркетинг" />
+              <Title LCID="1051" Text="Marketing" />
+              <Title LCID="1060" Text="Trženje" />
+              <Title LCID="3098" Text="Маркетинг" />
+              <Title LCID="10266" Text="Маркетинг" />
+              <Title LCID="2074" Text="Marketing" />
+              <Title LCID="9242" Text="Marketing" />
+              <Title LCID="1053" Text="Marknadsföring" />
+              <Title LCID="1054" Text="การตลาด" />
+              <Title LCID="1055" Text="Pazarlama" />
+              <Title LCID="1058" Text="Маркетинг" />
+              <Title LCID="1066" Text="Tiếp thị" />
+              <Title LCID="2052" Text="市场营销" />
+              <Title LCID="3076" Text="行銷" />
+              <Title LCID="1028" Text="行銷" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+              <Title LCID="1026" Text="Сесии на процес" />
+              <Title LCID="1027" Text="Sessions del procés" />
+              <Title LCID="1029" Text="Relace procesů" />
+              <Title LCID="1030" Text="Processessioner" />
+              <Title LCID="1031" Text="Prozesssitzungen" />
+              <Title LCID="1032" Text="Περίοδοι λειτουργίας διεργασίας" />
+              <Title LCID="3082" Text="Sesiones de proceso" />
+              <Title LCID="1061" Text="Protsessiseansid" />
+              <Title LCID="1069" Text="Prozesu-saioak" />
+              <Title LCID="1035" Text="Prosessin istunnot" />
+              <Title LCID="1036" Text="Sessions de traitement" />
+              <Title LCID="1110" Text="Sesións de proceso" />
+              <Title LCID="1081" Text="प्रक्रिया सत्र" />
+              <Title LCID="1050" Text="Sesije procesa" />
+              <Title LCID="1038" Text="Feldolgozási munkamenetek" />
+              <Title LCID="1057" Text="Sesi Proses" />
+              <Title LCID="1040" Text="Sessioni processo" />
+              <Title LCID="1041" Text="プロセス セッション" />
+              <Title LCID="1087" Text="Процесс сеанстары" />
+              <Title LCID="1042" Text="프로세스 세션" />
+              <Title LCID="1063" Text="Apdorojimo seansai" />
+              <Title LCID="1062" Text="Apstrādes sesijas" />
+              <Title LCID="1086" Text="Sesi Proses" />
+              <Title LCID="1044" Text="Prosessøkter" />
+              <Title LCID="1043" Text="Processessies" />
+              <Title LCID="1045" Text="Sesje procesów" />
+              <Title LCID="1046" Text="Processar Sessões" />
+              <Title LCID="2070" Text="Sessões de Processo" />
+              <Title LCID="1048" Text="Sesiuni de proces" />
+              <Title LCID="1049" Text="Сеансы процесса" />
+              <Title LCID="1051" Text="Relácie procesov" />
+              <Title LCID="1060" Text="Seje procesov" />
+              <Title LCID="3098" Text="Сесије процеса" />
+              <Title LCID="10266" Text="Сесије процеса" />
+              <Title LCID="2074" Text="Sesije procesa" />
+              <Title LCID="9242" Text="Sesije procesa" />
+              <Title LCID="1053" Text="Processessioner" />
+              <Title LCID="1054" Text="เซสชันของกระบวนการ" />
+              <Title LCID="1055" Text="İşlem Oturumları" />
+              <Title LCID="1058" Text="Сеанси процесів" />
+              <Title LCID="1066" Text="Phiên Quá trình" />
+              <Title LCID="2052" Text="进程会话" />
+              <Title LCID="3076" Text="程序工作階段" />
+              <Title LCID="1028" Text="程序工作階段" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Portal KnowledgeArticle" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

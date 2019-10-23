@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f1318f9d-37c2-4f7a-975a-06afeb013fdc}</savedqueryid>
+    <layoutxml>
+      <grid name="new_areas" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_area" id="new_areaid">
+          <cell name="new_name" width="300" />
+          <cell name="new_city" width="100" />
+          <cell name="crm1st_countryid" width="100" />
+          <cell name="tra_regioncode" width="100" />
+          <cell name="tra_porttypecode" width="100" />
+          <cell name="tra_portlevelcode" width="100" />
+          <cell name="tra_cargotypecode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch distinct="false" no-lock="false" mapping="logical">
+        <entity name="new_area">
+          <attribute name="new_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_name" descending="false" />
+          <attribute name="tra_regioncode" />
+          <attribute name="tra_porttypecode" />
+          <attribute name="tra_portlevelcode" />
+          <attribute name="crm1st_countryid" />
+          <attribute name="new_city" />
+          <attribute name="tra_cargotypecode" />
+          <attribute name="new_areaid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Area Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

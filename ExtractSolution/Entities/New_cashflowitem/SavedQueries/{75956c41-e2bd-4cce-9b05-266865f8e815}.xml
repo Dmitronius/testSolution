@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{75956c41-e2bd-4cce-9b05-266865f8e815}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="0">
+        <row name="new_cashflowitem" id="new_cashflowitemid">
+          <cell name="new_name" width="300" />
+          <cell name="new_date" width="100" />
+          <cell name="new_amount" width="100" />
+          <cell name="transactioncurrencyid" width="100" />
+          <cell name="new_invoice_number" width="100" />
+          <cell name="ownerid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_cashflowitem">
+          <attribute name="new_cashflowitemid" />
+          <attribute name="new_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_name" descending="false" />
+          <attribute name="ownerid" />
+          <attribute name="new_invoice_number" />
+          <attribute name="new_date" />
+          <attribute name="transactioncurrencyid" />
+          <attribute name="new_amount" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.17.03.29</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="CashFlow Item  Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

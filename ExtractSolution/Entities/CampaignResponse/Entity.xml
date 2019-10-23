@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name LocalizedName="Campaign Response" OriginalName="Campaign Response">CampaignResponse</Name>
+  <EntityInfo>
+    <entity Name="CampaignResponse" unmodified="1">
+      <attributes>
+        <attribute PhysicalName="OriginatingActivityId" unmodified="1">
+          <Type>lookup</Type>
+          <Name>originatingactivityid</Name>
+          <LogicalName>originatingactivityid</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>0</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>5.0.0.0</IntroducedVersion>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes>
+            <LookupType id="00000000-0000-0000-0000-000000000000">4204</LookupType>
+            <LookupType id="00000000-0000-0000-0000-000000000000">4210</LookupType>
+            <LookupType id="00000000-0000-0000-0000-000000000000">4202</LookupType>
+            <LookupType id="00000000-0000-0000-0000-000000000000">4207</LookupType>
+            <LookupType id="00000000-0000-0000-0000-000000000000">4201</LookupType>
+          </LookupTypes>
+          <displaynames>
+            <displayname description="Originating Activity" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="recurringappointmentmaster_campaignresponse" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+      </attributes>
+    </entity>
+  </EntityInfo>
+  <RibbonDiffXml />
+</Entity>

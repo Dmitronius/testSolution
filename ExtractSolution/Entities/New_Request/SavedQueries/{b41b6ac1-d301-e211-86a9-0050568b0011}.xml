@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{b41b6ac1-d301-e211-86a9-0050568b0011}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_requestno" select="1" preview="1" icon="1">
+        <row name="result" id="new_requestid">
+          <cell name="new_requestno" width="150" />
+          <cell name="new_description" width="100" disableSorting="1" />
+          <cell name="createdby" width="100" />
+          <cell name="createdon" width="100" />
+          <cell name="new_customercontactid" width="100" />
+          <cell name="new_estdateofcomplition" width="100" />
+          <cell name="new_initialestimate" width="100" />
+          <cell name="new_initiator" width="100" />
+          <cell name="new_initiatorid" width="100" />
+          <cell name="new_laststatusupdatedate" width="100" />
+          <cell name="new_man_days_required" width="100" />
+          <cell name="modifiedby" width="100" />
+          <cell name="modifiedon" width="100" />
+          <cell name="new_opportunityid" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="statuscode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_request">
+          <attribute name="statuscode" />
+          <attribute name="ownerid" />
+          <attribute name="new_opportunityid" />
+          <attribute name="modifiedon" />
+          <attribute name="modifiedby" />
+          <attribute name="new_man_days_required" />
+          <attribute name="new_laststatusupdatedate" />
+          <attribute name="new_initiatorid" />
+          <attribute name="new_initiator" />
+          <attribute name="new_initialestimate" />
+          <attribute name="new_estdateofcomplition" />
+          <attribute name="new_description" />
+          <attribute name="new_customercontactid" />
+          <attribute name="createdon" />
+          <attribute name="createdby" />
+          <order attribute="new_requestno" descending="false" />
+          <filter type="and">
+            <condition attribute="createdby" operator="eq-userid" />
+          </filter>
+          <attribute name="new_requestno" />
+          <attribute name="new_requestid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

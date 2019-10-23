@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{5d9ec348-249a-e711-810d-5065f38a4a21}</WebResourceId>
+  <Name>tra_Vessel_001_transp.png</Name>
+  <DisplayName>Vessel_001_transp.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_Vessel_001_transppng5D9EC348-249A-E711-810D-5065F38A4A21</FileName>
+</WebResource>

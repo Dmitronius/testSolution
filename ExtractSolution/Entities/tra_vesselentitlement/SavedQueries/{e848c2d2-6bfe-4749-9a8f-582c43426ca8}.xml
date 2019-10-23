@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e848c2d2-6bfe-4749-9a8f-582c43426ca8}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="tra_vesselentitlement" id="tra_vesselentitlementid">
+          <cell name="tra_accountid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_vesselid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_msaid" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_vesselentitlement">
+          <attribute name="createdon" />
+          <order attribute="tra_accountid" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_vesselid" />
+          <attribute name="tra_msaid" />
+          <attribute name="statuscode" />
+          <attribute name="tra_accountid" />
+          <attribute name="tra_vesselentitlementid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Vessel Entitlement Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

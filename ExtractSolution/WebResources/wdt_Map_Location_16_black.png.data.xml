@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{ba4ac32c-6ea4-e911-a966-000d3ab5a84e}</WebResourceId>
+  <Name>wdt_Map_Location_16_black.png</Name>
+  <DisplayName>Map_Location_16_black.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/wdt_Map_Location_16_blackpngBA4AC32C-6EA4-E911-A966-000D3AB5A84E</FileName>
+</WebResource>

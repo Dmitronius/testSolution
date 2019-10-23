@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{47d71e58-2d45-e711-8104-5065f38a4a21}</WebResourceId>
+  <Name>new_jquery_1.91.min</Name>
+  <DisplayName>jquery_1.91.min</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.17.03.30</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/new_jquery_191min47D71E58-2D45-E711-8104-5065F38A4A21</FileName>
+</WebResource>

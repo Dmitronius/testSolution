@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{bea98f78-6567-e911-a970-000d3ab5a0d7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" preview="1" icon="1">
+        <row name="result" id="productid">
+          <cell name="name" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="vendorname" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="productnumber" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="product">
+          <attribute name="name" />
+          <order attribute="vendorname" descending="true" />
+          <order attribute="productnumber" descending="false" />
+          <attribute name="vendorname" />
+          <attribute name="productnumber" />
+          <attribute name="productid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.44.3.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Products view for Account Products" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

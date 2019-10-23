@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{df5c4045-323f-e911-a968-000d3ab5a6ae}" Name="Calculate isCommercial Attribute" Description="Calculate isCommercial Attribute&#xA;If &quot;Project Type&quot; = &quot;Unknown&quot; or &quot;Exhibition&quot; or &quot;Administrative&quot; or &quot;Investment&quot; or &quot;Product Support (M)&quot; or &quot;Production (P)&quot; or &quot;General Production (G)&quot; -&gt; do not al" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/CalculateisCommercialAttribute-DF5C4045-323F-E911-A968-000D3AB5A6AE.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>Opportunity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Calculate isCommercial Attribute" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Calculate isCommercial Attribute&#xA;If &quot;Project Type&quot; = &quot;Unknown&quot; or &quot;Exhibition&quot; or &quot;Administrative&quot; or &quot;Investment&quot; or &quot;Product Support (M)&quot; or &quot;Production (P)&quot; or &quot;General Production (G)&quot; -&gt; do not al" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{c79421f6-3355-e911-a96e-000d3ab5a0d7}">
+      <controltype>1</controltype>
+      <scope>2</scope>
+      <controlname>new_projecttype</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{c89421f6-3355-e911-a96e-000d3ab5a0d7}">
+      <scope>2</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{c99421f6-3355-e911-a96e-000d3ab5a0d7}">
+      <controltype>1</controltype>
+      <scope>2</scope>
+      <controlname>crm1st_genericcode</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{ca9421f6-3355-e911-a96e-000d3ab5a0d7}">
+      <scope>2</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{18a8229b-e076-e711-8109-5065f38a4a21}" Name="Check Est. Order Date &lt; Today" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/CheckEstOrderDateToday-18A8229B-E076-E711-8109-5065F38A4A21.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>Opportunity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Check Est. Order Date &lt; Today" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{7807682b-a036-49af-a407-9b5c69265571}">
+      <label languagecode="1033" description="At this stage, it should be set to today or later." />
+    </steplabels>
+  </labels>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{deb04a65-eb90-e911-a96a-000d3ab5a3d0}">
+      <controltype>1</controltype>
+      <formid>{a2a56263-ec37-4991-a3b0-e7b37a71d818}</formid>
+      <scope>1</scope>
+      <controlname>new_actualorderdate</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{dfb04a65-eb90-e911-a96a-000d3ab5a3d0}">
+      <formid>{a2a56263-ec37-4991-a3b0-e7b37a71d818}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{e0b04a65-eb90-e911-a96a-000d3ab5a3d0}">
+      <controltype>1</controltype>
+      <formid>{a2a56263-ec37-4991-a3b0-e7b37a71d818}</formid>
+      <scope>1</scope>
+      <controlname>tra_today</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{e1b04a65-eb90-e911-a96a-000d3ab5a3d0}">
+      <formid>{a2a56263-ec37-4991-a3b0-e7b37a71d818}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{e2b04a65-eb90-e911-a96a-000d3ab5a3d0}">
+      <controltype>1</controltype>
+      <formid>{a2a56263-ec37-4991-a3b0-e7b37a71d818}</formid>
+      <scope>1</scope>
+      <controlname>statecode</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{e3b04a65-eb90-e911-a96a-000d3ab5a3d0}">
+      <formid>{a2a56263-ec37-4991-a3b0-e7b37a71d818}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{e4b04a65-eb90-e911-a96a-000d3ab5a3d0}">
+      <controltype>1</controltype>
+      <formid>{a2a56263-ec37-4991-a3b0-e7b37a71d818}</formid>
+      <scope>1</scope>
+      <controlname>processid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{e5b04a65-eb90-e911-a96a-000d3ab5a3d0}">
+      <controltype>1</controltype>
+      <formid>{a2a56263-ec37-4991-a3b0-e7b37a71d818}</formid>
+      <scope>1</scope>
+      <controlname>stageid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

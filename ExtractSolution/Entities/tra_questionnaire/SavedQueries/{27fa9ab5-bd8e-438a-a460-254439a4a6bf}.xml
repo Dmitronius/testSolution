@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{27fa9ab5-bd8e-438a-a460-254439a4a6bf}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_questionnaireid">
+          <cell name="tra_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_questionnaire">
+          <attribute name="tra_name" />
+          <attribute name="createdon" />
+          <order attribute="tra_name" descending="false" />
+          <attribute name="tra_questionnaireid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.17.09.06</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Bundle Surveys Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

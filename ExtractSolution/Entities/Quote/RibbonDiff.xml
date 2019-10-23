@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="new.TRA.Quote.OpenConfiguratorISV.Button.CustomAction" Location="Mscrm.Form.quote.MainTab.Save.Controls._children" Sequence="95">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:TRA.Quote.OpenConfiguratorISV.Button.Alt" Command="TRA.Quote.OpenConfiguratorISV.Command" Id="TRA.Quote.OpenConfiguratorISV.Button" Image32by32="$webresource:tra_config1_32" Image16by16="$webresource:tra_config1_16" LabelText="$LocLabels:TRA.Quote.OpenConfiguratorISV.Button.LabelText" Sequence="95" TemplateAlias="isv" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="TRA.Quote.OpenConfiguratorISV.Command">
+      <EnableRules>
+        <EnableRule Id="TRA.Quote.OpenConfiguratorISV.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="TRA.QuoteRibbonLibrary.openConfigurator" Library="$webresource:tra_quote_ribbon_library" />
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="TRA.Quote.OpenConfiguratorISV.EnableRule">
+        <CustomRule FunctionName="TRA.QuoteRibbonLibrary.checkInstance" Library="$webresource:tra_quote_ribbon_library" Default="true" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="TRA.Quote.OpenConfiguratorISV.Button.Alt">
+      <Titles>
+        <Title description="Configurator" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="TRA.Quote.OpenConfiguratorISV.Button.LabelText">
+      <Titles>
+        <Title description="Configurator" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

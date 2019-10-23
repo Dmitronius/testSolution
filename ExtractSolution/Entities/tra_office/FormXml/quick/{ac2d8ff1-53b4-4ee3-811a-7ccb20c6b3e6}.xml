@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{ac2d8ff1-53b4-4ee3-811a-7ccb20c6b3e6}</formid>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{95d860b7-7180-4b62-a990-d9f559f2b9f2}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{652caac6-38ba-4f93-95b1-9d5288b98f1a}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{74a66c74-1c33-4e4a-92c9-0a9736614a81}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cbee73d3-44a4-5813-77b7-75d22d065bc2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Office Code" languagecode="1033" />
+                        </labels>
+                        <control id="tra_officecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_officecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3e54cee1-bdac-3519-ea0b-ed52295076ee}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Region" languagecode="1033" />
+                        </labels>
+                        <control id="tra_regioncode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_regioncode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{89bd57e6-bc7a-97e1-0093-85478c1e00ac}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Sub Region" languagecode="1033" />
+                        </labels>
+                        <control id="tra_subregioncode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_subregioncode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

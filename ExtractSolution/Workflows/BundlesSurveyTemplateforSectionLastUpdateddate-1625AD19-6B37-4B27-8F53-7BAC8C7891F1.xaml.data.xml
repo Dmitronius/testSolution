@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{1625ad19-6b37-4b27-8f53-7bac8c7891f1}" Name="Bundles Survey.Template for Section Last Updated date" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/BundlesSurveyTemplateforSectionLastUpdateddate-1625AD19-6B37-4B27-8F53-7BAC8C7891F1.xaml</XamlFileName>
+  <Type>3</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnUpdateAttributeList>tra_isihoupgraded,tra_paperlesssailing,tra_ecdis3qty,tra_ecdis2qty,tra_ecdis1qty,tra_ecdisyearofoldest3,tra_ecdisyearofoldest2,tra_ecdisyearofoldest1,tra_ecdistypecode3,tra_ecdistypecode2,tra_ecdistypecode1</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>1</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <PrimaryEntity>tra_questionnaire</PrimaryEntity>
+</Workflow>

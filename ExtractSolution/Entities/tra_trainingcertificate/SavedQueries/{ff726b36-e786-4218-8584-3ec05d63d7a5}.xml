@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ff726b36-e786-4218-8584-3ec05d63d7a5}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_trainingcertificateid">
+          <cell name="tra_name" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_contact" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_37622a692e05e911a95d000d3ab5a3d0.address1_city" width="125" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_37622a692e05e911a95d000d3ab5a3d0.crm1st_countryid" width="125" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_account" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="wdt_trainedproductscode" width="300" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_trainer" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_trainingtype" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_traininglocation" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_issuedate" width="100" />
+          <cell name="tra_expirydate" width="100" />
+          <cell name="statuscode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="tra_trainingcertificate">
+          <attribute name="tra_name" />
+          <attribute name="tra_trainingtype" />
+          <attribute name="statuscode" />
+          <attribute name="tra_traininglocation" />
+          <attribute name="tra_trainer" />
+          <attribute name="wdt_trainedproductscode" />
+          <attribute name="tra_issuedate" />
+          <attribute name="tra_expirydate" />
+          <attribute name="tra_contact" />
+          <attribute name="tra_account" />
+          <order attribute="tra_name" descending="false" />
+          <link-entity name="contact" from="contactid" to="tra_contact" visible="false" link-type="outer" alias="a_37622a692e05e911a95d000d3ab5a3d0">
+            <attribute name="crm1st_countryid" />
+            <attribute name="address1_city" />
+          </link-entity>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="wdt_trainedproductscode" operator="contain-values">
+              <value>{0}</value>
+            </condition>
+            <condition attribute="tra_name" operator="like" value="{0}" />
+            <condition attribute="tra_contact" operator="like" value="{0}" />
+            <condition attribute="tra_account" operator="like" value="{0}" />
+          </filter>
+          <attribute name="tra_trainingcertificateid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>18.12.12.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Training Certificates" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

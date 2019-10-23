@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5d2198e8-a017-43a4-8b5a-ef2db7cc4a5e}</formid>
+    <IntroducedVersion>0.35</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="400">
+      <tabs>
+        <tab id="{195b32c5-6031-447a-98f7-339afde9df5c}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{eca0626f-47e9-43ca-b537-9783e298fca6}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c491a5a5-a7d0-88d0-bd5a-b323331ee41a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vessel Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ecde9e66-4278-0b79-2235-41527741c319}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type of Vessel" languagecode="1033" />
+                        </labels>
+                        <control id="new_typeofvessel" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_typeofvessel" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e79d5682-27c9-55c0-85e7-3861251ed1de}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="IMO" languagecode="1033" />
+                        </labels>
+                        <control id="new_imo" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_imo" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c7e5ab6-8be7-c6d1-6d59-46028adabb23}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Dongle Number" languagecode="1033" />
+                        </labels>
+                        <control id="new_donglenumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_donglenumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d2994bb7-eb20-0b57-339c-09ab19727c80}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Paperless Vessel" languagecode="1033" />
+                        </labels>
+                        <control id="new_paperlessvessel" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="new_paperlessvessel" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{72d778ea-b37b-be03-072d-c515544b1a21}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Flag State" languagecode="1033" />
+                        </labels>
+                        <control id="new_flagstate" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_flagstate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0302446a-6e69-ccea-dc8a-d7d892707738}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="NextSBM" languagecode="1033" />
+                        </labels>
+                        <control id="new_nextsbm" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_nextsbm" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7d120aca-0adc-ee33-03ab-507474cb9d8e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="No of SBM" languagecode="1033" />
+                        </labels>
+                        <control id="new_nosbm" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_nosbm" disabled="false" uniqueid="{c28cea80-5251-c175-d44d-379d079c2d1a}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d16eed2c-25ae-6a44-0c32-79c90d16c651}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Last APT VDR\SVDR" languagecode="1033" />
+                        </labels>
+                        <control id="new_aptvdrsvdr" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_aptvdrsvdr" disabled="false" uniqueid="{b6c50a61-19a0-a8a9-e57d-11528c339774}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6412748c-b32d-c88d-bdee-5e548d434808}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Last APS ECDIS" languagecode="1033" />
+                        </labels>
+                        <control id="new_aps_ecdis" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_aps_ecdis" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_1_section_2" showlabel="false" showbar="false" locklevel="0" id="{a0528862-6a93-2eda-2224-1c86293d0196}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ab098720-3ea5-e5e9-4d35-6a78de9e7714}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Vessel Case" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

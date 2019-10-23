@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{aad543f7-be84-4638-aa41-cd36f921f19c}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_5" id="{5db03816-c9b0-403e-cc4a-114862171aa9}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Budget Lines" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="false" showbar="false" locklevel="0" id="{41d6e3a7-0be1-55e8-1ae1-3a19ced0a976}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" height="auto" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Budget Lines" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{210e8524-e39a-47c5-a831-655bd44e3127}" showlabel="true" colspan="4" auto="false" rowspan="102">
+                        <labels>
+                          <label description="Budget Lines" languagecode="1033" />
+                        </labels>
+                        <control id="BudgetLines" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" indicationOfSubgrid="true" uniqueid="{5968328c-a95c-db86-18a8-b2a7ce196e8d}">
+                          <parameters>
+                            <ViewId>{EC898893-DE80-E711-810D-5065F38B06F1}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_cashflow_new_cashflowitem</RelationshipName>
+                            <TargetEntityType>new_cashflowitem</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{FA2B5982-4665-E711-810A-5065F38AEA61}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>100</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{d3646317-b071-e011-b5f0-0050568b0265}" IsUserDefined="1" locklevel="0" name="Budget Financial Profile" expanded="false" showlabel="true">
+          <labels>
+            <label description="Budget Financial Profile" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="true" showbar="false" locklevel="0" id="{c9d5812d-b071-e011-b5f0-0050568b0265}" IsUserDefined="1" layout="varwidth" columns="1" labelwidth="115" height="auto" name="{c9d5812d-b071-e011-b5f0-0050568b0265}" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="CF Summary" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="true" auto="true" rowspan="40" colspan="1" id="{53d32a73-27c5-4ce4-af0b-281ab39fe183}">
+                        <labels>
+                          <label description="Chart" languagecode="1033" />
+                        </labels>
+                        <control id="IFRAME_CF_CHART" classid="{FD2A7985-3187-444e-908D-6624B21F69C0}">
+                          <parameters>
+                            <Url>about:blank</Url>
+                            <PassParameters>true</PassParameters>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>false</Border>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <Handlers>
+                              <Handler functionName="IFRAME_CF_CHART_onload" libraryName="New_cashflow_main_library.js" handlerUniqueId="37e49a3a-4060-42db-9158-1f79af3dd651" enabled="false">
+                                <dependencies />
+                              </Handler>
+                            </Handlers>
+                            <dependencies />
+                          </event>
+                          <event name="onreadystatecomplete" application="false" active="false">
+                            <Handlers>
+                              <Handler functionName="onLoadChart" libraryName="New_cashflow_main_library.js" handlerUniqueId="{5aecc6b8-c191-56ed-50b4-0961b59660cc}" enabled="true" parameters="" passExecutionContext="false" />
+                            </Handlers>
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+          <events>
+            <event name="tabstatechange" application="false" active="false">
+              <Handlers>
+                <Handler functionName="changeIFrameChartUrl" libraryName="New_cashflow_main_library.js" handlerUniqueId="{ca72cde5-ba84-44e2-0e1b-7e6b120cd2b6}" enabled="true" parameters="" passExecutionContext="false" />
+              </Handlers>
+            </event>
+          </events>
+        </tab>
+        <tab id="{cb7e15b9-ee71-e211-b99d-005056b707d3}" IsUserDefined="1" locklevel="0" name="{cb7e15b9-ee71-e211-b99d-005056b707d3}" expanded="false" showlabel="true">
+          <labels>
+            <label description="Revenue Recognition" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" locklevel="0" id="{b5df46c5-ee71-e211-b99d-005056b707d3}" IsUserDefined="1" layout="varwidth" columns="1" labelwidth="115" height="auto" name="{b5df46c5-ee71-e211-b99d-005056b707d3}" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Budget" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" auto="true" rowspan="40" colspan="1" id="{3e3c8c61-53e3-4a11-9fb8-97a9b2617805}">
+                        <labels>
+                          <label description="Budget" languagecode="1033" />
+                        </labels>
+                        <control id="IFRAME_budget" classid="{FD2A7985-3187-444e-908D-6624B21F69C0}">
+                          <parameters>
+                            <Url>about:blank</Url>
+                            <PassParameters>true</PassParameters>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>true</Border>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <Handlers>
+                              <Handler functionName="IFRAME_budget_onload" libraryName="New_cashflow_main_library.js" handlerUniqueId="33ed2ecc-23da-4841-98f1-5082e89d4070" enabled="false">
+                                <dependencies />
+                              </Handler>
+                            </Handlers>
+                            <dependencies />
+                          </event>
+                          <event name="onreadystatecomplete" application="false" active="false">
+                            <Handlers>
+                              <Handler functionName="onLoadBudget" libraryName="New_cashflow_main_library.js" handlerUniqueId="{aa5726c8-7641-2a20-132c-c098dcab1068}" enabled="true" parameters="" passExecutionContext="false" />
+                            </Handlers>
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+          <events>
+            <event name="tabstatechange" application="false" active="false">
+              <Handlers>
+                <Handler functionName="changeIFrameBudgetUrl" libraryName="New_cashflow_main_library.js" handlerUniqueId="{6baa4bbe-a437-d3bb-ee27-9a7d34727e59}" enabled="true" parameters="" passExecutionContext="false" />
+              </Handlers>
+            </event>
+          </events>
+        </tab>
+        <tab verticallayout="true" id="{b588c623-46c7-4afb-9654-f91b214d8199}" IsUserDefined="1" expanded="false" locklevel="0" showlabel="true" name="General">
+          <labels>
+            <label description="Administration and Notes" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="30%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c00eff49-f834-43d5-bd35-4353e2dfda47}" name="{c00eff49-f834-43d5-bd35-4353e2dfda47}" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="true" locklevel="0" id="{5e4916b1-fef3-4ed9-837e-a9e32b386fa8}">
+                        <labels>
+                          <label description="Budget Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" uniqueid="{d7378bac-8160-0142-d5a7-c33e17eeec3d}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{01a0d4c7-deb1-ebb7-009b-eab811e7b2db}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="true" uniqueid="{a18e5d4d-8a9b-aeb8-04b2-cde4ba7e0888}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{8fef58e4-233c-4d47-b2c2-2efeab56ff37}">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="new_opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_opportunityid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{ae54071e-ef5c-4714-8795-a1378eeb2cda}">
+                        <labels>
+                          <label description="Payment Terms (AR)" languagecode="1033" />
+                        </labels>
+                        <control id="new_due_date" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_due_date" disabled="true" uniqueid="{7222cac9-ddb2-d882-7521-a66b6649be35}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{4957b7d4-7520-46bb-bf4c-8b1f5749adfe}">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b5e87e11-6db5-44e5-b2ef-3bd5f5eb37b6}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" uniqueid="{3206ac42-e071-db37-696a-075a4dc73620}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{72c8a7ee-1b3b-21dd-10e1-316a63875b96}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Exchange Rate" languagecode="1033" />
+                        </labels>
+                        <control id="exchangerate" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="exchangerate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a4517d18-24d5-a911-a526-0e7951e9622a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Gross Margin (Base)" languagecode="1033" />
+                        </labels>
+                        <control id="new_grossmargin_base" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_grossmargin_base" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="40%">
+              <sections>
+                <section name="{b588c623-46c7-4afb-9654-f91b214d8199}_section_3" showlabel="false" showbar="false" locklevel="0" id="{0bc674c9-2e79-869c-46e3-7cd318329d24}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Comment" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{05912a61-e4d5-32da-483b-6020cb2aae85}" showlabel="false" rowspan="15" auto="false" colspan="1" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{d4a610ac-5963-5a71-acb8-dbca486bd060}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>ActivitiesTab</DefaultTabId>
+                            <OrderByActivityWall>descending</OrderByActivityWall>
+                            <SortActivityWall>modifiedon</SortActivityWall>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="30%">
+              <sections>
+                <section name="{b588c623-46c7-4afb-9654-f91b214d8199}_section_4" showlabel="false" showbar="false" locklevel="0" id="{9894d9d1-901a-a590-dd25-c460accd8ac4}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{41085881-186e-29d6-ea78-d72386eb69aa}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{d751c04c-2603-e611-ab5a-005056bc0366}" IsUserDefined="1" locklevel="0" name="{d751c04c-2603-e611-ab5a-005056bc0366}" expanded="false" showlabel="true" visible="false">
+          <labels>
+            <label description="Excel" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" locklevel="0" id="{c0d8be83-2603-e611-ab5a-005056bc0366}" IsUserDefined="1" layout="varwidth" columns="11" labelwidth="115" height="auto" name="{c0d8be83-2603-e611-ab5a-005056bc0366}" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Inline GridView Editor" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" auto="true" rowspan="5" colspan="2" id="{bee1fc10-7b25-4bea-88b9-439bc4d09c7c}">
+                        <labels>
+                          <label description="Excel" languagecode="1033" />
+                        </labels>
+                        <control id="IFRAME_editor" classid="{FD2A7985-3187-444e-908D-6624B21F69C0}">
+                          <parameters>
+                            <Url>http://crm.transas.com/ISV/CashFlowExcelGrid/default.aspx</Url>
+                            <PassParameters>false</PassParameters>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>true</Border>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <Handlers>
+                              <Handler functionName="IFRAME_editor_onload" libraryName="New_cashflow_main_library.js" handlerUniqueId="2b2a3f46-82d3-457c-81ca-d5400075b0fb" enabled="false">
+                                <dependencies />
+                              </Handler>
+                            </Handlers>
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{f0424863-976a-4d77-96db-a12432903aba}" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{e64d8761-9e41-1cde-5235-07d316ed09ed}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Name" languagecode="1033" />
+              </labels>
+              <control id="header_new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+            </cell>
+            <cell id="{1c734ed2-b118-be93-c201-74be976430e9}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Opportunity" languagecode="1033" />
+              </labels>
+              <control id="header_new_opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_opportunityid" disabled="false" />
+            </cell>
+            <cell id="{eee458e5-2576-e138-aa98-c2ba30a2e8b6}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{0a7b9ce7-24e5-3695-9d5e-d79975c14987}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{a6806ef1-ad7d-48b4-8a4e-e6f906e54e09}">
+        <rows>
+          <row>
+            <cell id="{6f1f0b0c-4dfc-4138-a52b-11b6cbd06f0d}">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="footer_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{5968328c-a95c-db86-18a8-b2a7ce196e8d}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+            <parameters>
+              <ViewId>{EC898893-DE80-E711-810D-5065F38B06F1}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>new_new_cashflow_new_cashflowitem</RelationshipName>
+              <TargetEntityType>new_cashflowitem</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>true</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{FA2B5982-4665-E711-810A-5065F38AEA61}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>Grid</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>false</EnableChartPicker>
+              <RecordsPerPage>100</RecordsPerPage>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{EC898893-DE80-E711-810D-5065F38B06F1}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>new_new_cashflow_new_cashflowitem</RelationshipName>
+                <TargetEntityType>new_cashflowitem</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{FA2B5982-4665-E711-810A-5065F38AEA61}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">yes</EnableGroupBy>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{EC898893-DE80-E711-810D-5065F38B06F1}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>new_new_cashflow_new_cashflowitem</RelationshipName>
+                <TargetEntityType>new_cashflowitem</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{FA2B5982-4665-E711-810A-5065F38AEA61}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">yes</EnableGroupBy>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{EC898893-DE80-E711-810D-5065F38B06F1}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>new_new_cashflow_new_cashflowitem</RelationshipName>
+                <TargetEntityType>new_cashflowitem</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{FA2B5982-4665-E711-810A-5065F38AEA61}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">yes</EnableGroupBy>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formLibraries>
+        <Library name="New_cashflow_main_library.js" libraryUniqueId="{1be7c837-c4c6-44e1-9fa8-c011cabd0833}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="true">
+          <Handlers>
+            <Handler functionName="cashflowMain.OnLoadForm" libraryName="New_cashflow_main_library.js" handlerUniqueId="7377a389-b5cd-45e6-9cb0-372b510844ad" enabled="true" passExecutionContext="false" parameters="">
+              <dependencies />
+            </Handler>
+          </Handlers>
+        </event>
+        <event name="onsave" application="false" active="true">
+          <Handlers>
+            <Handler functionName="incidentMain.OnSaveForm" libraryName="New_cashflow_main_library.js" handlerUniqueId="309088f3-a8b4-4b8e-9911-c6c1221a00d6" enabled="true" passExecutionContext="false" parameters="">
+              <dependencies />
+            </Handler>
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="new_category" relationship="" control="BudgetLines">
+          <Handlers>
+            <Handler functionName="categoryValidate" libraryName="New_cashflow_main_library.js" handlerUniqueId="{9e1cd39e-1325-4e8e-92b1-27c43d615c18}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="new_type" relationship="" control="BudgetLines">
+          <Handlers>
+            <Handler functionName="categoryValidate" libraryName="New_cashflow_main_library.js" handlerUniqueId="{bba5d417-2a3b-7107-1732-9d5b633ee47c}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

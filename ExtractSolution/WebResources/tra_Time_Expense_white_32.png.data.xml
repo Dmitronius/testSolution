@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{8928be44-1955-e811-8132-5065f38b06f1}</WebResourceId>
+  <Name>tra_Time_Expense_white_32.png</Name>
+  <DisplayName>Time_Expense_white_32.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_Time_Expense_white_32png8928BE44-1955-E811-8132-5065F38B06F1</FileName>
+</WebResource>

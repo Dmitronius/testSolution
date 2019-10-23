@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{5b6aaa59-bbab-e111-b503-0050568b0011}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_cashflowid">
+          <cell name="new_name" width="100" />
+          <cell name="a_4b97d636c5674794b199bc366d064e60.name" width="200" disableSorting="1" />
+          <cell name="a_4b97d636c5674794b199bc366d064e60.new_fin_contractvalue" width="100" disableSorting="1" />
+          <cell name="transactioncurrencyid" width="100" />
+          <cell name="createdon" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="createdby" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_cashflow">
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="ownerid" operator="eq-userid" />
+          </filter>
+          <attribute name="transactioncurrencyid" />
+          <attribute name="ownerid" />
+          <attribute name="createdon" />
+          <attribute name="createdby" />
+          <attribute name="new_name" />
+          <link-entity alias="a_4b97d636c5674794b199bc366d064e60" name="opportunity" from="opportunityid" to="new_opportunityid" link-type="outer" visible="false">
+            <attribute name="name" />
+            <attribute name="new_fin_contractvalue" />
+          </link-entity>
+          <attribute name="new_cashflowid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Budgets" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

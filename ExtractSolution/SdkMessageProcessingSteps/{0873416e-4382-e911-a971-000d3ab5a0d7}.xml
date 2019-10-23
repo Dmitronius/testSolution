@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Wartsila.Plugins.CaseTracking.PostOperationCaseUpdate: Update of incident" SdkMessageProcessingStepId="{0873416e-4382-e911-a971-000d3ab5a0d7}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PluginTypeName>Wartsila.Plugins.CaseTracking.PostOperationCaseUpdate, Wartsila.Plugins.CaseTracking, Version=1.3.0.0, Culture=neutral, PublicKeyToken=a9dc434ca707dee3</PluginTypeName>
+  <PluginTypeId>7ee19cff-b917-4709-925e-3667f22b2e60</PluginTypeId>
+  <PrimaryEntity>incident</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <Description>Wartsila.Plugins.CaseTracking.PostOperationCaseUpdate: Update of incident</Description>
+  <FilteringAttributes>statuscode</FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{20bebb1b-ea3e-db11-86a7-000a3a5473e8}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages>
+    <SdkMessageProcessingStepImage Name="Image">
+      <SdkMessageProcessingStepImageId>{580d408c-4382-e911-a971-000d3ab5a0d7}</SdkMessageProcessingStepImageId>
+      <Attributes>incidentid,ticketnumber,title,statecode,statuscode</Attributes>
+      <EntityAlias>Image</EntityAlias>
+      <ImageType>0</ImageType>
+      <MessagePropertyName>Target</MessagePropertyName>
+      <IsCustomizable>1</IsCustomizable>
+    </SdkMessageProcessingStepImage>
+  </SdkMessageProcessingStepImages>
+</SdkMessageProcessingStep>

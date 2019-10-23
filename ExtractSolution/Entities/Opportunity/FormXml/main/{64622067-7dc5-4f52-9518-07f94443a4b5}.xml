@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{64622067-7dc5-4f52-9518-07f94443a4b5}</formid>
+    <IntroducedVersion>0.44.14.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <hiddencontrols>
+        <data id="pricelevelid" datafieldname="pricelevelid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="statecode" datafieldname="statecode" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+      </hiddencontrols>
+      <tabs>
+        <tab id="{a9dd8610-71e3-4fe3-93d6-cee419cd614d}" name="wdt_general" verticallayout="true" IsUserDefined="0" locklevel="0" expanded="true" showlabel="true" labelid="{0e3aabc9-8d60-4b54-8e11-3d60575be11f}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section id="{2fda664a-00d2-4b22-a68f-24983962bdfe}" name="{2fda664a-00d2-4b22-a68f-24983962bdfe}" IsUserDefined="0" locklevel="0" showlabel="false" labelid="{175e7157-46ea-45e0-b4e7-f326f7113f28}" showbar="false" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Opportunity Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a90a6223-6904-443c-b40f-de1e8ad44285}" locklevel="0" showlabel="true" labelid="{8d841ceb-2603-457e-b2bb-de71ff359099}" colspan="1">
+                        <labels>
+                          <label description="Topic" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="name" datafieldname="name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" uniqueid="{d1dde5a6-6d01-5bae-5e30-1ceea6d872d5}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{336200b9-59e0-856d-e65b-a902d49cab40}" showlabel="true" locklevel="0" labelid="{da5eecb9-9a31-4fbb-abf1-30e8b09a1887}">
+                        <labels>
+                          <label description="Generic Code" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_genericcode" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="crm1st_genericcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{729c11e1-e9b6-1aa1-a78a-3d0506444d13}" locklevel="0" showlabel="true" labelid="{ce024406-5bf5-4b4f-b679-fa42b1228534}">
+                        <labels>
+                          <label description="Potential Customer" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="parentaccountid" datafieldname="parentaccountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" uniqueid="{c6b9316b-c029-4dc8-651a-369daa2ae557}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b1d8d2c6-7980-4e78-aba2-d26b0b4307ff}" locklevel="0" showlabel="true" labelid="{4bb67d07-51bd-4ccd-a3c7-d78a718d6341}" colspan="1" auto="false" rowspan="1">
+                        <labels>
+                          <label description="Solution" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_solutions" datafieldname="new_solutions" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" uniqueid="{677b6ae6-5d52-71b8-d440-cb465d771762}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{91e061dc-b21e-46a7-ac03-e48f63e3f1fa}" locklevel="0" showlabel="true" labelid="{2d1cd60e-2ae2-4b61-98d2-08972bf09f5d}" colspan="1" auto="false" rowspan="1">
+                        <labels>
+                          <label description="Project Type" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_projecttype" datafieldname="new_projecttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" uniqueid="{3a4a7b5b-111d-ae3e-e0c0-114375442e6b}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8c73eb06-737f-400a-8a3f-643e7d085ad9}" locklevel="0" showlabel="true" labelid="{19155d8c-c656-462e-b8ea-eba2c22fe788}" colspan="1" auto="false" rowspan="1">
+                        <labels>
+                          <label description="Office" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_owningorganization" datafieldname="new_owningorganization" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" uniqueid="{d646a977-a8d0-0414-7a1d-133226a55a16}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f7939134-bf51-4adb-b9e2-d26fe5861971}" locklevel="0" showlabel="true" labelid="{43a8944d-f594-4f36-a87c-2d1c0135b14d}" colspan="1" auto="false" rowspan="1">
+                        <labels>
+                          <label description="Contracting Org." languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_contractingorganization" datafieldname="new_contractingorganization" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" uniqueid="{0bcb938c-67d4-7d4d-c540-1dad22e88421}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fe431190-3a14-4d04-811d-091db5207412}" locklevel="0" showlabel="true" labelid="{97ae51d0-c76a-4e60-9f36-1a98e34694f5}">
+                        <labels>
+                          <label description="Project Code" languagecode="1033" />
+                        </labels>
+                        <control disabled="true" id="CFSTLProjectID" datafieldname="CFSTLProjectID" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" uniqueid="{b8323524-1bd1-1599-6d07-5286c636d435}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{db2518cb-0c3b-a9bc-12a9-142d9dc1b654}" locklevel="0" showlabel="true" labelid="{b1fec1e8-fb6e-4c6c-8ff2-5fa92899933f}">
+                        <labels>
+                          <label description="VAT" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="crm1st_vat" datafieldname="crm1st_vat" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" uniqueid="{1455eec5-2ba7-c34b-167b-2bc452c79d31}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section id="{8a73111c-ca92-9715-8122-6879019361e1}" name="Forecasting Information" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{2705a0dc-9462-4358-811e-642d0c755134}" showbar="false" columns="1" labelwidth="130" celllabelalignment="Left" celllabelposition="Left" layout="varwidth">
+                  <labels>
+                    <label description="Forecasting" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3e4b0cae-518d-4316-8c9f-93077723b7d8}" labelid="{ed3da1a5-e559-4e5d-9ec1-51ef8d32f832}">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" datafieldname="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" uniqueid="{1dd73277-db24-d221-7764-db7ad29952c0}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{94566943-4491-4c9a-baad-d39b32145191}" locklevel="0" showlabel="true" labelid="{7a3f7feb-93d1-4eda-8f02-da025913dd8b}">
+                        <labels>
+                          <label description="Est. Revenue" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="estimatedvalue" datafieldname="estimatedvalue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" uniqueid="{46e5a4cd-b1d0-9bd1-e97c-5e0940ce6966}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{925f52c9-0465-400c-a90f-a95da95986ce}" locklevel="0" showlabel="true" labelid="{439a67d3-41fa-40a0-a7ab-eb5d50010b8a}" colspan="1" auto="false" rowspan="1">
+                        <labels>
+                          <label description="Est. Order Date" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_actualorderdate" datafieldname="new_actualorderdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" uniqueid="{58071281-1e60-7807-4a1d-1249d31905d5}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e291b5b1-d8a7-ade3-1c32-e155ca00bda9}" locklevel="0" showlabel="true" labelid="{eb464e4e-5893-4db7-8035-c30137fbc50f}">
+                        <labels>
+                          <label description="To Forecast" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_istobudgetinnavision" datafieldname="new_istobudgetinnavision" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" uniqueid="{6858bd0b-6318-9578-b620-8896961eeca8}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a2869141-0991-c66e-a747-1e3a4caca464}" locklevel="0" showlabel="true" labelid="{ea49c416-bbac-4988-a77b-077e3b05f1a3}">
+                        <labels>
+                          <label description="Probability Grade" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="crm1st_probability" datafieldname="crm1st_probability" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" uniqueid="{199ed206-64bb-6883-c506-53d47e803a28}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{13653c24-5e5f-4b04-bd2f-f412dac510aa}" locklevel="0" showlabel="true" labelid="{7232b4f1-57b3-4544-86a7-9ae93083bfc9}" colspan="1" auto="false" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Revenue" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="isrevenuesystemcalculated" datafieldname="isrevenuesystemcalculated" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" uniqueid="{ca4a4359-d1ad-2170-675c-de94ce3134e4}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{c23f3530-ef08-440c-9b8b-e16aa5864063}" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+        <rows>
+          <row>
+            <cell id="{6805de6e-9c6c-1170-5b3a-4c3cb5ed3c50}" showlabel="false" labelid="{97e82440-4fd1-492a-886e-ab79e5508593}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3be5153d-7e55-b339-d92b-42c542db9ac8}" locklevel="0" showlabel="true" labelid="{8413291a-41eb-422c-a8be-5d5462c784ab}" colspan="1">
+              <labels>
+                <label description="Account Manager" languagecode="1033" />
+              </labels>
+              <control disabled="false" id="header_ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" uniqueid="{ae0e1b7a-094a-b964-c93b-324072b7068d}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                </parameters>
+              </control>
+            </cell>
+            <cell id="{25d98e65-8a7d-8c02-0158-cdb004e4c369}" showlabel="true" locklevel="0" labelid="{f093f92c-a1c3-4c88-8227-67b677e67a8d}">
+              <labels>
+                <label description="Generic Code" languagecode="1033" />
+              </labels>
+              <control id="header_crm1st_genericcode" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="crm1st_genericcode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{45218f35-f193-4034-8973-d1e0a631efce}" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{4a5cea98-6b07-4e1b-ebb4-776823b1d31e}" showlabel="true" locklevel="0" labelid="{4255a803-2ac9-4828-9b07-2422f81fbb29}">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="footer_createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="true" />
+            </cell>
+            <cell id="{4a9578e3-4152-1e21-821b-3c513aa82057}" showlabel="true" locklevel="0" labelid="{e2690caa-5dcd-4b32-b357-be3a8dd4dce7}">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="true" />
+            </cell>
+            <cell id="{05167099-2cd7-34ed-0893-09a008e9875c}" showlabel="true" locklevel="0" labelid="{7c731ec5-9cdf-47fd-abd4-06c923d18ad5}">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="footer_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <events>
+        <event name="onchange" application="true" active="true" attribute="isrevenuesystemcalculated">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.isrevenuesystemcalculated_onchange" libraryName="Sales/Opportunity/Opportunity_main_system_library.js" handlerUniqueId="3b6c5880-6469-48bc-9642-f5350374785b" enabled="true">
+              <dependencies>
+                <dependency id="estimatedvalue" />
+                <dependency id="totalamount" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="transactioncurrencyid">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.transactioncurrencyid_onchange" libraryName="Sales/Opportunity/Opportunity_main_system_library.js" handlerUniqueId="151544F6-720A-4606-820D-60E0DB0D2606" enabled="true">
+              <dependencies>
+                <dependency id="pricelevelid" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Sales/Opportunity/Opportunity_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navProducts" Sequence="1" Area="Info" Id="navProducts">
+            <Titles>
+              <Title LCID="1033" Text="Products" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="navActivityHistory" Icon="/_imgs/ico_18_history.gif" Area="Info" Sequence="20" RelationshipName="Opportunity_ActivityPointers" TitleResourceId="Tab_Label_History" ViewId="21E2B905-6FDB-470d-8517-AD69B4C01268">
+            <Titles>
+              <Title Text="Closed Activities" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="navOrders" Area="Sales" Sequence="21" RelationshipName="opportunity_sales_orders">
+            <Titles>
+              <Title Text="Orders" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="navActivities" Icon="/_imgs/ico_18_act.gif" Area="Info" Sequence="22" RelationshipName="Opportunity_ActivityPointers">
+            <Titles>
+              <Title Text="Activities" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="navQuotes" Area="Sales" Sequence="22" RelationshipName="opportunity_quotes" Show="true">
+            <Titles>
+              <Title Text="Quotes" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="opportunity_customer_opportunity_roles" Id="navRelationship" Show="true" Sequence="9600" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Opportunity Relationships" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAudit" Sequence="9601" Area="Info" Id="navAudit">
+            <Titles>
+              <Title LCID="1033" Text="Audit History" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="tra_opportunity_tra_timeexpense" Sequence="10001" Area="Info" Id="nav_tra_opportunity_tra_timeexpense">
+            <Titles>
+              <Title LCID="1033" Text="Time Reports" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_new_Opportunity_AccountProducts" Area="Service" Sequence="10001" RelationshipName="new_Opportunity_AccountProducts">
+            <Titles>
+              <Title Text="Account Products" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="new_opportunity_new_agreement" Sequence="10001" Area="Info" Id="nav_new_opportunity_new_agreement">
+            <Titles>
+              <Title LCID="1033" Text="Agreements" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_new_marketkeyword_opportunity" Area="Marketing" Sequence="10001" RelationshipName="new_marketkeyword_opportunity">
+            <Titles>
+              <Title Text="Market Keywords" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="new_opportunity_new_cashflow" Sequence="10002" Area="Sales" Id="nav_new_opportunity_new_cashflow">
+            <Titles>
+              <Title LCID="1033" Text="Budgets" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="tra_opportunity_contract" Sequence="10002" Area="Info" Id="nav_tra_opportunity_contract">
+            <Titles>
+              <Title LCID="1033" Text="Contracts" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_new_new_productgroup_opportunity" Area="Marketing" Sequence="10002" RelationshipName="new_new_productgroup_opportunity" Show="false">
+            <Titles>
+              <Title Text="Product Groups" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_new_opportunity_new_opportunityproductgroup" Area="Marketing" Sequence="10003" RelationshipName="new_opportunity_new_opportunityproductgroup" Show="true">
+            <Titles>
+              <Title Text="Product Groups" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <DisplayConditions FallbackForm="true" Order="8">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Project Codes Generation" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

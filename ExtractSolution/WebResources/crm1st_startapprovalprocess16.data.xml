@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{26f32cc2-6b77-e711-810c-5065f38aea61}</WebResourceId>
+  <Name>crm1st_startapprovalprocess16</Name>
+  <DisplayName>Start approval process (small)</DisplayName>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>6</WebResourceType>
+  <IntroducedVersion>0.40.5.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/crm1st_startapprovalprocess1626F32CC2-6B77-E711-810C-5065F38AEA61</FileName>
+</WebResource>

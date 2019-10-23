@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{af508db9-bd7e-e811-8139-5065f38a9a01}</WebResourceId>
+  <Name>tra_productpackageitem_main_library</Name>
+  <DisplayName>product package item main library</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_productpackageitem_main_libraryAF508DB9-BD7E-E811-8139-5065F38A9A01</FileName>
+</WebResource>

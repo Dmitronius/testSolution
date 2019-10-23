@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{6d15194d-5dde-e711-811b-5065f38a9a01}</WebResourceId>
+  <Name>crm1st_incident_merge_library.js</Name>
+  <DisplayName>Incident merge library</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/crm1st_incident_merge_libraryjs6D15194D-5DDE-E711-811B-5065F38A9A01</FileName>
+</WebResource>

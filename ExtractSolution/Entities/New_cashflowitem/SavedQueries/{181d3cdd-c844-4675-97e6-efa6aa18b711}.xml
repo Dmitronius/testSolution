@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{181d3cdd-c844-4675-97e6-efa6aa18b711}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_cashflowitemid">
+          <cell name="new_date" width="100" />
+          <cell name="new_name" width="300" />
+          <cell name="a_7463d5352a3ae71181055065f38b06f1.new_name" width="100" disableSorting="1" />
+          <cell name="new_amount" width="100" />
+          <cell name="transactioncurrencyid" width="100" />
+          <cell name="new_invoice_number" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="new_type" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_cashflowitem">
+          <attribute name="new_name" />
+          <attribute name="createdon" />
+          <order attribute="new_name" descending="false" />
+          <link-entity alias="a_7463d5352a3ae71181055065f38b06f1" name="new_cashflow" from="new_cashflowid" to="new_cashflowid" link-type="outer" visible="false">
+            <attribute name="new_name" />
+          </link-entity>
+          <attribute name="new_type" />
+          <attribute name="statuscode" />
+          <attribute name="ownerid" />
+          <attribute name="new_invoice_number" />
+          <attribute name="new_date" />
+          <attribute name="transactioncurrencyid" />
+          <attribute name="new_amount" />
+          <attribute name="new_cashflowitemid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.17.03.29</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="CashFlow Item Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{8b5d68f6-9b7b-e811-813d-5065f38aea61}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" preview="1" icon="1">
+        <row name="result" id="productid">
+          <cell name="name" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="productnumber" width="100" />
+          <cell name="tra_basicweight" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="product">
+          <attribute name="name" />
+          <attribute name="productnumber" />
+          <attribute name="tra_basicweight" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <condition attribute="productstructure" operator="eq" value="3" />
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="productid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.43.151.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Bundle Product for Opportunity Line" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{cac409bc-18d5-e711-811a-5065f38a9a01}" Name="BP 3rd party Visibility Control" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/BP3rdpartyVisibilityControl-CAC409BC-18D5-E711-811A-5065F38A9A01.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.1.1.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>Incident</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="BP 3rd party Visibility Control" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{8b56c53a-ec6b-e811-8132-5065f38a4a21}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>tra_serviceattendanceby</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Incident</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{8c56c53a-ec6b-e811-8132-5065f38a4a21}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Incident</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{8d56c53a-ec6b-e811-8132-5065f38a4a21}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>tra_serviceattendanceby</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Incident</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{8e56c53a-ec6b-e811-8132-5065f38a4a21}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Incident</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{8f56c53a-ec6b-e811-8132-5065f38a4a21}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>processid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Incident</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

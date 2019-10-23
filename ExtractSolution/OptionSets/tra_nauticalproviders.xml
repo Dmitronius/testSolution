@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tra_nauticalproviders" localizedName="Nautical Providers" description="for ex:&#xA;Charts Provider&#xA;ENP Provider&#xA;ADP Provider&#xA;PAPER Provider" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.17.9.6</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Nautical Providers" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="for ex:&#xA;Charts Provider&#xA;ENP Provider&#xA;ADP Provider&#xA;PAPER Provider" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="167490000" Color="#0000ff">
+      <labels>
+        <label description="Chart Co" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490001" Color="#0000ff">
+      <labels>
+        <label description="ChartWorld" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490002" Color="#0000ff">
+      <labels>
+        <label description="Hong Yunn" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490003" Color="#0000ff">
+      <labels>
+        <label description="CNC Marine" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490004" Color="#0000ff">
+      <labels>
+        <label description="MarinePress" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490005" Color="#0000ff">
+      <labels>
+        <label description="Transas" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490006" Color="#0000ff">
+      <labels>
+        <label description="Navtor" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490007" Color="#0000ff">
+      <labels>
+        <label description="C-Map" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490008" Color="#0000ff">
+      <labels>
+        <label description="Nautisk Forlag" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490009" Color="#0000ff">
+      <labels>
+        <label description="Weilbach" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

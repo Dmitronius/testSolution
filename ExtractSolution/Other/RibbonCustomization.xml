@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="c4crm.new.ApplicationRibbon.{!EntityLogicalName}.TransformLinksCRMDocumentsToSharePoint.Button.CustomAction" Location="Mscrm.Form.{!EntityLogicalName}.MainTab.Save.Controls._children" Sequence="15">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.Button.Alt" Command="new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.Command" Id="new.ApplicationRibbon.{!EntityLogicalName}.TransformLinksCRMDocumentsToSharePoint.Button" LabelText="$LocLabels:new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.Button.LabelText" Sequence="15" TemplateAlias="o1" ToolTipTitle="$LocLabels:new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.Button.ToolTipTitle" ToolTipDescription="$LocLabels:new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.Command">
+      <EnableRules>
+        <EnableRule Id="new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions />
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.EnableRule">
+        <CustomRule FunctionName="TransformerLinksToSharePoint.Process" Library="$webresource:c4crm_TransformLinksCRMDocumentsToSharePoint" Default="true" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.Button.Alt">
+      <Titles>
+        <Title description="TransformLinksCRMDocumentsToSharePoint" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.Button.LabelText">
+      <Titles>
+        <Title description="TransformLinksCRMDocumentsToSharePoint" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.Button.ToolTipDescription">
+      <Titles>
+        <Title description="TransformLinksCRMDocumentsToSharePoint" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.ApplicationRibbon.TransformLinksCRMDocumentsToSharePoint.Button.ToolTipTitle">
+      <Titles>
+        <Title description="TransformLinksCRMDocumentsToSharePoint" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

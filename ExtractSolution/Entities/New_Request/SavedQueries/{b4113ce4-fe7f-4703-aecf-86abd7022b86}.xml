@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b4113ce4-fe7f-4703-aecf-86abd7022b86}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_requestno" select="1" icon="1" preview="1">
+        <row name="result" id="new_requestid">
+          <cell name="new_requestno" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <columnsetxml>
+      <columnset>
+        <column>new_requestno</column>
+        <column>createdon</column>
+        <ascend>new_requestno</ascend>
+      </columnset>
+    </columnsetxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_request">
+          <attribute name="new_requestid" />
+          <attribute name="new_requestno" />
+          <attribute name="createdon" />
+          <order attribute="new_requestno" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Request Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

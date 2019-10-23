@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="new.Mscrm.Form.tra_timeexpense.AddToQueue.Hide" Location="Mscrm.Form.tra_timeexpense.AddToQueue" />
+    <HideCustomAction HideActionId="new.Mscrm.Form.tra_timeexpense.Close.Hide" Location="Mscrm.Form.tra_timeexpense.Close" />
+    <HideCustomAction HideActionId="new.Mscrm.Form.tra_timeexpense.Convert.Case.Hide" Location="Mscrm.Form.tra_timeexpense.Convert.Case" />
+    <HideCustomAction HideActionId="new.Mscrm.Form.tra_timeexpense.Convert.Opportunity.Hide" Location="Mscrm.Form.tra_timeexpense.Convert.Opportunity" />
+    <HideCustomAction HideActionId="new.Mscrm.Form.tra_timeexpense.PromoteToResponse.Hide" Location="Mscrm.Form.tra_timeexpense.PromoteToResponse" />
+    <HideCustomAction HideActionId="new.Mscrm.Form.tra_timeexpense.QueueItemDetail.Hide" Location="Mscrm.Form.tra_timeexpense.QueueItemDetail" />
+    <HideCustomAction HideActionId="new.Mscrm.Form.tra_timeexpense.SaveAsComplete.Hide" Location="Mscrm.Form.tra_timeexpense.SaveAsComplete" />
+    <CustomAction Id="new.tra.tra_timeexpense.Form.ApproveTimeReport.Button.CustomAction" Location="Mscrm.Form.tra_timeexpense.MainTab.Save.Controls._children" Sequence="42">
+      <CommandUIDefinition>
+        <Button Command="tra.tra_timeexpense.Form.RunApproveWF.Command" Id="tra.tra_timeexpense.Form.ApproveTimeReport.Button" Image32by32="$webresource:tra_Approve02_32.png" Image16by16="$webresource:tra_Approve02_16.png" LabelText="$LocLabels:tra.tra_timeexpense.Form.ApproveTimeReport.Button.LabelText" Sequence="42" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.tra.tra_timeexpense.Form.RejectTimeReport.Button.CustomAction" Location="Mscrm.Form.tra_timeexpense.MainTab.Save.Controls._children" Sequence="44">
+      <CommandUIDefinition>
+        <Button Command="tra.tra_timeexpense.Form.RunRejectWF.Command" Id="tra.tra_timeexpense.Form.RejectTimeReport.Button" Image32by32="$webresource:tra_Reject02_32.png" Image16by16="$webresource:tra_Reject02_16.png" LabelText="$LocLabels:tra.tra_timeexpense.Form.RejectTimeReport.Button.LabelText" Sequence="44" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.tra.tra_timeexpense.Form.SubmitTimeReport.Button.CustomAction" Location="Mscrm.Form.tra_timeexpense.MainTab.Save.Controls._children" Sequence="38">
+      <CommandUIDefinition>
+        <Button Command="tra.tra_timeexpense.Form.RunSubmitWF.Command" Id="tra.tra_timeexpense.Form.SubmitTimeReport.Button" Image32by32="$webresource:tra_Submit02_32.png" Image16by16="$webresource:tra_Submit02_16.png" LabelText="$LocLabels:tra.tra_timeexpense.Form.SubmitTimeReport.Button.LabelText" Sequence="38" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.tra.tra_timeexpense.Grid.ApproveTimeReport.Button.CustomAction" Location="Mscrm.SubGrid.tra_timeexpense.MainTab.Management.Controls._children" Sequence="77">
+      <CommandUIDefinition>
+        <Button Command="tra.tra_timeexpense.Grid.RunApproveWF.Command" Id="tra.tra_timeexpense.Grid.ApproveTimeReport.Button" Image32by32="$webresource:tra_Approve02_16.png" Image16by16="$webresource:tra_Approve02_16.png" LabelText="$LocLabels:tra.tra_timeexpense.Grid.ApproveTimeReport.Button.LabelText" Sequence="77" TemplateAlias="o2" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.tra.tra_timeexpense.Grid.RejectTimeReport.Button.CustomAction" Location="Mscrm.SubGrid.tra_timeexpense.MainTab.Management.Controls._children" Sequence="78">
+      <CommandUIDefinition>
+        <Button Command="tra.tra_timeexpense.Grid.RunRejectWF.Command" Id="tra.tra_timeexpense.Grid.RejectTimeReport.Button" Image32by32="$webresource:tra_Reject02_32.png" Image16by16="$webresource:tra_Reject02_16.png" LabelText="$LocLabels:tra.tra_timeexpense.Grid.RejectTimeReport.Button.LabelText" Sequence="78" TemplateAlias="o2" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.tra.tra_timeexpense.Grid.SubmitTimeReport.Button.CustomAction" Location="Mscrm.SubGrid.tra_timeexpense.MainTab.Management.Controls._children" Sequence="75">
+      <CommandUIDefinition>
+        <Button Command="tra.tra_timeexpense.Grid.RunSubmitWF.Command" Id="tra.tra_timeexpense.Grid.SubmitTimeReport.Button" Image32by32="$webresource:tra_Submit02_32.png" Image16by16="$webresource:tra_Submit02_16.png" LabelText="$LocLabels:tra.tra_timeexpense.Grid.SubmitTimeReport.Button.LabelText" Sequence="75" TemplateAlias="o2" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="tra.tra_timeexpense.Form.RunApproveWF.Command">
+      <EnableRules>
+        <EnableRule Id="tra.tra_timeexpense.Form.RunApproveRejectWF.EnableRule" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="tra.tra_timeexpense.Form.RunApproveRejectWF.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.CommandBarActions.launchOnDemandWorkflowForm" Library="/_static/_common/scripts/CommandBarActions.js">
+          <CrmParameter Value="PrimaryEntityTypeCode" />
+          <StringParameter Value="9298A64A-930B-4BEB-A3A1-123E29F11B59" />
+        </JavaScriptFunction>
+        <JavaScriptFunction FunctionName="refreshForm" Library="$webresource:tra_timereport_ribbon_main_library" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.tra_timeexpense.Form.RunRejectWF.Command">
+      <EnableRules>
+        <EnableRule Id="tra.tra_timeexpense.Form.RunApproveRejectWF.EnableRule" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="tra.tra_timeexpense.Form.RunApproveRejectWF.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.CommandBarActions.launchOnDemandWorkflowForm" Library="/_static/_common/scripts/CommandBarActions.js">
+          <CrmParameter Value="PrimaryEntityTypeCode" />
+          <StringParameter Value="177CF704-EAB4-4A7D-9427-C4B78F0BA622" />
+        </JavaScriptFunction>
+        <JavaScriptFunction FunctionName="refreshForm" Library="$webresource:tra_timereport_ribbon_main_library" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.tra_timeexpense.Form.RunSubmitWF.Command">
+      <EnableRules>
+        <EnableRule Id="tra.tra_timeexpense.RunSubmitWF.EnableRule" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="tra.tra_timeexpense.Form.RunSubmitWF.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.CommandBarActions.launchOnDemandWorkflowForm" Library="/_static/_common/scripts/CommandBarActions.js">
+          <CrmParameter Value="PrimaryEntityTypeCode" />
+          <StringParameter Value="711D8FC1-0071-4E8E-8395-20ABC757BD01" />
+        </JavaScriptFunction>
+        <JavaScriptFunction FunctionName="refreshForm" Library="$webresource:tra_timereport_ribbon_main_library" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.tra_timeexpense.Grid.RunApproveWF.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.GridRibbonActions.launchOnDemandWorkflow" Library="/_static/_common/scripts/RibbonActions.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="SelectedEntityTypeCode" />
+          <StringParameter Value="9298A64A-930B-4BEB-A3A1-123E29F11B59" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.tra_timeexpense.Grid.RunRejectWF.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.GridRibbonActions.launchOnDemandWorkflow" Library="/_static/_common/scripts/RibbonActions.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="SelectedEntityTypeCode" />
+          <StringParameter Value="177CF704-EAB4-4A7D-9427-C4B78F0BA622" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.tra_timeexpense.Grid.RunSubmitWF.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.GridRibbonActions.launchOnDemandWorkflow" Library="/_static/_common/scripts/RibbonActions.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="SelectedEntityTypeCode" />
+          <StringParameter Value="711D8FC1-0071-4E8E-8395-20ABC757BD01" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="tra.tra_timeexpense.Form.RunApproveRejectWF.DisplayRule">
+        <FormStateRule State="Existing" Default="true" InvertResult="false" />
+        <OrRule>
+          <Or>
+            <ValueRule Field="tra_approvalstatuscode" Value="167490001" Default="true" InvertResult="false" />
+          </Or>
+          <Or>
+            <ValueRule Field="tra_approvalstatuscode" Value="167490002" Default="true" InvertResult="false" />
+          </Or>
+          <Or>
+            <ValueRule Field="tra_approvalstatuscode" Value="167490004" Default="true" InvertResult="false" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+      <DisplayRule Id="tra.tra_timeexpense.Form.RunSubmitWF.DisplayRule">
+        <FormStateRule State="Existing" Default="true" InvertResult="false" />
+        <OrRule>
+          <Or>
+            <ValueRule Field="tra_approvalstatuscode" Value="167490000" Default="true" InvertResult="false" />
+          </Or>
+          <Or>
+            <ValueRule Field="tra_approvalstatuscode" Value="167490003" Default="true" InvertResult="false" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="tra.tra_timeexpense.Form.RunApproveRejectWF.EnableRule">
+        <CustomRule FunctionName="checkIsUserApproverForTR" Library="$webresource:tra_timereport_ribbon_main_library" Default="true" InvertResult="false" />
+      </EnableRule>
+      <EnableRule Id="tra.tra_timeexpense.RunSubmitWF.EnableRule">
+        <CustomRule FunctionName="checkIsUserEmployeeForTR" Library="$webresource:tra_timereport_ribbon_main_library" Default="true" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="tra.tra_timeexpense.Form.ApproveTimeReport.Button.LabelText">
+      <Titles>
+        <Title description="Approve" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.tra_timeexpense.Form.RejectTimeReport.Button.LabelText">
+      <Titles>
+        <Title description="Reject" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.tra_timeexpense.Form.SubmitTimeReport.Button.LabelText">
+      <Titles>
+        <Title description="Submit" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.tra_timeexpense.Grid.ApproveTimeReport.Button.LabelText">
+      <Titles>
+        <Title description="Approve" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.tra_timeexpense.Grid.RejectTimeReport.Button.LabelText">
+      <Titles>
+        <Title description="Reject" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.tra_timeexpense.Grid.SubmitTimeReport.Button.LabelText">
+      <Titles>
+        <Title description="Submit" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

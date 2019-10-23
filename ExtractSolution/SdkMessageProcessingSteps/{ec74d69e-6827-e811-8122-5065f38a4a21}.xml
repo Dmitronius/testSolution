@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="crm1st.Transas.AutoNumberGenerator.Plugin.NumberGeneratorPlugin: Create of new_certificate_of_aps" SdkMessageProcessingStepId="{ec74d69e-6827-e811-8122-5065f38a4a21}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PluginTypeName>crm1st.Transas.AutoNumberGenerator.Plugin.NumberGeneratorPlugin, crm1st.Transas.AutoNumberGenerator.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7a7968611d8d37be</PluginTypeName>
+  <PluginTypeId>2d1cd6b2-f511-479a-828e-5af8f5146a9d</PluginTypeId>
+  <PrimaryEntity>new_certificate_of_aps</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <Description>crm1st.Transas.AutoNumberGenerator.Plugin.NumberGeneratorPlugin: Create of new_certificate_of_aps</Description>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{9ebdbb1b-ea3e-db11-86a7-000a3a5473e8}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>20</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

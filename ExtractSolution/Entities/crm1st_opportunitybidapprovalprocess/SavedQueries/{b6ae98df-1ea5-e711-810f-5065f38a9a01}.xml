@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{b6ae98df-1ea5-e711-810f-5065f38a9a01}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bpf_name" select="1" preview="1" icon="1">
+        <row name="result" id="businessprocessflowinstanceid">
+          <cell name="bpf_opportunityid" width="100" />
+          <cell name="aa.CFSTLProjectID" width="100" disableSorting="1" />
+          <cell name="aa.statecode" width="100" disableSorting="1" />
+          <cell name="aa.statuscode" width="100" disableSorting="1" />
+          <cell name="activestageid" width="100" />
+          <cell name="aa.stageid" width="100" disableSorting="1" />
+          <cell name="statecode" width="100" />
+          <cell name="statuscode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="crm1st_opportunitybidapprovalprocess">
+          <order attribute="activestageid" descending="false" />
+          <attribute name="statuscode" />
+          <attribute name="statecode" />
+          <attribute name="bpf_opportunityid" />
+          <attribute name="activestageid" />
+          <link-entity name="opportunity" from="opportunityid" to="bpf_opportunityid" alias="aa">
+            <filter type="and">
+              <condition attribute="CFSTLProjectID" operator="not-null" />
+            </filter>
+            <attribute name="statuscode" />
+            <attribute name="statecode" />
+            <attribute name="CFSTLProjectID" />
+            <attribute name="stageid" />
+          </link-entity>
+          <attribute name="businessprocessflowinstanceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.42.10.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Search view with project code" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

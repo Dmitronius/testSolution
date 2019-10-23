@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{611d9d42-ce4c-494f-afa2-d5e09698bce0}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_productgroupid">
+          <cell name="new_name" width="300" />
+          <cell name="new_product_code" width="100" />
+          <cell name="new_solutions" width="100" />
+          <cell name="statecode" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="new_description" width="100" />
+          <cell name="modifiedon" width="100" />
+          <cell name="modifiedby" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_productgroup">
+          <attribute name="new_name" />
+          <order attribute="new_name" descending="false" />
+          <attribute name="statuscode" />
+          <attribute name="statecode" />
+          <attribute name="new_solutions" />
+          <attribute name="new_product_code" />
+          <attribute name="modifiedon" />
+          <attribute name="modifiedby" />
+          <attribute name="new_description" />
+          <attribute name="new_productgroupid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Product Group Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

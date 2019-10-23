@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="crm1st.Mscrm.SubGrid.new_cashflow.AddNewStandard.Hide" Location="Mscrm.SubGrid.new_cashflow.AddNewStandard" />
+    <HideCustomAction HideActionId="crm1st.Mscrm.SubGrid.new_cashflow.NewRecord.Hide" Location="Mscrm.SubGrid.new_cashflow.NewRecord" />
+    <CustomAction Id="new.crm1st.new_cashflow.Button2.ShiftStartDatesButton.CustomAction" Location="Mscrm.Form.new_cashflow.MainTab.Save.Controls._children" Sequence="65">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:crm1st.new_cashflow.Button2.ShiftStartDatesButton.Alt" Command="crm1st.new_cashflow.Command7.ShiftStartDatesCommand" Id="crm1st.new_cashflow.Button2.ShiftStartDatesButton" Image32by32="$webresource:crm1st_shiftdate32" Image16by16="$webresource:crm1st_shiftdate16" LabelText="$LocLabels:crm1st.new_cashflow.Button2.ShiftStartDatesButton.LabelText" Sequence="65" TemplateAlias="o2" ToolTipTitle="$LocLabels:crm1st.new_cashflow.Button2.ShiftStartDatesButton.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.new_cashflow.Button2.ShiftStartDatesButton.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.new_cashflow.Button3.RecalculateButton.CustomAction" Location="Mscrm.Form.new_cashflow.MainTab.Save.Controls._children" Sequence="64">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:crm1st.new_cashflow.Button3.RecalculateButton.Alt" Command="crm1st.new_cashflow.Command1.RecalculateCommand" Id="crm1st.new_cashflow.Button3.RecalculateButton" Image32by32="/_imgs/ribbon/recalculateopportunity32.png" Image16by16="/_imgs/SFA/Recalculate_16.png" LabelText="$LocLabels:crm1st.new_cashflow.Button3.RecalculateButton.LabelText" Sequence="64" TemplateAlias="o2" ToolTipTitle="$LocLabels:crm1st.new_cashflow.Button3.RecalculateButton.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.new_cashflow.Button3.RecalculateButton.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.new_cashflow.Button4.PersonnelCostsButton.CustomAction" Location="Mscrm.Form.new_cashflow.MainTab.Save.Controls._children" Sequence="67">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:crm1st.new_cashflow.Button4.PersonnelCostsButton.Alt" Command="crm1st.new_cashflow.Command2.PersonnelCostsCommand" Id="crm1st.new_cashflow.Button4.PersonnelCostsButton" Image32by32="$webresource:crm1st_personnel32" Image16by16="$webresource:crm1st_personnel16" LabelText="$LocLabels:crm1st.new_cashflow.Button4.PersonnelCostsButton.LabelText" Sequence="67" TemplateAlias="o2" ToolTipTitle="$LocLabels:crm1st.new_cashflow.Button4.PersonnelCostsButton.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.new_cashflow.Button4.PersonnelCostsButton.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.new_cashflow.Button5.ShiftSelectedDatesButton.CustomAction" Location="Mscrm.Form.new_cashflow.MainTab.Save.Controls._children" Sequence="66">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:crm1st.new_cashflow.Button5.ShiftSelectedDatesButton.Alt" Command="crm1st.new_cashflow.Command8.ShiftSelectedDatesCommand" Id="crm1st.new_cashflow.Button5.ShiftSelectedDatesButton" Image32by32="$webresource:crm1st_shiftdate32" Image16by16="$webresource:crm1st_shiftdate16" LabelText="$LocLabels:crm1st.new_cashflow.Button5.ShiftSelectedDatesButton.LabelText" Sequence="66" TemplateAlias="o2" ToolTipTitle="$LocLabels:crm1st.new_cashflow.Button5.ShiftSelectedDatesButton.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.new_cashflow.Button5.ShiftSelectedDatesButton.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.Mscrm.Isv.new_cashflow.Form.CustomAction" Location="Mscrm.Tabs._children" Sequence="1010">
+      <CommandUIDefinition>
+        <Tab Command="Mscrm.Isv.new_cashflow.Form" Description="ISV Budget Form" Id="Mscrm.Isv.new_cashflow.Form" Sequence="1010" Title="$LocLabels:Mscrm.Isv.new_cashflow.Form.Title">
+          <Scaling Id="Mscrm.Isv.new_cashflow.Form.Scaling">
+            <MaxSize GroupId="Mscrm.Isv.new_cashflow.Form.Group0" Id="Mscrm.Isv.new_cashflow.Form.Group0.MaxSize" Sequence="10" Size="Large" />
+            <Scale GroupId="Mscrm.Isv.new_cashflow.Form.Group0" Id="Mscrm.Isv.new_cashflow.Form.Group0.Scale.Medium" Sequence="20" Size="Medium" />
+            <Scale GroupId="Mscrm.Isv.new_cashflow.Form.Group0" Id="Mscrm.Isv.new_cashflow.Form.Group0.Scale.Small" Sequence="30" Size="Small" />
+            <Scale GroupId="Mscrm.Isv.new_cashflow.Form.Group0" Id="Mscrm.Isv.new_cashflow.Form.Group0.Scale.Popup" Sequence="40" Size="Popup" />
+          </Scaling>
+          <Groups Id="Mscrm.Isv.new_cashflow.Form.Groups">
+            <Group Command="Mscrm.Isv.new_cashflow.Form.Group0" Description="$LocLabels:Mscrm.Isv.new_cashflow.Form.Title" Id="Mscrm.Isv.new_cashflow.Form" Sequence="10" Title="$LocLabels:Mscrm.Isv.new_cashflow.Form.Title">
+              <Controls Id="Mscrm.Isv.new_cashflow.Form.Controls" />
+            </Group>
+          </Groups>
+        </Tab>
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="crm1st.new_cashflow.Command1.RecalculateCommand">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="tra.new_cashflow.HideIfInactive.DisplayRule" />
+        <DisplayRule Id="tra.new_cashflow.HideIfTransferedToJira.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="budgetRecalculate" Library="$webresource:crm1st_ribboncommands" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.new_cashflow.Command2.PersonnelCostsCommand">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="tra.new_cashflow.HideIfTransferedToJira.DisplayRule" />
+        <DisplayRule Id="tra.new_cashflow.HideIfInactive.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="budgetPersonnelCost" Library="$webresource:crm1st_ribboncommands" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.new_cashflow.Command7.ShiftStartDatesCommand">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="tra.new_cashflow.HideIfTransferedToJira.DisplayRule" />
+        <DisplayRule Id="tra.new_cashflow.HideIfInactive.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="budgetShiftDates" Library="$webresource:crm1st_ribboncommands" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.new_cashflow.Command8.ShiftSelectedDatesCommand">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="tra.new_cashflow.HideIfTransferedToJira.DisplayRule" />
+        <DisplayRule Id="tra.new_cashflow.HideIfInactive.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="budgetShiftSelectedDates" Library="$webresource:crm1st_ribboncommands" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflow.Form.Group0">
+      <EnableRules />
+      <DisplayRules />
+      <Actions />
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules>
+      <TabDisplayRule TabCommand="Mscrm.Isv.new_cashflow.Form">
+        <EntityRule Context="Form" />
+      </TabDisplayRule>
+    </TabDisplayRules>
+    <DisplayRules>
+      <DisplayRule Id="tra.new_cashflow.HideIfInactive.DisplayRule">
+        <ValueRule Field="statuscode" Value="2" Default="true" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="tra.new_cashflow.HideIfTransferedToJira.DisplayRule">
+        <ValueRule Field="statuscode" Value="167490000" Default="true" InvertResult="true" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="crm1st.new_cashflow.Button2.ShiftStartDatesButton.Alt">
+      <Titles>
+        <Title description="Shift Budget Start Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button2.ShiftStartDatesButton.LabelText">
+      <Titles>
+        <Title description="Shift Budget Start Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button2.ShiftStartDatesButton.ToolTipDescription">
+      <Titles>
+        <Title description="Shift Budget Start Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button2.ShiftStartDatesButton.ToolTipTitle">
+      <Titles>
+        <Title description="Shift Budget Start Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button3.RecalculateButton.Alt">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button3.RecalculateButton.LabelText">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button3.RecalculateButton.ToolTipDescription">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button3.RecalculateButton.ToolTipTitle">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button4.PersonnelCostsButton.Alt">
+      <Titles>
+        <Title description="Create / Edit Personnel Costs" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button4.PersonnelCostsButton.LabelText">
+      <Titles>
+        <Title description="Create / Edit Personnel Costs" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button4.PersonnelCostsButton.ToolTipDescription">
+      <Titles>
+        <Title description="Create / Edit Personnel Costs" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button4.PersonnelCostsButton.ToolTipTitle">
+      <Titles>
+        <Title description="Create / Edit Personnel Costs" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button5.ShiftSelectedDatesButton.Alt">
+      <Titles>
+        <Title description="Shift Selected Start Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button5.ShiftSelectedDatesButton.LabelText">
+      <Titles>
+        <Title description="Shift Selected Start Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button5.ShiftSelectedDatesButton.ToolTipDescription">
+      <Titles>
+        <Title description="Shift Selected Start Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflow.Button5.ShiftSelectedDatesButton.ToolTipTitle">
+      <Titles>
+        <Title description="Shift Selected Start Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.new_cashflow.Form.Title">
+      <Titles>
+        <Title description="ISV Budget Form 1" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

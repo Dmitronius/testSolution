@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b6f2f2bf-3622-4277-95d1-2b63973255c3}</savedqueryid>
+    <layoutxml>
+      <grid name="new_productgroups" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_productgroup" id="new_productgroupid">
+          <cell name="new_product_code" width="75" />
+          <cell name="new_name" width="300" />
+          <cell name="new_solutions" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch distinct="false" no-lock="false" mapping="logical">
+        <entity name="new_productgroup">
+          <attribute name="new_name" />
+          <attribute name="new_product_code" />
+          <attribute name="new_solutions" />
+          <attribute name="new_productgroupid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_solutions" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Product Group Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{5785d2e0-1090-e811-8143-5065f38aea61}</WebResourceId>
+  <Name>tra_BoxedCheckboxOFF1_16.png</Name>
+  <DisplayName>BoxedCheckboxOFF1_16.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_BoxedCheckboxOFF1_16png5785D2E0-1090-E811-8143-5065F38AEA61</FileName>
+</WebResource>

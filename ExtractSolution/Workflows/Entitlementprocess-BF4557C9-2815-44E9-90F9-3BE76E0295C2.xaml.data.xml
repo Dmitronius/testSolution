@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{bf4557c9-2815-44e9-90f9-3be76e0295c2}" Name="Entitlement process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/Entitlementprocess-BF4557C9-2815-44E9-90F9-3BE76E0295C2.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>tra_entitlementprocess</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>Entitlement</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Entitlement process" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{0fff882c-f168-4bfb-b3b7-280b96e97415}">
+      <label languagecode="1033" description="Creation" />
+    </steplabels>
+    <steplabels id="{e690ffff-4428-4fb5-95a3-e2ebe26524ba}">
+      <label languagecode="1033" description="Customer" />
+    </steplabels>
+    <steplabels id="{1381fed4-2021-429a-a6a5-12dfb9605a60}">
+      <label languagecode="1033" description="Vessel" />
+    </steplabels>
+    <steplabels id="{a38fbb85-c4fa-4cd1-84e1-fbf73b03cdbc}">
+      <label languagecode="1033" description="Entitlement Type" />
+    </steplabels>
+    <steplabels id="{b8de89a2-04de-42a0-ba1a-650b388de411}">
+      <label languagecode="1033" description="Start Date" />
+    </steplabels>
+    <steplabels id="{a36a1c5e-e4fb-40a8-8f58-33511c4da378}">
+      <label languagecode="1033" description="End Date" />
+    </steplabels>
+    <steplabels id="{b70d6d4e-8af9-479e-9be3-d4ee8fe348a1}">
+      <label languagecode="1033" description="Opportunity" />
+    </steplabels>
+    <steplabels id="{392f256e-ece6-47df-9c0d-6971b05c2934}">
+      <label languagecode="1033" description="Submit For Approval" />
+    </steplabels>
+    <steplabels id="{11ee34b9-22eb-471f-9ecb-dd0b5987c485}">
+      <label languagecode="1033" description="Status Reason" />
+    </steplabels>
+  </labels>
+  <ProcessTriggers />
+</Workflow>

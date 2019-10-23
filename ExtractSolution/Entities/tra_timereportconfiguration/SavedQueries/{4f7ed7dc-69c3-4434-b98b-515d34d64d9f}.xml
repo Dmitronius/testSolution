@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{4f7ed7dc-69c3-4434-b98b-515d34d64d9f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_timereportconfigurationid">
+          <cell name="tra_timerreportactivitytypecode" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_officeid" width="100" />
+          <cell name="tra_opportunityid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_9bb4d21915d2e81181515065f38b06f1.CFSTLProjectID" width="125" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_timereportconfiguration">
+          <order attribute="tra_timerreportactivitytypecode" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_timerreportactivitytypecode" />
+          <attribute name="tra_opportunityid" />
+          <attribute name="tra_officeid" />
+          <link-entity alias="a_9bb4d21915d2e81181515065f38b06f1" name="opportunity" from="opportunityid" to="tra_opportunityid" link-type="outer" visible="false">
+            <attribute name="CFSTLProjectID" />
+          </link-entity>
+          <attribute name="tra_timereportconfigurationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>18.10.11.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Time Report Configurations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{3d7588a7-cd8f-4476-b79c-e94099f339a5}" Name="Case.getCaseAttributes" Description="#operationWF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/CasegetCaseAttributes-3D7588A7-CD8F-4476-B79C-E94099F339A5.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>3</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <RunAs>1</RunAs>
+  <SdkMessageId>{fcd1c2e2-5c46-e911-a96c-000d3ab5a0d7}</SdkMessageId>
+  <UniqueName>CasegetCaseAttributes</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.44.1.7</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <FormId>{00000000-0000-0000-0000-000000000000}</FormId>
+  <PrimaryEntity>Incident</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Case.getCaseAttributes" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="#operationWF" />
+  </Descriptions>
+</Workflow>

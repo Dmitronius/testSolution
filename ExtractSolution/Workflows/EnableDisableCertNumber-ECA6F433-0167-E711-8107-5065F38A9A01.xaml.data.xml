@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{eca6f433-0167-e711-8107-5065f38a9a01}" Name="Enable/Disable CertNumber" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/EnableDisableCertNumber-ECA6F433-0167-E711-8107-5065F38A9A01.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.32</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>New_certificate_of_aps</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Enable/Disable CertNumber" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{6c1ff481-0167-e711-8107-5065f38a9a01}">
+      <controltype>1</controltype>
+      <formid>{3abfc9af-150d-4022-80e5-2a19434ae3d3}</formid>
+      <scope>1</scope>
+      <controlname>new_name</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>New_certificate_of_aps</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{6d1ff481-0167-e711-8107-5065f38a9a01}">
+      <formid>{3abfc9af-150d-4022-80e5-2a19434ae3d3}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>New_certificate_of_aps</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

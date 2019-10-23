@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{3c8f7620-caca-475c-b725-2c92a5506eba}</formid>
+    <IntroducedVersion>0.44.2.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="400">
+      <tabs>
+        <tab id="{10a15bbe-c690-410c-b40f-99b2249c9d92}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{7c4c1637-8605-4f16-8d42-fc4880ce99db}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{006697eb-8313-b2e3-68dc-32eb559e6a31}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Account Manager" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" uniqueid="{c91064b3-3d85-152b-cb7c-a2492ea977d3}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3458ca26-c7ae-a855-c93b-c4936590e208}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Project Manager" languagecode="1033" />
+                        </labels>
+                        <control id="new_projectmanagerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_projectmanagerid" disabled="true" uniqueid="{7d6a7547-7eab-23c7-3a02-2da547e2c514}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ed08999d-9e6e-c636-2dcb-d72a6234ebed}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Project Engineer" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_projectengineerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="wdt_projectengineerid" disabled="true" uniqueid="{6371a653-8536-655b-189e-043d83c57b26}">
+                          <parameters>
+                            <AutoResolve>false</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="2">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Opportunity Details for AP" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Displayed on AP" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

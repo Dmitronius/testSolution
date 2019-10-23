@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{3ed314d0-62e5-4a8b-a68e-b56eeb975e2f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="wdt_name" select="1" icon="1" preview="1">
+        <row name="result" id="wdt_casehistoryid">
+          <cell name="wdt_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="wdt_casehistory">
+          <attribute name="wdt_casehistoryid" />
+          <attribute name="wdt_name" />
+          <attribute name="createdon" />
+          <order attribute="wdt_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Case History Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

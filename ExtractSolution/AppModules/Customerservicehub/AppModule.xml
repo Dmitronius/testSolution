@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>Customerservicehub</UniqueName>
+  <IntroducedVersion>9.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="62" schemaName="Customerservicehub" />
+    <AppModuleComponent type="29" id="{8e65f6a7-86f2-4b00-a52a-9bb8082dda84}" />
+    <AppModuleComponent type="29" id="{bf4557c9-2815-44e9-90f9-3be76e0295c2}" />
+    <AppModuleComponent type="29" id="{bcd43793-5686-4fd4-b3b4-c0c26d6f7e40}" />
+    <AppModuleComponent type="29" id="{f5db40ff-b352-443b-9baa-fc0b727417de}" />
+    <AppModuleComponent type="29" id="{ab81c1af-1a45-48d9-8133-3edc033dbeef}" />
+    <AppModuleComponent type="29" id="{cad25f94-5811-410c-a055-b750bdf78d58}" />
+    <AppModuleComponent type="29" id="{0ffbcde4-61c1-4355-aa89-aa1d7b2b8792}" />
+    <AppModuleComponent type="29" id="{bd57803e-0408-44d6-b21d-ae7158ec6555}" />
+    <AppModuleComponent type="60" id="{57220268-843b-e511-80d1-00155db10d2b}" />
+    <AppModuleComponent type="60" id="{a104b835-9f3b-e511-80d1-00155db10d2b}" />
+    <AppModuleComponent type="60" id="{d201a642-6283-4f1d-81b7-da4b1685e698}" />
+    <AppModuleComponent type="60" id="{acddedde-9140-4130-a1c1-96a5c6867a9f}" />
+    <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="60" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+    <AppModuleComponent type="60" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
+    <AppModuleComponent type="1" schemaName="actioncard" />
+    <AppModuleComponent type="1" schemaName="activitypointer" />
+    <AppModuleComponent type="60" id="{a4640db1-4962-4e79-92c6-690e627924d7}" />
+    <AppModuleComponent type="1" schemaName="appointment" />
+    <AppModuleComponent type="60" id="{230cd27c-0ce0-4b52-9fe5-d7a5ed94ba4e}" />
+    <AppModuleComponent type="1" schemaName="activitymimeattachment" />
+    <AppModuleComponent type="1" schemaName="incident" />
+    <AppModuleComponent type="60" id="{915f6055-2e07-4276-ae08-2b96c8d02c57}" />
+    <AppModuleComponent type="60" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+    <AppModuleComponent type="1" schemaName="category" />
+    <AppModuleComponent type="60" id="{52c5e211-b180-4277-a74e-19245bbac640}" />
+    <AppModuleComponent type="1" schemaName="connection" />
+    <AppModuleComponent type="1" schemaName="connectionrole" />
+    <AppModuleComponent type="1" schemaName="contact" />
+    <AppModuleComponent type="60" id="{cc760212-3eab-4009-b5c3-ea9cf6f3e141}" />
+    <AppModuleComponent type="60" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+    <AppModuleComponent type="1" schemaName="tra_cs_case_process" />
+    <AppModuleComponent type="1" schemaName="email" />
+    <AppModuleComponent type="60" id="{1d5ad078-3edb-4edc-98c6-c0c21e3125e3}" />
+    <AppModuleComponent type="1" schemaName="entitlement" />
+    <AppModuleComponent type="1" schemaName="tra_entitlementprocess" />
+    <AppModuleComponent type="1" schemaName="expiredprocess" />
+    <AppModuleComponent type="1" schemaName="feedback" />
+    <AppModuleComponent type="60" id="{db046342-b909-4d87-9149-f31509de85ba}" />
+    <AppModuleComponent type="1" schemaName="knowledgearticle" />
+    <AppModuleComponent type="1" schemaName="knowledgearticleincident" />
+    <AppModuleComponent type="60" id="{5e4e7214-a56d-4152-ac51-1a89e463eff4}" />
+    <AppModuleComponent type="1" schemaName="knowledgearticleviews" />
+    <AppModuleComponent type="60" id="{58ffe45c-cc30-4ab8-a3f3-10197c82bbaa}" />
+    <AppModuleComponent type="1" schemaName="knowledgebaserecord" />
+    <AppModuleComponent type="1" schemaName="wdt_newknowledgearticleprocess" />
+    <AppModuleComponent type="1" schemaName="newprocess" />
+    <AppModuleComponent type="1" schemaName="annotation" />
+    <AppModuleComponent type="1" schemaName="opportunity" />
+    <AppModuleComponent type="1" schemaName="crm1st_opportunitybidapprovalprocess" />
+    <AppModuleComponent type="1" schemaName="phonecall" />
+    <AppModuleComponent type="60" id="{cdc622ea-2a17-4cc3-9605-44564d56cea7}" />
+    <AppModuleComponent type="1" schemaName="phonetocaseprocess" />
+    <AppModuleComponent type="1" schemaName="queue" />
+    <AppModuleComponent type="1" schemaName="queueitem" />
+    <AppModuleComponent type="60" id="{8e246769-0d43-48d6-bb1d-e78cd7f8d183}" />
+    <AppModuleComponent type="1" schemaName="socialactivity" />
+    <AppModuleComponent type="60" id="{ed66d7d6-2234-4e82-b73e-e711e796919d}" />
+    <AppModuleComponent type="1" schemaName="socialprofile" />
+    <AppModuleComponent type="60" id="{a0ea0f71-dc25-47b6-8cc9-9ef8144ae424}" />
+    <AppModuleComponent type="60" id="{88599263-c11e-4c33-bf9d-a46fcee7595b}" />
+    <AppModuleComponent type="1" schemaName="task" />
+    <AppModuleComponent type="60" id="{d5b4a1b2-de4f-4f86-8768-b0730001e7d1}" />
+    <AppModuleComponent type="1" schemaName="tra_timeexpense" />
+    <AppModuleComponent type="1" schemaName="tra_timereportconfiguration" />
+    <AppModuleComponent type="1" schemaName="translationprocess" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{3dac4d9e-568c-e611-80d4-00155d42a122}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Customer Service Hub" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="A focused, interactive experience for managing your customer service." languagecode="1033" />
+  </Descriptions>
+</AppModule>

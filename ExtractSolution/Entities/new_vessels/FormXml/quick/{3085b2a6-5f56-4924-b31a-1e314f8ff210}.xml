@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{3085b2a6-5f56-4924-b31a-1e314f8ff210}</formid>
+    <IntroducedVersion>0.1.1.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{6862acae-d6c8-47d2-a759-8b40cf48d550}" name="Vessel_Details" showlabel="false" locklevel="0" expanded="true">
+          <labels>
+            <label description="Vessel Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{48fd27f6-510c-4a39-8e3a-6bf8d38fdc1d}" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="90" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="VESSEL DETAILS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7ad63103-7446-3696-46d2-d81770284931}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vessel Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a9629ea5-881d-8b87-9153-930b25114b35}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="IMO" languagecode="1033" />
+                        </labels>
+                        <control id="new_imo" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_imo" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{473e3d18-66bc-a872-066b-8070edb79e20}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Dongle Number" languagecode="1033" />
+                        </labels>
+                        <control id="new_donglenumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_donglenumber" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Vessel_Details_section_2" showlabel="true" showbar="false" locklevel="0" id="{c8a112da-2400-d672-52a6-596ce0106299}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="90" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="RECENT CASES" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d7c3c8ca-1702-6846-17a5-13c2cc65bb97}" showlabel="false" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Related Cases" languagecode="1033" />
+                        </labels>
+                        <control id="Related_Cases" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{a57e7a44-5575-7515-334b-aa38e87383be}">
+                          <parameters>
+                            <ViewId>{74679B53-897E-E711-810A-5065F38A9A01}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_vessels_incident_Vessel</RelationshipName>
+                            <TargetEntityType>incident</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001028},{74679B53-897E-E711-810A-5065F38A9A01}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{4143B74E-4A07-4D01-9FFE-2CDCAA4208FD}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="2">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Vessel Details" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

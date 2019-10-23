@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="new.nav.new_vessels.Mdm.Button.CustomAction" Location="Mscrm.Form.new_vessels.MainTab.Collaborate.Controls._children" Sequence="66">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:nav.new_vessels.Mdm.Button.Alt" Command="nav.new_vessels.Mdm.Command" Id="nav.new_vessels.Mdm.Button" Image32by32="$webresource:nav_mdmbutton32.png" Image16by16="$webresource:nav_mdmbutton16.png" LabelText="$LocLabels:nav.new_vessels.Mdm.Button.LabelText" Sequence="66" TemplateAlias="o2" ToolTipTitle="$LocLabels:nav.new_vessels.Mdm.Button.ToolTipTitle" ToolTipDescription="$LocLabels:nav.new_vessels.Mdm.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.wdt.new_vessels.Form.Button.displayRecordId.CustomAction" Location="Mscrm.Form.new_vessels.MainTab.Collaborate.Controls._children" Sequence="65">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:wdt.new_vessels.Form.Button.displayRecordId.Alt" Command="wdt.new_vessels.Form.Command.displayRecordId" Id="wdt.new_vessels.Form.Button.displayRecordId" Image32by32="$webresource:tra_hash_32" Image16by16="$webresource:tra_hash_16" LabelText="$LocLabels:wdt.new_vessels.Form.Button.displayRecordId.LabelText" Sequence="65" TemplateAlias="o2" ToolTipTitle="$LocLabels:wdt.new_vessels.Form.Button.displayRecordId.ToolTipTitle" ToolTipDescription="$LocLabels:wdt.new_vessels.Form.Button.displayRecordId.ToolTipDescription" ModernImage="$webresource:tra_hash_32" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="Mscrm.SavePrimary">
+      <EnableRules>
+        <EnableRule Id="Mscrm.AvailableOnForm" />
+        <EnableRule Id="Mscrm.CanSavePrimary" />
+        <EnableRule Id="Mscrm.ReadPrimaryPermission" />
+        <EnableRule Id="Mscrm.IsAutoSaveDisable" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanSavePrimaryEntityType" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Save.saveForm" Library="$webresource:Main_system_library.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="nav.new_vessels.Mdm.Command">
+      <EnableRules>
+        <EnableRule Id="nav.new_vessels.MdmBtnEnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="isNaN" Library="$webresource:nav_xrmservicetoolkit" />
+        <JavaScriptFunction FunctionName="VesselRibbon.MmdButtonClickLogic" Library="$webresource:nav_vessels_ribbon" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="wdt.new_vessels.Form.Command.displayRecordId">
+      <EnableRules>
+        <EnableRule Id="wdt.new_vessels.DisplayRule.ExistingRecord" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="displayRecordId" Library="$webresource:wdt_vessel_ribbon_library.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.CanSavePrimaryEntityType">
+        <OrRule>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Create" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+        </OrRule>
+        <EntityPrivilegeRule PrivilegeType="Read" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="Mscrm.AvailableOnForm">
+        <EntityRule AppliesTo="PrimaryEntity" Context="Form" Default="false" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.CanSavePrimary">
+        <OrRule>
+          <Or>
+            <RecordPrivilegeRule PrivilegeType="Create" AppliesTo="PrimaryEntity" />
+            <FormStateRule State="Create" />
+          </Or>
+          <Or>
+            <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" />
+            <FormStateRule State="Existing" />
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.IsAutoSaveDisable">
+        <OrRule>
+          <Or>
+            <FormStateRule State="Create" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.AutoSave.isAutoSaveEnabled" Library="$webresource:Main_system_library.js" InvertResult="true" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.RefreshForm.isRefreshForm" Library="$webresource:Main_system_library.js" InvertResult="true" />
+          </Or>
+          <Or>
+            <FormStateRule State="Existing" />
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.ReadPrimaryPermission">
+        <RecordPrivilegeRule PrivilegeType="Read" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+      <EnableRule Id="nav.new_vessels.MdmBtnEnableRule">
+        <FormStateRule State="Existing" Default="true" />
+      </EnableRule>
+      <EnableRule Id="wdt.new_vessels.DisplayRule.ExistingRecord">
+        <FormStateRule State="Existing" Default="true" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="nav.new_vessels.Mdm.Button.Alt">
+      <Titles>
+        <Title description="Send Vessel to MDM" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nav.new_vessels.Mdm.Button.LabelText">
+      <Titles>
+        <Title description="MDM" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nav.new_vessels.Mdm.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Send Vessel to MDM" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nav.new_vessels.Mdm.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Send Vessel to MDM" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.new_vessels.Form.Button.displayRecordId.Alt">
+      <Titles>
+        <Title description="Get CRM Code" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.new_vessels.Form.Button.displayRecordId.LabelText">
+      <Titles>
+        <Title description="Get CRM Code" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.new_vessels.Form.Button.displayRecordId.ToolTipDescription">
+      <Titles>
+        <Title description="Show Vessel CRM Code" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.new_vessels.Form.Button.displayRecordId.ToolTipTitle">
+      <Titles>
+        <Title description="Get CRM Code" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

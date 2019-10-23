@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{9dab5bce-2cf0-e911-a812-000d3ab82d69}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" preview="1" icon="1">
+        <row name="result" id="opportunityid">
+          <cell name="name" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="customerid" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="statuscode" width="100" />
+          <cell name="new_actualorderdate" width="100" />
+          <cell name="wdt_vesselquantity" width="100" />
+          <cell name="estimatedvalue" width="100" />
+          <cell name="closeprobability" width="50" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="wdt_firstmonthofrolloutdate" width="100" />
+          <cell name="wdt_lastmonthofrolloutdate" width="100" />
+          <cell name="wdt_isproofofconcept" width="75" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="opportunity">
+          <attribute name="name" />
+          <attribute name="wdt_vesselquantity" />
+          <attribute name="statuscode" />
+          <attribute name="wdt_isproofofconcept" />
+          <attribute name="closeprobability" />
+          <attribute name="customerid" />
+          <attribute name="wdt_lastmonthofrolloutdate" />
+          <attribute name="wdt_firstmonthofrolloutdate" />
+          <attribute name="estimatedvalue" />
+          <attribute name="new_actualorderdate" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <condition attribute="ownerid" operator="eq-userid" />
+            <condition attribute="statuscode" operator="in">
+              <value>1</value>
+              <value>6</value>
+            </condition>
+            <condition attribute="new_solutions" operator="eq" value="5" />
+            <condition attribute="crm1st_genericcode" operator="ne" value="1" />
+          </filter>
+          <attribute name="opportunityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.46.1.16</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My FOS Opportunities" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

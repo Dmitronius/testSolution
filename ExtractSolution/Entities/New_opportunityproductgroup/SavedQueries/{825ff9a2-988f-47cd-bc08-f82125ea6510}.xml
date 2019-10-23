@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{825ff9a2-988f-47cd-bc08-f82125ea6510}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_opportunityproductgroupid">
+          <cell name="tra_productlineid" width="100" />
+          <cell name="tra_productpackageitemscount" width="100" />
+          <cell name="a_316a9f83847be811813d5065f38aea61.tra_basicweight" width="100" disableSorting="1" />
+          <cell name="new_opportunityid" width="150" />
+          <cell name="createdon" width="100" />
+          <cell name="createdby" width="100" />
+          <cell name="overriddencreatedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_opportunityproductgroup">
+          <order attribute="tra_productlineid" descending="false" />
+          <attribute name="new_opportunityid" />
+          <attribute name="overriddencreatedon" />
+          <attribute name="createdon" />
+          <attribute name="createdby" />
+          <attribute name="tra_productpackageitemscount" />
+          <attribute name="tra_productlineid" />
+          <link-entity alias="a_316a9f83847be811813d5065f38aea61" name="product" from="productid" to="tra_productlineid" link-type="outer" visible="false">
+            <attribute name="tra_basicweight" />
+          </link-entity>
+          <attribute name="new_opportunityproductgroupid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Opportunity Product Line Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

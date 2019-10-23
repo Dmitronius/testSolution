@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{b61e4e44-b88c-e711-8110-5065f38aea61}</WebResourceId>
+  <Name>c4crm_/SharepointDocumentRibbon.js</Name>
+  <DisplayName>SharepointDocumentRibbon.js</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.17.07.05</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/c4crm_SharepointDocumentRibbonjsB61E4E44-B88C-E711-8110-5065F38AEA61</FileName>
+</WebResource>

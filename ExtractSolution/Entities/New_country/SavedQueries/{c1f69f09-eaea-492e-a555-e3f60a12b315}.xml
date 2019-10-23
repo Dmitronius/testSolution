@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c1f69f09-eaea-492e-a555-e3f60a12b315}</savedqueryid>
+    <layoutxml>
+      <grid name="new_countries" jump="new_name" select="1" icon="1" preview="0">
+        <row name="new_country" id="new_countryid">
+          <cell name="new_name" width="300" />
+          <cell name="new_primarylanguageid" width="100" />
+          <cell name="new_secondarylanguageid" width="100" />
+          <cell name="new_isacceptenglish" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_country">
+          <attribute name="new_countryid" />
+          <attribute name="new_name" />
+          <order attribute="new_name" descending="false" />
+          <attribute name="new_secondarylanguageid" />
+          <attribute name="new_primarylanguageid" />
+          <attribute name="new_isacceptenglish" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Country Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

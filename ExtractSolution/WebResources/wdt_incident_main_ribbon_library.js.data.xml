@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{52a5bc8f-1177-e911-a96a-000d3ab5a3d0}</WebResourceId>
+  <Name>wdt_incident_main_ribbon_library.js</Name>
+  <DisplayName>Incident Main Ribbon Library</DisplayName>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>0.44.5.4</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"&gt;&lt;Library name="wdt_process.js" displayName="Process Library for Workflows" languagecode="" description="" libraryUniqueId="{d1a70735-2897-b804-3a4d-84be8b775dbb}"/&gt;&lt;/Dependency&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/wdt_incident_main_ribbon_libraryjs52A5BC8F-1177-E911-A96A-000D3AB5A3D0</FileName>
+</WebResource>

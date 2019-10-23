@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f0091217-a800-4411-8c53-fffc051d61c0}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_vessels" id="new_vesselsid">
+          <cell name="new_name" width="300" />
+          <cell name="new_vesseltype" width="100" />
+          <cell name="new_flagstate" width="100" />
+          <cell name="new_imo" width="100" />
+          <cell name="new_donglenumber" width="100" />
+          <cell name="new_paperlessvessel" width="100" />
+          <cell name="new_parentaccount" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_dwt" width="100" />
+          <cell name="new_portofregistry" width="100" />
+          <cell name="new_yearofbuild" width="100" />
+          <cell name="new_shipbuilder" width="100" />
+          <cell name="new_vessellength" width="100" />
+          <cell name="new_sailarea" width="100" />
+          <cell name="new_country" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="createdon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_vessels">
+          <attribute name="new_vesselsid" />
+          <attribute name="new_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_vesseltype" />
+          <attribute name="new_donglenumber" />
+          <attribute name="new_parentaccount" />
+          <attribute name="new_yearofbuild" />
+          <attribute name="new_paperlessvessel" />
+          <attribute name="ownerid" />
+          <attribute name="new_flagstate" />
+          <attribute name="new_dwt" />
+          <attribute name="new_country" />
+          <attribute name="new_imo" />
+          <attribute name="new_portofregistry" />
+          <attribute name="new_shipbuilder" />
+          <attribute name="new_vessellength" />
+          <attribute name="new_sailarea" />
+          <order attribute="new_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.17.03.30</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Vessel Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{6095544a-d1bb-4fa6-ad04-48bae477e909}" Name="Dummy.Opportunity. Create Task(s) for T1-Coordinators" Description="Created to be run by BPF as Dummy &#xA;See case 119100122000077 " xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/DummyOpportunityCreateTasksforT1-Coordinators-6095544A-D1BB-4FA6-AD04-48BAE477E909.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>1</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>1</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <UpdateStage>20</UpdateStage>
+  <RunAs>0</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.44.9.40</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <PrimaryEntity>Opportunity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Dummy.Opportunity. Create Task(s) for T1-Coordinators" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Created to be run by BPF as Dummy &#xA;See case 119100122000077 " />
+  </Descriptions>
+</Workflow>

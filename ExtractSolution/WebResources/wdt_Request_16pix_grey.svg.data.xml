@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{34459dc8-1fd6-e911-a970-000d3ab5a3d0}</WebResourceId>
+  <Name>wdt_Request_16pix_grey.svg</Name>
+  <DisplayName>Request_16pix_grey.svg</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/wdt_Request_16pix_greysvg34459DC8-1FD6-E911-A970-000D3AB5A3D0</FileName>
+</WebResource>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{338e6c4f-3576-490e-93de-1d635ae9b22b}</formid>
+    <IntroducedVersion>0.44.5.13</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{385e2af0-c7e2-4bd2-b2e6-2a0741c82f24}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{ba508847-88e3-4c8f-8d66-8d799fa129ba}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{14aed723-975b-8831-661b-6462a82a3b29}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Account Product Configuration" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_accountproductconfigurationid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="wdt_accountproductconfigurationid" disabled="true" uniqueid="{087c3458-eb7d-ddd5-dab5-3a2c203e93d5}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{C004F873-2412-4916-9920-ABCB6673914A}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9b3c8073-8c44-6de4-c2d5-4e0409de1753}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Application" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_productid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="wdt_productid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6cb492c0-a493-42a2-a4ac-66fd4c148468}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="wdt_name" uniqueid="{d17c59a6-9be6-9349-a9e8-ee4a9d99e500}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{81a62c3d-3b19-43f8-90f2-3f4f3f8046a4}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{078bcc32-d8c7-0b78-5292-55d4c3d319ed}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="wdt_trainingclassapplication_main_library.js" libraryUniqueId="{9c11a981-bd5b-dc60-7c15-3abd68b54593}" />
+      </formLibraries>
+      <events>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="recalculateUnitCount" libraryName="wdt_trainingclassapplication_main_library.js" handlerUniqueId="{9d4c08b3-8964-486c-49c3-b8c7cbd775b6}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="MAIN" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

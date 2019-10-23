@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{0e7139fc-ac2b-490e-8f4a-afbb033519e8}</formid>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{248da006-704e-481a-a310-aac026d082e6}" IsUserDefined="1" name="{248da006-704e-481a-a310-aac026d082e6}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{9c7045be-4089-4453-a97f-fd461c51028e}" name="{9c7045be-4089-4453-a97f-fd461c51028e}" columns="1111" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8dd620ba-af7b-4fb0-a72f-124040153915}">
+                        <labels>
+                          <label description="Instance Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_instancename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_instancename" />
+                      </cell>
+                      <cell id="{6d213893-8a48-3dcd-1dd8-7281a3d583b6}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{bd94c9ed-c711-9d53-579d-17ca43d7798b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{add76a21-4c37-76e1-cc28-9a3ca9c15619}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{59290462-78b4-4374-4902-eb0e93e099d7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="BudgetAdminTeam" languagecode="1033" />
+                        </labels>
+                        <control id="tra_budgetadminteam" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_budgetadminteam" disabled="false" />
+                      </cell>
+                      <cell id="{b71b4261-1599-5e55-540d-ce895d46abd1}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b63e775a-6904-a444-7137-05c0d8931161}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{ad1a9033-965a-263c-179a-561b1d6445be}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{248da006-704e-481a-a310-aac026d082e6}_section_3" showlabel="true" showbar="false" locklevel="0" id="{a4e7929a-8034-a397-690d-28e6a314b139}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="MDM" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a42126cd-b760-b8b9-ce71-e9740cac9607}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="MDM_SQL UserName" languagecode="1033" />
+                        </labels>
+                        <control id="tra_mdmsqlusername" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_mdmsqlusername" disabled="false" />
+                      </cell>
+                      <cell id="{46a725ec-9897-87ba-05b4-98eeca5b8827}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{d8dceb26-1915-4400-3c31-91365987283a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{e16c6211-8d56-aa73-d4c8-977c5b681452}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b591337c-7221-7115-3206-20a9765b6113}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="MDM_SQL Password" languagecode="1033" />
+                        </labels>
+                        <control id="tra_mdmsqlpassword" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_mdmsqlpassword" disabled="false" />
+                      </cell>
+                      <cell id="{10ba7e5c-29ba-e475-4241-daeb2749c2bd}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{8a5da488-5d7a-ad6e-0090-a1784b11cb8c}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{d8c63e63-60ee-31db-90e6-80e61c8209a0}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9bd45669-454b-7e99-b3be-657acb455457}" showlabel="true" locklevel="0" colspan="4">
+                        <labels>
+                          <label description="MDM_SQL ConnectionString" languagecode="1033" />
+                        </labels>
+                        <control id="tra_mdmsqlconnectionstring" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_mdmsqlconnectionstring" disabled="false" uniqueid="{4ace0140-acca-286c-5795-5e674a9dd981}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{961b8b01-2b1c-14c5-4e11-84b0975c1cc1}" showlabel="true" locklevel="0" colspan="4">
+                        <labels>
+                          <label description="MDM_WEB Service URL" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_mdmwebserviceurl" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="wdt_mdmwebserviceurl" disabled="false" uniqueid="{cc012e8b-73ee-c013-cb99-9d191b611593}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{248da006-704e-481a-a310-aac026d082e6}_section_4" showlabel="true" showbar="false" locklevel="0" id="{bbe4bcea-410b-43b6-9ee0-d2b26b1ba59e}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="DMS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ee6a4531-c046-5a26-ce71-744489387da7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="DMS.Client.CertificateThumbprint" languagecode="1033" />
+                        </labels>
+                        <control id="tra_dmsclientcertificatethumbprint" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_dmsclientcertificatethumbprint" disabled="false" uniqueid="{7a6ccd3c-7176-a7e7-e6eb-e82e48339913}" />
+                      </cell>
+                      <cell id="{038ea978-7404-2160-253e-ca889bd3e587}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{8b8dcb8d-4a2a-b685-94e0-c34138523a9a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{3237b205-c0a1-296d-6aa2-5881b1ba8831}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aab81135-93cc-6811-d779-6557967b6691}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="DMS.Client.Endpoint" languagecode="1033" />
+                        </labels>
+                        <control id="tra_dmsclientendpoint" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_dmsclientendpoint" disabled="false" />
+                      </cell>
+                      <cell id="{4892c0d2-a174-dbaa-cb5b-4ed9ea415e77}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{ecac7443-2e99-3c5e-4388-6ddbd142ac63}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{447a816b-bc40-8b73-1943-53bc3be43a7d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{248da006-704e-481a-a310-aac026d082e6}_section_5" showlabel="true" showbar="false" locklevel="0" id="{5755d290-16ec-9d19-e56e-0a2204315ce0}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="SMTP" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e2a139d4-c516-d415-4857-ecc90252a06a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="SMTP server" languagecode="1033" />
+                        </labels>
+                        <control id="tra_smtpserver" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_smtpserver" disabled="false" />
+                      </cell>
+                      <cell id="{c30126d6-bc6b-34d4-b331-acd47c020de7}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{5ab55351-d706-0296-5901-dc628a745210}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{8c588696-9b8a-2de7-9ee8-a1eb09a83e49}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{08b5039a-9136-676d-abec-064853da82a3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="SMTP user" languagecode="1033" />
+                        </labels>
+                        <control id="tra_smtpuser" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_smtpuser" disabled="false" />
+                      </cell>
+                      <cell id="{39094828-3b06-197e-d361-03a18d564d97}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{49ab5e23-6822-2874-59b5-6c154a2453e8}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{459970a1-0269-53b8-c894-cd372b60c64d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7997c40b-b414-9a84-424e-e3a2788dc44b}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="SMTP PWD" languagecode="1033" />
+                        </labels>
+                        <control id="tra_smtppwd" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_smtppwd" disabled="false" uniqueid="{8ca2d990-b4c1-b2a4-0a63-9cc65d50dbcc}" />
+                      </cell>
+                      <cell id="{3aaa092a-304e-1ed0-d10c-eecd4832e413}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{2461c75b-188d-3a9d-cb15-04473a84bdc2}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{a98d25ad-8c35-68e3-3245-898a465be72b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{248da006-704e-481a-a310-aac026d082e6}_section_6" showlabel="true" showbar="false" locklevel="0" id="{ae579890-4722-97cb-d299-c8ee4196ddea}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Email Addresses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{932473a4-168b-a374-e05c-e3b211d01a33}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Finance Credit Control Email" languagecode="1033" />
+                        </labels>
+                        <control id="tra_financecreditcontrolemail" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_financecreditcontrolemail" disabled="false" />
+                      </cell>
+                      <cell id="{b5628911-8845-8daa-625d-4056a924b296}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{e0e33815-c6b7-558c-b4d4-ed6e10670dd2}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{656de843-a7c1-e21c-7568-2dd8cb8b09d0}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{248da006-704e-481a-a310-aac026d082e6}_section_7" showlabel="false" showbar="false" locklevel="0" id="{e4977527-9c28-172a-23b7-6a1a73a299c1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{71179c07-2e13-72e7-2891-cae3c6c04c25}" showlabel="true" locklevel="0" rowspan="10">
+                        <labels>
+                          <label description="General_JSON" languagecode="1033" />
+                        </labels>
+                        <control id="tra_generaljson" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="tra_generaljson" disabled="false" uniqueid="{ae040d25-3789-a974-a2a5-668d236ae9eb}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="{248da006-704e-481a-a310-aac026d082e6}_section_8" showlabel="true" showbar="false" locklevel="0" id="{59178d64-c8be-cd18-3e8e-5005c40aad4b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="RRT &amp; NPV Calculation" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0c8dc81e-1c56-45d3-3330-e87e700d6e80}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="RRT Amount Limit" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_rrtamountlimit" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="wdt_rrtamountlimit" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{19416359-258d-1879-93ce-25a3a9738703}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="RRT Length Limit" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_rrtlengthlimit" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="wdt_rrtlengthlimit" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ec6205ed-0394-7146-e258-a857075b458d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Discounting Factor" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_discountingfactor" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="wdt_discountingfactor" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

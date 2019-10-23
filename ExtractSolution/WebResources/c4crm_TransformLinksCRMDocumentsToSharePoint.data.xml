@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{513bf83b-4204-e911-a95c-000d3ab5a3d0}</WebResourceId>
+  <Name>c4crm_TransformLinksCRMDocumentsToSharePoint</Name>
+  <DisplayName>TransformLinksCRMDocumentsToSharePoint</DisplayName>
+  <Description>Преобразует ссылки на CRM документы (Notes, Attachments) на форме в ссылки на документы в SharePoint.</Description>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>18.12.11.01</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/c4crm_TransformLinksCRMDocumentsToSharePoint513BF83B-4204-E911-A95C-000D3AB5A3D0</FileName>
+</WebResource>

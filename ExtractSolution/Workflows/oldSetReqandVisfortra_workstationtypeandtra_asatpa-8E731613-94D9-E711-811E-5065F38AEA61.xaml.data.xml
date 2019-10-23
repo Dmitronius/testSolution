@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{8e731613-94d9-e711-811e-5065f38aea61}" Name="old Set Req and Vis for tra_workstationtype and tra_asatpackage for FOS" Description="replaced with JS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/oldSetReqandVisfortra_workstationtypeandtra_asatpa-8E731613-94D9-E711-811E-5065F38AEA61.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>Opportunity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="old Set Req and Vis for tra_workstationtype and tra_asatpackage for FOS" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="replaced with JS" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{4db21acf-e8ef-e911-a812-000d3ab826fd}">
+      <controltype>1</controltype>
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <controlname>new_solutions</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{4eb21acf-e8ef-e911-a812-000d3ab826fd}">
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{4fb21acf-e8ef-e911-a812-000d3ab826fd}">
+      <controltype>1</controltype>
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <controlname>new_solutions</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{50b21acf-e8ef-e911-a812-000d3ab826fd}">
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{51b21acf-e8ef-e911-a812-000d3ab826fd}">
+      <controltype>1</controltype>
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <controlname>new_solutions</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{52b21acf-e8ef-e911-a812-000d3ab826fd}">
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{53b21acf-e8ef-e911-a812-000d3ab826fd}">
+      <controltype>1</controltype>
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <controlname>tra_workstationcategory</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{54b21acf-e8ef-e911-a812-000d3ab826fd}">
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{55b21acf-e8ef-e911-a812-000d3ab826fd}">
+      <controltype>1</controltype>
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <controlname>new_solutions</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{56b21acf-e8ef-e911-a812-000d3ab826fd}">
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{57b21acf-e8ef-e911-a812-000d3ab826fd}">
+      <controltype>1</controltype>
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <controlname>tra_workstationcategory</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{58b21acf-e8ef-e911-a812-000d3ab826fd}">
+      <formid>{b4c99040-015d-4569-abd3-1a307e482c49}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>Opportunity</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

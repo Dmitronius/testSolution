@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tra_region" localizedName="Region" description="Sales Regions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>0.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Region" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Sales Regions" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="167490000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Europe" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Americas" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="APAC" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="MEAI" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Russia" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Mixed" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

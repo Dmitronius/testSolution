@@ -1,0 +1,158 @@
+function budgetShiftDates() {
+    executeCommand("/Budgets/ProjectShiftDateDialog/default.aspx");
+}
+
+function budgetShiftSelectedDates() {
+
+    var dialogArguments = [];
+    var selectedRows = Xrm.Page.getControl("BudgetLines").getGrid().getSelectedRows();
+    selectedRows.forEach(function (selectedRow, i) {
+        dialogArguments.push(selectedRow.getData().getEntity().getEntityReference().id);
+    });
+
+    var suffix = "/Budgets/SelectedItemsShiftDateDialog/default.aspx";
+    var orgLcId = "&orglcid=" + Xrm.Page.context.getOrgLcid();
+    var userLcId = "&userlcid=" + Xrm.Page.context.getUserLcid();
+    var orgName = Xrm.Page.context.getOrgUniqueName();
+    var orgname = "&orgname=" + orgName;
+    var typename = "&typename=" + Xrm.Page.data.entity.getEntityName();
+    var arr = "&arr=" + dialogArguments.join(",");
+    var id = "?id=" + encodeURI(Xrm.Page.data.entity.getId());
+    var params = id + orgLcId + userLcId + orgname + typename + arr;
+
+    var prefixDev = "https://weita-crmfirst.transas.com/";
+    var prefixProd = "https://weita-crmfirst2.transas.com/";
+    var newTarget;
+    var prefix;
+    var serverUrl = Xrm.Page.context.getClientUrl();
+    
+    if (orgName === "transas2") {
+        newTarget = "ISV";
+        prefix = prefixProd;
+    }
+    else if (orgName === "orgbe46661f") {
+        newTarget = "ISVDev";
+        prefix = prefixDev;
+    } else {
+        newTarget = "ISVUat";
+        prefix = prefixDev;
+    }
+    newTarget = prefix + newTarget + suffix;
+
+    //Append the parameters to the new page URL
+    var newUrl = newTarget + params;
+
+    window.open(newUrl, "", "toolbar=no, scrollbars=yes, resizable=yes, height=480, width=640");
+}
+
+function budgetPersonnelCost() {
+    executeCommand("/Budgets/PersonelCostsGenerator/Default.aspx");
+}
+
+function budgetRecalculate() {
+    executeCommand("/Cashflow/UpdateFinKPIs.aspx");
+}
+
+function opportunityApproval() {
+    debugger;
+    executeCommand("/Approvals/StartApproval/default.aspx");
+    // if (Xrm.Page.getAttribute("tra_iscontractapprovalrequired") != undefined
+    //     && Xrm.Page.getAttribute("tra_contractapprovalstartdate") != undefined
+    //     && Xrm.Page.getAttribute("tra_isbidapprovalrequired") != undefined
+    //     && Xrm.Page.getAttribute("tra_bidapprovalstartdate") != undefined) {
+    //     if (Xrm.Page.getAttribute("tra_iscontractapprovalrequired").getValue() == "167490001") {
+    //         Xrm.Page.getAttribute("tra_contractapprovalstartdate").setValue(Date.now());
+    //         Xrm.Page.data.entity.save();
+    //     } else {
+    //         if (Xrm.Page.getAttribute("tra_isbidapprovalrequired").getValue() == "167490001") {
+    //             Xrm.Page.getAttribute("tra_bidapprovalstartdate").setValue(Date.now());
+    //             Xrm.Page.data.entity.save();
+    //         }
+    //     }
+    // }
+}
+
+function opportunityCreateBudget() {
+    oppID = Xrm.Page.data.entity.getId().replace('{', '').replace('}', '');
+    console.log("TRA.checkBudget oppID: " + oppID);
+    getActiveBudgetsNumber(oppID, function (activeBudgetCount) {
+        if (activeBudgetCount === 1) {
+            Xrm.Utility.alertDialog("Only one Active Budget can exist for opportunity, please deactivate active budget before creating new");
+        } else {
+            executeCommand("/Budgets/CashFlowWizardDialog/Default.aspx");
+        }
+    });
+}
+
+
+
+//web api function
+function getActiveBudgetsNumber(oppID, callback) {
+    var req = new XMLHttpRequest();
+    req.open("GET", Xrm.Page.context.getClientUrl() + "/api/data/v8.2/new_cashflows?$filter=_new_opportunityid_value eq " + oppID + " and  statecode eq 0", true);
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("Prefer", "odata.include-annotations=\"*\"");
+    req.onreadystatechange = function () {
+        if (this.readyState === 4) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var results = JSON.parse(this.response);
+                console.log("TRA.activeBudgetCount = " + results.value.length);
+                callback(results.value.length);
+
+            } else {
+                console.log("TRA. getActiveBudgetsCount request failed with:" + this.statusText);
+            }
+        }
+    };
+    req.send();
+}
+
+function opportunityRecalculateFX() {
+    executeCommand("/Cashflow/RecalculateFX.aspx");
+}
+
+function certificateAPSprintPDF() {
+    executeCommand("/APTCertificate/APS.aspx");
+}
+ 
+function certificateAPTprintPDF() {
+    executeCommand("/APTCertificate/default.aspx");
+}
+
+function executeCommand(suffix) {
+    var orgLcId = "&orglcid=" + Xrm.Page.context.getOrgLcid();
+    var userLcId = "&userlcid=" + Xrm.Page.context.getUserLcid();
+    var orgName = Xrm.Page.context.getOrgUniqueName();
+    var orgname = "&orgname=" + orgName;
+    var typename = "&typename=" + Xrm.Page.data.entity.getEntityName();
+    var id = "?id=" + encodeURI(Xrm.Page.data.entity.getId());
+    var params = id + orgLcId + userLcId + orgname + typename;
+
+    var prefixDev = "https://weita-crmfirst.transas.com/";
+    var prefixProd = "https://weita-crmfirst2.transas.com/";
+    var newTarget;
+    var prefix;
+    var serverUrl = Xrm.Page.context.getClientUrl();
+    
+    if (orgName === "transas2") {
+        newTarget = "ISV";
+        prefix = prefixProd;
+    }
+    else if (orgName === "orgbe46661f") {
+        newTarget = "ISVDev";
+        prefix = prefixDev;
+    } else {
+        newTarget = "ISVUat";
+        prefix = prefixDev;
+    }
+    newTarget = prefix + newTarget + suffix;
+
+    //Append the parameters to the new page URL
+    var newUrl = newTarget + params;
+
+    window.open(newUrl, "", "toolbar=no, scrollbars=yes, resizable=yes, height=480, width=640");
+}

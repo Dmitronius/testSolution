@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{e2d8cdc1-1fd6-e911-a96b-000d3ab5a84e}</WebResourceId>
+  <Name>wdt_Settings_32pix_grey.svg</Name>
+  <DisplayName>Settings_32pix_grey.svg</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/wdt_Settings_32pix_greysvgE2D8CDC1-1FD6-E911-A96B-000D3AB5A84E</FileName>
+</WebResource>

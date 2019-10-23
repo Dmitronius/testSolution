@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4995cace-9dd4-e911-a973-000d3ab5a6ae}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" preview="1" icon="1">
+        <row name="result" id="tra_centerofexcelenceid">
+          <cell name="tra_coecode" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="wdt_description" width="100" disableSorting="1" />
+          <cell name="tra_officeid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="tra_centerofexcelence">
+          <attribute name="tra_officeid" />
+          <attribute name="tra_coecode" />
+          <order attribute="tra_coecode" descending="false" />
+          <filter type="and">
+            <condition attribute="tra_coecode" operator="in">
+              <value>750610009</value>
+              <value>750610008</value>
+              <value>750610007</value>
+              <value>750610005</value>
+              <value>750610006</value>
+              <value>750610003</value>
+              <value>750610001</value>
+              <value>750610002</value>
+              <value>750610004</value>
+            </condition>
+          </filter>
+          <attribute name="wdt_description" />
+          <attribute name="tra_centerofexcelenceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.46.1.5</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="COE for Opportunity" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

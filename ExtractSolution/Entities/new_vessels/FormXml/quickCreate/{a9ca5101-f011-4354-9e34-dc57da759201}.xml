@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a9ca5101-f011-4354-9e34-dc57da759201}</formid>
+    <IntroducedVersion>0.33</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1900">
+      <tabs>
+        <tab id="{50e762a8-5362-4baa-b0aa-54e04ceaf6f1}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{a36227d4-3760-45ec-8fa0-74bcde65f59e}" name="tab_1_column_1_section_1" showlabel="false" IsUserDefined="0" showbar="false" columns="1">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{724794ea-e5bc-5b56-3ea4-0330a7cb76d6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vessel Name" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_name" datafieldname="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" uniqueid="{8630a107-747c-440c-31a2-7756540e9bd4}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c4bbb452-7207-845d-52a4-68c22ed2cd88}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vessel Type" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_vesseltype" datafieldname="new_vesseltype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a4375dd0-0b06-a4b7-c2c0-22401a818e96}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="IMO" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_imo" datafieldname="new_imo" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{408cc365-8dda-4c41-2911-2bd8a3b26e83}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="MMSI" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_mmsi" datafieldname="new_mmsi" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c1258a92-4313-cb47-cc24-75d06ea1bb43}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{78164c57-7a96-4e62-b5df-b56dab3408aa}" name="tab_1_column_2_section_1" showlabel="false" IsUserDefined="0" showbar="false" columns="1">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5ca273c7-9340-ea53-9120-ce6b6c4ac454}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Shipping Owner" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_parentaccount" datafieldname="new_parentaccount" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{51a42a8d-7955-7a5d-4423-76cd4a28aea6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Ship Manager" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="tra_shipmanager" datafieldname="tra_shipmanager" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{eabff50c-0554-4a6a-b225-27b617b83710}" name="tab_1_column_3_section_1" showlabel="false" IsUserDefined="0" showbar="false" columns="1">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0aaf506e-187f-44fe-8384-c2bc29774bb3}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <formLibraries>
+        <Library name="tra_vessel_main_library.js" libraryUniqueId="{21a598ba-c741-6468-5487-1965b960aa51}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="onLoadForm_autocomplete_name" libraryName="tra_vessel_main_library.js" handlerUniqueId="{b0c1a407-e67d-48a2-1b72-cc3d2513c6a3}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="new_name">
+          <Handlers>
+            <Handler functionName="name_onchange" libraryName="tra_vessel_main_library.js" handlerUniqueId="{29ad73b3-274d-d6bb-b611-34786a34324a}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+      <controlDescriptions />
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Vessel Quick Create" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

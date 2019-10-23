@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InteractionCentricDashboard unmodified="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="Leads Dashboard" languagecode="1033" />
+  </LocalizedNames>
+  <FormId>{9a14ebb4-143e-e711-80e1-00155d871bb4}</FormId>
+</InteractionCentricDashboard>

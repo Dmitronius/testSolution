@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{07ab270d-f917-418c-940d-0edcf03b1a1e}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{0fff882c-f168-4bfb-b3b7-280b96e97415}" name="StageStep3" locklevel="0" expanded="true">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{69d3eac5-a958-4d69-8d5b-1c76813ef7e7}" name="StageStep3_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e690ffff-4428-4fb5-95a3-e2ebe26524ba}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_entitlement_tra_entitlementprocess:customerid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="customerid" relationship="bpf_entitlement_tra_entitlementprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1381fed4-2021-429a-a6a5-12dfb9605a60}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_entitlement_tra_entitlementprocess:tra_vesselid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="tra_vesselid" relationship="bpf_entitlement_tra_entitlementprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a38fbb85-c4fa-4cd1-84e1-fbf73b03cdbc}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_entitlement_tra_entitlementprocess:entitlementtemplateid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="entitlementtemplateid" relationship="bpf_entitlement_tra_entitlementprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b8de89a2-04de-42a0-ba1a-650b388de411}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_entitlement_tra_entitlementprocess:startdate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="startdate" relationship="bpf_entitlement_tra_entitlementprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a36a1c5e-e4fb-40a8-8f58-33511c4da378}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_entitlement_tra_entitlementprocess:enddate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="enddate" relationship="bpf_entitlement_tra_entitlementprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b70d6d4e-8af9-479e-9be3-d4ee8fe348a1}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_entitlement_tra_entitlementprocess:tra_opportunityid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="tra_opportunityid" relationship="bpf_entitlement_tra_entitlementprocess" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{392f256e-ece6-47df-9c0d-6971b05c2934}" name="StageStep17" locklevel="0" expanded="true">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{ffc53cc7-6b15-492d-9e7c-a99e4c67aacb}" name="StageStep17_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{11ee34b9-22eb-471f-9ecb-dd0b5987c485}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_entitlement_tra_entitlementprocess:statuscode" classid="{5d68b988-0661-4db2-bc3e-17598ad3be6c}" datafieldname="statuscode" relationship="bpf_entitlement_tra_entitlementprocess" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{c0e4edab-4ddb-e711-811b-5065f38a9a01}</WebResourceId>
+  <Name>crm1st_CaseMerge.html</Name>
+  <DisplayName>CaseMerge.html</DisplayName>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/crm1st_CaseMergehtmlC0E4EDAB-4DDB-E711-811B-5065F38A9A01</FileName>
+</WebResource>

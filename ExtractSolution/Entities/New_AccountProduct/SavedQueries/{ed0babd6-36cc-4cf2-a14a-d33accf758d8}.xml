@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ed0babd6-36cc-4cf2-a14a-d33accf758d8}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_accproductidname" select="1" icon="1" preview="1">
+        <row name="result" id="new_accountproductid">
+          <cell name="new_accproductidname" width="300" />
+          <cell name="new_productkey" width="100" />
+          <cell name="new_accountid" width="100" />
+          <cell name="new_installationdate" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="wdt_numberofconfigurations" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_accountproduct">
+          <attribute name="new_accproductidname" />
+          <order attribute="new_accproductidname" descending="false" />
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="new_serial_number" operator="like" value="{0}" />
+            <condition attribute="new_product_number" operator="like" value="{0}" />
+            <condition attribute="new_productkey" operator="like" value="{0}" />
+            <condition attribute="new_productid" operator="like" value="{0}" />
+            <condition attribute="new_accproductidname" operator="like" value="{0}" />
+            <condition attribute="new_accountid" operator="like" value="{0}" />
+          </filter>
+          <attribute name="new_productkey" />
+          <attribute name="ownerid" />
+          <attribute name="new_installationdate" />
+          <attribute name="new_accountid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="wdt_numberofconfigurations" />
+          <attribute name="new_accountproductid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Account Products" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

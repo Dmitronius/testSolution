@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{8adba6f7-2484-e811-813c-5065f38a4a21}" Name="Mandatory Account Selection" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/MandatoryAccountSelection-8ADBA6F7-2484-E811-813C-5065F38A4A21.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.1.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>new_vessels</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Mandatory Account Selection" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{7845c2f8-2429-4cda-b16d-a6f1eaeb5e50}">
+      <label languagecode="1033" description="Please fill Shipping owner OR Ship Manager" />
+    </steplabels>
+  </labels>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{d507a3fe-2484-e811-813c-5065f38a4a21}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>tra_shipmanager</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>new_vessels</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{d607a3fe-2484-e811-813c-5065f38a4a21}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>new_vessels</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{d707a3fe-2484-e811-813c-5065f38a4a21}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>new_parentaccount</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>new_vessels</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{d807a3fe-2484-e811-813c-5065f38a4a21}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>new_vessels</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

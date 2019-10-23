@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{4be8260b-53c7-4295-bc49-a3159f058a99}" Name="Queue item.Autopopulate Group on Creation of a Queue" Description="#OperationWF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/QueueitemAutopopulateGrouponCreationofaQueue-4BE8260B-53C7-4295-BC49-A3159F058A99.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>workerid,queueid</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>1</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>0</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.17.03.30</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <PrimaryEntity>QueueItem</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Queue item.Autopopulate Group on Creation of a Queue" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="#OperationWF" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{fe585598-8bc5-476f-8a46-1fe982ada992}">
+      <label languagecode="1033" description="all ok" />
+    </steplabels>
+  </labels>
+</Workflow>

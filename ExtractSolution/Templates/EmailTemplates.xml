@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EmailTemplates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <emailtemplate>
+    <IsCustomizable>1</IsCustomizable>
+    <templateid>{b220dc69-5a7d-e911-a964-000d3ab5a84e}</templateid>
+    <subject></subject>
+    <subjectpresentationxml></subjectpresentationxml>
+    <templatetypecode>3</templatetypecode>
+    <body></body>
+    <title>ARTS Informational e-mail to Sales Director</title>
+    <presentationxml></presentationxml>
+    <languagecode>1033</languagecode>
+    <generationtypecode>0</generationtypecode>
+    <IntroducedVersion>0.44.5.9</IntroducedVersion>
+  </emailtemplate>
+</EmailTemplates>

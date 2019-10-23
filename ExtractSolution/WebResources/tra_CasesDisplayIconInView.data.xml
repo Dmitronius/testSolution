@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{18073b2b-ade0-e711-811e-5065f38aea61}</WebResourceId>
+  <Name>tra_CasesDisplayIconInView</Name>
+  <DisplayName>Cases display icon in view</DisplayName>
+  <Description>Cases display icon in view</Description>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_CasesDisplayIconInView18073B2B-ADE0-E711-811E-5065F38AEA61</FileName>
+</WebResource>

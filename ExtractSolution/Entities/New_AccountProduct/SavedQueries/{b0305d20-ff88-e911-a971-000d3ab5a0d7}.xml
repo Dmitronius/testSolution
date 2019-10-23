@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{b0305d20-ff88-e911-a971-000d3ab5a0d7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_accproductidname" select="1" preview="1" icon="1">
+        <row name="result" id="new_accountproductid">
+          <cell name="new_accproductidname" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_solutioncode" width="50" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="wdt_solutioncategorycode" width="100" />
+          <cell name="new_productid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_productkey" width="100" />
+          <cell name="new_version" width="100" />
+          <cell name="wdt_thirdpartyaccountid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="createdon" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_accountproduct">
+          <attribute name="new_accproductidname" />
+          <order attribute="new_accproductidname" descending="false" />
+          <attribute name="tra_solutioncode" />
+          <attribute name="createdon" />
+          <attribute name="new_version" />
+          <attribute name="new_productkey" />
+          <attribute name="wdt_solutioncategorycode" />
+          <attribute name="new_productid" />
+          <attribute name="wdt_thirdpartyaccountid" />
+          <attribute name="new_accountproductid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.44.8.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Account Products Grid for Entitlement form" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

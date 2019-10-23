@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tra_requesttypes" localizedName="Request Types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.1.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Request Types" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="167490000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Operator Question" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Engineer Question" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Software issue" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Hardware issue" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Connectivity issue" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490005" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Known Software Bug" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490006" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Administrative Task" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Charts delivery" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Electronic publications" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="FOS Dash" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Weather update" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Patch update" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610005" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Apps crash" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610006" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="4G/VSAT/Iridium" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610007" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Data Update issue" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

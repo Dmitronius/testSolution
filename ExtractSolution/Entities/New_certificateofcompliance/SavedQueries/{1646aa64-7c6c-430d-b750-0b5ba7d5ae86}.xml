@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1646aa64-7c6c-430d-b750-0b5ba7d5ae86}</savedqueryid>
+    <layoutxml>
+      <grid name="new_certificateofcompliances" jump="new_name" select="1" icon="1" preview="0">
+        <row name="new_certificateofcompliance" id="new_certificateofcomplianceid">
+          <cell name="new_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <columnsetxml>
+      <columnset>
+        <column>new_name</column>
+        <column>createdon</column>
+        <ascend>new_name</ascend>
+      </columnset>
+    </columnsetxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_certificateofcompliance">
+          <attribute name="new_certificateofcomplianceid" />
+          <attribute name="new_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Certificate of Compliance Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="Transas.CalcBudgetFinancialProfile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d748ef58abfedbab" PluginAssemblyId="0d56bd60-65d8-4565-b950-ac1b84d72643" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/TransasCalcBudgetFinancialProfile-0D56BD60-65D8-4565-B950-AC1B84D72643/TransasCalcBudgetFinancialProfile.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Transas.CalcBudgetFinancialProfile.CalcBudgetDeviation, Transas.CalcBudgetFinancialProfile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d748ef58abfedbab" PluginTypeId="35379f9b-9b7c-4173-8b04-611168442558" Name="Transas.CalcBudgetFinancialProfile.CalcBudgetDeviation">
+      <FriendlyName>c7ddb144-7dcf-4c0b-8198-09ddf3993f83</FriendlyName>
+      <WorkflowActivityGroupName>Transas.CalcBudgetFinancialProfile (1.0.0.0)</WorkflowActivityGroupName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

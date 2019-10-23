@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{c8f93e50-8542-4c5c-83c1-877b77060d5f}" Name="BPF.Opportunity. Set Est.Ordered day to today on Ordered Stage" Description="#OperationWF for BPF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/BPFOpportunitySetEstOrdereddaytotodayonOrderedStag-C8F93E50-8542-4C5C-83C1-877B77060D5F.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>1</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.43.12.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <PrimaryEntity>Opportunity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="BPF.Opportunity. Set Est.Ordered day to today on Ordered Stage" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="#OperationWF for BPF" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{222c56b9-5a7f-4ce4-8053-0ce890f7f4bc}">
+      <label languagecode="1033" description="Nothing to do" />
+    </steplabels>
+  </labels>
+</Workflow>

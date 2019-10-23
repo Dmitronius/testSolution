@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{bb5c1340-4e66-49a9-83ca-8b2584db3c8c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_requestno" select="1" icon="1" preview="1">
+        <row name="result" id="new_requestid">
+          <cell name="new_requestno" width="100" />
+          <cell name="new_title" width="300" />
+          <cell name="new_type" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="new_estdateofcomplition" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="createdby" width="100" />
+          <cell name="new_initiatorid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_request">
+          <attribute name="new_requestno" />
+          <attribute name="createdon" />
+          <order attribute="new_requestno" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="new_type" />
+          <attribute name="ownerid" />
+          <attribute name="new_estdateofcomplition" />
+          <attribute name="createdby" />
+          <attribute name="new_initiatorid" />
+          <attribute name="new_title" />
+          <attribute name="new_requestid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

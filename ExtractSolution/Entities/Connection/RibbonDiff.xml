@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="new.connection.Button4.Button.Mscrm.SubGrid.connection.AddNewStandard.CustomAction" Location="Mscrm.SubGrid.connection.MainTab.Management.Controls._children" Sequence="13">
+      <CommandUIDefinition>
+        <Button Alt="$Resources(EntityDisplayName):Ribbon.SubGrid.AddNew" Command="Mscrm.AddNewRecordFromSubGridStandard" Id="new.connection.Button4.Button.Mscrm.SubGrid.connection.AddNewStandard" Image32by32="/_imgs/ribbon/newrecord32.png" Image16by16="/_imgs/ribbon/New_16.png" LabelText="$Resources(EntityDisplayName):Ribbon.SubGrid.AddNew" Sequence="13" TemplateAlias="o1" ToolTipTitle="$LocLabels:new.connection.Button4.Button.Mscrm.SubGrid.connection.AddNewStandard.ToolTipTitle" ToolTipDescription="$LocLabels:new.connection.Button4.Button.Mscrm.SubGrid.connection.AddNewStandard.ToolTipDescription" ModernImage="New" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="Mscrm.AddNewRecordFromSubGridStandard">
+      <EnableRules>
+        <EnableRule Id="Mscrm.AppendToPrimary" />
+        <EnableRule Id="Mscrm.EntityFormIsEnabled" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Add.addConnectionFromForm" Library="$webresource:Main_system_library.js">
+          <CrmParameter Value="FirstPrimaryItemId" />
+          <CrmParameter Value="PrimaryEntityTypeCode" />
+          <CrmParameter Value="PrimaryControl" />
+          <BoolParameter Value="false" />
+          <CrmParameter Value="SelectedControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.AddNewRecordFromSubGridStandardForConnectionSubgridOnPricelevelOrKnowledgeArticle">
+        <OrRule>
+          <Or>
+            <FormEntityContextRule EntityName="pricelevel" Default="false" />
+          </Or>
+          <Or>
+            <FormEntityContextRule EntityName="knowledgearticle" Default="false" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="Mscrm.AppendToPrimary">
+        <RecordPrivilegeRule PrivilegeType="AppendTo" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.EntityFormIsEnabled">
+        <FormStateRule State="Disabled" InvertResult="true" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="new.connection.Button4.Button.Mscrm.SubGrid.connection.AddNewStandard.ToolTipDescription">
+      <Titles>
+        <Title description="Create new Coonection to this record." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.connection.Button4.Button.Mscrm.SubGrid.connection.AddNewStandard.ToolTipTitle">
+      <Titles>
+        <Title description="Create new Coonection to this record." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

@@ -1,0 +1,164 @@
+//CRM-13 25/10/2017 andnov
+//If the TRA namespace object is not defined, create it.
+if (typeof TRA == "undefined") {
+  TRA = {};
+}
+// Create Namespace container for functions in this library;
+//Example of Parameters: "casetypecode",["1","2","3","6","8","9","200000","200003"]
+TRA.AlterOptionSet = {};
+
+TRA.AlterOptionSet.disableOption = function(picklist, optionID) {
+  //debugger;
+  if (Xrm.Page.ui.getFormType() == 1 || Xrm.Page.ui.getFormType() == 2) {
+    if (Xrm.Page.getControl(picklist) != undefined && picklist != undefined) {
+      for (var i = 0; i <= optionID.length; i++) {
+        if (optionID[i] != undefined) {
+          Xrm.Page.getControl(picklist).removeOption(optionID[i]);
+        }
+      }
+    }
+  }
+};
+
+TRA.AlterOptionSet.enableOption = function(picklist, optionObjArr) {
+  //debugger;
+  if (Xrm.Page.ui.getFormType() == 1 || Xrm.Page.ui.getFormType() == 2) {
+    if (Xrm.Page.getControl(picklist) != undefined && picklist != undefined) {
+      Xrm.Page.getControl(picklist).clearOptions();
+      for (var i = 0; i <= optionObjArr.length; i++) {
+        if (optionObjArr[i] != undefined) {
+          Xrm.Page.getControl(picklist).addOption(optionObjArr[i]);
+        }
+      }
+    }
+  }
+};
+
+TRA.AlterOptionSet.selectDefaultOption = function(picklist, defaultOptionID) {
+  //debugger;
+  if (Xrm.Page.ui.getFormType() == 1 || Xrm.Page.ui.getFormType() == 2) {
+    if (
+      Xrm.Page.getControl(picklist) != undefined &&
+      picklist != undefined &&
+      defaultOptionID != undefined
+    ) {
+      Xrm.Page.getAttribute(picklist).setValue(defaultOptionID);
+    }
+  }
+};
+
+//version with executionContext
+
+/*
+Example of passed parameters (setvalue should contain only one value)
+executionContext, [
+    {"picklist":"new_projecttype",
+    "action":"disable",
+    "optionsetvalues": ["2","3","4","13"]
+    },
+    {"picklist":"new_solutions",
+    "action":"enable",
+    "optionsetvalues": ["6","8","3","7"]
+    },
+        {"picklist":"new_solutions",
+    "action":"setvalue",
+    "optionsetvalues": ["7"]
+    },
+    ]
+*/
+function getFormType(formContext) {
+  if (formContext.ui.getFormType() == 2) {
+  }
+
+  /*
+    Value	Form type
+    0	Undefined
+    1	Create
+    2	Update
+    3	Read Only
+    4	Disabled
+    6	Bulk Edit
+    */
+}
+
+function alterOptionSetValues(executionContext, config) {
+  console.log("Starting alterOptionSetValues");
+  let formContext = executionContext.getFormContext();
+  if (formContext.ui.getFormType() == 1 || formContext.ui.getFormType() == 2) {
+
+    for (let i = 0; i < config.length; i++) {
+      console.log("config.length :  " + config.length);
+      let optionSetToAlterControl = formContext.getControl(config[i].picklist);
+      let optionSetAction = config[i].action;
+      let optionSetValuesArr = config[i].optionsetvalues;
+      let currentOptionSetValue;
+      if (optionSetToAlterControl) {
+      currentOptionSetValue = formContext
+        .getControl(config[i].picklist)
+        .getAttribute()
+        .getValue();
+      }
+      console.log ('currentOptionSetValue: ' + currentOptionSetValue);
+
+      if (optionSetToAlterControl && optionSetAction && optionSetValuesArr) {
+        let optionsetNameArr = [];
+        let availableOptions = optionSetToAlterControl.getOptions();
+        let optionSetValuesArrInt = optionSetValuesArr.map(num =>
+          parseInt(num, 10)
+        );
+        let filteredAvailableOptions = availableOptions.filter(options =>
+          optionSetValuesArrInt.includes(options.value)
+        );
+        console.log("optionSetAction :  " + optionSetAction);
+        if (optionSetAction == "enable") {
+          optionSetToAlterControl.clearOptions();
+          for (let j = 0; j < optionSetValuesArr.length; j++) {
+            optionSetToAlterControl.addOption(filteredAvailableOptions[j]);
+            console.log(
+              "Adding option: " +
+                filteredAvailableOptions[j].value +
+                " : " +
+                filteredAvailableOptions[j].text +
+                " to " +
+                config[i].picklist
+            );
+          }
+
+          if (optionSetValuesArr.includes(currentOptionSetValue.toString(10))) {
+            formContext
+              .getAttribute(config[i].picklist)
+              .setValue(parseInt(currentOptionSetValue, 10));
+            console.log(
+              "Selecting back option: " +
+                currentOptionSetValue +
+                " to " +
+                config[i].picklist
+            );
+          }
+        } else if (optionSetAction == "disable") {
+          for (let j = 0; j < optionSetValuesArr.length; j++) {
+            optionSetToAlterControl.removeOption(
+              parseInt(optionSetValuesArr[j], 10)
+            );
+            console.log(
+              "Removing option: " +
+                optionSetValuesArr[j] +
+                " from " +
+                config[i].picklist
+            );
+          }
+        } else if (optionSetAction == "setvalue") {
+          formContext
+            .getAttribute(config[i].picklist)
+            .setValue(parseInt(optionSetValuesArr[0], 10));
+          console.log(
+            "Assigning option: " +
+              optionSetValuesArr[0] +
+              " to " +
+              config[i].picklist
+          );
+        }
+      }
+    }
+  }
+}

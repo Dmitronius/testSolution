@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{228432d7-deae-4d92-9fd0-77637980f8f5}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_accproductidname" select="1" icon="1" preview="1">
+        <row name="result" id="new_accountproductid">
+          <cell name="new_accproductidname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <columnsetxml>
+      <columnset>
+        <column>new_accproductidname</column>
+        <column>createdon</column>
+        <ascend>new_accproductidname</ascend>
+      </columnset>
+    </columnsetxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_accountproduct">
+          <attribute name="new_accountproductid" />
+          <attribute name="new_accproductidname" />
+          <attribute name="createdon" />
+          <order attribute="new_accproductidname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Account Products" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

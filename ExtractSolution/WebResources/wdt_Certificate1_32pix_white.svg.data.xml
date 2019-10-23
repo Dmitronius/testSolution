@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{0f95c055-45d5-e911-a973-000d3ab5a6ae}</WebResourceId>
+  <Name>wdt_Certificate1_32pix_white.svg</Name>
+  <DisplayName>Certificate1_32pix_white.svg</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/wdt_Certificate1_32pix_whitesvg0F95C055-45D5-E911-A973-000D3AB5A6AE</FileName>
+</WebResource>

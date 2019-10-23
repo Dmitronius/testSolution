@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f6caffc2-2bb8-40ad-8999-83cf7614745a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_salesrepresentativeid">
+          <cell name="new_countryid" width="100" />
+          <cell name="new_responsiblepersonid" width="125" />
+          <cell name="new_name" width="100" />
+          <cell name="new_responsibleofficeid" width="125" />
+          <cell name="new_businessunitid" width="100" />
+          <cell name="new_startdate" width="75" />
+          <cell name="new_enddate" width="75" />
+          <cell name="a_cf719bb367844cf5a5ecdea5f0633e39.new_primarylanguageid" width="125" disableSorting="1" />
+          <cell name="a_cf719bb367844cf5a5ecdea5f0633e39.new_secondarylanguageid" width="125" disableSorting="1" />
+          <cell name="a_cf719bb367844cf5a5ecdea5f0633e39.new_isacceptenglish" width="100" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_salesrepresentative">
+          <attribute name="new_name" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_startdate" />
+          <attribute name="new_responsiblepersonid" />
+          <attribute name="new_enddate" />
+          <attribute name="new_countryid" />
+          <attribute name="new_businessunitid" />
+          <attribute name="new_responsibleofficeid" />
+          <link-entity alias="a_cf719bb367844cf5a5ecdea5f0633e39" name="new_country" from="new_countryid" to="new_countryid" link-type="outer" visible="false">
+            <attribute name="new_secondarylanguageid" />
+            <attribute name="new_primarylanguageid" />
+            <attribute name="new_isacceptenglish" />
+          </link-entity>
+          <attribute name="new_salesrepresentativeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Sales Representatives" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="Mscrm.Isv.new_agreement.FormCustomAction" Location="Mscrm.Tabs._children" Sequence="100">
+      <CommandUIDefinition>
+        <Tab Id="Mscrm.Isv.new_agreement.Form" Command="Mscrm.Isv.new_agreement.Form" Description="ISV Agreement Form" Title="ISV Agreement Form" Sequence="1010">
+          <Scaling Id="Mscrm.Isv.new_agreement.Form.Scaling">
+            <MaxSize Id="Mscrm.Isv.new_agreement.Form.Group0.MaxSize" Sequence="10" GroupId="Mscrm.Isv.new_agreement.Form.Group0" Size="Large" />
+            <Scale Id="Mscrm.Isv.new_agreement.Form.Group0.Scale.Medium" Sequence="20" GroupId="Mscrm.Isv.new_agreement.Form.Group0" Size="Medium" />
+            <Scale Id="Mscrm.Isv.new_agreement.Form.Group0.Scale.Small" Sequence="30" GroupId="Mscrm.Isv.new_agreement.Form.Group0" Size="Small" />
+            <Scale Id="Mscrm.Isv.new_agreement.Form.Group0.Scale.Popup" Sequence="40" GroupId="Mscrm.Isv.new_agreement.Form.Group0" Size="Popup" />
+          </Scaling>
+          <Groups Id="Mscrm.Isv.new_agreement.Form.Groups">
+            <Group Id="Mscrm.Isv.new_agreement.Form.Group0" Sequence="10" Command="Mscrm.Isv.new_agreement.Form.Group0" Title="ISV Agreement Form 1" Description="ISV Agreement Form 1" Template="Mscrm.Templates.Flexible">
+              <Controls Id="Mscrm.Isv.new_agreement.Form.Group0.Controls">
+                <Button Id="Mscrm.Isv.new_agreement.Form.Group0.Control0" Command="Mscrm.Isv.new_agreement.Form.Group0.Control0" LabelText="$LocLabels:Mscrm.Isv.new_agreement.Form.Group0.Control0.LocLabel" ToolTipTitle="$LocLabels:Mscrm.Isv.new_agreement.Form.Group0.Control0.LocLabel" ToolTipDescription="$LocLabels:Mscrm.Isv.new_agreement.Form.Group0.Control0.ToolTip.LocLabel" Image16by16="/ISV/ContractApprovalSite/img/approval.gif" Image32by32="/ISV/ContractApprovalSite/img/approval.gif" Image16by16Class="ms-crm-Upgraded-Ribbon-Image16" Image32by32Class="ms-crm-Upgraded-Ribbon-Image32" Sequence="10" TemplateAlias="o1" />
+              </Controls>
+            </Group>
+          </Groups>
+        </Tab>
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="Mscrm.Isv.new_agreement.Form">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_agreement.Form" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_agreement.Form.Group0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_agreement.Form.Group0" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_agreement.Form.Group0.Control0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_agreement.Form.Group0.Control0" />
+      </DisplayRules>
+      <Actions>
+        <Url Address="/ISV/ContractApprovalSite/StartApproval/Default.aspx" WinMode="0" PassParams="true" WinParams="height=420, width=920,  scrollbars=yes, toolbar=false, status=yes, resizable=yes" />
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules>
+      <TabDisplayRule TabCommand="Mscrm.Isv.new_agreement.Form">
+        <EntityRule Context="Form" />
+      </TabDisplayRule>
+    </TabDisplayRules>
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.Isv.new_agreement.Form">
+        <MiscellaneousPrivilegeRule PrivilegeName="ISVExtensions" />
+        <OrRule>
+          <Or>
+            <CrmClientTypeRule Type="Web" />
+          </Or>
+          <Or>
+            <CrmClientTypeRule Type="Outlook" />
+            <CrmOfflineAccessStateRule State="Online" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.new_agreement.Form.Group0">
+        <FormStateRule State="Create" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.new_agreement.Form.Group0.Control0">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="Mscrm.Isv.new_agreement.Form.Group0.Control0.LocLabel">
+      <Titles>
+        <Title languagecode="1033" description="Send Request for Approval" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.new_agreement.Form.Group0.Control0.ToolTip.LocLabel">
+      <Titles>
+        <Title languagecode="1033" description="Send Request for Approval" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

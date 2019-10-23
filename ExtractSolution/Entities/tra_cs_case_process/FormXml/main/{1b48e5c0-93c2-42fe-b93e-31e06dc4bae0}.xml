@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1b48e5c0-93c2-42fe-b93e-31e06dc4bae0}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{219f6d84-a9ae-4bbe-9b7a-a78452abee78}" name="StageStep3" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{e4aebeac-5fcc-4188-b56b-575226d2ec9a}" name="StageStep3_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f865a197-f488-43d1-a102-394cbe4c39c9}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:casetypecode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="casetypecode" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3c28363e-9414-4dc9-85f7-11d723244473}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:customer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="customerid" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd8bfe41-ba41-44ab-a468-302c4698bf08}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:new_vessel" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="new_vessel" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{31e29953-f711-4343-8a37-c5e99c3c5e68}" name="StageStep11" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{55329770-4fed-46b7-87a0-e9581da23267}" name="StageStep11_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f3938195-e42b-422c-8eea-51e0ec752f8f}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:crm1st_po" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crm1st_po" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{43f4f23d-58bc-4af0-9439-175fb3526d25}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:crm1st_estimatedtimeofarrival" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crm1st_estimatedtimeofarrival" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{41bb16d4-f964-4499-9e4e-7138f6a0e4f5}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:crm1st_estimatedtimeofdeparture" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crm1st_estimatedtimeofdeparture" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7ebc5d84-2ec5-4910-a138-163dc3beb7ed}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_port" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="tra_port" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{662e3a53-974f-4023-96bd-793db545f346}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:new_ageninformation" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="new_ageninformation" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{20bebbdc-f92f-47fe-ae96-d39d3d4d98a0}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_serviceattendanceby" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_serviceattendanceby" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{556bd9f6-2269-4705-8f37-67abd6f63d74}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_servicesupplier" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="tra_servicesupplier" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0c1692d3-b708-406d-bed0-7539b07b26dd}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_servicesuppliercontact" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="tra_servicesuppliercontact" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d21f0818-6956-4398-bacf-c905d983e372}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_serviceactivityiscreated" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_serviceactivityiscreated" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d76d493f-b9ad-4f25-ba1d-ccbf1d98361c}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_postponedorcanceledduringplanning" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_postponedorcanceledduringplanning" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ae6756a2-7e28-450e-8eae-f9eb14937b92}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_postponedorcanceledduringplanningdate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="tra_postponedorcanceledduringplanningdate" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{6259236e-7b4b-4e90-8c43-b26324253b0e}" name="StageStep36" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{1a83097b-e490-454f-a5a6-f8741de368e6}" name="StageStep36_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{348ad10d-6e11-4166-977c-f643a4d37275}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:statuscode" classid="{5d68b988-0661-4db2-bc3e-17598ad3be6c}" datafieldname="statuscode" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d16c5ef0-080b-43e2-a59f-cccecd976e97}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_postponedorcanceledduringattendance" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_postponedorcanceledduringattendance" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7d8f0515-01a4-4268-a1ba-f5f15ffb0327}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_postponedorcanceledduringattendancedate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="tra_postponedorcanceledduringattendancedate" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6b89ba6c-da04-4d7f-8d58-092310a1fe77}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_engineerarrivedonsite" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_engineerarrivedonsite" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c3664a59-4352-4bf5-9e28-4ddb8646392e}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_engineerarrivedonsitedate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="tra_engineerarrivedonsitedate" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{09e43ad5-a9ef-44e5-8506-486c7fe083ab}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_servicefilessaved" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_servicefilessaved" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c8eb2498-1313-4a50-bbd4-d1f7802bdcff}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_new_followuprequired" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_new_followuprequired" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{be3d0f48-8c7c-4bf9-bc44-411f5ffe710c}" name="StageStep53" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{4c00ea6c-1f48-419d-a15f-20b86655baeb}" name="StageStep53_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6aadabe9-16c6-47f7-90dd-e717ec804e1b}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_firsttimefix" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_firsttimefix" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ae84824-c780-4d6f-b636-0a1a31c33d28}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_tobeinvoicedby" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_tobeinvoicedby" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{4a2b0ed9-ccfc-4719-9740-6ae638597850}" name="StageStep61" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{8981fe50-6a15-4007-b6b2-061f7c0220d4}" name="StageStep61_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{55efb563-3852-44a9-a707-5c140184bb2c}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_solutioncode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_solutioncode" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6a99462a-047c-4413-8deb-8c8aac874f22}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_productlinecode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_productlinecode" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{22124fbd-1a90-447a-87e5-56567ba07df5}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_requesttypecode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_requesttypecode" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{10565760-c7a5-4db2-b7da-b54f70969dd1}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_remotediagnosticsfinished" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_remotediagnosticsfinished" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{883a6133-b75d-4f38-91ce-d2dfa2bcfd5c}" name="StageStep71" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{877bc50c-69df-476a-84c1-33341897405e}" name="StageStep71_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{db5ca9a9-fc93-44eb-aaf7-2dc2bb435e3e}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_knowledgebasearticleavailable" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_knowledgebasearticleavailable" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{df26325f-3100-4fe0-9b0e-2332b121fff3}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_remoteconnectiononsite" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_remoteconnectiononsite" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{aa5fa058-37a0-40da-9fee-9b16538e78d6}" name="StageStep78" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{91072b7d-f044-41d9-9085-ad77a7365cc2}" name="StageStep78_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9f42e000-a4ec-4af5-b82f-a66c574a5703}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_firsttimefix" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_firsttimefix" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bbe48438-f89d-4bb2-8c1f-f23c48ae6ccd}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_casesolvedremotely" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_casesolvedremotely" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2ca7b629-cd20-4829-bf3f-82fbf0fa2947}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_tobeinvoicedby" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_tobeinvoicedby" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{e11d7958-ed6a-4bad-a3f9-f7924cab72f0}" name="StageStep88" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{f878d518-9475-4c69-b807-8405df7113c3}" name="StageStep88_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{420c9fdd-574e-41af-85b3-97797da90f6b}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_digitaldatadatabasechecked" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_digitaldatadatabasechecked" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f639564b-73c5-4a9f-a952-77d3224bea7c}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_digitaldataapprovalrequestsent" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_digitaldataapprovalrequestsent" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{adea1070-47e1-4402-8c73-5422cacf1698}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_chartorderapprovalreceived" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_chartorderapprovalreceived" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{ab57ca22-b62a-4349-8511-29aaf3e8ffe5}" name="StageStep96" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{1f94fa8e-1713-472e-9f1d-2656a4fcdfcb}" name="StageStep96_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{081555cb-43ea-474b-9baf-b3111627f4a9}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_digitaldataorderapprovedinids" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_digitaldataorderapprovedinids" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f330744a-c9b4-4e95-8920-72f90fb096f4}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_cs_case_process:tra_licenseorpermitssend" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_licenseorpermitssend" relationship="bpf_incident_tra_cs_case_process" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{10a85dc3-ecf3-43dc-9e2f-c47a1674e565}" name="StageStep102" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections />
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{28fa27f7-d700-4fb1-a41d-da9c2e611448}" name="StageStep106" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections />
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{5718c17a-518a-42fd-ad8a-a2d8a0d90cda}" name="StageStep110" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections />
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

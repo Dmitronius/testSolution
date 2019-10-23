@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{e5c31958-45d5-e911-a978-000d3ab5a0d7}</WebResourceId>
+  <Name>wdt_BudgetLine_32pix_white.svg</Name>
+  <DisplayName>BudgetLine_32pix_white.svg</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/wdt_BudgetLine_32pix_whitesvgE5C31958-45D5-E911-A978-000D3AB5A0D7</FileName>
+</WebResource>

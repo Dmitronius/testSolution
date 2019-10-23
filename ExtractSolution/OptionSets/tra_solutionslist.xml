@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tra_solutionslist" localizedName="Solutions List" description="Opportunity&#xA;Case" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Solutions List" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Opportunity&#xA;Case" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="167490000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="SIM" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="FOS" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="SHS" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="STC" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="NB" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490005" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="ADM" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490006" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="ITS" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490007" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="OPS" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490008" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="old - Digital Data" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="For Cases" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Transas.CalculateOpportunity.Plugin.CalculateOpportunityKPIs: Create of new_cashflowitem" SdkMessageProcessingStepId="{acd9d4ec-90be-e911-a96f-000d3ab5a3d0}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PluginTypeName>Transas.CalculateOpportunity.Plugin.CalculateOpportunityKPIs, Transas.CalculateOpportunity.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=81927446eb6f4aa9</PluginTypeName>
+  <PluginTypeId>d460a25b-e652-4d15-ad2f-1d9b9bf94cf6</PluginTypeId>
+  <PrimaryEntity>new_cashflowitem</PrimaryEntity>
+  <AsyncAutoDelete>1</AsyncAutoDelete>
+  <Description>Transas.CalculateOpportunity.Plugin.CalculateOpportunityKPIs: Create of new_cashflowitem</Description>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>1</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{9ebdbb1b-ea3e-db11-86a7-000a3a5473e8}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

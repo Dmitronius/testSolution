@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2d6b3f17-819b-4b74-9de3-278168e2566d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_opportunityproductgroupid">
+          <cell name="new_name" width="100" />
+          <cell name="new_opportunityid" width="200" />
+          <cell name="tra_productlineid" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="overriddencreatedon" width="100" />
+          <cell name="statecode" width="100" />
+          <cell name="statuscode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_opportunityproductgroup">
+          <attribute name="new_name" />
+          <attribute name="createdon" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="tra_productlineid" operator="like" value="{0}" />
+            <condition attribute="new_name" operator="like" value="{0}" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="statecode" />
+          <attribute name="overriddencreatedon" />
+          <attribute name="new_opportunityid" />
+          <attribute name="tra_productlineid" />
+          <attribute name="new_opportunityproductgroupid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Opportunity Product Lines" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2a13c189-31ec-48f3-a74c-a5f9bc5bb0f9}</savedqueryid>
+    <layoutxml>
+      <grid name="new_cashflows" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_cashflow" id="new_cashflowid">
+          <cell name="new_name" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="statecode" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch distinct="false" no-lock="false" mapping="logical">
+        <entity name="new_cashflow">
+          <attribute name="createdon" />
+          <attribute name="new_name" />
+          <attribute name="statecode" />
+          <attribute name="statuscode" />
+          <attribute name="new_cashflowid" />
+          <order attribute="new_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Budgets Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{2005cf55-8c10-4fc8-9a8f-548331b35e7b}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab verticallayout="true" id="{74cd555c-5a66-4813-8a16-de9e6ef1588d}" IsUserDefined="1" name="{74cd555c-5a66-4813-8a16-de9e6ef1588d}" locklevel="0" expanded="true" showlabel="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{ab5c9b6b-097d-466d-af87-8d4e24b392e9}" name="{ab5c9b6b-097d-466d-af87-8d4e24b392e9}" columns="11" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7c24aded-bd15-4c87-aebd-261370c80c38}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Employee Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_employeenameid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_employeenameid" disabled="true" uniqueid="{81ec1369-a219-796d-9230-82cb1ab92138}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{cb8109e0-367b-ae7e-ce39-8195e5130909}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ae33ba15-c02b-2960-27b9-1e215354dd85}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Posting Date" languagecode="1033" />
+                        </labels>
+                        <control id="tra_postingdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="tra_postingdate" disabled="false" />
+                      </cell>
+                      <cell id="{70b83623-ce8e-782e-cce1-21b938c0c4ad}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{40a77a45-27d3-ca22-912d-15cc7e599b8e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type of Activity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_timeexpenseactivitytypecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_timeexpenseactivitytypecode" disabled="false" uniqueid="{80dc37e8-24bd-4592-0c2a-2961c678dc71}" />
+                      </cell>
+                      <cell id="{d98530ee-6dbe-0b1e-13de-e253eaad1e6e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{272ea2ae-acd3-d9b2-4175-25d537944aa8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Case" languagecode="1033" />
+                        </labels>
+                        <control id="tra_caseid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_caseid" disabled="false" uniqueid="{b395c2a2-b694-4ce3-ec5c-032c992c5ca2}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{9AC51863-58C7-49A0-ADCC-AFD9A4C3EE59}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{6a5ae5ea-9d5a-5ee6-d84b-8299901a64c3}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{190a1672-5a75-2e40-1ba3-9e4439e32b46}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Hours Spent" languagecode="1033" />
+                        </labels>
+                        <control id="tra_hoursspentfpn" classid="{0D2C745A-E5A8-4c8f-BA63-C6D3BB604660}" datafieldname="tra_hoursspentfpn" disabled="false" />
+                      </cell>
+                      <cell id="{6d3961aa-219a-e9b2-8729-b4401a669419}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{018b3737-76b7-8a76-c59c-9eb21be56b36}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="old-Minutes Spent" languagecode="1033" />
+                        </labels>
+                        <control id="tra_hoursspent" classid="{AA987274-CE4E-4271-A803-66164311A958}" datafieldname="tra_hoursspent" disabled="true" uniqueid="{76813435-e4c2-cd8b-a3a4-c06bb9550dec}" />
+                      </cell>
+                      <cell id="{65d7cee8-7bed-8291-1abd-1041808c2061}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{74cd555c-5a66-4813-8a16-de9e6ef1588d}_section_3" showlabel="true" showbar="false" locklevel="0" id="{53682703-56ca-4438-cd7a-b07e17103108}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Time Report Approval" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{360e185a-8e45-9e79-d322-0eb337289957}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approval Status" languagecode="1033" />
+                        </labels>
+                        <control id="tra_approvalstatuscode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_approvalstatuscode" disabled="true" uniqueid="{a6c22503-c5cc-8b11-31b4-4ed6bd67c5c5}" />
+                      </cell>
+                      <cell id="{e594029a-10a3-a29c-4791-1deb23a57b02}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approval Comment" languagecode="1033" />
+                        </labels>
+                        <control id="tra_approvalcomment" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="tra_approvalcomment" disabled="false" uniqueid="{d167d4e6-a817-3720-a232-58c3e2707bdb}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{654b5da2-b1e2-d14a-0178-ed17ed07772a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pre-Approver" languagecode="1033" />
+                        </labels>
+                        <control id="tra_tier1approverid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_tier1approverid" disabled="true" uniqueid="{270db59b-3747-034b-ab5d-12b93929d8b4}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{b54cd540-5205-278c-330e-bae5175ea260}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pre-Approval Time" languagecode="1033" />
+                        </labels>
+                        <control id="tra_tier1approvaltime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="tra_tier1approvaltime" disabled="true" uniqueid="{03697457-6e00-5424-8119-79c715581ac5}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1c60be67-d942-c7b9-7e85-b1131ab3db60}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approver" languagecode="1033" />
+                        </labels>
+                        <control id="tra_tier2approverid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_tier2approverid" disabled="true" uniqueid="{705ec041-da47-5059-ad31-5cd8ec227c8d}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{0333cd58-5c9a-6662-ce60-ed575cd92e24}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approval Time" languagecode="1033" />
+                        </labels>
+                        <control id="tra_tier2approvaltime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="tra_tier2approvaltime" disabled="true" uniqueid="{8b8c7519-6764-6ba1-ca29-51b6a8d9688d}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="{74cd555c-5a66-4813-8a16-de9e6ef1588d}_section_4" showlabel="false" showbar="false" locklevel="0" id="{bc1a9d80-b9e6-0568-80c6-0b1d8a734c80}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto">
+                  <labels>
+                    <label description="Notes Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1de220e2-3a88-953a-5077-88ca70c78a7b}" showlabel="false" rowspan="15" auto="true" colspan="1" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{656831b0-0b2a-39bb-3391-8ed7790b4389}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>ActivityFeedsTab</DefaultTabId>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+                <section id="{5bfa1f59-aa8a-41e3-8262-abc90cffe4a3}" name="{74cd555c-5a66-4813-8a16-de9e6ef1588d}_column_2_section_1" columns="11" showlabel="false" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" availableforphone="true" visible="false">
+                  <labels>
+                    <label description="Hidden section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{217443f3-4f84-4f64-af05-0e0935c16ac5}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Subject" languagecode="1033" />
+                        </labels>
+                        <control id="subject" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" uniqueid="{7de044e5-7bba-62ca-b132-7b7155b489e9}" disabled="true" />
+                      </cell>
+                      <cell id="{3894546b-2e16-499b-8925-3e23be08fb5e}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{67848503-a7cc-452c-b1e1-1bb8579bd965}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0e1bb57e-282a-b914-caca-b5901417aca3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vessel Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_vesselname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_vesselname" disabled="false" />
+                      </cell>
+                      <cell id="{075350b6-607e-3460-6da1-d96b51311376}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vessel IMO" languagecode="1033" />
+                        </labels>
+                        <control id="tra_vesselimo" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_vesselimo" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb090581-d021-d6dd-6995-a7da192e4a9a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Project Code" languagecode="1033" />
+                        </labels>
+                        <control id="tra_projectcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_projectcode" disabled="false" />
+                      </cell>
+                      <cell id="{187a5187-47e6-add2-da90-b51a9c54ecc1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Solution" languagecode="1033" />
+                        </labels>
+                        <control id="tra_solution" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_solution" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4324c134-a7de-d96b-259a-b8a752dca63c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Opportunity Office" languagecode="1033" />
+                        </labels>
+                        <control id="tra_opportunityoffice" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_opportunityoffice" disabled="false" />
+                      </cell>
+                      <cell id="{3b04229a-8db2-520b-0222-88802341e0c7}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{71da6195-a7c8-4872-5942-35be5aa2179e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Employee Office" languagecode="1033" />
+                        </labels>
+                        <control id="tra_employeeoffice" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_employeeoffice" disabled="false" />
+                      </cell>
+                      <cell id="{d1e3b32c-21d3-254b-e93d-bbb95b8684ae}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="COE" languagecode="1033" />
+                        </labels>
+                        <control id="tra_coe" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_coe" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{80043b23-d596-4f5b-b498-0cc7f50f190e}" celllabelposition="Top" columns="1111" labelwidth="115" celllabelalignment="Left" availableforphone="true">
+        <rows>
+          <row>
+            <cell id="{1318ec36-2ba4-aad6-7d1c-4904e5041b43}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5408ed4c-c077-ca21-a67e-8a813c2e8345}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{31700ba2-ea35-e0d1-749b-2e9492c35570}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Approval Status" languagecode="1033" />
+              </labels>
+              <control id="header_tra_approvalstatuscode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_approvalstatuscode" disabled="true" uniqueid="{30a940c3-5888-9be1-0e64-83ea416b9cdc}" />
+            </cell>
+            <cell id="{6f0c7cae-bdd1-47ce-90a8-1f5c5b17d76c}" showlabel="true" locklevel="0" visible="false">
+              <labels>
+                <label description="Activity Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" uniqueid="{aac15b58-9977-62b8-29b6-b054779ca71a}" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{1c174e8d-5faf-480c-b430-454e6bab9fb0}" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{8d5d0d7e-55a9-692b-ad38-ea66132ae8ee}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c6ce072d-ae0b-eb0d-0eaa-91b5a03bdb7b}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="footer_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" />
+            </cell>
+            <cell id="{dd6535e3-38e8-e717-3e9c-636ae84c318a}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Last Updated" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="true" />
+            </cell>
+            <cell id="{0deae856-435a-ca94-e222-d643d9dda4dd}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="tra_timeexpenses_library" libraryUniqueId="{79da994c-a1dc-6764-5209-036e26514825}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="TRA.Utility.fillDefaultPostingDate" libraryName="tra_timeexpenses_library" handlerUniqueId="{b33d9b5e-e5e6-705c-1bad-35136e94e0bc}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="TRA.Utility.addNotificationOnEmployeeName" libraryName="tra_timeexpenses_library" handlerUniqueId="{c784a916-c67c-8c40-5c85-c42b37e3ede2}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="TRA.Utility.addNotificationOnEmployeeName" libraryName="tra_timeexpenses_library" handlerUniqueId="{96ba22b9-bd7c-d1c9-565a-b4524abcc71e}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

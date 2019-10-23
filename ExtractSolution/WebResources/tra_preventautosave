@@ -1,0 +1,14 @@
+function preventAutoSave(econtext) {
+    //debugger;
+    var eventArgs = econtext.getEventArgs();
+    //console.log(eventArgs);
+    console.log("TRA: Email form type: " + Xrm.Page.ui.getFormType());
+    console.log("TRA: Save type: " + eventArgs.getSaveMode());
+
+    if (Xrm.Page.ui.getFormType() == 2 && eventArgs.getSaveMode() == 70) {
+        eventArgs.preventDefault();
+        console.log("TRA: Autosave prevented");
+    };
+
+};
+

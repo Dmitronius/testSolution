@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{f03fc5fb-726c-e711-8107-5065f38a9a01}</WebResourceId>
+  <Name>crm1st_Samplejsonforarticle.json</Name>
+  <DisplayName>Sample json for Article</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>0.33</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/crm1st_SamplejsonforarticlejsonF03FC5FB-726C-E711-8107-5065F38A9A01</FileName>
+</WebResource>

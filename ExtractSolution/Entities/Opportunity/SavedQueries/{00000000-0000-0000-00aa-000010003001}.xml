@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{00000000-0000-0000-00aa-000010003001}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="opportunityid">
+          <cell name="name" width="300" />
+          <cell name="customerid" width="150" />
+          <cell name="a_ef8066bb4eb040ba856b83c0ae259e29.stagename" width="100" disableSorting="1" />
+          <cell name="new_actualorderdate" width="100" />
+          <cell name="estimatedvalue" width="100" />
+          <cell name="crm1st_probability" width="100" />
+          <cell name="CFSTLProjectID" width="100" />
+          <cell name="new_istobudgetinnavision" width="100" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="ownerid" width="100" />
+          <cell name="a_34e7bb29d7d04dcb985d78a992c283cc.new_countryid" width="100" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="opportunity">
+          <attribute name="name" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="customerid" />
+          <attribute name="new_actualorderdate" />
+          <attribute name="crm1st_probability" />
+          <link-entity alias="a_34e7bb29d7d04dcb985d78a992c283cc" name="account" from="accountid" to="customerid" link-type="outer" visible="false">
+            <attribute name="new_countryid" />
+          </link-entity>
+          <attribute name="ownerid" />
+          <attribute name="estimatedvalue" />
+          <link-entity alias="a_ef8066bb4eb040ba856b83c0ae259e29" name="processstage" from="processstageid" to="stageid" link-type="outer" visible="false">
+            <attribute name="stagename" />
+          </link-entity>
+          <attribute name="CFSTLProjectID" />
+          <attribute name="new_istobudgetinnavision" />
+          <attribute name="opportunityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Open Opportunities" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

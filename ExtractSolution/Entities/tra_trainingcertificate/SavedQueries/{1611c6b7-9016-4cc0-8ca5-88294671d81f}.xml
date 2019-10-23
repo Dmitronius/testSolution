@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1611c6b7-9016-4cc0-8ca5-88294671d81f}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="tra_trainingcertificate" id="tra_trainingcertificateid">
+          <cell name="tra_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_trainingcertificate">
+          <attribute name="tra_trainingcertificateid" />
+          <attribute name="tra_name" />
+          <attribute name="createdon" />
+          <order attribute="tra_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>18.12.12.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Training Certificate Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="new.crm1st.new_cashflowitem.Button2.RecalculateButton.CustomAction" Location="Mscrm.Form.new_cashflowitem.Developer.Customize.Controls._children" Sequence="5">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:crm1st.new_cashflowitem.Button2.RecalculateButton.Alt" Command="crm1st.new_cashflowitem.Command11.RecalculateCommand" Id="crm1st.new_cashflowitem.Button2.RecalculateButton" Image32by32="/_imgs/ribbon/recalculateopportunity32.png" Image16by16="/_imgs/SFA/Recalculate_16.png" LabelText="$LocLabels:crm1st.new_cashflowitem.Button2.RecalculateButton.LabelText" Sequence="5" TemplateAlias="o1" ToolTipTitle="$LocLabels:crm1st.new_cashflowitem.Button2.RecalculateButton.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.new_cashflowitem.Button2.RecalculateButton.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.Mscrm.Isv.new_cashflowitem.Form.CustomAction" Location="Mscrm.Tabs._children" Sequence="1010">
+      <CommandUIDefinition>
+        <Tab Command="Mscrm.Isv.new_cashflowitem.Form" Description="ISV Budget Line Form" Id="Mscrm.Isv.new_cashflowitem.Form" Sequence="1010" Title="$LocLabels:Mscrm.Isv.new_cashflowitem.Form.Title">
+          <Scaling Id="Mscrm.Isv.new_cashflowitem.Form.Scaling">
+            <MaxSize GroupId="Mscrm.Isv.new_cashflowitem.Form.Group0" Id="Mscrm.Isv.new_cashflowitem.Form.Group0.MaxSize" Sequence="10" Size="Large" />
+            <Scale GroupId="Mscrm.Isv.new_cashflowitem.Form.Group0" Id="Mscrm.Isv.new_cashflowitem.Form.Group0.Scale.Medium" Sequence="20" Size="Medium" />
+            <Scale GroupId="Mscrm.Isv.new_cashflowitem.Form.Group0" Id="Mscrm.Isv.new_cashflowitem.Form.Group0.Scale.Small" Sequence="30" Size="Small" />
+            <Scale GroupId="Mscrm.Isv.new_cashflowitem.Form.Group0" Id="Mscrm.Isv.new_cashflowitem.Form.Group0.Scale.Popup" Sequence="40" Size="Popup" />
+          </Scaling>
+          <Groups Id="Mscrm.Isv.new_cashflowitem.Form.Groups">
+            <Group Command="Mscrm.Isv.new_cashflowitem.Form.Group0" Description="$LocLabels:Mscrm.Isv.new_cashflowitem.Form.Group0.Title" Id="Mscrm.Isv.new_cashflowitem.Form.Group0" Sequence="10" Title="$LocLabels:Mscrm.Isv.new_cashflowitem.Form.Group0.Title">
+              <Controls Id="Mscrm.Isv.new_cashflowitem.Form.Group0.Controls" />
+            </Group>
+          </Groups>
+        </Tab>
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.Mscrm.Isv.new_cashflowitem.HomepageGrid.CustomAction" Location="Mscrm.Tabs._children" Sequence="1020">
+      <CommandUIDefinition>
+        <Tab Command="Mscrm.Isv.new_cashflowitem.HomepageGrid" Description="ISV Budget Line Grid" Id="Mscrm.Isv.new_cashflowitem.HomepageGrid" Sequence="1020" Title="$LocLabels:Mscrm.Isv.new_cashflowitem.HomepageGrid.Title">
+          <Scaling Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Scaling">
+            <MaxSize GroupId="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0" Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.MaxSize" Sequence="10" Size="Large" />
+            <Scale GroupId="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0" Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Scale.Medium" Sequence="20" Size="Medium" />
+            <Scale GroupId="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0" Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Scale.Small" Sequence="30" Size="Small" />
+            <Scale GroupId="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0" Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Scale.Popup" Sequence="40" Size="Popup" />
+          </Scaling>
+          <Groups Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Groups">
+            <Group Command="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0" Description="$LocLabels:Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Title" Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0" Sequence="10" Title="$LocLabels:Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Title">
+              <Controls Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Controls" />
+            </Group>
+          </Groups>
+        </Tab>
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.Mscrm.Isv.new_cashflowitem.SubGrid.CustomAction" Location="Mscrm.Tabs._children" Sequence="1030">
+      <CommandUIDefinition>
+        <Tab Command="Mscrm.Isv.new_cashflowitem.SubGrid" Description="ISV Budget Line Grid" Id="Mscrm.Isv.new_cashflowitem.SubGrid" Sequence="1030" Title="$LocLabels:Mscrm.Isv.new_cashflowitem.SubGrid.Title">
+          <Scaling Id="Mscrm.Isv.new_cashflowitem.SubGrid.Scaling">
+            <MaxSize GroupId="Mscrm.Isv.new_cashflowitem.SubGrid.Group0" Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.MaxSize" Sequence="10" Size="Large" />
+            <Scale GroupId="Mscrm.Isv.new_cashflowitem.SubGrid.Group0" Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Scale.Medium" Sequence="20" Size="Medium" />
+            <Scale GroupId="Mscrm.Isv.new_cashflowitem.SubGrid.Group0" Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Scale.Small" Sequence="30" Size="Small" />
+            <Scale GroupId="Mscrm.Isv.new_cashflowitem.SubGrid.Group0" Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Scale.Popup" Sequence="40" Size="Popup" />
+          </Scaling>
+          <Groups Id="Mscrm.Isv.new_cashflowitem.SubGrid.Groups">
+            <Group Command="Mscrm.Isv.new_cashflowitem.SubGrid.Group0" Description="$LocLabels:Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Title" Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0" Sequence="10" Title="$LocLabels:Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Title">
+              <Controls Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Controls" />
+            </Group>
+          </Groups>
+        </Tab>
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="crm1st.new_cashflowitem.Command11.RecalculateCommand">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="budgetRecalculate" Library="$webresource:crm1st_ribboncommands" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.Form">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_cashflowitem.Form" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.Form.Group0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_cashflowitem.Form.Group0" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.Form.Group0.Control0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_cashflowitem.Form.Group0.Control0" />
+      </DisplayRules>
+      <Actions>
+        <Url Address="/ISV/CashFlow/UpdateFinKPIs.aspx" WinMode="0" WinParams="height=140, width=250, scrollbars=yes, toolbar=false, status=yes" PassParams="true" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.HomepageGrid">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_cashflowitem.HomepageGrid" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0">
+      <EnableRules />
+      <DisplayRules />
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Control0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Control0" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm_Isv_new_cashflowitem_HomepageGrid_Group0_Control0_1" Library="$Webresource:new_cashflowitem_ribbon.js" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Control1">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Control1" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm_Isv_new_cashflowitem_HomepageGrid_Group0_Control1_2" Library="$Webresource:new_cashflowitem_ribbon.js" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.SubGrid">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_cashflowitem.SubGrid" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0">
+      <EnableRules />
+      <DisplayRules />
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Control0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Control0" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm_Isv_new_cashflowitem_SubGrid_Group0_Control0_3" Library="$Webresource:new_cashflowitem_ribbon.js" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Control1">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Control1" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm_Isv_new_cashflowitem_SubGrid_Group0_Control1_4" Library="$Webresource:new_cashflowitem_ribbon.js" />
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules>
+      <TabDisplayRule TabCommand="Mscrm.Isv.new_cashflowitem.Form">
+        <EntityRule Context="Form" />
+      </TabDisplayRule>
+      <TabDisplayRule TabCommand="Mscrm.Isv.new_cashflowitem.HomepageGrid">
+        <EntityRule Context="HomePageGrid" />
+      </TabDisplayRule>
+      <TabDisplayRule TabCommand="Mscrm.Isv.new_cashflowitem.SubGrid">
+        <EntityRule Context="SubGridStandard" />
+        <EntityRule Context="SubGridAssociated" />
+      </TabDisplayRule>
+    </TabDisplayRules>
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.Isv.new_cashflowitem.Form">
+        <MiscellaneousPrivilegeRule PrivilegeName="ISVExtensions" />
+        <OrRule>
+          <Or>
+            <CrmClientTypeRule Type="Web" />
+          </Or>
+          <Or>
+            <CrmClientTypeRule Type="Outlook" />
+            <CrmOfflineAccessStateRule State="Online" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.new_cashflowitem.Form.Group0">
+        <FormStateRule State="Create" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.new_cashflowitem.Form.Group0.Control0">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.new_cashflowitem.HomepageGrid">
+        <MiscellaneousPrivilegeRule PrivilegeName="ISVExtensions" />
+        <OrRule>
+          <Or>
+            <CrmClientTypeRule Type="Web" />
+          </Or>
+          <Or>
+            <CrmClientTypeRule Type="Outlook" />
+            <CrmOfflineAccessStateRule State="Online" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Control0">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Control1">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.new_cashflowitem.SubGrid">
+        <MiscellaneousPrivilegeRule PrivilegeName="ISVExtensions" />
+        <OrRule>
+          <Or>
+            <CrmClientTypeRule Type="Web" />
+          </Or>
+          <Or>
+            <CrmClientTypeRule Type="Outlook" />
+            <CrmOfflineAccessStateRule State="Online" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Control0">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Control1">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="crm1st.new_cashflowitem.Button2.RecalculateButton.Alt">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflowitem.Button2.RecalculateButton.LabelText">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflowitem.Button2.RecalculateButton.ToolTipDescription">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.new_cashflowitem.Button2.RecalculateButton.ToolTipTitle">
+      <Titles>
+        <Title description="Recalculate" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.new_cashflowitem.Form.Group0.Title">
+      <Titles>
+        <Title description="ISV Budget Line Form 1" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.new_cashflowitem.Form.Title">
+      <Titles>
+        <Title description="ISV Budget Line Form" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Group0.Title">
+      <Titles>
+        <Title description="ISV Budget Line Grid 1" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.new_cashflowitem.HomepageGrid.Title">
+      <Titles>
+        <Title description="ISV Budget Line Grid" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.new_cashflowitem.SubGrid.Group0.Title">
+      <Titles>
+        <Title description="ISV Budget Line Grid 1" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.new_cashflowitem.SubGrid.Title">
+      <Titles>
+        <Title description="ISV Budget Line Grid" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

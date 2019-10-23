@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="Transas.ARTSClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1c6e7ca50443b250" PluginAssemblyId="5390de90-802e-4a04-8e75-d7cb80f2201f" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/TransasARTSClient-5390DE90-802E-4A04-8E75-D7CB80F2201F/TransasARTSClient.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Transas.ARTSClient.OppotunityToARTSClient, Transas.ARTSClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1c6e7ca50443b250" PluginTypeId="b0f98bfd-485d-49e5-825a-bcf829c5fb0e" Name="Transas.ARTSClient.OppotunityToARTSClient">
+      <FriendlyName>c7bfe65d-076e-4b65-9a9e-0884c0e665f6</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

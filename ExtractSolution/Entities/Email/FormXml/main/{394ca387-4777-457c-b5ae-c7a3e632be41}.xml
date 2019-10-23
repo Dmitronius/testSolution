@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{394ca387-4777-457c-b5ae-c7a3e632be41}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form>
+      <hiddencontrols>
+        <data id="directioncode" datafieldname="directioncode" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="statecode" datafieldname="statecode" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+      </hiddencontrols>
+      <tabs>
+        <tab verticallayout="true" id="{c86a8d1b-4793-4f90-a9a2-4fe3a3955374}" IsUserDefined="0">
+          <labels>
+            <label description="Email" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" locklevel="0" id="{fbd66c96-dca4-42cd-b760-fd8b8f8a3828}" IsUserDefined="0" layout="varwidth" columns="11">
+                  <labels>
+                    <label description="Recipient Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{33de98e6-392a-4a7b-85e2-a9bfbccf45ee}">
+                        <labels>
+                          <label description="From" languagecode="1033" />
+                        </labels>
+                        <control id="from" classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="from" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{0d82da3e-b04b-411e-91ad-ec2595149da6}">
+                        <labels>
+                          <label description="Cc" languagecode="1033" />
+                        </labels>
+                        <control id="cc" classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="cc" disabled="false">
+                          <parameters>
+                            <ResolveEmailAddress>true</ResolveEmailAddress>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{7e86a7d2-f0b5-48a3-8f1b-be72b72e673b}">
+                        <labels>
+                          <label description="To" languagecode="1033" />
+                        </labels>
+                        <control id="to" classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="to" disabled="false">
+                          <parameters>
+                            <ResolveEmailAddress>true</ResolveEmailAddress>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{63ea2a1b-ea76-4d3f-bf0e-beacf0e922dc}">
+                        <labels>
+                          <label description="Bcc" languagecode="1033" />
+                        </labels>
+                        <control id="bcc" classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="bcc" disabled="false">
+                          <parameters>
+                            <ResolveEmailAddress>true</ResolveEmailAddress>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section showlabel="false" showbar="false" locklevel="0" id="{C57EC4C8-F4BE-4bd5-9F80-BC22211058EB}" IsUserDefined="0" layout="varwidth" columns="11" height="auto">
+                  <labels>
+                    <label description="Email Description" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2" id="{2b0dd903-dd6d-42ba-bf4a-7368b5ba4da0}">
+                        <labels>
+                          <label description="Subject" languagecode="1033" />
+                        </labels>
+                        <control id="subject" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell colspan="2" showlabel="false" rowspan="5" auto="true" id="{689a5a57-c7ce-4686-924f-e0cd2d9d05c9}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="description" classid="{6F3FB987-393B-4d2d-859F-9D0F0349B6AD}" datafieldname="description" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+                <section showlabel="false" showbar="false" locklevel="0" id="{D1A34BBC-7F4F-48a0-A6E6-7E99DCFB607F}" IsUserDefined="0" layout="varwidth" columns="11">
+                  <labels>
+                    <label description="E-mail Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2" id="{1bf260db-ff7b-4fd0-ba76-cc957d9cef26}">
+                        <labels>
+                          <label description="Regarding" languagecode="1033" />
+                        </labels>
+                        <control id="regardingobjectid" classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" disabled="false">
+                          <parameters>
+                            <AutoResolve>false</AutoResolve>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2" id="{da0f2180-ba2b-45f2-b6cd-25ee79b07114}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{6fedbb1d-9ad7-49d6-8f7f-5aea43f2723b}">
+                        <labels>
+                          <label description="Duration" languagecode="1033" />
+                        </labels>
+                        <control id="actualdurationminutes" classid="{AA987274-CE4E-4271-A803-66164311A958}" datafieldname="actualdurationminutes" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{75b9a7cf-44dc-492f-aadd-5962d65f4a2c}">
+                        <labels>
+                          <label description="Priority" languagecode="1033" />
+                        </labels>
+                        <control id="prioritycode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="prioritycode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{6aff1d06-0ecd-49d6-9e9a-e6f530a56558}">
+                        <labels>
+                          <label description="Due" languagecode="1033" />
+                        </labels>
+                        <control id="scheduledend" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{f00af200-49ae-43cd-86d8-781a68074814}">
+                        <labels>
+                          <label description="To Discussion" languagecode="1033" />
+                        </labels>
+                        <control id="new_todiscution" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_todiscution" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{9c849926-7e18-4c74-9071-b2b69bacd10c}">
+                        <labels>
+                          <label description="Category" languagecode="1033" />
+                        </labels>
+                        <control id="category" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="category" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{45220a0d-6f65-4812-8f86-a7c32a17d253}">
+                        <labels>
+                          <label description="Sub-Category" languagecode="1033" />
+                        </labels>
+                        <control id="subcategory" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subcategory" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section showlabel="false" showbar="false" locklevel="0" id="{5c734d99-e432-dd11-8aa8-0003ffc25b3b}" IsUserDefined="1" layout="varwidth" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="test" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{0b59a673-3423-4aad-89fa-d4b9d2c42fb8}">
+                        <labels>
+                          <label description="Actual End" languagecode="1033" />
+                        </labels>
+                        <control id="actualend" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="actualend" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{89714b10-541f-4cc0-a44c-83cb69208301}">
+                        <labels>
+                          <label description="Actual Start" languagecode="1033" />
+                        </labels>
+                        <control id="actualstart" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="actualstart" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{43a5843d-1ea2-47ac-bb6c-c6c516666134}">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{2815a246-3e98-4d6d-a3fd-b3b7f3d0a9ed}">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="scheduledstart" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledstart" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{4fbc42ac-d18c-4132-9fa7-89f8d0bb0e0c}" IsUserDefined="0" locklevel="0" expanded="false">
+          <labels>
+            <label description="Attachments" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" locklevel="0" id="{125986d7-ae21-4864-8494-b88d712b4e39}" height="auto" IsUserDefined="0" layout="varheight" columns="11">
+                  <labels>
+                    <label description="Attachments" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="2" rowspan="2" showlabel="false" auto="true" id="{19bef896-e1d2-49d2-9592-9f4a674f523a}">
+                        <labels>
+                          <label description="Attachment" languagecode="1033" />
+                        </labels>
+                        <control id="attachmentsGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{270DE234-E469-4806-9C7E-8D94901CD521}</ViewId>
+                            <TargetEntityType>activitymimeattachment</TargetEntityType>
+                            <RelationshipName>email_activity_mime_attachment</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="attachments" verticallayout="true" id="{96C7C7C4-69BE-4104-90B4-00943CDB8760}" IsUserDefined="0" locklevel="0" expanded="false">
+          <labels>
+            <label description="Attachments" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{c719bb61-eed8-4987-8337-22fd66a741ab}" name="attachments_column_3_section_1" columns="11" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows></rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_5" id="{71d2726c-e606-861c-828a-c5b140c280a4}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="Documents" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="false" showbar="false" locklevel="0" id="{03774099-d86e-e56a-b988-781adb550d77}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Documents" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{68a308d2-7d3e-e710-587b-b2a7dd2372a2}" showlabel="false" colspan="1" auto="false" rowspan="16">
+                        <labels>
+                          <label description="Documents" languagecode="1033" />
+                        </labels>
+                        <control id="WebResource_Properties" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
+                          <parameters>
+                            <Url>c4crm_DocumentsIFrame.html</Url>
+                            <Data>etc</Data>
+                            <PassParameters>true</PassParameters>
+                            <ShowOnMobileClient>false</ShowOnMobileClient>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>true</Border>
+                            <WebResourceId>{0A03826B-A277-E711-810C-5065F38B06F1}</WebResourceId>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="details" id="{77D60D0D-F6F1-4ADB-9E2D-534CA77C17AC}" IsUserDefined="0" locklevel="0" expanded="false">
+          <labels>
+            <label description="Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{eeb3b63a-c504-4ab6-85e9-d57a04ef8be3}" name="details_column_4_section_1" columns="11" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows></rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Activities.Email.formOnload" libraryName="Activities/SystemLibraries/Email_main_system_library.js" handlerUniqueId="ecdfe4d8-d6d3-4d21-ab68-8ea75bb30a79" enabled="true" passExecutionContext="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onsave" application="false" active="true">
+          <Handlers>
+            <Handler functionName="Form_onsave" libraryName="Email_main_library.js" handlerUniqueId="616c2fc9-b402-484a-aeb8-cbdc87d1ba0f" enabled="true">
+              <dependencies />
+            </Handler>
+          </Handlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Activities/SystemLibraries/Email_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <DisplayConditions FallbackForm="true" Order="5">
+        <Everyone />
+      </DisplayConditions>
+      <formLibraries>
+        <Library name="Email_main_library.js" libraryUniqueId="{5cbd8078-fa0a-4861-8a00-fa21ebf2803e}" />
+      </formLibraries>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

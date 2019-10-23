@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{46a74e83-1187-43a2-b4d3-5ba3c65e2f39}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab verticallayout="true" id="{f42f0dbe-7a78-4f64-8a54-da7f0ebbbf2a}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c4b71f8e-a2f2-476b-968d-9e71be92bc7f}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{905ae6b2-84ab-4fe2-b189-ef19fcbe66d7}">
+                        <labels>
+                          <label description="Account" languagecode="1033" />
+                        </labels>
+                        <control id="new_account" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_account" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{609ebabb-286c-49a2-8f66-db32eef8e640}">
+                        <labels>
+                          <label description="Product Group" languagecode="1033" />
+                        </labels>
+                        <control id="new_productgroup" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_productgroup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell showlabel="true" locklevel="0" id="{dd4ae5d8-b118-44db-a9a6-a698a31f4799}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="true" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{68efff47-209e-4dfb-988f-e636a5b7d78d}">
+                        <labels>
+                          <label description="Subgroup" languagecode="1033" />
+                        </labels>
+                        <control id="new_subgroups" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_subgroups" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <footer id="{5bc72a1e-4e32-4499-b4fe-518244441a61}">
+        <rows>
+          <row>
+            <cell id="{a1f4b1ec-4cbd-4ed2-b06d-165f2fb42c43}">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="footer_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <events>
+        <event name="onload" application="false" active="true">
+          <Handlers>
+            <Handler functionName="siteProductGroupMain.OnLoadForm" libraryName="New_siteproductgroup_main_library.js" handlerUniqueId="abde9ecf-3be5-4cf0-8a86-87c6e6b32ef9" enabled="true" passExecutionContext="false" parameters="">
+              <dependencies />
+            </Handler>
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="true" attribute="new_productgroup">
+          <Handlers>
+            <Handler functionName="siteProductGroupMain.onChange_new_productgroup" libraryName="New_siteproductgroup_main_library.js" handlerUniqueId="f17c5405-c1a5-4623-85a9-23425b40b320" enabled="true" passExecutionContext="false" parameters="">
+              <dependencies />
+            </Handler>
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="new_name">
+          <Handlers>
+            <Handler functionName="new_name_onchange" libraryName="New_siteproductgroup_main_library.js" handlerUniqueId="8436ede4-fe99-4d84-8ce3-0b8b9d0dfb8a" enabled="false">
+              <dependencies />
+            </Handler>
+          </Handlers>
+        </event>
+      </events>
+      <formLibraries>
+        <Library name="New_siteproductgroup_main_library.js" libraryUniqueId="{bab46a9a-936f-4255-885e-3c04db84e8f4}" />
+      </formLibraries>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

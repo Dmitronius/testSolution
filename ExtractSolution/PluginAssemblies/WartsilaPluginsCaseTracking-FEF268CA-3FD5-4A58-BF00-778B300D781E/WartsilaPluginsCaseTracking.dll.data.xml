@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="Wartsila.Plugins.CaseTracking, Version=1.3.0.0, Culture=neutral, PublicKeyToken=a9dc434ca707dee3" PluginAssemblyId="fef268ca-3fd5-4a58-bf00-778b300d781e" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/WartsilaPluginsCaseTracking-FEF268CA-3FD5-4A58-BF00-778B300D781E/WartsilaPluginsCaseTracking.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Wartsila.Plugins.CaseTracking.PostOperationCaseCreate, Wartsila.Plugins.CaseTracking, Version=1.3.0.0, Culture=neutral, PublicKeyToken=a9dc434ca707dee3" PluginTypeId="b3670766-5656-4d6d-9d76-07887412339a" Name="Wartsila.Plugins.CaseTracking.PostOperationCaseCreate">
+      <FriendlyName>f56e8c68-5eb4-40fe-842f-e032a0f7e3ec</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Wartsila.Plugins.CaseTracking.PostOperationCaseUpdate, Wartsila.Plugins.CaseTracking, Version=1.3.0.0, Culture=neutral, PublicKeyToken=a9dc434ca707dee3" PluginTypeId="7ee19cff-b917-4709-925e-3667f22b2e60" Name="Wartsila.Plugins.CaseTracking.PostOperationCaseUpdate">
+      <FriendlyName>92f5ddb5-887e-4100-bf5d-bef58ad9e1e5</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Wartsila.Plugins.CaseTracking.PostOperationEmailCreate, Wartsila.Plugins.CaseTracking, Version=1.3.0.0, Culture=neutral, PublicKeyToken=a9dc434ca707dee3" PluginTypeId="fa1461d3-4b5d-4a73-825f-18bf0839acee" Name="Wartsila.Plugins.CaseTracking.PostOperationEmailCreate">
+      <FriendlyName>7ed1e38d-9a62-4db3-a78c-964d19e20eb0</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Wartsila.Plugins.CaseTracking.PostOperationEmailUpdate, Wartsila.Plugins.CaseTracking, Version=1.3.0.0, Culture=neutral, PublicKeyToken=a9dc434ca707dee3" PluginTypeId="3255dd92-04a5-4b51-a232-bb0212867707" Name="Wartsila.Plugins.CaseTracking.PostOperationEmailUpdate">
+      <FriendlyName>e140394c-6984-4bf8-b25f-053afae1e2bd</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{eee02a1e-4308-e811-8123-5065f38aea61}</WebResourceId>
+  <Name>new_/pages/SharePointAccess.html</Name>
+  <DisplayName>new_/pages/SharePointAccess.html</DisplayName>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.02.01.2017</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/new_pagesSharePointAccesshtmlEEE02A1E-4308-E811-8123-5065F38AEA61</FileName>
+</WebResource>

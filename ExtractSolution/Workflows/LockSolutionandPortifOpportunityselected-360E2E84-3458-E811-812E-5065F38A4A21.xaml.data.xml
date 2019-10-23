@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{360e2e84-3458-e811-812e-5065f38a4a21}" Name="Lock Solution and Port if Opportunity selected" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/LockSolutionandPortifOpportunityselected-360E2E84-3458-E811-812E-5065F38A4A21.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>New_AccountProduct</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Lock Solution and Port if Opportunity selected" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{24919bac-b9c4-e911-a972-000d3ab5a6ae}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>new_opportunityid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>New_AccountProduct</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{25919bac-b9c4-e911-a972-000d3ab5a6ae}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>New_AccountProduct</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{26919bac-b9c4-e911-a972-000d3ab5a6ae}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>tra_competitorid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>New_AccountProduct</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{27919bac-b9c4-e911-a972-000d3ab5a6ae}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>New_AccountProduct</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{28919bac-b9c4-e911-a972-000d3ab5a6ae}">
+      <controltype>1</controltype>
+      <scope>1</scope>
+      <controlname>tra_solutioncode</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>New_AccountProduct</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{29919bac-b9c4-e911-a972-000d3ab5a6ae}">
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>New_AccountProduct</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

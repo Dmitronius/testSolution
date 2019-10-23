@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{12309b9d-7f83-e811-813c-5065f38a4a21}</WebResourceId>
+  <Name>tra_entitlement_ribbon_main_library</Name>
+  <DisplayName>Entitlement Ribbon Main Library</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_entitlement_ribbon_main_library12309B9D-7F83-E811-813C-5065F38A4A21</FileName>
+</WebResource>

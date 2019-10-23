@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{73fdc64b-926f-4a69-a10d-0e49d27bd163}</formid>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{93e2ac7b-a328-4e0a-b330-a5b49dc1cffd}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{6abd8d3b-6619-4e7f-9f33-5528f214d3f9}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a6c73c0c-5e6d-43ab-ae1c-db3212530297}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b44c894a-d1e4-132a-4449-d86cde270d6b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Function" languagecode="1033" />
+                        </labels>
+                        <control id="tra_functioncode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_functioncode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{625b6ba4-0716-4bc8-932d-b6a51918534d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Sub Function" languagecode="1033" />
+                        </labels>
+                        <control id="tra_subfunctioncode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_subfunctioncode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9ed128d5-4cd9-b37c-5b9d-de59e2d4174b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="CoE Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_coecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_coecode" disabled="false" uniqueid="{7c6e647b-b772-c468-d13d-c28067c453ae}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a0357833-60b0-a7a9-061b-c85cc8c462ea}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Office" languagecode="1033" />
+                        </labels>
+                        <control id="tra_officeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_officeid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2e1dd23b-2659-00e3-641a-a8a211da1247}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pre-Approver" languagecode="1033" />
+                        </labels>
+                        <control id="tra_tier1approverid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_tier1approverid" disabled="false" uniqueid="{610070ad-3ea1-8401-4d0c-7a36dc8e8a07}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0888c161-c79c-347c-8d75-95a7e9626b19}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approver" languagecode="1033" />
+                        </labels>
+                        <control id="tra_tier2approverid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_tier2approverid" disabled="false" uniqueid="{b6551571-be9d-41dc-e9a8-20e3ad10c498}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ada59ab5-6211-3c92-e4e2-91343a105e04}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="wdt_description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c7a48118-0543-d38c-499c-d0e108495318}" showlabel="false" colspan="1" auto="false" rowspan="18">
+                        <labels>
+                          <label description="Users (Office Center of Excellence)" languagecode="1033" />
+                        </labels>
+                        <control id="Emplyees" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{00000000-0000-0000-00AA-000010001019}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>tra_tra_centerofexcelence_systemuser_usercoe</RelationshipName>
+                            <TargetEntityType>systemuser</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001019}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>16</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

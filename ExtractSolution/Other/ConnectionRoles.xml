@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConnectionRoles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ConnectionRoles>
+    <ConnectionRole>
+      <connectionroleid>{f90a3379-9b78-e911-a971-000d3ab5a0d7}</connectionroleid>
+      <name>Lead Contact</name>
+      <category>1</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>0.44.5.5</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{070b3379-9b78-e911-a971-000d3ab5a0d7}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>contact</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{0aa4954d-c8a3-e911-a96c-000d3ab5a3d0}</connectionroleid>
+      <name>Project Engineer</name>
+      <category>1001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>0.44.9.31</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{13a4954d-c8a3-e911-a96c-000d3ab5a3d0}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>systemuser</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+  </ConnectionRoles>
+</ConnectionRoles>

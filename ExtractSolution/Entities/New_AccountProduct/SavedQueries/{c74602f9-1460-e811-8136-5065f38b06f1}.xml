@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{c74602f9-1460-e811-8136-5065f38b06f1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_accproductidname" select="1" preview="1" icon="1">
+        <row name="result" id="new_accountproductid">
+          <cell name="a_8f4666892358e811812e5065f38a4a21.tra_regioncode" width="100" disableSorting="1" />
+          <cell name="a_8f4666892358e811812e5065f38a4a21.crm1st_countryid" width="100" disableSorting="1" />
+          <cell name="tra_portid" width="100" />
+          <cell name="a_8f4666892358e811812e5065f38a4a21.tra_porttypecode" width="100" disableSorting="1" />
+          <cell name="a_8f4666892358e811812e5065f38a4a21.tra_portlevelcode" width="100" disableSorting="1" />
+          <cell name="a_8f4666892358e811812e5065f38a4a21.tra_cargotypecode" width="100" disableSorting="1" />
+          <cell name="tra_systemclasscode" width="100" />
+          <cell name="new_installationdate" width="100" />
+          <cell name="new_sum2" width="100" />
+          <cell name="a_1465d5352a3ae71181055065f38b06f1.vendorname" width="100" disableSorting="1" />
+          <cell name="tra_competitorid" width="100" />
+          <cell name="a_8f4666892358e811812e5065f38a4a21.tra_latitude" width="100" disableSorting="1" />
+          <cell name="a_8f4666892358e811812e5065f38a4a21.tra_longitude" width="100" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_accountproduct">
+          <order attribute="tra_systemclasscode" descending="false" />
+          <attribute name="tra_systemclasscode" />
+          <attribute name="new_sum2" />
+          <attribute name="new_installationdate" />
+          <link-entity alias="a_1465d5352a3ae71181055065f38b06f1" name="product" from="productid" to="new_productid" link-type="outer" visible="false">
+            <attribute name="vendorname" />
+          </link-entity>
+          <attribute name="tra_competitorid" />
+          <link-entity alias="a_8f4666892358e811812e5065f38a4a21" name="new_area" from="new_areaid" to="tra_portid" link-type="outer" visible="false">
+            <attribute name="tra_regioncode" />
+            <attribute name="tra_porttypecode" />
+            <attribute name="tra_portlevelcode" />
+            <attribute name="crm1st_countryid" />
+            <attribute name="tra_cargotypecode" />
+            <attribute name="tra_longitude" />
+            <attribute name="tra_latitude" />
+          </link-entity>
+          <attribute name="tra_portid" />
+          <attribute name="new_accountproductid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="VTS Market Volume" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="For Rostopshin D. 25-5-2018" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

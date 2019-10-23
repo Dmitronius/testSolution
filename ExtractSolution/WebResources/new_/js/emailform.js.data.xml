@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{c0a1ae6e-191e-e811-8124-5065f38aea61}</WebResourceId>
+  <Name>new_/js/emailform.js</Name>
+  <DisplayName>emailform.js</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.18.02.07</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"&gt;&lt;Library name="wdt_process.js" displayName="Process Library for Workflows" languagecode="" description="" libraryUniqueId="{21418c99-03e0-7d55-4aed-8e1366e413de}"/&gt;&lt;Library name="wdt_alert.js" displayName="Alert JS Library" languagecode="" description="" libraryUniqueId="{76263339-81c2-1e8a-4c43-50e91ab5c2a6}"/&gt;&lt;/Dependency&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/new_jsemailformjsC0A1AE6E-191E-E811-8124-5065F38AEA61</FileName>
+</WebResource>

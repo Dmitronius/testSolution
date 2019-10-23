@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="crm1st.Transas.AutoNumberGenerator.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7a7968611d8d37be" PluginAssemblyId="a473be45-2a56-4b0b-b4b9-8e36534dca9d" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/crm1stTransasAutoNumberGeneratorPlugin-A473BE45-2A56-4B0B-B4B9-8E36534DCA9D/crm1stTransasAutoNumberGeneratorPlugin.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="crm1st.Transas.AutoNumberGenerator.Plugin.NumberGeneratorPlugin, crm1st.Transas.AutoNumberGenerator.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7a7968611d8d37be" PluginTypeId="2d1cd6b2-f511-479a-828e-5af8f5146a9d" Name="crm1st.Transas.AutoNumberGenerator.Plugin.NumberGeneratorPlugin">
+      <FriendlyName>822baa6b-16bd-4c0b-8a19-bd8f92745b77</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="crm1st.Transas.AutoNumberGenerator.Plugin.NumberGeneratorWorkflow, crm1st.Transas.AutoNumberGenerator.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7a7968611d8d37be" PluginTypeId="4e72787f-652c-41c6-84ae-4c6461520b72" Name="crm1st.Transas.AutoNumberGenerator.Plugin.NumberGeneratorWorkflow">
+      <FriendlyName>025ed46f-2f51-4878-818f-22fae0f4c496</FriendlyName>
+      <WorkflowActivityGroupName>crm1st.Transas.AutoNumberGenerator.Plugin (1.0.0.0)</WorkflowActivityGroupName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

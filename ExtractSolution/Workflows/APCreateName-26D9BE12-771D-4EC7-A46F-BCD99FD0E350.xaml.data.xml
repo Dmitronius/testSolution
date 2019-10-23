@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{26d9be12-771d-4ec7-a46f-bcd99fd0e350}" Name="AP.Create Name" Description="#operationWF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/APCreateName-26D9BE12-771D-4EC7-A46F-BCD99FD0E350.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnUpdateAttributeList>new_productkey,new_productid</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>1</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.44.2.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <PrimaryEntity>New_AccountProduct</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="AP.Create Name" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="#operationWF" />
+  </Descriptions>
+</Workflow>

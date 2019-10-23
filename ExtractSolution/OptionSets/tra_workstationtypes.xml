@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tra_workstationtypes" localizedName="Workstation Types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Workstation Types" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="167490000" Color="#0000ff">
+      <labels>
+        <label description="ECDIS MPC24 Silver" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="FOS" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490001" Color="#0000ff">
+      <labels>
+        <label description="ECDIS  24D Platinum" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="FOS" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490002" Color="#0000ff">
+      <labels>
+        <label description="ECDIS 26D Platinum" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="FOS" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490003" Color="#0000ff">
+      <labels>
+        <label description="ECDIS Silver" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="SHS" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490004" Color="#0000ff">
+      <labels>
+        <label description="ECDIS Platinum" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="SHS" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490005" Color="#0000ff">
+      <labels>
+        <label description="Radar 4000 19”" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="SHS" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490006" Color="#0000ff">
+      <labels>
+        <label description="Radar 4000 24”" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="SHS" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490007" Color="#0000ff">
+      <labels>
+        <label description="Radar 4000 26”" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="SHS" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490008" Color="#0000ff">
+      <labels>
+        <label description="WB 4000 ECS TPC15" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="SHS" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490009" Color="#0000ff">
+      <labels>
+        <label description="WB 4000 ECS TPC19" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490010" Color="#0000ff">
+      <labels>
+        <label description="ECS Blackbox" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490011" Color="#0000ff">
+      <labels>
+        <label description="Upgrade RS4" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490012" Color="#0000ff">
+      <labels>
+        <label description="Upgrade RS6" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490013" Color="#0000ff">
+      <labels>
+        <label description="WECDIS 4100 19&quot;" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490014" Color="#0000ff">
+      <labels>
+        <label description="WECDIS 4100 24&quot;" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490015" Color="#0000ff">
+      <labels>
+        <label description="WECDIS 4100 26&quot;" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="167490020" Color="#0000ff">
+      <labels>
+        <label description="None" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="No Workstations in this Project" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

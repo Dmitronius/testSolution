@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{d7b84055-7dc0-e711-811b-5065f38aea61}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="title" select="1" preview="1" icon="1">
+        <row name="result" id="incidentid">
+          <cell name="tra_slastatus" width="100" imageproviderfunctionname="displayIconTooltip" imageproviderwebresource="$webresource:tra_CasesDisplayIconInView" />
+          <cell name="ticketnumber" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="casetypecode" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="title" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_vessel" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="customerid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="crm1st_workedby" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="crm1st_queue" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="statuscode" width="100" />
+          <cell name="modifiedon" width="100" />
+          <cell name="prioritycode" width="100" />
+          <cell name="tra_slastatusdetails" width="100" />
+          <cell name="wdt_isunreadupdates" width="50" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="wdt_unreadupdateson" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false" count="50">
+        <entity name="incident">
+          <attribute name="title" />
+          <order attribute="crm1st_workedby" />
+          <order attribute="modifiedon" descending="true" />
+          <filter type="and">
+            <condition attribute="statuscode" operator="eq" value="100000000" />
+          </filter>
+          <attribute name="ticketnumber" />
+          <attribute name="new_vessel" />
+          <attribute name="statuscode" />
+          <attribute name="customerid" />
+          <attribute name="casetypecode" />
+          <attribute name="crm1st_workedby" />
+          <attribute name="crm1st_queue" />
+          <attribute name="prioritycode" />
+          <attribute name="modifiedon" />
+          <attribute name="tra_slastatus" />
+          <attribute name="tra_slastatusdetails" />
+          <attribute name="wdt_unreadupdateson" />
+          <attribute name="wdt_isunreadupdates" />
+          <attribute name="incidentid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Cases with status: Open" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

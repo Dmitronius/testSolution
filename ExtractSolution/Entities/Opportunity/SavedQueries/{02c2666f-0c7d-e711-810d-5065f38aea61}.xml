@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{02c2666f-0c7d-e711-810d-5065f38aea61}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" preview="1" icon="1">
+        <row name="result" id="opportunityid">
+          <cell name="tra_subregioncalc" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="crm1st_redflag_contract" width="100" />
+          <cell name="name" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="estimatedvalue" width="100" />
+          <cell name="new_fin_grossmargin" width="100" />
+          <cell name="tra_decisionmakernamecontract" width="100" />
+          <cell name="crm1st_decisionmakerstatus_contract" width="100" />
+          <cell name="tra_financenamecontract" width="100" />
+          <cell name="crm1st_financestatus_contract" width="100" />
+          <cell name="wdt_tradefinancenamecontractid" width="100" />
+          <cell name="wdt_tradefinancestatus_contract" width="100" />
+          <cell name="tra_legalnamecontract" width="100" />
+          <cell name="wdt_legalapprovestatus_contract" width="100" />
+          <cell name="tra_pmonamecontract" width="100" />
+          <cell name="crm1st_pmostatus_contract" width="100" />
+          <cell name="tra_cfonamecontract" width="100" />
+          <cell name="crm1st_cfostatus_contract" width="100" />
+          <cell name="tra_vpopsnamecontract" width="100" />
+          <cell name="tra_vpopsstatus_contract" width="100" />
+          <cell name="tra_vpsalesnamecontract" width="100" />
+          <cell name="crm1st_vpsalesstatus_contract" width="100" />
+          <cell name="crm1st_financecomment_contract" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="opportunity">
+          <attribute name="name" />
+          <attribute name="estimatedvalue" />
+          <attribute name="ownerid" />
+          <attribute name="new_fin_grossmargin" />
+          <attribute name="crm1st_redflag_contract" />
+          <attribute name="crm1st_vpsalesstatus_contract" />
+          <attribute name="tra_vpsalesnamecontract" />
+          <attribute name="tra_vpopsstatus_contract" />
+          <attribute name="tra_vpopsnamecontract" />
+          <attribute name="crm1st_pmostatus_contract" />
+          <attribute name="tra_pmonamecontract" />
+          <attribute name="tra_legalnamecontract" />
+          <attribute name="crm1st_financestatus_contract" />
+          <attribute name="tra_financenamecontract" />
+          <attribute name="crm1st_financecomment_contract" />
+          <attribute name="crm1st_decisionmakerstatus_contract" />
+          <attribute name="tra_decisionmakernamecontract" />
+          <attribute name="crm1st_cfostatus_contract" />
+          <attribute name="tra_cfonamecontract" />
+          <attribute name="tra_subregioncalc" />
+          <attribute name="wdt_legalapprovestatus_contract" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="wdt_currentapproversnames" operator="like" value="%Contract Approvers%" />
+          </filter>
+          <attribute name="wdt_tradefinancestatus_contract" />
+          <attribute name="wdt_tradefinancenamecontractid" />
+          <attribute name="opportunityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Contract Approvals Status" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

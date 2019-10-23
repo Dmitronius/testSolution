@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{a0a611b0-077e-4b66-828a-40e4cfdb7266}" Name="OpportunityVessel.generate Entitlement" Description="#operationWF&#xA;Called by Opportunity.Generate Entitlements for Vessels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/OpportunityVesselgenerateEntitlement-A0A611B0-077E-4B66-828A-40E4CFDB7266.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>1</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.44.9.36</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <PrimaryEntity>wdt_opportunityvessel_nn</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="OpportunityVessel.generate Entitlement" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="#operationWF&#xA;Called by Opportunity.Generate Entitlements for Vessels" />
+  </Descriptions>
+</Workflow>

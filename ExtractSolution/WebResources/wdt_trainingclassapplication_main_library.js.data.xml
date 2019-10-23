@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{a4da9283-ce82-e911-a964-000d3ab5a84e}</WebResourceId>
+  <Name>wdt_trainingclassapplication_main_library.js</Name>
+  <DisplayName>Training Class Application main library</DisplayName>
+  <Description>wdt_trainingclassapplication_main_library.js</Description>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>0.44.6.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/wdt_trainingclassapplication_main_libraryjsA4DA9283-CE82-E911-A964-000D3AB5A84E</FileName>
+</WebResource>

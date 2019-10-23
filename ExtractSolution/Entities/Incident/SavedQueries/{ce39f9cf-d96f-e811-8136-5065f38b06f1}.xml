@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{ce39f9cf-d96f-e811-8136-5065f38b06f1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="title" select="1" preview="1" icon="1">
+        <row name="result" id="incidentid">
+          <cell name="ticketnumber" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_ponumber" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="customerid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="title" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="statuscode" width="100" />
+          <cell name="createdon" width="100" />
+          <cell name="modifiedon" width="100" />
+          <cell name="prioritycode" width="100" />
+          <cell name="wdt_isunreadupdates" width="100" />
+          <cell name="wdt_unreadupdateson" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="incident">
+          <attribute name="title" />
+          <attribute name="ticketnumber" />
+          <attribute name="statuscode" />
+          <attribute name="customerid" />
+          <attribute name="prioritycode" />
+          <attribute name="modifiedon" />
+          <attribute name="ownerid" />
+          <attribute name="createdon" />
+          <order attribute="modifiedon" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="crm1st_centerofservice" from="crm1st_centerofserviceid" to="crm1st_centerofservice" alias="aa">
+            <filter type="and">
+              <condition attribute="tra_centerofservicetypecode" operator="eq" value="167490005" />
+            </filter>
+          </link-entity>
+          <attribute name="tra_ponumber" />
+          <attribute name="wdt_unreadupdateson" />
+          <attribute name="wdt_isunreadupdates" />
+          <attribute name="incidentid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="old-Product Purchasing Cases with status: Active" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

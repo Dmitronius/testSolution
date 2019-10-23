@@ -1,0 +1,244 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+</head>
+
+<body style="word-wrap: break-word;">
+
+    <title>Report</title>
+
+    <style type="text/css">
+        body {
+            font-family: Tahoma;
+            padding: 3em;
+        }
+    </style>
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.17/js/adal.min.js"></script>
+    <script src="https://microsoft.github.io/PowerBI-JavaScript/demo/node_modules/powerbi-client/dist/powerbi.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <div id="embedContainer" allowfullscreen="true">
+    </div>
+
+    <script type="text/javascript">
+        // Set up ADAL
+        var authContext = new AuthenticationContext({
+            tenant: '144b7c9d-0f33-4f2f-bf6c-77913b1b9dcb',
+            clientId: '84f1c406-5637-4c52-aff5-640812564dcb',
+            redirectUri: 'https://transasdev.crm4.dynamics.com/%7B636615413540001559%7D/WebResources/tra_pbi_account'
+
+            //popUp: true
+        });
+
+        console.log('check if user exist');
+        authContext.handleWindowCallback();
+        var user = authContext.getCachedUser();
+        if (!user) {
+            console.log('user not exist, login');
+            authContext.login();
+        }
+        else {
+            console.log('user exist');
+        }
+
+
+        if (authContext.isCallback(window.location.hash)) {
+            // Handle redirect after token requests
+            authContext.handleWindowCallback();
+            var err = authContext.getLoginError();
+            if (err) {
+                document.getElementById('api_response').textContent =
+                    'ERROR:\n\n' + err;
+            }
+
+        } else {
+            // If logged in, get access token and make an API request
+            var user = authContext.getCachedUser();
+            if (user) {
+                authContext.acquireToken('c67d739c-7357-47db-a40e-91603aeb959f', function (err, tokenRes) {
+                    if (err) {
+                        console.log('unable get token');
+                        console.log('error ' + err);
+                    }
+                    else {
+                        console.log('token ok');
+                        console.log(tokenRes);
+                        var xhr = new XMLHttpRequest();
+                        //xhr.open('POST', 'https://powerbiapp1.azurewebsites.net/api/getToken?code=3mcftNfRODfCtxgZeTlmPUE0VFo6z2NZkMyJvFhEty4OlRg9CtGH8w==', true);
+                        xhr.open('POST', 'https://transascrmaccess.azurewebsites.net/api/gettoken?code=3mcftNfRODfCtxgZeTlmPUE0VFo6z2NZkMyJvFhEty4OlRg9CtGH8w==', true);
+                        xhr.setRequestHeader('Authorization', 'Bearer ' + tokenRes);
+                        xhr.setRequestHeader("Content-Type", "application/json");
+                        xhr.send();
+                        xhr.onreadystatechange = function () {
+                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                console.log('response ok');
+                                var embedToken = xhr.response;
+                                                                showReport(embedToken);
+                            } else {
+                                console.log('error');
+                            }
+                        };
+                    }
+                });
+            }
+
+
+            function showReport(embedToken) {
+                var txtAccessToken = embedToken.substring(1, embedToken.length - 5);
+                var txtEmbedUrl = 'https://app.powerbi.com/reportEmbed?reportId=aaebc4cc-ad61-4c0c-a7a9-ab4721c4e1c6&groupId=c4645d71-6923-4a6a-bbc0-5ad1f6b2b428';
+                var txtEmbedReportId = 'aaebc4cc-ad61-4c0c-a7a9-ab4721c4e1c6';
+                var models = window['powerbi-client'].models;
+                var permissions = models.Permissions.All;
+                // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
+                var config = {
+                    type: 'report',
+                    tokenType: models.TokenType.Embed,
+                    accessToken: txtAccessToken,
+                    embedUrl: txtEmbedUrl,
+                    id: txtEmbedReportId,
+                    permissions: permissions,
+                    settings: {
+                        filterPaneEnabled: true,
+                        navContentPaneEnabled: true
+                    }
+                };
+
+                //const basicFilter: pbi.models.IBasicFilter = {
+                const basicFilter = {
+                    $schema: "http://powerbi.com/product/schema#basic",
+                    target: {
+                        table: "Query1",
+                        column: "ProjectCode"
+                    },
+                    operator: "In",
+                    values: getDataParam()
+                };
+
+                // Get a reference to the embedded report HTML element
+                var embedContainer = $('#embedContainer')[0];
+                //var embedContainer2 = $('#embededframe')[0];
+                // Embed the report and display it within the div container.
+                var report = powerbi.embed(embedContainer, config);
+                report2 = powerbi.get(embedContainer);
+                report2.fullscreen();
+                //var report = powerbi.embed(embedContainer2, config);
+                // Report.off removes a given event handler if it exists.
+                report.off("loaded");
+                // Report.on will add an event handler which prints to Log window.
+                report.on("loaded", function () {
+                    console.log("Loaded");
+                    report.setFilters([basicFilter])
+                        .catch(errors => {
+                            // Handle error
+                        });
+                });
+
+                report.on("error", function (event) {
+                    console.log(event.detail);
+                    report.off("error");
+                });
+
+                report.off("saved");
+                report.on("saved", function (event) {
+                    console.log(event.detail);
+                    if (event.detail.saveAs) {
+                        console.log('In order to interact with the new report, create a new token and load the new report');
+                    }
+                });
+            }
+        }
+
+        /*
+        
+    */
+
+
+        //getting parameters from form
+    /*    document.onreadystatechange = function () {
+            if (document.readyState == "complete") {
+                getDataParam();
+            }
+        }
+*/
+        function getDataParam() {
+            //Get the any query string parameters parse them and use for opportunity query
+            var regexEntity = /[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}/i; //for account
+            var regexURL = /https:\/\/[\w\d]+.crm4.dynamics.com/i  //for crmURL
+            var vals = "";
+            var entityID = "";
+            var crmURL = "";
+            if (location.search != "") {
+                vals = location.search.substr(1).split("&");
+                vals = decodeURIComponent(vals);
+                entityID = regexEntity.exec(vals);
+                var entityID = entityID[0];
+                crmURL = regexURL.exec(vals);
+                var crmURL = crmURL[0];
+                console.log("TRA.Account: " + entityID);
+                console.log("TRA.CRM instance: " + crmURL);
+
+            }
+
+            //fetching opportunities by account
+            var req = new XMLHttpRequest();
+            var cFSTLProjectID = [];
+            req.open("GET", crmURL + "/api/data/v8.2/opportunities?fetchXml=%3Cfetch%3E%3Centity%20name%3D%22opportunity%22%20%3E%3Cattribute%20name%3D%22CFSTLProjectID%22%20%2F%3E%3Cfilter%20type%3D%22and%22%20%3E%3Ccondition%20attribute%3D%22parentaccountid%22%20operator%3D%22eq%22%20value%3D%22" + entityID + "%22%20%2F%3E%3Ccondition%20attribute%3D%22statecode%22%20operator%3D%22neq%22%20value%3D%222%22%20%2F%3E%3C%2Ffilter%3E%3C%2Fentity%3E%3C%2Ffetch%3E", false);
+            req.setRequestHeader("OData-MaxVersion", "4.0");
+            req.setRequestHeader("OData-Version", "4.0");
+            req.setRequestHeader("Accept", "application/json");
+            req.setRequestHeader("Prefer", "odata.include-annotations=\"*\"");
+            req.onreadystatechange = function () {
+                if (this.readyState === 4) {
+                    req.onreadystatechange = null;
+                    if (this.status === 200) {
+                        var results = JSON.parse(this.response);
+                        console.log(results);
+                        for (var i = 0; i < results.value.length; i++) {
+                            if (results.value[i]["CFSTLProjectID"] !== undefined) {
+                                var codeValue = results.value[i]["CFSTLProjectID"];
+                                cFSTLProjectID.push(codeValue);
+                            }
+
+                        }
+                    } else {
+                        alert(this.statusText);
+                    }
+                }
+
+            };
+            console.log(cFSTLProjectID);
+            req.send();
+            return cFSTLProjectID;
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

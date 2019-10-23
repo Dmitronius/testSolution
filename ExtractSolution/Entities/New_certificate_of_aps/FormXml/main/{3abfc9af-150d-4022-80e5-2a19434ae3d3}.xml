@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{3abfc9af-150d-4022-80e5-2a19434ae3d3}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{e9d0eac5-78a8-4f72-9e14-da123a58a4f9}" IsUserDefined="1" name="{e9d0eac5-78a8-4f72-9e14-da123a58a4f9}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="true" showbar="true" IsUserDefined="0" id="{0d7e72d4-72a4-4f6d-9a60-c35fc8174417}" locklevel="0" labelwidth="115" name="{0d7e72d4-72a4-4f6d-9a60-c35fc8174417}" columns="1" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Certificate of Annual Perfomance Survey" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="true" locklevel="0" colspan="1" id="{c9d69b04-2af8-4070-833f-1e7724d2d362}">
+                        <labels>
+                          <label description="Certificate Number" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" uniqueid="{aad0c92d-55d3-ccc6-d425-7eab0247b62e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{31205789-9639-2c47-716e-c81a1d5aa609}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vessel Name" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_vesselid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="crm1st_vesselid" disabled="false" uniqueid="{45e66cc1-a978-daed-9e28-74d1a8cb006b}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{20213B0E-4625-40CD-A3F8-182D6184A1DF}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c4ec9104-5656-d961-0560-d74e510295ca}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Account" languagecode="1033" />
+                        </labels>
+                        <control id="new_vesselid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_vesselid" disabled="false" uniqueid="{13d3581e-d57a-e55c-8322-2ea42dece78c}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{348e91b6-eed8-4bbe-b8de-9cf53c130ea1}">
+                        <labels>
+                          <label description="Service Agent" languagecode="1033" />
+                        </labels>
+                        <control id="new_serviceagentid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_serviceagentid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{488c0ec0-9613-4842-95f7-15c94a631283}">
+                        <labels>
+                          <label description="IMO" languagecode="1033" />
+                        </labels>
+                        <control id="new_imo" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_imo" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{96fb7f56-2fe1-4dcf-a51b-eef117d3c293}">
+                        <labels>
+                          <label description="Certificate Sent" languagecode="1033" />
+                        </labels>
+                        <control id="new_certificatesent" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_certificatesent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{5dd714d0-e227-41ef-92c5-57bcc39f7ab4}">
+                        <labels>
+                          <label description="Representative" languagecode="1033" />
+                        </labels>
+                        <control id="new_representative" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_representative" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{ad2bda1e-9839-4958-acb7-0387748456c9}">
+                        <labels>
+                          <label description="Equipment" languagecode="1033" />
+                        </labels>
+                        <control id="new_equipment" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_equipment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{444dfa0e-41d4-44f3-bca0-8ba15bb52ee5}">
+                        <labels>
+                          <label description="Date of APS" languagecode="1033" />
+                        </labels>
+                        <control id="new_issuedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_issuedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{471e24ec-77dc-44e1-8ca7-17d38fdabcb2}">
+                        <labels>
+                          <label description="Port" languagecode="1033" />
+                        </labels>
+                        <control id="new_portref" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_portref" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{ac0f61e0-a0a0-4d08-ac67-ccfa6c923c2b}">
+                        <labels>
+                          <label description="Approval" languagecode="1033" />
+                        </labels>
+                        <control id="new_approval" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_approval" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section showlabel="true" showbar="false" locklevel="0" id="{d39c7d52-25ac-e211-8340-005056b707d3}" IsUserDefined="1" layout="varwidth" columns="1" labelwidth="115" name="{d39c7d52-25ac-e211-8340-005056b707d3}" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="ECDIS information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{00417e1b-a860-48a9-bcd5-e878db44a7d9}">
+                        <labels>
+                          <label description="Account Product" languagecode="1033" />
+                        </labels>
+                        <control id="new_accountproductid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_accountproductid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{c6f5cd91-d830-42c8-9012-7c6966398b41}">
+                        <labels>
+                          <label description="Product Dongle" languagecode="1033" />
+                        </labels>
+                        <control id="new_productserial" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_productserial" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="{e9d0eac5-78a8-4f72-9e14-da123a58a4f9}_section_5" showlabel="false" showbar="false" locklevel="0" id="{e8263596-c5b8-1dde-5060-d37d51b64d53}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{92e70300-8494-6d96-50b3-e7915a6959aa}" showlabel="false" rowspan="15" auto="false" colspan="2" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{5196d38d-5a8c-a897-a97d-844a02791ad2}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>ActivitiesTab</DefaultTabId>
+                            <OrderByActivityWall>descending</OrderByActivityWall>
+                            <SortActivityWall>modifiedon</SortActivityWall>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section showlabel="true" showbar="true" locklevel="0" id="{833afa2d-25ac-e211-8340-005056b707d3}" IsUserDefined="1" layout="varwidth" columns="1" labelwidth="115" name="{833afa2d-25ac-e211-8340-005056b707d3}" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Status &amp; Invoice" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{e3b4c565-28ea-4fd4-9038-043ca5aa9906}">
+                        <labels>
+                          <label description="Expiry Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_expirydate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_expirydate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{1694a3c2-6b32-4e50-a576-d228374e3f61}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{e3fdfd45-0897-45d5-8e3a-00c22a6382bd}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="4" colspan="1" id="{b41b99a8-7c31-48ac-8611-a1d1bb70c436}">
+                        <labels>
+                          <label description="Comments" languagecode="1033" />
+                        </labels>
+                        <control id="new_comments" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_comments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="{e9d0eac5-78a8-4f72-9e14-da123a58a4f9}_section_4" showlabel="false" showbar="false" locklevel="0" id="{ddd59e3a-0cb6-1696-4346-320b8ba75b92}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{99aee0cb-7982-0ca7-25d2-2d245c781554}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{7322f809-9455-404a-a92e-1fcfc7a18256}" columns="111">
+        <rows>
+          <row>
+            <cell id="{568615e8-1ffc-4513-b34d-17515ab45cec}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3d682453-784b-46ec-d26a-887655ac850c}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{168b3d4c-1c67-5292-3084-d97744d11796}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{e3770556-6260-4cc2-96ce-2274606675be}">
+        <rows>
+          <row>
+            <cell id="{103413f6-c654-4589-8639-b9d1b9809cec}">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="footer_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

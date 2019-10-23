@@ -1,0 +1,31 @@
+<html><head>
+    <title></title>
+    <script type="text/javascript" src="new_jquery_1.91.min"></script>
+    <script type="text/javascript">
+        function ConvertDropDownToRadiobuttonList() {
+            var dropdownOptions = parent.Xrm.Page.getAttribute("new_areas_of_activity").getOptions();
+            var selectedValue = parent.Xrm.Page.getAttribute("new_areas_of_activity").getValue();
+            // if(parent.Xrm.Page.getAttribute("customertypecode").getSelectedOption().text == "Dealer/Service agent"){
+            $(dropdownOptions).each(function (i, e) {
+                var rText = $(this)[0].text;
+                var rvalue = $(this)[0].value;
+                if (rvalue != '') {
+                    var radiobutton = "<input type='checkbox' name='r' />" + rText + "</br>"
+                    $(radiobutton)
+                        .attr("value", rvalue)
+                        .attr("checked", rvalue == selectedValue)
+                        .click(function () {
+                            parent.Xrm.Page.getAttribute("new_areas_of_activity").setValue(rvalue);
+                        })
+                        .appendTo(new_areas_of_activity_value);
+                }
+            });
+        }
+    </script>    
+<meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta></head>
+<body onload="ConvertDropDownToRadiobuttonList()" style="word-wrap: break-word;">
+    <div id="new_areas_of_activity_value">
+    </div>
+
+
+</body></html>

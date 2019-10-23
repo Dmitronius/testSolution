@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{518cd291-a613-4552-90ce-cb4e632d381a}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{5a196455-b3f8-4721-aace-0238e9ca2f08}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{095d8b2b-2adc-47fb-b95a-0f8bdfc8347b}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{02357810-0a0b-4773-86d0-50fc5f9b3933}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="wdt_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0104c806-222a-6b4d-e5ed-bb547acb6e8d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_type" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="wdt_type" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4379eeb1-720c-9ca1-d25d-d792889dd022}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Case" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_caseid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="wdt_caseid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d1527b2-915d-ee7c-7b2a-3c7a0c690b28}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Case Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_casestatuscode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="wdt_casestatuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2b019400-ab69-7aed-6842-7914ece541ae}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="wdt_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{62719c31-116d-61d9-a7dd-4a7e0d03ccd1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="wdt_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{11da9825-448a-44d2-9266-febb15cf9f24}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{114a1a80-204c-a387-eddc-ec8370701c1d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_emailid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="wdt_emailid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

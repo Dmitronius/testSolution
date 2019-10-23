@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{f0bf72e3-7bdd-44f2-bb3a-b9d9a54174ba}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_certificate_of_apsid">
+          <cell name="new_name" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_accountproductid" width="100" />
+          <cell name="new_issuedon" width="100" />
+          <cell name="new_expirydate" width="100" />
+          <cell name="crm1st_vesselid" width="100" />
+          <cell name="new_imo" width="100" />
+          <cell name="new_portref" width="100" />
+          <cell name="new_productserial" width="100" />
+          <cell name="new_representative" width="100" />
+          <cell name="new_serviceagentid" width="100" />
+          <cell name="new_certificatesent" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="ownerid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_certificate_of_aps">
+          <attribute name="new_certificate_of_apsid" />
+          <attribute name="new_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="crm1st_vesselid" />
+          <attribute name="new_serviceagentid" />
+          <attribute name="new_representative" />
+          <attribute name="new_productserial" />
+          <attribute name="new_portref" />
+          <attribute name="ownerid" />
+          <attribute name="new_imo" />
+          <attribute name="new_expirydate" />
+          <attribute name="new_issuedon" />
+          <attribute name="new_certificatesent" />
+          <attribute name="new_accountproductid" />
+          <order attribute="new_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.17.03.29</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Certificates APS" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

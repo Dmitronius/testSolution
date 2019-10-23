@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d2c9ea70-7df9-40b7-8216-11307dfe0b7e}</formid>
+    <IntroducedVersion>0.43.151.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1900">
+      <tabs>
+        <tab id="{8614896e-2889-4486-b55b-47ad9cd094dc}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{93989b10-16a5-43b9-8864-1e52f79677f9}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{52a5bbe3-3c3c-240e-a519-7b251a620589}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Employee Name" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" uniqueid="{ceae581e-764b-373d-14c1-9780420d219b}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e2ed271e-b095-023c-9727-4c608bab5457}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Posting Date" languagecode="1033" />
+                        </labels>
+                        <control id="tra_postingdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="tra_postingdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9977e74c-c216-3b12-8304-0202084aca56}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type of Activity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_timeexpenseactivitytypecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_timeexpenseactivitytypecode" disabled="false" uniqueid="{c1412763-0957-4b45-3596-1dcd13c37b31}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a89a323a-8848-8e93-a89e-0edbd7d29084}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Case" languagecode="1033" />
+                        </labels>
+                        <control id="tra_caseid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_caseid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{19731aa5-2662-a2c0-7c73-ac4ba1c35834}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Time Spent" languagecode="1033" />
+                        </labels>
+                        <control id="tra_hoursspent" classid="{AA987274-CE4E-4271-A803-66164311A958}" datafieldname="tra_hoursspent" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{ce6e234b-db56-41d0-ade8-d496211e49f7}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{21b4f63f-7d25-4e12-9228-668044be44f9}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{a16cc640-a27f-4d0b-9d16-4d98042cfe15}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9cddd380-1535-4014-9d25-3efe2c51f651}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions />
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create Time Report" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

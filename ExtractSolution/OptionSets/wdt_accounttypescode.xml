@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="wdt_accounttypescode" localizedName="Account Types" description="Account types for AP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>0.44.2.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Account Types" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Account types for AP" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="750610000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Commercial" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Commercial – Limited (for small commercial schools)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Manufacturer" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Industry Association" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Consultant" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610005" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Ship/Vessel Manager" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610006" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Pilots" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610007" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Non-Profit" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610008" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Union" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610009" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Federal" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610010" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="State/Provincial" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610011" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Community College" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="750610012" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Others" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

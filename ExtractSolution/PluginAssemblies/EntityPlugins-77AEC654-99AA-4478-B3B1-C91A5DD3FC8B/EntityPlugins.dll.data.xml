@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="EntityPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1c00cf82d99d3255" PluginAssemblyId="77aec654-99aa-4478-b3b1-c91a5dd3fc8b" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/EntityPlugins-77AEC654-99AA-4478-B3B1-C91A5DD3FC8B/EntityPlugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="EntityPlugins.CreateOpportunityPlugin, EntityPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1c00cf82d99d3255" PluginTypeId="53303d59-c97a-4407-869f-c2bc87741ea7" Name="EntityPlugins.CreateOpportunityPlugin">
+      <FriendlyName>5e8ed40d-4f1f-4c71-8a61-55212e03ad22</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="EntityPlugins.GetCurrentUser, EntityPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1c00cf82d99d3255" PluginTypeId="ad2fce0d-60c6-44ce-850c-c5a1a893135b" Name="EntityPlugins.GetCurrentUser">
+      <FriendlyName>260b7a0d-f1fc-45e5-9959-ffa559d112f1</FriendlyName>
+      <WorkflowActivityGroupName>EntityPlugins (1.0.0.0)</WorkflowActivityGroupName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="EntityPlugins.UpdateOpportunityPlugin, EntityPlugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1c00cf82d99d3255" PluginTypeId="34aacefe-7231-49ca-a63a-bcc358274ec9" Name="EntityPlugins.UpdateOpportunityPlugin">
+      <FriendlyName>995a4a65-0b52-4d1e-95c1-b79e88b5b6a3</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

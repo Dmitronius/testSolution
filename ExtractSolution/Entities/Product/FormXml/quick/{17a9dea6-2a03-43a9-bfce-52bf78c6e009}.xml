@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{17a9dea6-2a03-43a9-bfce-52bf78c6e009}</formid>
+    <IntroducedVersion>0.44.2.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="400">
+      <tabs>
+        <tab id="{0985d785-ca4f-4e86-8766-8d92f6c22dfe}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{0e06eec1-e7fe-44ee-810d-c8f62878ddad}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0c80acb0-5931-7dc9-1d9b-63e5de8ae214}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vendor" languagecode="1033" />
+                        </labels>
+                        <control id="vendorname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="vendorname" disabled="true" uniqueid="{86856810-4dce-3711-c6d5-89d5460c13ee}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Product Details" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Product Details used on AP" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

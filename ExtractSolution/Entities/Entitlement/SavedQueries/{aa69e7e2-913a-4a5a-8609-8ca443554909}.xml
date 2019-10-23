@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{aa69e7e2-913a-4a5a-8609-8ca443554909}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="entitlementid">
+          <cell name="wdt_autonumber" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="name" width="300" />
+          <cell name="customerid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="tra_vesselid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="slaid" width="100" />
+          <cell name="startdate" width="100" />
+          <cell name="enddate" width="100" />
+          <cell name="statuscode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="entitlement">
+          <attribute name="name" />
+          <order attribute="name" descending="false" />
+          <attribute name="customerid" />
+          <attribute name="startdate" />
+          <attribute name="enddate" />
+          <attribute name="slaid" />
+          <attribute name="tra_vesselid" />
+          <attribute name="statuscode" />
+          <attribute name="wdt_autonumber" />
+          <attribute name="entitlementid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>6.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Entitlements" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

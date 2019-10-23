@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5dcb4944-f1bd-4cf4-9d6e-bade6fef4e82}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{9f17a4e3-3f69-4c89-9561-9f9599aec6b6}" name="StageStep3" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{da95644c-6a8a-436d-8798-96ca5147d9ae}" name="StageStep3_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bc8e6cb3-5169-4281-bcda-6244a97ca23e}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:parentcontactid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="parentcontactid" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3eb88ac9-5132-42de-a478-9cb501809a30}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:identifycompetitors" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="identifycompetitors" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3aa2aaff-b32f-4ead-b17a-b42784d989b0}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:tra_isbidapprovalrequired" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_isbidapprovalrequired" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d69bb2ca-5609-4048-aa02-c91f4cc8a3a2}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:wdt_isbidpreparationstarted" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="wdt_isbidpreparationstarted" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ff426c99-25e2-40fd-8266-1093e90dc3a0}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:wdt_bidsubmissiondeadlinedate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="wdt_bidsubmissiondeadlinedate" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{974db4bb-68c3-4e50-82ef-10be5979ff40}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:tra_isproductlineadded" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="tra_isproductlineadded" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a6bf35d1-59e2-4cad-b6ac-1404e8902eef}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:wdt_iscommercial" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="wdt_iscommercial" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cdd6e1b2-aada-4409-87b2-176a56c03830}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:wdt_isvesseladded" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="wdt_isvesseladded" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{017e8e71-0848-45ac-ae4b-46e99f2703c1}" name="StageStep21" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{1cb1fa83-3f30-4b56-8e3c-8f8ccf6b8335}" name="StageStep21_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{aea7f9ff-729b-42da-ae9c-7a449342e520}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:crm1st_decisionmakerstatus_bid" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="crm1st_decisionmakerstatus_bid" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a4f14ae6-ed99-409d-9400-30c20758757c}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:crm1st_vpsalesstatus_bid" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="crm1st_vpsalesstatus_bid" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{424b6b1a-2250-4c5f-a14a-66a951f34bbc}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:crm1st_financestatus_bid" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crm1st_financestatus_bid" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a08cb10a-bc60-4444-abfd-13290b90e77f}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:wdt_tradefinancestatus_bid" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="wdt_tradefinancestatus_bid" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{160d9d03-1b3f-4db5-bad9-792d5269049e}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:crm1st_cfostatus_bid" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="crm1st_cfostatus_bid" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9756c2aa-f543-4745-9e2a-3a411804e4d8}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:wdt_legalapprovestatus_bid" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="wdt_legalapprovestatus_bid" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4851df34-55d6-413a-9e37-9f4511ba302c}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:crm1st_pmostatus_bid" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crm1st_pmostatus_bid" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{768aef05-4419-4744-8f81-79c4df20f720}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:tra_vpopsstatus_bid" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_vpopsstatus_bid" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{587b02ba-ed77-431b-97d8-3d5ef55891f6}" name="StageStep39" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{d74de72d-c5b0-4dd0-8070-fc159680a610}" name="StageStep39_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f878669e-9fa7-4d18-bd9f-f361b873b2ef}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:tra_iscontractapprovalrequired" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_iscontractapprovalrequired" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a4278c05-4cfb-4a93-b79a-d3c5db91cc77}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:tra_issingleactivebudget" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="tra_issingleactivebudget" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0d67f7ee-c10d-4f9b-9192-6fbbbfbefa7d}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:wdt_isentitlementsadded" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="wdt_isentitlementsadded" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{7c5672d0-7bef-4775-bec6-1affc94472ef}" name="StageStep47" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{408f73e8-e009-41fd-9333-5550cc22f980}" name="StageStep47_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{27e8e3e3-8a84-48da-8a44-dde3fa977d80}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:crm1st_decisionmakerstatus_contract" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="crm1st_decisionmakerstatus_contract" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f3abee1d-cf69-432e-87a8-49091dc9b4d4}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:crm1st_vpsalesstatus_contract" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="crm1st_vpsalesstatus_contract" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd05c98e-b343-4034-ab89-1917ff5a5096}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:crm1st_financestatus_contract" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crm1st_financestatus_contract" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cafdd7bf-7572-444b-82ca-7e1cf59d350f}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:wdt_tradefinancestatus_contract" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="wdt_tradefinancestatus_contract" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{903197b9-b522-483e-b67c-c2b99acd5a5f}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:crm1st_cfostatus_contract" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="crm1st_cfostatus_contract" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b4c19796-ef4a-47a1-9af2-ed4a71888c3d}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:wdt_legalapprovestatus_contract" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="wdt_legalapprovestatus_contract" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{32147394-b269-4310-afe9-e17d1fc506a6}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:crm1st_pmostatus_contract" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crm1st_pmostatus_contract" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e6d71304-f39a-4c60-a288-7fcfdb977347}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:tra_vpopsstatus_contract" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_vpopsstatus_contract" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8975ad1f-a022-420f-a62d-7c03baece185}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:tra_issingleactivebudget" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="tra_issingleactivebudget" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{940fe360-ae32-4961-bb40-bc0c5ec4e6b3}" name="StageStep67" locklevel="0" expanded="true" visible="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{7534dd1f-5f1d-4401-a33f-f58efc9137c5}" name="StageStep67_section1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c39fa54c-4c35-4c77-b36a-248c51febb87}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:new_projectmanagerid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="new_projectmanagerid" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{eb946133-71dd-4102-b1f2-56d2a01e6062}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:new_underpmomanagement" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="new_underpmomanagement" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f38a5858-58c6-4f41-8f6a-17b3678e215a}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_crm1st_opportunitybidapprovalprocess:tra_issingleactivebudget" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="tra_issingleactivebudget" relationship="bpf_opportunity_crm1st_opportunitybidapprovalprocess" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

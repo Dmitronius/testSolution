@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{e8ce1735-09aa-e911-a974-000d3ab5a0d7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="entitlementid">
+          <cell name="wdt_autonumber" width="100" />
+          <cell name="tra_vesselid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="slaid" width="75" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="startdate" width="100" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="enddate" width="100" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="statuscode" width="75" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="entitlement">
+          <attribute name="startdate" />
+          <attribute name="enddate" />
+          <attribute name="slaid" />
+          <attribute name="tra_vesselid" />
+          <attribute name="statuscode" />
+          <order attribute="tra_vesselid" descending="false" />
+          <filter type="and">
+            <condition attribute="statuscode" operator="in">
+              <value>1</value>
+              <value>0</value>
+              <value>3</value>
+              <value>2</value>
+              <value>1200</value>
+            </condition>
+          </filter>
+          <attribute name="wdt_autonumber" />
+          <attribute name="entitlementid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.44.9.36</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Entitlements for Opportunity" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

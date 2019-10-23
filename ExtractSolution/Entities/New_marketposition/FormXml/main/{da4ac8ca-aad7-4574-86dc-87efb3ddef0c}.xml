@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{da4ac8ca-aad7-4574-86dc-87efb3ddef0c}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{270054e2-88e9-4658-bcb8-9e74bc490695}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{0652dc14-4291-46c4-9afe-9752931aa04f}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2" id="{135c4619-adbc-4ae8-945b-f506117b1b27}">
+                        <labels>
+                          <label description="Sales Representative" languagecode="1033" />
+                        </labels>
+                        <control id="new_salesrepresentativeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_salesrepresentativeid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2" id="{5de55369-d73b-47aa-b4fd-df349db845bb}">
+                        <labels>
+                          <label description="Business Unit" languagecode="1033" />
+                        </labels>
+                        <control id="new_businessunitid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_businessunitid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell colspan="2" id="{fa9f0558-9ef6-443a-b8dc-18baacf5b539}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="FY" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2" id="{c777ea0e-218c-4040-aa5c-16f1e90cd45c}">
+                        <labels>
+                          <label description="Country" languagecode="1033" />
+                        </labels>
+                        <control id="new_countryid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_countryid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{ac178b2e-318f-4063-87e4-dbd0e5535ba6}">
+                        <labels>
+                          <label description="Market" languagecode="1033" />
+                        </labels>
+                        <control id="new_marketid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_marketid" disabled="false" />
+                      </cell>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{7b78f662-54c7-4342-8127-d91e721ca2da}">
+                        <labels>
+                          <label description="Market Position" languagecode="1033" />
+                        </labels>
+                        <control id="new_marketposition" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_marketposition" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2" id="{8338a282-014b-4e40-8b8a-4ddb03252009}">
+                        <labels>
+                          <label description="Grip" languagecode="1033" />
+                        </labels>
+                        <control id="new_grip" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_grip" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <footer id="{e4636052-a122-427b-9ae8-3fc8739fdc80}">
+        <rows>
+          <row>
+            <cell id="{305b5433-bc05-4289-87ee-4e8e4bcfb989}">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="footer_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

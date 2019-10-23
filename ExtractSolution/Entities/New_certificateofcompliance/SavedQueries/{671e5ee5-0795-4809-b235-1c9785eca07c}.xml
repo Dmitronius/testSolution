@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{671e5ee5-0795-4809-b235-1c9785eca07c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_certificateofcomplianceid">
+          <cell name="new_name" width="125" />
+          <cell name="crm1st_vesselid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_vesselid" width="150" />
+          <cell name="new_imo" width="50" />
+          <cell name="new_productid" width="75" />
+          <cell name="new_productserial" width="75" />
+          <cell name="new_svdrserial" width="75" />
+          <cell name="new_expirydate" width="100" />
+          <cell name="new_certificatesent" width="100" />
+          <cell name="new_issuedon" width="100" />
+          <cell name="ownerid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_certificateofcompliance">
+          <attribute name="new_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="new_vesselid" />
+          <attribute name="ownerid" />
+          <attribute name="new_issuedon" />
+          <attribute name="new_expirydate" />
+          <attribute name="new_certificateofcomplianceid" />
+          <attribute name="new_svdrserial" />
+          <attribute name="new_productserial" />
+          <attribute name="new_productid" />
+          <attribute name="new_imo" />
+          <attribute name="new_certificatesent" />
+          <attribute name="crm1st_vesselid" />
+          <order attribute="new_name" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Certificates of Compliance" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

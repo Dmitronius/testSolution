@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{11e3fc3e-0172-4bdd-835a-3ad271a3a326}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_areaid">
+          <cell name="new_name" width="300" />
+          <cell name="tra_porttypecode" width="100" />
+          <cell name="crm1st_countryid" width="100" />
+          <cell name="tra_regioncode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_area">
+          <attribute name="new_name" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="tra_regioncode" operator="like" value="{0}" />
+            <condition attribute="tra_portlevelcode" operator="like" value="{0}" />
+            <condition attribute="new_name" operator="like" value="{0}" />
+            <condition attribute="crm1st_countryid" operator="like" value="{0}" />
+            <condition attribute="new_city" operator="like" value="{0}" />
+          </filter>
+          <attribute name="tra_regioncode" />
+          <attribute name="tra_porttypecode" />
+          <attribute name="crm1st_countryid" />
+          <attribute name="new_areaid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Ports" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

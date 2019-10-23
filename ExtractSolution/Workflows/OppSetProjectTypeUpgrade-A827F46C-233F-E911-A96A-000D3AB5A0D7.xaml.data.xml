@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{a827f46c-233f-e911-a96a-000d3ab5a0d7}" Name="Opp.Set Project Type = Upgrade" Description="#operationwf&#xA;#userondemandwf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/OppSetProjectTypeUpgrade-A827F46C-233F-E911-A96A-000D3AB5A0D7.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>1</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <UniqueName>OppSetProjectTypeaa27f46c233fe911a96a000d3ab5a0d7</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.44.1.4</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>Opportunity</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Opp.Set Project Type = Upgrade" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="#operationwf&#xA;#userondemandwf" />
+  </Descriptions>
+</Workflow>

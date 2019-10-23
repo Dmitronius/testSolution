@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="crm1st.Mscrm.SubGrid.SharePointDocument.AddLocation.Hide" Location="Mscrm.SubGrid.SharePointDocument.AddLocation" />
+    <HideCustomAction HideActionId="crm1st.Mscrm.SubGrid.SharePointDocument.ChangeLocation.Hide" Location="Mscrm.SubGrid.SharePointDocument.ChangeLocation" />
+    <HideCustomAction HideActionId="crm1st.Mscrm.SubGrid.SharePointDocument.CheckIn.Hide" Location="Mscrm.SubGrid.SharePointDocument.CheckIn" />
+    <HideCustomAction HideActionId="crm1st.Mscrm.SubGrid.SharePointDocument.CheckOut.Hide" Location="Mscrm.SubGrid.SharePointDocument.CheckOut" />
+    <HideCustomAction HideActionId="crm1st.Mscrm.SubGrid.SharePointDocument.DiscardCheckOut.Hide" Location="Mscrm.SubGrid.SharePointDocument.DiscardCheckOut" />
+    <HideCustomAction HideActionId="crm1st.Mscrm.SubGrid.SharePointDocument.EditLocation.Hide" Location="Mscrm.SubGrid.SharePointDocument.EditLocation" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="Mscrm.SharePointDocumentUpload">
+      <EnableRules>
+        <EnableRule Id="Mscrm.IsSharePointDocLocationNotSharedOrAllFiles" />
+        <EnableRule Id="Mscrm.IsFolderNotSelected" />
+        <EnableRule Id="Mscrm.IsSharePointSiteConfigured" />
+        <EnableRule Id="Mscrm.IsRecordHasActiveSharePointDocLocation" />
+        <EnableRule Id="Mscrm.SelectionCountZero" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="DocumentManagement.SharePointDocumentUpload.SharePointUpload" Library="$Webresource:SharePoint_main_system_library.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="PrimaryEntityTypeCode" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="Mscrm.IsRecordHasActiveSharePointDocLocation">
+        <CustomRule FunctionName="XrmCore.Rules.SharePointDocument.isRecordHasActiveSharePointDocLocation" Library="$webresource:Main_system_library.js" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.IsSharePointSiteConfigured">
+        <CustomRule FunctionName="XrmCore.Rules.SharePointDocument.isSharePointSiteConfigured" Library="$webresource:Main_system_library.js" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.SelectionCountZeroOrOne">
+        <SelectionCountRule AppliesTo="SelectedEntity" Minimum="0" Maximum="1" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

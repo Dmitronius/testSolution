@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{2f83be21-f9dd-e911-a96b-000d3ab5a84e}</WebResourceId>
+  <Name>wdt_alert.js</Name>
+  <DisplayName>Alert JS Library</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>0.46.1.8</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/wdt_alertjs2F83BE21-F9DD-E911-A96B-000D3AB5A84E</FileName>
+</WebResource>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{2c824fdb-36bb-4940-a377-51cc2501766d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_questionnaireid">
+          <cell name="tra_name" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_be1dfee128a4e71181115065f38b06f1.ownerid" width="150" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="statuscode" width="100" />
+          <cell name="modifiedon" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_questionnaire">
+          <order attribute="tra_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_name" />
+          <attribute name="statuscode" />
+          <attribute name="modifiedon" />
+          <link-entity alias="a_be1dfee128a4e71181115065f38b06f1" name="account" from="accountid" to="tra_qustionnairesofaccountid" link-type="outer" visible="false">
+            <attribute name="ownerid" />
+          </link-entity>
+          <attribute name="tra_questionnaireid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.17.09.06</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Bundle Surveys" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

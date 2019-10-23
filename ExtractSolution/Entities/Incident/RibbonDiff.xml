@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="new.crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.CustomAction" Location="Mscrm.HomepageGrid.incident.MainTab.Management.Controls._children" Sequence="100">
+      <CommandUIDefinition>
+        <Button Command="crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.Command" Id="crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh" LabelText="$LocLabels:crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.LabelText" Sequence="100" TemplateAlias="isv" ToolTipTitle="$LocLabels:crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.CustomAction" Location="Mscrm.HomepageGrid.incident.MainTab.Management.Controls._children" Sequence="120">
+      <CommandUIDefinition>
+        <Button Command="crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.Command" Id="crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh" Image32by32="$webresource:crm1st_StartButton_32x32" Image16by16="$webresource:crm1st_StartButton_16x16" LabelText="$LocLabels:crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.LabelText" Sequence="120" TemplateAlias="isv" ToolTipTitle="$LocLabels:crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.CustomAction" Location="Mscrm.HomepageGrid.incident.MainTab.Management.Controls._children" Sequence="110">
+      <CommandUIDefinition>
+        <Button Command="crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.Command" Id="crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh" Image32by32="$webresource:crm1st_StopButton_32x32" Image16by16="$webresource:crm1st_StopButton_16x16" LabelText="$LocLabels:crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.LabelText" Sequence="110" TemplateAlias="isv" ToolTipTitle="$LocLabels:crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.incident.Button2.Button.CustomAction" Location="Mscrm.HomepageGrid.incident.MainTab.Workflow.Controls._children" Sequence="20">
+      <CommandUIDefinition>
+        <Button Command="new.contact.Grid.RunWorkflow1.Command" Id="new.incident.Button2.Button" Image16by16="$webresource:tra_EmailToCaseOfQueue_16.png" LabelText="$LocLabels:new.incident.Button2.Button.LabelText" Sequence="20" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.incident.Button3.Button.CustomAction" Location="Mscrm.SubGrid.incident.MainTab.Workflow.Controls._children" Sequence="15">
+      <CommandUIDefinition>
+        <Button Command="new.contact.Grid.RunWorkflow1.Command" Id="new.incident.Button3.Button" Image16by16="$webresource:tra_EmailToCaseOfQueue_16.png" LabelText="$LocLabels:new.incident.Button3.Button.LabelText" Sequence="15" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.incident.Button4.Button.CustomAction" Location="Mscrm.Form.incident.MainTab.Save.Controls._children" Sequence="51">
+      <CommandUIDefinition>
+        <Button Command="new.contact.Form.RunWorkflow1.Command" Id="new.incident.Button4.Button" Image16by16="$webresource:tra_EmailToCaseOfQueue_16.png" LabelText="$LocLabels:new.incident.Button4.Button.LabelText" Sequence="51" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.tra.Form.Incident.QuickResolveWF.button.CustomAction" Location="Mscrm.Form.incident.MainTab.Save.Controls._children" Sequence="49">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:tra.Form.Incident.QuickResolveWF.button.Alt" Command="tra.Form.Incident.RunQuickResolveWF.Command" Id="tra.Form.Incident.QuickResolveWF.button" Image32by32="$webresource:tra_sync_32.png" Image16by16="$webresource:tra_sync_16.png" LabelText="$LocLabels:tra.Form.Incident.QuickResolveWF.button.LabelText" Sequence="49" TemplateAlias="o1" ToolTipTitle="$LocLabels:tra.Form.Incident.QuickResolveWF.button.ToolTipTitle" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.tra.incident.MergeCases.Button.CustomAction" Location="Mscrm.Form.incident.MainTab.Save.Controls._children" Sequence="52">
+      <CommandUIDefinition>
+        <Button Command="tra.Form.incident.MergeCases.Command" Id="tra.incident.MergeCases.Button" Image32by32="/_imgs/ribbon/MergeRecords_32.png" Image16by16="/_imgs/ribbon/MergeRecords_16.png" LabelText="$LocLabels:tra.incident.MergeCases.Button.LabelText" Sequence="52" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.Command">
+      <EnableRules>
+        <EnableRule Id="crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.Command.EnableRule.CustomRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.Command">
+      <EnableRules>
+        <EnableRule Id="crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.Command.EnableRule.CustomRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="EnableRefresh" Library="$webresource:crm1st_EnabaleDisableAutoRefresh" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.Command">
+      <EnableRules>
+        <EnableRule Id="crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.Command.EnableRule.CustomRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="DisableRefresh" Library="$webresource:crm1st_EnabaleDisableAutoRefresh" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.SaveAndClosePrimary">
+      <EnableRules>
+        <EnableRule Id="Mscrm.AvailableOnForm" />
+        <EnableRule Id="Mscrm.CanSavePrimary" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanSaveAndClosePrimaryEntityType" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Save.saveAndCloseForm" Library="$webresource:Main_system_library.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.SavePrimary">
+      <EnableRules>
+        <EnableRule Id="Mscrm.AvailableOnForm" />
+        <EnableRule Id="Mscrm.CanSavePrimary" />
+        <EnableRule Id="Mscrm.ReadPrimaryPermission" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanSavePrimaryEntityType" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Save.saveForm" Library="$webresource:Main_system_library.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="new.contact.Form.RunWorkflow1.Command">
+      <EnableRules>
+        <EnableRule Id="Mscrm.FormStateNotNew" />
+        <EnableRule Id="Mscrm.RunWorkflowPrimary" />
+        <EnableRule Id="new.incident.EnableRuleForm.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="callPickWorkflow" Library="$webresource:wdt_incident_main_ribbon_library.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="new.contact.Grid.RunWorkflow1.Command">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+        <EnableRule Id="Mscrm.RunWorkflowSelected" />
+        <EnableRule Id="new.incident.EnableRuleGrid.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.GridRibbonActions.launchOnDemandWorkflow" Library="/_static/_common/scripts/RibbonActions.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="SelectedEntityTypeCode" />
+          <StringParameter Value="43FFF8A4-1FF9-4BFD-ADF9-A1EB658400ED" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.Form.incident.MergeCases.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="mergeRecords" Library="$webresource:crm1st_incident_merge_library.js" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.Form.Incident.RunQuickResolveWF.Command">
+      <EnableRules>
+        <EnableRule Id="new.incident.EnableRule13.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.CommandBarActions.launchOnDemandWorkflowForm" Library="/_static/_common/scripts/CommandBarActions.js">
+          <CrmParameter Value="PrimaryEntityTypeCode" />
+          <StringParameter Value="7fb86187-47df-49a9-a251-a18f200cfd03" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.CanSaveAndClosePrimaryEntityType">
+        <OrRule>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Create" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.CanSavePrimaryEntityType">
+        <OrRule>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Create" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+        </OrRule>
+        <EntityPrivilegeRule PrivilegeType="Read" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.Command.EnableRule.CustomRule">
+        <CustomRule FunctionName="DoAutoRefresh" Library="$webresource:crm1st_AutoRefresh" Default="false" InvertResult="false" />
+      </EnableRule>
+      <EnableRule Id="crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.Command.EnableRule.CustomRule">
+        <CustomRule FunctionName="StartButtonValidation" Library="$webresource:crm1st_RefreshButtonValidation" Default="false" />
+      </EnableRule>
+      <EnableRule Id="crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.Command.EnableRule.CustomRule">
+        <CustomRule FunctionName="StopButtonValidation" Library="$webresource:crm1st_RefreshButtonValidation" Default="false" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.AvailableOnForm">
+        <EntityRule AppliesTo="PrimaryEntity" Context="Form" Default="false" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.CanSavePrimary">
+        <OrRule>
+          <Or>
+            <RecordPrivilegeRule PrivilegeType="Create" AppliesTo="PrimaryEntity" />
+            <FormStateRule State="Create" />
+          </Or>
+          <Or>
+            <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" />
+            <FormStateRule State="Existing" />
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.IsAutoSaveDisable">
+        <OrRule>
+          <Or>
+            <FormStateRule State="Create" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.AutoSave.isAutoSaveEnabled" Library="$webresource:Main_system_library.js" InvertResult="true" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.RefreshForm.isRefreshForm" Library="$webresource:Main_system_library.js" InvertResult="true" />
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.ReadPrimaryPermission">
+        <RecordPrivilegeRule PrivilegeType="Read" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+      <EnableRule Id="new.incident.EnableRule13.EnableRule">
+        <FormStateRule State="Existing" Default="true" InvertResult="false" />
+        <FormStateRule State="ReadOnly" Default="true" InvertResult="true" />
+      </EnableRule>
+      <EnableRule Id="new.incident.EnableRuleForm.EnableRule">
+        <CustomRule FunctionName="enableWorkOnForm" Library="$webresource:new_/js/workonribbon.js" Default="false" />
+      </EnableRule>
+      <EnableRule Id="new.incident.EnableRuleGrid.EnableRule">
+        <CustomRule FunctionName="enableWorkOnGrid" Library="$webresource:new_/js/workonribbon.js" Default="false">
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+        </CustomRule>
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.LabelText">
+      <Titles>
+        <Title description="DoAutoRefresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.ToolTipDescription">
+      <Titles>
+        <Title description="DoAutoRefresh Description" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.incident.MainTab.Management.DoAutoRefresh.ToolTipTitle">
+      <Titles>
+        <Title description="DoAutoRefresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.LabelText">
+      <Titles>
+        <Title description="Start Auto Refresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.ToolTipDescription">
+      <Titles>
+        <Title description="Press this Button to start the automatic refresh on the view" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.incident.MainTab.Management.StartAutoRefresh.ToolTipTitle">
+      <Titles>
+        <Title description="Start Auto Refresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.LabelText">
+      <Titles>
+        <Title description="Stop Auto Refresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.ToolTipDescription">
+      <Titles>
+        <Title description="Press this Button to stop the automatic refresh on the view" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.incident.MainTab.Management.StopAutoRefresh.ToolTipTitle">
+      <Titles>
+        <Title description="Stop Auto Refresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.incident.Button2.Button.LabelText">
+      <Titles>
+        <Title description="WORK ON" languagecode="1049" />
+        <Title description="PICK" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.incident.Button3.Button.LabelText">
+      <Titles>
+        <Title description="WORK ON" languagecode="1049" />
+        <Title description="PICK" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="new.incident.Button4.Button.LabelText">
+      <Titles>
+        <Title description="WORK ON" languagecode="1049" />
+        <Title description="PICK" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.Form.Incident.QuickResolveWF.button.Alt">
+      <Titles>
+        <Title description="Quick Resolve" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.Form.Incident.QuickResolveWF.button.LabelText">
+      <Titles>
+        <Title description="Quick Resolve" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.Form.Incident.QuickResolveWF.button.ToolTipTitle">
+      <Titles>
+        <Title description="Quick Resolve the Case" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.incident.MergeCases.Button.LabelText">
+      <Titles>
+        <Title description="Merge" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

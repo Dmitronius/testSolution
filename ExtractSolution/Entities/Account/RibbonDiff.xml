@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="new.Mscrm.Form.account.Assign.CustomAction" Location="Mscrm.Form.account.MainTab.Save.Controls._children" Sequence="62">
+      <CommandUIDefinition>
+        <Button Alt="$Resources:Ribbon.HomepageGrid.MainTab.Actions.Assign" Command="Mscrm.AssignPrimaryRecord" Id="Mscrm.Form.account.Assign" Image32by32="/_imgs/ribbon/Assign_32.png" Image16by16="/_imgs/ribbon/Assign_16.png" LabelText="$Resources:Ribbon.HomepageGrid.MainTab.Actions.Assign" Sequence="62" TemplateAlias="o1" ToolTipTitle="$Resources:Ribbon.HomepageGrid.MainTab.Actions.Assign" ToolTipDescription="$Resources(EntityPluralDisplayName):Ribbon.Tooltip.Assign" ModernImage="Assign" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.Mscrm.Isv.account.Form.CustomAction" Location="Mscrm.Tabs._children" Sequence="1010">
+      <CommandUIDefinition>
+        <Tab Command="Mscrm.Isv.account.Form" Description="ISV Account Form" Id="Mscrm.Isv.account.Form" Sequence="1010" Title="$LocLabels:Mscrm.Isv.account.Form.Title">
+          <Scaling Id="Mscrm.Isv.account.Form.Scaling">
+            <MaxSize GroupId="Mscrm.Isv.account.Form.Group0" Id="Mscrm.Isv.account.Form.Group0.MaxSize" Sequence="10" Size="Large" />
+            <Scale GroupId="Mscrm.Isv.account.Form.Group0" Id="Mscrm.Isv.account.Form.Group0.Scale.Medium" Sequence="20" Size="Medium" />
+            <Scale GroupId="Mscrm.Isv.account.Form.Group0" Id="Mscrm.Isv.account.Form.Group0.Scale.Small" Sequence="30" Size="Small" />
+            <Scale GroupId="Mscrm.Isv.account.Form.Group0" Id="Mscrm.Isv.account.Form.Group0.Scale.Popup" Sequence="40" Size="Popup" />
+          </Scaling>
+          <Groups Id="Mscrm.Isv.account.Form.Groups">
+            <Group Command="Mscrm.Isv.account.Form.Group0" Description="$LocLabels:Mscrm.Isv.account.Form.Group0.Title" Id="Mscrm.Isv.account.Form.Group0" Sequence="10" Title="$LocLabels:Mscrm.Isv.account.Form.Group0.Title">
+              <Controls Id="Mscrm.Isv.account.Form.Group0.Controls" />
+            </Group>
+          </Groups>
+        </Tab>
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.Mscrm.Isv.account.HomepageGrid.CustomAction" Location="Mscrm.Tabs._children" Sequence="1020">
+      <CommandUIDefinition>
+        <Tab Command="Mscrm.Isv.account.HomepageGrid" Description="ISV Account Grid" Id="Mscrm.Isv.account.HomepageGrid" Sequence="1020" Title="$LocLabels:Mscrm.Isv.account.HomepageGrid.Title">
+          <Scaling Id="Mscrm.Isv.account.HomepageGrid.Scaling">
+            <MaxSize GroupId="Mscrm.Isv.account.HomepageGrid.Group0" Id="Mscrm.Isv.account.HomepageGrid.Group0.MaxSize" Sequence="10" Size="Large" />
+            <Scale GroupId="Mscrm.Isv.account.HomepageGrid.Group0" Id="Mscrm.Isv.account.HomepageGrid.Group0.Scale.Medium" Sequence="20" Size="Medium" />
+            <Scale GroupId="Mscrm.Isv.account.HomepageGrid.Group0" Id="Mscrm.Isv.account.HomepageGrid.Group0.Scale.Small" Sequence="30" Size="Small" />
+            <Scale GroupId="Mscrm.Isv.account.HomepageGrid.Group0" Id="Mscrm.Isv.account.HomepageGrid.Group0.Scale.Popup" Sequence="40" Size="Popup" />
+          </Scaling>
+          <Groups Id="Mscrm.Isv.account.HomepageGrid.Groups">
+            <Group Command="Mscrm.Isv.account.HomepageGrid.Group0" Description="$LocLabels:Mscrm.Isv.account.HomepageGrid.Group0.Title" Id="Mscrm.Isv.account.HomepageGrid.Group0" Sequence="10" Title="$LocLabels:Mscrm.Isv.account.HomepageGrid.Group0.Title">
+              <Controls Id="Mscrm.Isv.account.HomepageGrid.Group0.Controls" />
+            </Group>
+          </Groups>
+        </Tab>
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.Mscrm.Isv.account.SubGrid.CustomAction" Location="Mscrm.Tabs._children" Sequence="1030">
+      <CommandUIDefinition>
+        <Tab Command="Mscrm.Isv.account.SubGrid" Description="ISV Account Grid" Id="Mscrm.Isv.account.SubGrid" Sequence="1030" Title="$LocLabels:Mscrm.Isv.account.SubGrid.Title">
+          <Scaling Id="Mscrm.Isv.account.SubGrid.Scaling">
+            <MaxSize GroupId="Mscrm.Isv.account.SubGrid.Group0" Id="Mscrm.Isv.account.SubGrid.Group0.MaxSize" Sequence="10" Size="Large" />
+            <Scale GroupId="Mscrm.Isv.account.SubGrid.Group0" Id="Mscrm.Isv.account.SubGrid.Group0.Scale.Medium" Sequence="20" Size="Medium" />
+            <Scale GroupId="Mscrm.Isv.account.SubGrid.Group0" Id="Mscrm.Isv.account.SubGrid.Group0.Scale.Small" Sequence="30" Size="Small" />
+            <Scale GroupId="Mscrm.Isv.account.SubGrid.Group0" Id="Mscrm.Isv.account.SubGrid.Group0.Scale.Popup" Sequence="40" Size="Popup" />
+          </Scaling>
+          <Groups Id="Mscrm.Isv.account.SubGrid.Groups">
+            <Group Command="Mscrm.Isv.account.SubGrid.Group0" Description="$LocLabels:Mscrm.Isv.account.SubGrid.Group0.Title" Id="Mscrm.Isv.account.SubGrid.Group0" Sequence="10" Title="$LocLabels:Mscrm.Isv.account.SubGrid.Group0.Title">
+              <Controls Id="Mscrm.Isv.account.SubGrid.Group0.Controls" />
+            </Group>
+          </Groups>
+        </Tab>
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.nav.account.Mdm.Button.CustomAction" Location="Mscrm.Form.account.MainTab.Save.Controls._children" Sequence="63">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:nav.account.Mdm.Button.Alt" Command="nav.account.Mdm.Command" Id="nav.account.Mdm.Button" Image32by32="$webresource:nav_mdmbutton32.png" Image16by16="$webresource:nav_mdmbutton16.png" LabelText="$LocLabels:nav.account.Mdm.Button.LabelText" Sequence="63" TemplateAlias="o2" ToolTipTitle="$LocLabels:nav.account.Mdm.Button.ToolTipTitle" ToolTipDescription="$LocLabels:nav.account.Mdm.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.tra.account.report.accountopportunities.CustomAction" Location="Mscrm.Form.account.MainTab.Save.Controls._children" Sequence="64">
+      <CommandUIDefinition>
+        <Button Command="tra.account.report.openopportunitiesreport.Command" Id="tra.account.report.accountopportunities" Image32by32="$webresource:tra_Report_32.png" Image16by16="$webresource:tra_Report_16.png" LabelText="$LocLabels:tra.account.report.accountopportunities.LabelText" Sequence="64" TemplateAlias="o2" ToolTipTitle="$LocLabels:tra.account.report.accountopportunities.ToolTipTitle" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <HideCustomAction HideActionId="new.tra.account.Utility.Copyrecordid.Hide" Location="tra.account.Utility.Copyrecordid" />
+    <CustomAction Id="new.wdt.account.Form.Button.displayRecordId.CustomAction" Location="Mscrm.Form.account.MainTab.Save.Controls._children" Sequence="63">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:wdt.account.Form.Button.displayRecordId.Alt" Command="wdt.account.Form.Command.displayRecordId" Id="wdt.account.Form.Button.displayRecordId" Image32by32="$webresource:tra_hash_32" Image16by16="$webresource:tra_hash_16" LabelText="$LocLabels:wdt.account.Form.Button.displayRecordId.LabelText" Sequence="63" TemplateAlias="o2" ToolTipTitle="$LocLabels:wdt.account.Form.Button.displayRecordId.ToolTipTitle" ToolTipDescription="$LocLabels:wdt.account.Form.Button.displayRecordId.ToolTipDescription" ModernImage="$webresource:tra_hash_32" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="Mscrm.Isv.account.Form">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.account.Form" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.account.Form.Group0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.account.Form.Group0" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.account.Form.Group0.Control0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.account.Form.Group0.Control0" />
+      </DisplayRules>
+      <Actions>
+        <Url Address="/ISV/AccountISV/default.aspx" WinMode="0" WinParams="height=260, width=620, scrollbars=yes, toolbar=false" PassParams="true" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.account.HomepageGrid">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.account.HomepageGrid" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.account.HomepageGrid.Group0">
+      <EnableRules />
+      <DisplayRules />
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.account.HomepageGrid.Group0.Control0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.account.HomepageGrid.Group0.Control0" />
+      </DisplayRules>
+      <Actions>
+        <Url Address="/ISV/AccountISV/UpdateAll/default.aspx" WinMode="0" WinParams="height=260, width=620, scrollbars=yes, toolbar=false" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.account.SubGrid">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.account.SubGrid" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.account.SubGrid.Group0">
+      <EnableRules />
+      <DisplayRules />
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Isv.account.SubGrid.Group0.Control0">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.Isv.account.SubGrid.Group0.Control0" />
+      </DisplayRules>
+      <Actions>
+        <Url Address="/ISV/AccountISV/UpdateAll/default.aspx" WinMode="0" WinParams="height=260, width=620, scrollbars=yes, toolbar=false" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.SavePrimary">
+      <EnableRules>
+        <EnableRule Id="Mscrm.AvailableOnForm" />
+        <EnableRule Id="Mscrm.CanSavePrimary" />
+        <EnableRule Id="Mscrm.ReadPrimaryPermission" />
+        <EnableRule Id="Mscrm.IsAutoSaveDisable" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanSavePrimaryEntityType" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Save.saveForm" Library="$webresource:Main_system_library.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="nav.account.Mdm.Command">
+      <EnableRules>
+        <EnableRule Id="nav.account.MdmBtnEnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="isNaN" Library="$webresource:nav_xrmservicetoolkit" />
+        <JavaScriptFunction FunctionName="AccountRibbon.MmdButtonClickLogic" Library="$webresource:nav_account_ribbon.js" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="tra.account.report.openopportunitiesreport.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="TRA.Report.openPBIReport" Library="$webresource:tra_account_ribbon_library">
+          <StringParameter Value="tra_pbi_account" />
+          <CrmParameter Value="PrimaryItemIds" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="wdt.account.Form.Command.displayRecordId">
+      <EnableRules>
+        <EnableRule Id="wdt.account.Form.Command.displayRecordId" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="displayRecordId" Library="$webresource:tra_account_ribbon_library">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules>
+      <TabDisplayRule TabCommand="Mscrm.Isv.account.Form">
+        <EntityRule Context="Form" />
+      </TabDisplayRule>
+      <TabDisplayRule TabCommand="Mscrm.Isv.account.HomepageGrid">
+        <EntityRule Context="HomePageGrid" />
+      </TabDisplayRule>
+      <TabDisplayRule TabCommand="Mscrm.Isv.account.SubGrid">
+        <EntityRule Context="SubGridStandard" />
+        <EntityRule Context="SubGridAssociated" />
+      </TabDisplayRule>
+    </TabDisplayRules>
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.CanSavePrimaryEntityType">
+        <OrRule>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Create" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+          <Or>
+            <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+          </Or>
+        </OrRule>
+        <EntityPrivilegeRule PrivilegeType="Read" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.account.Form">
+        <MiscellaneousPrivilegeRule PrivilegeName="ISVExtensions" />
+        <OrRule>
+          <Or>
+            <CrmClientTypeRule Type="Web" />
+          </Or>
+          <Or>
+            <CrmClientTypeRule Type="Outlook" />
+            <CrmOfflineAccessStateRule State="Online" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.account.Form.Group0">
+        <FormStateRule State="Create" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.account.Form.Group0.Control0">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.account.HomepageGrid">
+        <MiscellaneousPrivilegeRule PrivilegeName="ISVExtensions" />
+        <OrRule>
+          <Or>
+            <CrmClientTypeRule Type="Web" />
+          </Or>
+          <Or>
+            <CrmClientTypeRule Type="Outlook" />
+            <CrmOfflineAccessStateRule State="Online" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.account.HomepageGrid.Group0.Control0">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.account.SubGrid">
+        <MiscellaneousPrivilegeRule PrivilegeName="ISVExtensions" />
+        <OrRule>
+          <Or>
+            <CrmClientTypeRule Type="Web" />
+          </Or>
+          <Or>
+            <CrmClientTypeRule Type="Outlook" />
+            <CrmOfflineAccessStateRule State="Online" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.Isv.account.SubGrid.Group0.Control0">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="Mscrm.AvailableOnForm">
+        <EntityRule AppliesTo="PrimaryEntity" Context="Form" Default="false" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.CanSavePrimary">
+        <OrRule>
+          <Or>
+            <RecordPrivilegeRule PrivilegeType="Create" AppliesTo="PrimaryEntity" />
+            <FormStateRule State="Create" />
+          </Or>
+          <Or>
+            <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" />
+            <FormStateRule State="Existing" />
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.IsAutoSaveDisable">
+        <OrRule>
+          <Or>
+            <FormStateRule State="Create" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.AutoSave.isAutoSaveEnabled" Library="$webresource:Main_system_library.js" InvertResult="true" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.RefreshForm.isRefreshForm" Library="$webresource:Main_system_library.js" InvertResult="true" />
+          </Or>
+          <Or>
+            <FormStateRule State="Existing" />
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="Mscrm.ReadPrimaryPermission">
+        <RecordPrivilegeRule PrivilegeType="Read" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+      <EnableRule Id="nav.account.MdmBtnEnableRule">
+        <FormStateRule State="Existing" Default="true" />
+      </EnableRule>
+      <EnableRule Id="wdt.account.Form.Command.displayRecordId">
+        <FormStateRule State="Existing" Default="true" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="Mscrm.Isv.account.Form.Group0.Title">
+      <Titles>
+        <Title description="ISV Account Form 1" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.account.Form.Title">
+      <Titles>
+        <Title description="ISV Account Form" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.account.HomepageGrid.Group0.Title">
+      <Titles>
+        <Title description="ISV Account Grid 1" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.account.HomepageGrid.Title">
+      <Titles>
+        <Title description="ISV Account Grid" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.account.SubGrid.Group0.Title">
+      <Titles>
+        <Title description="ISV Account Grid 1" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Isv.account.SubGrid.Title">
+      <Titles>
+        <Title description="ISV Account Grid" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nav.account.Mdm.Button.Alt">
+      <Titles>
+        <Title description="Send Account to MDM" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nav.account.Mdm.Button.LabelText">
+      <Titles>
+        <Title description="MDM" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nav.account.Mdm.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Send Account to MDM" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nav.account.Mdm.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Send Account to MDM" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.account.report.accountopportunities.LabelText">
+      <Titles>
+        <Title description="Report" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.account.report.accountopportunities.ToolTipTitle">
+      <Titles>
+        <Title description="Launch BI Report" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.account.Form.Button.displayRecordId.Alt">
+      <Titles>
+        <Title description="Get CRM Code" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.account.Form.Button.displayRecordId.LabelText">
+      <Titles>
+        <Title description="Get CRM Code" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.account.Form.Button.displayRecordId.ToolTipDescription">
+      <Titles>
+        <Title description="Needed for NAV" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="wdt.account.Form.Button.displayRecordId.ToolTipTitle">
+      <Titles>
+        <Title description="Show Customer CRM Code" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

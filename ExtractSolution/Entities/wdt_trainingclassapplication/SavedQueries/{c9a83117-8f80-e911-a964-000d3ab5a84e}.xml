@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{c9a83117-8f80-e911-a964-000d3ab5a84e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="wdt_name" select="1" preview="1" icon="1">
+        <row name="result" id="wdt_trainingclassapplicationid">
+          <cell name="wdt_productid" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="wdt_trainingclassapplication">
+          <order attribute="wdt_productid" descending="false" />
+          <attribute name="wdt_productid" />
+          <attribute name="wdt_trainingclassapplicationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.44.5.13</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Training Class View for SIM AP Configuration form" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="Transas.CalculateOpportunity.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=81927446eb6f4aa9" PluginAssemblyId="06acc35b-68f1-4375-b946-9eff199f7884" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/TransasCalculateOpportunityPlugin-06ACC35B-68F1-4375-B946-9EFF199F7884/TransasCalculateOpportunityPlugin.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Transas.CalculateOpportunity.Plugin.CalculateOpportunityKPIs, Transas.CalculateOpportunity.Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=81927446eb6f4aa9" PluginTypeId="d460a25b-e652-4d15-ad2f-1d9b9bf94cf6" Name="Transas.CalculateOpportunity.Plugin.CalculateOpportunityKPIs">
+      <FriendlyName>9617d107-120b-4872-b1d1-c8baf278b564</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

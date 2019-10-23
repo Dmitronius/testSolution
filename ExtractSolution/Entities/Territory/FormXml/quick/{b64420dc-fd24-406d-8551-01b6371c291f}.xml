@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{b64420dc-fd24-406d-8551-01b6371c291f}</formid>
+    <IntroducedVersion>9.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="400">
+      <tabs>
+        <tab id="{bc4a386b-c3ac-41b6-9b4e-5ae8ac0bed9a}" name="hierarchy" showlabel="false" expanded="true" locklevel="0">
+          <labels>
+            <label description="Hierarchy" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{34c99924-e77a-4882-9204-de76ea37744b}" name="territory tile" columns="1" showlabel="false" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{18ad1848-2cde-e05d-5a1b-5e93a2411130}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Territory Name" languagecode="1033" />
+                        </labels>
+                        <control id="name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8be42423-7036-a6d4-1999-0d3e36817dd0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Manager" languagecode="1033" />
+                        </labels>
+                        <control id="managerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="managerid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Territory Hierarchy Tile Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

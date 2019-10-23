@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{50dfef7c-8519-4809-8efd-1cf940dd35d3}</formid>
+    <IntroducedVersion>18.12.5.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{54cac679-7444-4527-9323-d17f73ccf2c5}" IsUserDefined="1" name="{54cac679-7444-4527-9323-d17f73ccf2c5}" locklevel="0" expanded="true" showlabel="true" labelid="{2e437875-862e-40a3-afd0-c241aba7d073}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e6ea86fb-540f-4dda-bd5a-76eb4786c0fe}" name="{e6ea86fb-540f-4dda-bd5a-76eb4786c0fe}" columns="11" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left" labelid="{2936c759-5496-429f-8bc9-c31aadc8c922}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{884e7e2d-c16b-4028-98e1-0ee0b9881549}" labelid="{09bfc4a2-47c6-4f2d-b7e8-1cae71637f12}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crm1st_name" uniqueid="{a1d5b5c6-875d-072d-0999-c2918682b765}" />
+                      </cell>
+                      <cell id="{428b51a8-325b-b61a-ea9b-40a70a19d380}" showlabel="true" locklevel="0" labelid="{0be3fd5a-35e8-4495-9d96-eff2d9886872}">
+                        <labels>
+                          <label description="Center of Service type" languagecode="1033" />
+                        </labels>
+                        <control id="tra_centerofservicetypecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="tra_centerofservicetypecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a9b4dac2-3796-a985-eaa7-05e105eb55c3}" showlabel="true" locklevel="0" labelid="{27a6514f-412a-4603-bb85-fccef73e04f2}">
+                        <labels>
+                          <label description="Service user" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_serviceuser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="crm1st_serviceuser" disabled="false" uniqueid="{de827343-097a-db5b-dd95-3e2c4dab0b33}" />
+                      </cell>
+                      <cell id="{2a853d42-6374-64a1-3ec7-7c640ee70b22}" showlabel="true" locklevel="0" labelid="{eb6aeaf5-297c-4390-addb-9fd0ff543b6b}">
+                        <labels>
+                          <label description="Default Contact" languagecode="1033" />
+                        </labels>
+                        <control id="tra_defaultcontactid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_defaultcontactid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{482e80a1-8d9d-4c4c-cd64-ab163d8771b6}" showlabel="true" locklevel="0" labelid="{299a3445-bc20-41d5-9f6c-0c342e5429ed}">
+                        <labels>
+                          <label description="Initial support queue" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_initialsupportqueue" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="crm1st_initialsupportqueue" disabled="false" />
+                      </cell>
+                      <cell id="{49d8c480-ad7b-ec1e-a5b2-db74bc6bac47}" showlabel="true" locklevel="0" labelid="{17a94424-60a0-4a45-a482-d48b1fc847e2}">
+                        <labels>
+                          <label description="Email Queue" languagecode="1033" />
+                        </labels>
+                        <control id="tra_emailqueueid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_emailqueueid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a033ac3e-a1da-8aea-5c2d-dee963e6811e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{d2d037a1-98da-1321-89c1-860150631113}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Target SLA" languagecode="1033" />
+                        </labels>
+                        <control id="wdt_targetsla" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="wdt_targetsla" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{54cac679-7444-4527-9323-d17f73ccf2c5}_section_2" showlabel="false" showbar="false" locklevel="0" id="{1518d37a-e9b2-68ab-cc25-1a4653815ad0}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{96ecc7ec-f4ce-4adb-8ad6-787de3bbd5df}">
+                  <labels>
+                    <label description="General email configuration" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e495d88e-76c6-728d-12a2-d4ed50b2a8ad}" showlabel="true" locklevel="0" rowspan="5" labelid="{e5659541-c7ce-42ee-90a1-52d17f199d57}">
+                        <labels>
+                          <label description="Blocked Incoming Emails" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_blockedincomingemails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="crm1st_blockedincomingemails" disabled="false" uniqueid="{2989e329-7a48-49d4-1671-8e33360aa2ec}" />
+                      </cell>
+                      <cell id="{0068d008-acbb-0604-daca-e72791c908ed}" showlabel="false" labelid="{f12c3108-43ba-4ecf-bb32-1925f80623af}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{134c0263-3658-8e50-7c5c-d143d28ec209}" showlabel="false" labelid="{a37919fb-3999-4b34-a1a0-cd8c7c94aabc}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d82ed289-2588-5862-2c45-e2011d6ba888}" showlabel="false" labelid="{54a6776a-d334-4f99-a0ff-99a065c33ed3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6a836654-61e8-bb88-b82d-61c7a287b819}" showlabel="false" labelid="{caab4549-e836-430c-8b56-41e639ccb5f4}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b716416-63b1-5868-eee7-9e3925bb324e}" showlabel="false" labelid="{5ffc886f-a8c6-4f04-b14c-233de6aa4396}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7dca949a-0b5e-e25e-75ed-25b1a4151410}" showlabel="true" locklevel="0" rowspan="5" labelid="{b69b3562-bfed-46f9-9d0c-3b39da18e720}">
+                        <labels>
+                          <label description="Blocked Outgoing Emails" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_blockedemails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="crm1st_blockedemails" disabled="false" uniqueid="{6bebc396-3788-9dbd-e923-62d3676d0a02}" />
+                      </cell>
+                      <cell id="{38a2580e-7682-00d8-2dda-468e4dc5a925}" showlabel="false" labelid="{7da2fc0b-5e8d-44e9-a3d8-b0e209a41a9f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c97783ee-b150-d357-335e-50be7585a8a8}" showlabel="false" labelid="{c622996b-cd65-42ac-ad1b-a37cac2d3e57}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{344d4c88-9220-7248-5089-aa70a5ba4cce}" showlabel="false" labelid="{e1411c65-5453-4aa5-bedf-37132e21d73c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6d04b9db-eb17-1582-aac3-ed894da89183}" showlabel="false" labelid="{28351bf8-4f52-4f46-b151-4e1372357637}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{69d08088-5433-e25a-16a9-880ce91c81bd}" showlabel="false" labelid="{7cafc87f-b8b5-4515-a90f-c5119fba490f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{54cac679-7444-4527-9323-d17f73ccf2c5}_section_3" showlabel="false" showbar="false" locklevel="0" id="{2873cb0b-3063-065e-d017-9507ceab9770}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{95090a0c-2ac1-42d9-91c8-1a147211d3dc}">
+                  <labels>
+                    <label description="Autoreply configuration" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0e079e33-28cc-5b9e-a65b-5c7e4741a9b6}" showlabel="true" locklevel="0" labelid="{d69bcf77-bee8-4dc6-a468-7ba42c2a9338}">
+                        <labels>
+                          <label description="Email template (create)" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_emailtemplatecreate" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crm1st_emailtemplatecreate" disabled="false" />
+                      </cell>
+                      <cell id="{5990bad9-38e2-58eb-0267-6e2b701d9692}" showlabel="true" locklevel="0" labelid="{5d8b4ff7-2283-486f-9144-32e0ef19179e}">
+                        <labels>
+                          <label description="Allowed emails per period" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_emailslimit" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="crm1st_emailslimit" disabled="false" uniqueid="{56289bac-317b-a535-3441-b19d254dca69}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cc0a306a-2470-8230-81b9-0a4e3249482d}" showlabel="true" locklevel="0" labelid="{00196629-f5e7-4651-ab56-c946d2dc3a42}">
+                        <labels>
+                          <label description="Email template (close)" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_emailtemplateclose" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crm1st_emailtemplateclose" disabled="false" />
+                      </cell>
+                      <cell id="{222707d6-370b-a413-d5e2-5b7d54d04b29}" showlabel="true" locklevel="0" labelid="{7373d312-9155-4fdf-824a-948405a452fd}">
+                        <labels>
+                          <label description="Limit period (min)" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_limitperiod" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="crm1st_limitperiod" disabled="false" uniqueid="{d8e1d871-a3c7-3c17-1201-b2c3cbd86ce8}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2c2730a9-ce29-1cd1-17c5-c240b93ebb52}" showlabel="false" labelid="{20d244da-b89c-41be-8a37-ba8244f9e464}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{11a762d2-bd78-7dbc-bab2-1bab29e334a8}" showlabel="true" locklevel="0" labelid="{22d85713-6ab8-43cc-90e1-17f0b64883a8}">
+                        <labels>
+                          <label description="Timeout period (min)" languagecode="1033" />
+                        </labels>
+                        <control id="crm1st_timeoutperiod" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="crm1st_timeoutperiod" disabled="false" uniqueid="{95966249-b100-7a29-091b-5378edc788de}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Admin" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Admin form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

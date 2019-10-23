@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7b0a14ff-eca4-40cf-9418-f65bed24fa30}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="entitlementid">
+          <cell name="wdt_autonumber" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="name" width="300" />
+          <cell name="statecode" width="100" />
+          <cell name="customerid" width="100" />
+          <cell name="startdate" width="100" />
+          <cell name="enddate" width="100" />
+          <cell name="slaid" width="100" />
+          <cell name="entitytype" width="100" />
+          <cell name="allocationtypecode" width="100" />
+          <cell name="remainingterms" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="entitlement">
+          <attribute name="name" />
+          <attribute name="statecode" />
+          <attribute name="customerid" />
+          <attribute name="startdate" />
+          <attribute name="enddate" />
+          <attribute name="slaid" />
+          <attribute name="allocationtypecode" />
+          <attribute name="remainingterms" />
+          <order attribute="name" descending="false" />
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="tra_vesselid" operator="like" value="{0}" />
+            <condition attribute="wdt_autonumber" operator="like" value="{0}" />
+            <condition attribute="name" operator="like" value="{0}" />
+            <condition attribute="customerid" operator="like" value="{0}" />
+          </filter>
+          <attribute name="entitytype" />
+          <attribute name="wdt_autonumber" />
+          <attribute name="entitlementid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>6.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Entitlements" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Quick find view for entitlements." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,122 @@
+//3-07-2018 andnov CRM-355 in order to create Product Package Item with correct products
+
+function filterPackageProductList() {
+    var opportunityProductLine = Xrm.Page.getAttribute("tra_opportunityproductlineid").getValue();
+    if (opportunityProductLine != null) {
+        //var productLineTextValue = productLine[0].name;
+        var opportunityProductLineID = opportunityProductLine[0].id;
+        opportunityProductLineID = opportunityProductLineID.replace('{', '').replace('}', '');
+        retrieveProductLine(opportunityProductLineID, getExistingProductPackages);
+    }
+}
+
+//28-09-2018 in order to hide already selected products in existing package items of opportunity product line
+//getting productID of opportunity product line and passing forward productID + opportunityProductLine
+function retrieveProductLine(oppProductLineID, callback) {
+
+    var req = new XMLHttpRequest();
+    req.open("GET", Xrm.Page.context.getClientUrl() + "/api/data/v8.2/new_opportunityproductgroups(" + oppProductLineID + ")?$select=_tra_productlineid_value", true);
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("Prefer", "odata.include-annotations=\"*\"");
+    var oppLineProductID;
+    req.onreadystatechange = function () {
+        if (this.readyState === 4) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var result = JSON.parse(this.response);
+                var _tra_productlineid_value = result["_tra_productlineid_value"];
+                var _tra_productlineid_value_formatted = result["_tra_productlineid_value@OData.Community.Display.V1.FormattedValue"];
+                var _tra_productlineid_value_lookuplogicalname = result["_tra_productlineid_value@Microsoft.Dynamics.CRM.lookuplogicalname"];
+                oppLineProductID = _tra_productlineid_value;
+                console.log("1");
+                console.log(oppLineProductID);
+                callback(oppProductLineID, oppLineProductID, applyPackageFilter);
+            } else {
+                console.log("TRA.retrieveProductLine finished with error: " + this.statusText);
+            }
+        }
+    };
+    try {
+        req.send();
+    }
+    catch (e) {
+        alert(e);
+    }
+}
+
+// getting productIDs array from existing Product packages of that opportunity product line 
+//and passing forward productID off opportunity product line and productIDs array of package Items
+//oppProductLineID - Opportunity Product Line itself
+//oppLineProductID - it is product selected on Opportunity Product Line 
+function getExistingProductPackages (oppProductLineID, oppLineProductID, callback) {
+var req = new XMLHttpRequest();
+req.open("GET", Xrm.Page.context.getClientUrl() + "/api/data/v8.2/tra_productpackageitems?$select=_tra_productid_value&$filter=_tra_opportunityproductlineid_value eq " + oppProductLineID +" and  statecode eq 0", true);
+req.setRequestHeader("OData-MaxVersion", "4.0");
+req.setRequestHeader("OData-Version", "4.0");
+req.setRequestHeader("Accept", "application/json");
+req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+req.setRequestHeader("Prefer", "odata.include-annotations=\"*\"");
+var packageProductID = [];
+req.onreadystatechange = function() {
+    if (this.readyState === 4) {
+        req.onreadystatechange = null;
+        if (this.status === 200) {
+            var results = JSON.parse(this.response);
+            for (var i = 0; i < results.value.length; i++) {
+                var _tra_productid_value = results.value[i]["_tra_productid_value"];
+                var _tra_productid_value_formatted = results.value[i]["_tra_productid_value@OData.Community.Display.V1.FormattedValue"];
+                var _tra_productid_value_lookuplogicalname = results.value[i]["_tra_productid_value@Microsoft.Dynamics.CRM.lookuplogicalname"];
+                packageProductID [i] = _tra_productid_value.replace('{', '').replace('}', ''); // filling array with productIDs array of package Items
+            }
+            console.log("TRA.packageProductID: ");
+            console.log(packageProductID);
+            callback(oppLineProductID, packageProductID);
+        } else {
+            console.log("TRA.getExistingProductPackages finished with error: " + this.statusText);
+        }
+    }
+};
+req.send();
+}
+
+
+//applying filters by creating new view and showing it to user
+function applyPackageFilter(lineID, alreadyExistingPackageProductIDarr) {
+    var existingProductFilter = "<value>00000000-0000-0000-0000-000000000000</value>"; // if no packages entered and
+    for (var i = 0; i < alreadyExistingPackageProductIDarr.length; i++) {
+        if (alreadyExistingPackageProductIDarr[i] != null && alreadyExistingPackageProductIDarr[i] != undefined) {
+            existingProductFilter = existingProductFilter + "<value>" + alreadyExistingPackageProductIDarr[i] + "</value>";
+        }
+    }
+    var viewId = "{cecd08b8-6792-4c6f-b130-550227a3d696}";
+    var entityName = "product";//entity name to be filtered
+    var viewDisplayName = "Filtered Products";//custom view name 
+    var lineID = lineID.replace('{', '').replace('}', '');
+    var fetchXML = "<fetch>" +
+            "<entity name='product' >" +
+                "<filter>"+
+                    "<condition attribute='productid' operator='not-in' >"+
+                        existingProductFilter +
+                    "</condition>"+
+                "</filter>"+
+                "<link-entity name='productassociation' from='associatedproduct' to='productid' >" +
+                    "<filter type='and' >" +
+                        "<condition attribute='productid' operator='eq' value='" + lineID + "' />" +
+                    "</filter>" +
+                "</link-entity>" +
+            "</entity>" +
+        "</fetch>";
+    var layoutXml = "<grid name='resultset' object='1024' jump='name' select='1' preview='1' icon='1' >"
+            + "<row name='result' id='productid' >"
+                + "<cell name='name' width='200' />"
+                + "<cell name='tra_basicweight' width='100' />"
+            + "</row>"
+        + "</grid>";
+
+    Xrm.Page.getControl("tra_productid").addCustomView(viewId, entityName, viewDisplayName, fetchXML, layoutXml, true);
+}
+
+//end 28-09-2018

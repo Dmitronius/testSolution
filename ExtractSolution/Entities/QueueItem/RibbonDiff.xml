@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="new.ApplicationRibbon.queueitem.TransformLinksCRMDocumentsToSharePoint.Button.Hide" Location="new.ApplicationRibbon.queueitem.TransformLinksCRMDocumentsToSharePoint.Button" />
+    <CustomAction Id="new.crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.CustomAction" Location="Mscrm.HomepageGrid.queueitem.MainTab.Management.Controls._children" Sequence="100">
+      <CommandUIDefinition>
+        <Button Command="crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.Command" Id="crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh" LabelText="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.LabelText" Sequence="100" TemplateAlias="isv" ToolTipTitle="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.CustomAction" Location="Mscrm.HomepageGrid.queueitem.MainTab.Management.Controls._children" Sequence="140">
+      <CommandUIDefinition>
+        <Button Command="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.Command" Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases" Image32by32="/_imgs/ribbon/MergeRecords_32.png" Image16by16="/_imgs/ribbon/MergeRecords_16.png" LabelText="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.LabelText" Sequence="140" TemplateAlias="isv" ToolTipTitle="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.CustomAction" Location="Mscrm.HomepageGrid.queueitem.MainTab.Management.Controls._children" Sequence="120">
+      <CommandUIDefinition>
+        <Button Command="crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.Command" Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh" Image32by32="$webresource:crm1st_StartButton_32x32" Image16by16="$webresource:crm1st_StartButton_16x16" LabelText="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.LabelText" Sequence="120" TemplateAlias="isv" ToolTipTitle="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="new.crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.CustomAction" Location="Mscrm.HomepageGrid.queueitem.MainTab.Management.Controls._children" Sequence="110">
+      <CommandUIDefinition>
+        <Button Command="crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.Command" Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh" Image32by32="$webresource:crm1st_StopButton_32x32" Image16by16="$webresource:crm1st_StopButton_16x16" LabelText="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.LabelText" Sequence="110" TemplateAlias="isv" ToolTipTitle="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.ToolTipTitle" ToolTipDescription="$LocLabels:crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <HideCustomAction HideActionId="new.MailApp.Form.OpenRecordOnWeb.queueitem.Button.Hide" Location="MailApp.Form.OpenRecordOnWeb.queueitem.Button" />
+    <CustomAction Id="new.tra.queueitem.Button2.Button.Mscrm.SubGrid.queueitem.WorkOn.CustomAction" Location="Mscrm.HomepageGrid.queueitem.MainTab.Actions.Controls._children" Sequence="0">
+      <CommandUIDefinition>
+        <Button Alt="$Resources:Ribbon.HomepageGrid.queueitem.MainTab.Actions.WorkOn" Command="Mscrm.HomepageGrid.queueitem.WorkOn" Id="tra.queueitem.Button2.Button.Mscrm.SubGrid.queueitem.WorkOn" Image32by32="/_imgs/Workplace/WorkOn_32.png" Image16by16="/_imgs/Workplace/WorkOn_16.png" LabelText="$Resources:Ribbon.HomepageGrid.queueitem.MainTab.Actions.WorkOn" Sequence="0" TemplateAlias="o2" ToolTipTitle="$Resources:Mscrm_SubGrid_queueitem_MainTab_Actions_WorkOn_ToolTipDescription" ToolTipDescription="$Resources:Mscrm_SubGrid_queueitem_MainTab_Actions_WorkOn_ToolTipDescription" ModernImage="QueueItemPick" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.Command">
+      <EnableRules>
+        <EnableRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.Command.EnableRule.CustomRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.Command">
+      <EnableRules>
+        <EnableRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.Command.EnableRule.CrmOfflineAccessStateRule" />
+        <EnableRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.Command.EnableRule.SelectionCountRule" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.Command.DisplayRule.MiscellaneousPrivilegeRule" />
+        <DisplayRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.Command.DisplayRule.EntityPrivilegeRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="mergeCasesOnQueueItemView" Library="$webresource:wdt_QueueItem_main_library.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.Command">
+      <EnableRules>
+        <EnableRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.Command.EnableRule.CustomRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="EnableRefresh" Library="$webresource:crm1st_EnabaleDisableAutoRefresh" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.Command">
+      <EnableRules>
+        <EnableRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.Command.EnableRule.CustomRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="DisableRefresh" Library="$webresource:crm1st_EnabaleDisableAutoRefresh" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.HomepageGrid.queueitem.WorkOn">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanAppendToQueueItem" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.QueueItemGridCommandActions.queueManipulation" Library="$webresource:QueueItem_main_system_library.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="SelectedEntityTypeCode" />
+          <StringParameter Value="queueitemworkon" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.Command.DisplayRule.EntityPrivilegeRule">
+        <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" EntityName="incident" />
+      </DisplayRule>
+      <DisplayRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.Command.DisplayRule.MiscellaneousPrivilegeRule">
+        <MiscellaneousPrivilegeRule PrivilegeName="Merge" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.CanAppendToQueueItem">
+        <EntityPrivilegeRule PrivilegeType="AppendTo" PrivilegeDepth="Basic" EntityName="queueitem" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.Command.EnableRule.CustomRule">
+        <CustomRule FunctionName="DoAutoRefresh" Library="$webresource:crm1st_AutoRefresh" Default="false" InvertResult="false" />
+      </EnableRule>
+      <EnableRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.Command.EnableRule.CrmOfflineAccessStateRule">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </EnableRule>
+      <EnableRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.Command.EnableRule.SelectionCountRule">
+        <SelectionCountRule AppliesTo="SelectedEntity" Minimum="2" Maximum="-1" />
+      </EnableRule>
+      <EnableRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.Command.EnableRule.CustomRule">
+        <CustomRule FunctionName="StartButtonValidation" Library="$webresource:crm1st_RefreshButtonValidation" Default="false" />
+      </EnableRule>
+      <EnableRule Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.Command.EnableRule.CustomRule">
+        <CustomRule FunctionName="StopButtonValidation" Library="$webresource:crm1st_RefreshButtonValidation" Default="true" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.IsLeoServiceMetadataNotAvailable">
+        <CustomRule FunctionName="Mscrm.CommandBarActions.isServiceMetadataNotAvailable" Library="/_static/_common/scripts/CommandBarActions.js" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.SelectionCountAtLeastOne">
+        <SelectionCountRule AppliesTo="SelectedEntity" Minimum="1" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.LabelText">
+      <Titles>
+        <Title description="DoAutoRefresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.ToolTipDescription">
+      <Titles>
+        <Title description="DoAutoRefresh Description" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.DoAutoRefresh.ToolTipTitle">
+      <Titles>
+        <Title description="DoAutoRefresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.LabelText">
+      <Titles>
+        <Title description="Merge Cases" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.ToolTipDescription">
+      <Titles>
+        <Title description="Merge Cases Description" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.MergeCases.ToolTipTitle">
+      <Titles>
+        <Title description="Merge Cases" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.LabelText">
+      <Titles>
+        <Title description="Start Auto Refresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.ToolTipDescription">
+      <Titles>
+        <Title description="Press this Button to start the automatic refresh on the view" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StartAutoRefresh.ToolTipTitle">
+      <Titles>
+        <Title description="Start Auto Refresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.LabelText">
+      <Titles>
+        <Title description="Stop Auto Refresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.ToolTipDescription">
+      <Titles>
+        <Title description="Press this Button to stop the automatic refresh on the view" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="crm1st.HomepageGrid.queueitem.MainTab.Management.StopAutoRefresh.ToolTipTitle">
+      <Titles>
+        <Title description="Stop Auto Refresh" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

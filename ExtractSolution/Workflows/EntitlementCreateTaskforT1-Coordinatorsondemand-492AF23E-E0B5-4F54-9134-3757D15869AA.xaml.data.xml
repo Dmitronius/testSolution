@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{492af23e-e0b5-4f54-9134-3757d15869aa}" Name="Entitlement.Create Task for T1-Coordinators ondemand" Description="#operationWF&#xA;Called by &#xA;Opportunity. Create Task(s) for T1-Coordinators" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/EntitlementCreateTaskforT1-Coordinatorsondemand-492AF23E-E0B5-4F54-9134-3757D15869AA.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>0</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.44.9.40</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <PrimaryEntity>Entitlement</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Entitlement.Create Task for T1-Coordinators ondemand" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="#operationWF&#xA;Called by &#xA;Opportunity. Create Task(s) for T1-Coordinators" />
+  </Descriptions>
+</Workflow>
