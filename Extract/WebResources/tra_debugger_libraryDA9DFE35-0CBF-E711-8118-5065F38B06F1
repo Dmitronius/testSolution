@@ -1,0 +1,5 @@
+function listAllControls() {
+Xrm.Page.ui.controls.forEach(function (control, i) {
+Xrm.Utility.alertDialog(control.getName());
+});
+}

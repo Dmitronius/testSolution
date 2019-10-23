@@ -1,0 +1,9 @@
+function DisableRefresh() { 
+        window.top.crm1st_refreshDisabled = 1;
+        document.getElementById("crmGrid").control.Refresh();
+}
+
+function EnableRefresh() {
+        window.top.crm1st_refreshDisabled = 0;
+        document.getElementById("crmGrid").control.Refresh();
+}

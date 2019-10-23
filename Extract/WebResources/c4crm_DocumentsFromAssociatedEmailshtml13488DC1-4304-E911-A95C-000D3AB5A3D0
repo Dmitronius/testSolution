@@ -1,0 +1,171 @@
+<html><head>
+    <title>Documents from associated emails</title>
+    <style type="text/css">
+        table {
+            width: 100%;
+        }
+        .grid td {
+            font-size: 12px;
+            padding: 4px 15px 3px 15px;
+        }
+        #first-row td {
+            background-color: #F6F7F8;
+            font-family: Segoe\000020UI\000020Semibold,Tahoma,sans\00002Dserif;
+            color: #505050 !important;
+        }
+        .grid td, .grid td a {
+            font-family: Segoe\000020UI;
+            color: #000;
+        }
+        .grid td a {
+            text-decoration: none;
+        }
+        .grid tr:hover {
+            background-color: #d9ecf4;
+        }
+    </style>
+    <script type="text/javascript" src="crm1st_/libs/XrmServiceToolkit.js"></script>
+<meta><meta></head>
+<body style="overflow-wrap: break-word; padding: 0; margin: 0;">
+    <table>
+        <tbody id="documentsFromEmails" class="grid">
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        // Functions
+        function GetTypeCodeByEntityName(entityName) {
+            return entityName == 'email' ? 4202 : 0;
+        }
+
+        function BytesToNormalSizeView(bytes) {
+            var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+            if (bytes == 0) return '0 Byte';
+            var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+            return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+        }
+
+        function ReplaceBadSpaces(str) {
+            return decodeURIComponent(encodeURIComponent(str).replace(/%C2%A0/g, "%20")).trim();
+        }
+
+        function GetSharePointFiles(data) {
+            var dataFiles = [];
+            var list = parent.$(data).find('td.ms-crm-List-DataCell-Associated-Lite');
+            if (list.length > 0) {
+                for (var i = 0; i < list.length; i++) {
+                    if (parent.$(list[i]).attr('rowdata')) {
+                        var dataFile = JSON.parse(parent.$(list[i]).attr('rowdata'));
+                        if (dataFile.fullname && dataFile.absoluteurl) {
+                            dataFiles.push({
+                                'fullname': ReplaceBadSpaces(dataFile.fullname),
+                                'absoluteurl': dataFile.absoluteurl,
+                                'filesize': dataFile.filesize_Value
+                            });
+                        }
+                    }
+                }
+            }
+            return dataFiles;
+        }
+
+        function SendRequestAndGetSharePointFiles(recordId, oTypeCode, callbackSuccessFunc, callbackErrorFunc) {
+            var mainUrl =
+                location.protocol + "//" +
+                location.hostname + "/userdefined/areas.aspx?inlineEdit=1&navItemName=Documents&oId=" +
+                recordId + "&oType=" +
+                oTypeCode + "&pagemode=iframe&rof=true&security=852023&tabSet=areaSPDocuments&theme=Outlook15White";
+            parent.$.ajax({
+                method: 'GET',
+                url: mainUrl,
+                success: function (data) {
+                    var dataFiles = GetSharePointFiles(data);
+                    if (callbackSuccessFunc) {
+                        callbackSuccessFunc(recordId, dataFiles);
+                    }
+                },
+                error: function () {
+                    if (callbackErrorFunc) {
+                        callbackErrorFunc();
+                    }
+                }
+            });
+        }
+
+        function GetSPCompliantFileName(fileName) {
+            var i = fileName.lastIndexOf('.');
+            var name = fileName.substr(0, i);
+            var ext = fileName.substr(i + 1);
+            var spFileName = name.replace(/[~""#%&*:<>?/\\{|}.']{1}/g, "-") + '.' + ext;
+            return spFileName;
+        }
+
+        function GetSharePointFileInfoByName(spFiles, fileName) {
+            for (var i = 0; i < spFiles.length; i++) {
+                if (fileName == spFiles[i].fullname) {
+                    return spFiles[i];
+                }
+            }
+            return null;
+        }
+        // ---------
+        
+        var AttachmentType = 1001;
+        var tbody = parent.$(parent.$('#WebResource_DocumentsFromAssociatedEmails').contents()[0].body).find('#documentsFromEmails');
+        var id = parent.Xrm.Page.data.entity.getId();
+        var titleAttr = parent.Xrm.Page.getAttribute('title');
+        if (id && titleAttr) {
+            var relEmailsFetch = '<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true"><entity name="email">' +
+                                 '<attribute name="activityid" /><link-entity name="incident" from="incidentid" to="regardingobjectid" link-type="inner" alias="af">' +
+                                 '<filter type="and"><condition attribute="incidentid" operator="eq" uitype="incident" value="' + id + '" /></filter></link-entity></entity></fetch>';
+            var relEmails = XrmServiceToolkit.Soap.Fetch(relEmailsFetch);
+            if (relEmails && relEmails.length > 0) {
+                for (var i = 0; i < relEmails.length; i++) {
+                    if (relEmails[i].attributes && relEmails[i].attributes.activityid) {
+                        var activityId = relEmails[i].attributes.activityid.value;
+                        var typeCode = GetTypeCodeByEntityName('email');
+                        SendRequestAndGetSharePointFiles(activityId, typeCode, function (recordId, dataFiles) {
+                            var relAttachmentsFetch = '<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true"><entity name="activitymimeattachment">' +
+                                                      '<attribute name="activityid" /><attribute name="filename" /><attribute name="filesize" /><attribute name="mimetype" /><attribute name="activitymimeattachmentid" />' +
+                                                      '<filter type="and"><condition attribute="activityid" uitype="email" operator="eq" value="{' + recordId + '}" /></filter></entity></fetch>';
+                            var relAttachments = XrmServiceToolkit.Soap.Fetch(relAttachmentsFetch);
+                            if (relAttachments && relAttachments.length > 0) {
+                                for (var j = 0; j < relAttachments.length; j++) {
+                                    if (relAttachments[j].attributes && relAttachments[j].attributes.filename && relAttachments[j].attributes.filesize) {
+                                        var title = relAttachments[j].attributes.filename.value;
+                                        var filesize = relAttachments[j].attributes.filesize.value;
+                                        var fileName = ReplaceBadSpaces(title);
+                                        fileName = GetSPCompliantFileName(fileName);
+                                        var spF = GetSharePointFileInfoByName(dataFiles, fileName);
+                                        if (spF) {
+                                            parent.$(tbody).append('<tr><td style="width: 50%;"><a target="_blank" href="' + spF.absoluteurl + '">' + spF.fullname + '</a></td><td>' + BytesToNormalSizeView(spF.filesize) + '</td></tr>');
+                                        } else {
+                                            var activitymimeattachmentid = relAttachments[j].attributes.activitymimeattachmentid.value;
+                                            var urlBase = parent.Xrm.Page.context.getClientUrl();
+                                            var url = urlBase + '/userdefined/edit.aspx?etc=' + AttachmentType + '&id={' + activitymimeattachmentid + '}';
+                                            parent.$.get(url, function (data) {
+                                                var result = parent.$.parseHTML(data);
+                                                var crmAttachment = parent.$(result).find('#crmAttachment');
+                                                if (parent.$(crmAttachment).length > 0) {
+                                                    var attachmentid = parent.$(crmAttachment).attr('attachmentid');
+                                                    var wrpctokenurl = parent.$(crmAttachment).attr("wrpctokenurl");
+                                                    var value = parent.$(result).find('#crmFormOriginalXml').attr('value');
+                                                    var mainXML = (new DOMParser()).parseFromString(value, "text/xml");
+                                                    var name = parent.$(mainXML.getElementsByTagName('filename')[0]).text();
+                                                    var size = parent.$(mainXML.getElementsByTagName('filesize')[0]).text();
+                                                    var docUrl = urlBase + "/Activities/Attachment/download.aspx?AttachmentType=" + AttachmentType +
+                                                        "&AttachmentId=" + attachmentid + "&IsNotesTabAttachment=undefined" + wrpctokenurl;
+                                                    parent.$(tbody).append('<tr><td style="width: 50%;"><a target="_blank" href="' + docUrl + '">' + name + '</a></td><td>' + BytesToNormalSizeView(size) + '</td></tr>');
+                                                }
+                                            });
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    }
+                }
+            }
+        }
+    </script>
+
+</body></html>

@@ -1,0 +1,452 @@
+<html><head>
+    <title>FOS Gold Configurator</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="ClientGlobalContext.js.aspx"></script>
+    <link rel="stylesheet" href="gp_/css/bootstrap.min.css">
+    <link rel="stylesheet" href="new_FOSConfigurator.min.css">
+
+    <script type="text/javascript" src="lat_/CRMRESTBuilder/scripts/jquery1.9.1.min.js"></script>
+    <script type="text/javascript" src="gp_/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    var entityname=window.opener.Xrm.Page.data.entity.getEntityName();
+    var id=window.opener.Xrm.Page.data.entity.getId().substring(1, 37);//remove braces
+            
+    alert(entityname);
+    if (window.opener.Xrm.Page.data.entity.getEntityName()=='opportunity'){
+        alert('test2');
+        entityname="opportunities";         
+        var columnSet="?$select=_customerid_value,new_solutions,_parentaccountid_value,_pricelevelid_value,statecode,tra_subscriptionperiod,_transactioncurrencyid_value"; //list of column that we want to fetch         
+        retrieveEntity(entityname, id,columnSet);
+    }
+        var CRMCustomParameters = [];
+        alert('test3');        
+
+alert(window.opener.Xrm.Page.data.entity.getEntityName());
+        var getParameters = function () {
+            var Parameters = GetGlobalContext().getQueryStringParameters();
+            if (Parameters && Parameters.Data) {
+                location.href = Parameters.Data;
+            }
+        }
+         
+     function retrieveentityCollection(entity, options) {
+	    var serverURL = window.opener.Xrm.Page.context.getClientUrl();
+	    var Query = entity + options;
+        alert(serverURL + "/api/data/v8.2/" + Query);
+	    var req = new XMLHttpRequest();
+	    req.open("GET", serverURL + "/api/data/v8.2/" + Query, true);
+	    req.setRequestHeader("Accept", "application/json");
+	    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+	    req.setRequestHeader("OData-MaxVersion", "4.0");
+	    req.setRequestHeader("OData-Version", "4.0");
+	    req.onreadystatechange = function() {
+	        if (this.readyState == 4 /* complete */ ) {
+	            req.onreadystatechange = null;
+	            if (this.status == 200) {
+	                var data = JSON.parse(this.response);
+                    alert(data);
+	                //if(data['@odata.count']!=null)
+	                //Xrm.Page.getAttribute("numberofemployees").setValue(data['@odata.count']); //we are displaying it in out of the box number o employee field
+	            } else {
+	                var error = JSON.parse(this.response).error;
+	                alert(error.message);
+	            }
+	        }
+	    };
+	    req.send();
+	}  
+
+    function retrieveEntity(entityname,id, columnset) {
+	    var serverURL = window.opener.Xrm.Page.context.getClientUrl();
+	    var Query = entityname+ "(" + id + ")" + columnset;
+	    var req = new XMLHttpRequest();
+	    req.open("GET", serverURL + "/api/data/v8.2/" + Query, true);
+	    req.setRequestHeader("Accept", "application/json");
+	    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+	    req.setRequestHeader("OData-MaxVersion", "4.0");
+	    req.setRequestHeader("OData-Version", "4.0");
+	    req.onreadystatechange = function() {
+	        if (this.readyState == 4 /* complete */ ) {
+	            req.onreadystatechange = null;
+	            if (this.status == 200){//to verify result is OK 
+	                var data = JSON.parse(this.response);
+	               if(data!=null )
+	                    alert("testdata:"+data);
+                        var 
+	               //if(data!=null && data._primarycontactid_value!=null)
+	                 //     alert(data._primarycontactid_value); //for lookup id
+	 
+	            } else {
+	                var error = JSON.parse(this.response).error;
+	                alert("Error:"+error.message);
+	            }
+	        }
+	    };
+	    req.send();
+	}
+
+            
+    </script>
+
+</head>
+<body>
+<script>
+    var Quotation =@Html.Raw(this.ViewData["JSONQuotation"]);
+    var Vessels =@Html.Raw(this.ViewData["JSONVessels"]);
+</script>
+
+<div class="container body-content">
+<div class="row">
+    <div class="loader" style="display:none" id="loader"></div>
+    <div class="stepwizard col-xs-12" style="display:none">
+        <label class="col-sm-10 control-label">Montly subscription per vessel: </label>
+        <label class="col-sm-2" id="MarketPriceTop"></label>
+    </div>
+    <div class="stepwizard col-xs-12">
+        <div class="stepwizard-row setup-panel">
+            <div class="stepwizard-step">
+                <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                <p>Customer</p>
+            </div>
+            <div class="stepwizard-step">
+                <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                <p>ASAT</p>
+            </div>
+            <div class="stepwizard-step">
+                <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                <p>Navigation Solution</p>
+            </div>
+            <div class="stepwizard-step">
+                <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                <p>A-SUITE</p>
+            </div>
+            <div class="stepwizard-step">
+                <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
+                <p>Finish</p>
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content" id="step-1">
+        <div class="col-xs-12">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="control-label">Client</label>
+                    <select ng-model="discussionsSelect" class="form-control" id="Client">
+                        
+                        @foreach (var item in (Client[])ViewData["Clients"])
+                        {
+                            <option value="@item.Id">@item.ClientName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group" style="display:none">
+                    <label class="control-label">Currency</label>
+                    <select ng-model="discussionsSelect" class="form-control" id="PriceList">
+                        @foreach (var item in (PriceList[])ViewData["PriceList"])
+                        {
+                            <option value="@item.Id">@item.Currency</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label checkbox" for="VesselName">Vessel name</label>
+                    <div class="checkbox" id="VesselList">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="SubscriptionPeriod">Subscription period:</label>
+                    <label class="control-label" id="Period_y"></label>
+                </div>
+                <br>
+                <button class="btn btn-primary nextBtn btn-lg pull-right" id="Next" type="button" disabled="">Next</button>
+                <button class="btn btn-primary prevBtn btn-lg pull-left" type="button" onclick="javascript: self.close();">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content" id="step-2">
+        <div class="col-xs-12">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="control-label" for="ASAT">ASAT</label>
+                    <select ng-model="discussionsSelect" class="form-control" id="ASAT">
+                        @foreach (var item in (Item[])ViewData["Items"])
+                        {
+                            if (@item.Name.StartsWith("Entry") || @item.Name.StartsWith("MIR Only") || @item.Name.StartsWith("Plus") || @item.Name.StartsWith("Advanced") || @item.Name.StartsWith("Ultra") || @item.Name.StartsWith(" Ultra +"))
+                            {
+                                <option title="@item.Description" value="@item.Id">@item.Name</option>
+                            }
+                        }
+                    </select>
+                    <div id="helpASAT"></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="ExtraWirelessAP">Extra Wireless access point</label>
+                    <input class="form-control" type="text" data-val="true" data-val-required="The Extra Wireless access point field is required." id="Wireless access points" name="ExtraWirelessAP" value="0">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="ExtraVOIP">Extra VOIP handset</label>
+                    <input class="form-control" type="text" data-val="true" data-val-required="The Extra VOIP handset field is required." id="VOIP handsets" name="ExtraVOIP" value="0">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="ExtraDID">Extra DIDs</label>
+                    <input class="form-control" type="text" data-val="true" data-val-required="The Extra DIDs field is required." id="DIDs" name="ExtraDID" value="0">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="BackupSupply">Backup Supply</label>
+                    <div class="form-group">
+                        <select class="form-control" id="BackupSupply">
+                            <option title="Customer has existing both solutions: for the Hardware and Airtime plan" value="Customer">Customer Supply</option>
+                            <option title="Customer needs complete of part of a back up solution supplied by Transas" value="Transas">Transas Supply</option>
+                        </select>
+                        <div id="helpBackupSupply"></div>
+                    </div>
+                </div>
+                <div class="form-group" id="BackupHWCustomer">
+                    <label class="control-label" for="DescribeCustomerProvidedSolutionBackupHW">Describe customer provided solution for the back-up HW</label>
+                    <input class="form-control" type="text" id="DescribeCustomerProvidedSolutionBackupHW" name="DescribeCustomerProvidedSolutionBackupHW" placeholder="the back-up HW information">
+                </div>
+                <div class="form-group" id="BackupAirtimeCustomer">
+                    <label class="control-label" for="DescribeCustomerProvidedSolutionBackupAirtime">Describe customer provided solution for the back-up airtime</label>
+                    <input class="form-control" type="text" id="DescribeCustomerProvidedSolutionBackupAirtime" name="DescribeCustomerProvidedSolutionBackupAirtime" placeholder="the back-up airtime information">
+                </div>
+                <div class="form-group" id="BackupHW" style="display:none">
+                    <label class="control-label" for="BackupHW">BackUp HW</label>
+                    <div class="form-group">
+                        <select class="form-control" id="BackupSupplyHW">
+                            <option title="Customer is providing this HW on his own" value="Customer">Customer Supply</option>
+                            <option title="Transas is providing HW solution" value="Transas">Transas Supply</option>
+                        </select>
+                        <div id="helpBackupSupplyHW"></div>
+                    </div>
+                </div>
+                <div class="form-group" id="BackupHWType" style="display:none">
+                    <label class="control-label" for="BackupHWType">Select BackUp HW</label>
+                    <select ng-model="discussionsSelect" class="form-control" id="BackupSupplyHWType">
+                        @foreach (var item in (Item[])ViewData["Items"])
+                        {
+                            if (@item.Name.Contains("Iridium Pilot") || @item.Name.Contains("Intellian FB250") || @item.Name.Contains("Intellian FB500"))
+                            {
+                                <option title="@item.Description" value="@item.Id">@item.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="form-group" id="BackupAirtimePlan" style="display:none">
+                    <label class="control-label" for="BackupAirtimePlan">Select airtime plan</label>
+                    <select ng-model="discussionsSelect" class="form-control" id="BackupAirtimePlan">
+                        @foreach (var item in (Item[])ViewData["Items"])
+                        {
+                            if (@item.Name.Contains("Iridium ") &amp;&amp; @item.Name.Contains("MB"))
+                            {
+                                <option title="@item.Description" value="@item.Id">@item.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="form-group" id="BackupAirtimePlanFB" style="display:none">
+                    <label class="control-label" for="BackupAirtimePlanFB">Select airtime plan</label>
+                    <select ng-model="discussionsSelect" class="form-control" id="BackupAirtimePlanFB">
+                        @foreach (var item in (Item[])ViewData["Items"])
+                        {
+                            if (@item.Name.Contains("Fleet "))
+                            {
+                                <option title="@item.Description" value="@item.Id">@item.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <br>
+                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
+                <button class="btn btn-primary prevBtn btn-lg pull-left" type="button">Previous</button>
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content" id="step-3">
+        <div class="col-xs-12">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="control-label" for="TypeECDISPack">ECDIS</label>
+                    <select class="form-control" id="TypeECDISPack">
+                        <option title="Dual ECDIS Silver FOS - Dual set of Marine Panel 24 inch with dedicated trackball, desktop bracket, UPS, Cabling and TransLink cyber-secure connection to VSAT" value="Silver FOS">Silver</option>
+                        <option title="Dual ECDIS Platinum FOS - Dual set of Marine Display/PC with dedicated trackball and keyboard, desktop bracket, UPS, Cabling, 16NMEA Data Collector and TransLink cyber-secure connection to VSAT" value="Platinum FOS">Platinum</option>
+                    </select>
+                    <label id="helpECDIS"></label>
+                </div>
+                <div class="form-group" id="console">
+                    <label class="control-label" for="ConsoleNum">Console</label>
+                    <br>                 
+                    <select class="form-control" id="console">
+                        <option value="0" selected="selected">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group" id="ES6Keyboard">
+                    <label class="control-label" for="ES6Keyboard">ES6 Keyboard</label>
+                    <!--input class="form-control" type="text" data-val="true" data-val-required="The ES6 Keyboard field is required." id="ES6Keyboard" name="ES6Keyboard" value="0" /-->
+                    <br>                    
+                    <select class="form-control" id="keyboard">
+                        <option value="0" selected="selected">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group" id="RIB" style="display:none">
+                    <label class="control-label" for="RIB">Radar Interface RIB6</label>
+                    <br>                
+                    <select class="form-control" id="RIB">
+                        <option value="0" selected="selected">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group" id="Display26" style="display:none">
+                    <label class="control-label" for="Display26">Display</label>
+                    <br>
+                    <label><input type="checkbox" data-val="true" data-val-required="The 26&quot; Display field is required." id="Display" name="Display" value="26&quot; Display">  26" Display</label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="FlagstatePack">Special Flagstate package</label>
+                    <br>                  
+                    <select class="form-control" id="SpecialPack">
+                        <option value="None" selected="selected">None</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Malta">Malta</option>
+                        <option value="Netherland">Netherland</option>
+                    </select>
+                </div>                
+                <br>
+                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
+                <button class="btn btn-primary prevBtn btn-lg pull-left" type="button">Previous</button>
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content" id="step-4">
+        <div class="col-xs-12">
+            <div class="col-md-12">
+                <div class="checkbox">
+                    <input type="checkbox" data-val="true" data-val-required="The A-SUITE + Lifetime Subscription field is required." id="ASUITELifeTimeSubscription" name="ASUITELifeTimeSubscription" value="true">
+                    <label for="ASUITELifeTimeSubscription">A-SUITE + Lifetime Subscription</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" data-val="true" data-val-required="The FOS access field is required." id="FOSaccess" name="FOSaccess" value="true" readonly="">
+                    <label title="Fleet navigation management and a-Suite applications dashboard" for="FOSaccess">FOS Secure access</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" data-val="true" data-val-required="The ADD field is required." id="ADD" name="ADD" value="true" readonly="">
+                    <label title="Chart navigation and route planning coverage plan (pre-installed and regularly automatically updated package)" for="ADD">ADD Advanced Data Delivery</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" data-val="true" data-val-required="The ARM field is required." id="ARM" name="ARM" value="true" readonly="">
+                    <label title="Lifetime warranty and 24/7 support; compliancy to changing standards" for="ARM">ARM Advanced Remote Maintenance</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" data-val="true" data-val-required="The AIR field is required." id="AIR" name="AIR" value="true">
+                    <label title="Advanced intelligent routing" for="AIR">AIR Advanced intelligent routing</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" data-val="true" data-val-required="The AID field is required." id="AID" name="AID" value="true">
+                    <label title="AID Anomaly Intelligent Diagnostics" for="AID">AID Anomaly Intelligent Diagnostics</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" data-val="true" data-val-required="The AIM field is required." id="AIM" name="AIM" value="true">
+                    <label title="AIM Advanced Intelligent Manoeuvring" for="AIM">AIM Advanced Intelligent Manoeuvring</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" data-val="true" data-val-required="The ADP field is required." id="ADP" name="ADP" value="true" readonly="">
+                    <label title="ADP Advanced Digital Publications" class="control-label" for="ADP">ADP Advanced Digital Publications</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" data-val="true" data-val-required="The ARTS field is required." id="ARTS" name="ARTS" value="true" readonly="">
+                    <label title="ARTS Advanced Remote Training for Seafarers" class="control-label" for="ARTS">ARTS Advanced Remote Training for Seafarers</label>
+                </div>
+                <br>
+                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
+                <button class="btn btn-primary prevBtn btn-lg pull-left" type="button">Previous</button>
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content" id="step-5">
+        <div class="col-xs-12">
+            <div class="col-md-12">
+                <div class="row">
+                    <br>
+                    <br>
+                    <h3>Monthly Investment</h3>
+                    <div class="row">
+                        <label class="col-sm-3 control-label"></label>
+                        <label class="col-sm-2 text-right">Per vessel / month</label>
+                        <label class="col-sm-2 text-right">Per vessel / day</label>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-3 control-label">Monthly subscription (FOS GOLD special offer 3 year)</label>
+                        <label class="col-sm-2 text-right" id="SubscriptionPricePerMonth"></label>
+                        <label class="col-sm-2 text-right" id="SubscriptionPricePerDay"></label>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-3 control-label">Comparable market product</label>
+                        <label class="col-sm-2 text-right" id="SubscriptionPriceMarket"></label>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-3 control-label"></label>
+                        <label class="col-sm-2 text-right" style="color:red" id="SavingMonth"></label>                        
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-3 control-label">Included</label>
+                        <label class="col-sm-4 text-right" id="Included1"></label>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-3 control-label"></label>
+                        <label class="col-sm-2 text-right">Per vessel / month</label>
+                        <label class="col-sm-2 text-right">Per vessel / day</label>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-3 control-label">Monthly subscription for 3 years</label>
+                        <label class="col-sm-2 text-right" id="SubscriptionPricePerMonth2"></label>
+                        <label class="col-sm-2 text-right" id="SubscriptionPricePerDay2"></label>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-3 control-label">Upgrade to 5 year subscription</label>
+                        <label class="col-sm-2 text-right" id="SubscriptionPricePerMonth5"></label>
+                        <label class="col-sm-2 text-right" id="SubscriptionPricePerDay5"></label>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-sm-3 control-label"></label>
+                        <label class="col-sm-2 text-right" id="SavingMonth5"></label>
+                        <label class="col-sm-2 text-right" id="SavingDay5"></label>
+                    </div>
+                    <h3>One Time Investment</h3>
+                    <div class="row">
+                        <label class="col-sm-3 control-label"></label>
+                        <label class="col-sm-2 text-right">Per vessel / month</label>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-3 control-label">Production and Preparation</label>
+                        <label class="col-sm-2 text-right" id="PrepFee"></label>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-3 control-label">Included</label>
+                        <label class="col-sm-4 text-right" id="Included2">PM, Delivery, ABC, DEF, GHI – see Word Quote form</label>
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-primary prevBtn btn-lg pull-left" type="button" id="Previous">Previous</button>
+                <button class="btn btn-success btn-lg pull-right" type="button" id="Create_Edit">Create quote</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="new_FOSGoldConfigurator.min.js"></script>
+</div>
+
+</body></html>

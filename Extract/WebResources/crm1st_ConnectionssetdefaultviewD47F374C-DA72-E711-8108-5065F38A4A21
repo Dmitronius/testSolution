@@ -1,0 +1,7 @@
+function setLookupView()
+{
+debugger;
+if((Xrm.Page.getControl("record2id")) != null)
+   {Xrm.Page.getControl("record2id").setDefaultView("2");}
+}
+

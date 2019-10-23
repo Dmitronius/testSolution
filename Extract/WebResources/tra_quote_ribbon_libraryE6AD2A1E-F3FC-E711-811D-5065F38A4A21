@@ -1,0 +1,47 @@
+//18\12\2017 andnov
+//If the TRA namespace object is not defined, create it.
+if (typeof (TRA) == "undefined") { TRA = {}; }
+// Create Namespace container for functions in this library;
+TRA.QuoteRibbonLibrary = {};
+
+TRA.QuoteRibbonLibrary.checkInstance = function () {
+    var orgName = Xrm.Page.context.getOrgUniqueName();
+    if (orgName === "transas2") {  //Prod
+        return false;
+    } else if (orgName === "orgbe46661f") { //dev
+        return true;
+    } else if (orgName === "orga5a7fa35") { //uat
+        return true;
+    } else { //default
+        return false;
+    }
+};
+
+TRA.QuoteRibbonLibrary.openConfigurator = function () {
+    var prefix = "https://weita-crmfirst.transas.com/";
+    var ISV = "/QuoteConfigurator/?commandprops=";
+    //var orgLcId = "&orglcid=" + Xrm.Page.context.getOrgLcid();
+    //var userLcId = "&userlcid=" + Xrm.Page.context.getUserLcid();
+    var itemId = "&itemid=" + encodeURI(Xrm.Page.data.entity.getId());
+    var orgName = "&orgname=" + Xrm.Page.context.getOrgUniqueName();
+    var instance = Xrm.Page.context.getOrgUniqueName();
+    if (instance === "transas2") {
+        //isvInstance = "ISV";
+        isvInstance = "ISVDev";
+    }
+    else if (instance === "orgbe46661f") {
+        isvInstance = "ISVDev";
+    } else {
+        //isvInstance = "ISVUat";
+        isvInstance = "ISVDev";
+    };
+    var typeName = "&typename=" + Xrm.Page.data.entity.getEntityName();
+    var userId = "&userid=" + encodeURI(Xrm.Page.context.getUserId());
+    var newUrl;
+    //newUrl = prefix + instance + ISV + userId + itemId + orgLcId + orgName + typeName + userLcId;
+    newUrl = prefix + isvInstance + ISV + userId + itemId + orgName + typeName;
+    console.log(newUrl);
+    window.open(newUrl, "FOS Configurator");
+
+};
+

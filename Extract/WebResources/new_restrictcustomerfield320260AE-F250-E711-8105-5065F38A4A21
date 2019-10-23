@@ -1,0 +1,4 @@
+function OnLoad()
+{
+Xrm.Page.getAttribute("customerid").setLookupTypes(["account"]);
+}

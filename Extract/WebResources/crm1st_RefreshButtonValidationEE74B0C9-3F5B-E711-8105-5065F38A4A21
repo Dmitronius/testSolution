@@ -1,0 +1,7 @@
+function StopButtonValidation() {
+	return (!window.top.crm1st_refreshDisabled);
+}
+
+function StartButtonValidation() {
+	return (window.top.crm1st_refreshDisabled === 1);
+}
